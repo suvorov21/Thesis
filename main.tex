@@ -1,0 +1,316 @@
+\documentclass[12pt,a4paper]{memoir}
+
+% General packages
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2.5cm,footnotesep=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{multicol,multirow}
+\usepackage{calc}
+\usepackage{pifont}
+\usepackage{adjustbox}
+\usepackage{subfiles}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\usepackage{color,calc,graphicx,soul,fourier,lipsum}
+
+\usepackage{chngcntr}
+\counterwithin*{chapter}{part}
+
+% TOC stuff
+% suppress page number in toc for parts
+\cftpagenumbersoff{part}
+% Part offset in TOC
+\setlength{\cftpartindent}{6cm}
+% Rome number and part title separation
+\renewcommand\cftpartnumwidth{1cm}
+
+% Add a line at header
+\makeheadrule{headings}{\textwidth}{\normalrulethickness}
+
+% Allow hyphenation
+\usepackage[shortcuts]{extdash}
+
+% Referencing and links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linktocpage=true,
+	citecolor=YellowOrange,
+	linkcolor=violet,
+	urlcolor=MidnightBlue!50!Aquamarine,
+}
+
+% Spacing
+\setlength{\epigraphwidth}{.6\textwidth}
+\frenchspacing
+\usepackage[absolute]{textpos}
+\usepackage{enumitem}
+\setlist[itemize]{topsep=0.6em,itemsep=0.3em}
+\setlist[description]{leftmargin=0.3em}
+\setlist[description]{itemindent=0.6em}
+
+% Prevent orphans (line beginning at end of a page) and widows (line ending at begin of a page)
+\clubpenalty=10000
+\widowpenalty=10000
+\raggedbottom
+\interfootnotelinepenalty=10000 % prevent footnotes on several pages
+
+% bclogo blocks
+\usepackage[tikz]{bclogo}
+\renewcommand\bcStyleTitre[1]{\textbf{#1}}
+
+% Tikz
+\usepackage{tikz}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc,positioning,shadows.blur,decorations.pathreplacing}
+\usepackage{etoolbox}
+\tikzset{%
+        brace/.style = { decorate, decoration={brace, amplitude=5pt} },
+       mbrace/.style = { decorate, decoration={brace, amplitude=5pt, mirror} },
+        label/.style = { black, midway, scale=0.5, align=center },
+     toplabel/.style = { label, above=.5em, anchor=south },
+    leftlabel/.style = { label,rotate=-90,left=.5em,anchor=north },   
+  bottomlabel/.style = { label, below=.5em, anchor=north },
+        force/.style = { rotate=-90,scale=0.4 },
+        round/.style = { rounded corners=2mm },
+       legend/.style = { right,scale=0.4 },
+        nosep/.style = { inner sep=0pt },
+   generation/.style = { anchor=base }
+}
+
+
+% Tikz: particle table
+\newcommand\particle[7][white]{%
+  \begin{tikzpicture}[x=1cm, y=1cm]
+    \path[fill=#1,blur shadow={shadow blur steps=5}] (0.1,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
+        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
+    \ifstrempty{#7}{}{\path[fill=purple!50!white]
+        (0.6,0) --(0.7,0) -- (1.0,-0.3) -- (1.0,-0.4);}
+    \ifstrempty{#6}{}{\path[fill=green!50!black!50] (0.7,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.3);}
+    \ifstrempty{#5}{}{\path[fill=orange!50!white] (1.0,-0.7) -- (1.0,-0.9)
+        arc (0:-90:1mm) -- (0.7,-1.0);}
+    \draw[\ifstrempty{#2}{dashed}{black}] (0.1,0) -- (0.9,0)
+        arc (90:0:1mm) -- (1.0,-0.9) arc (0:-90:1mm) -- (0.1,-1.0)
+        arc (-90:-180:1mm) -- (0,-0.1) arc(180:90:1mm) -- cycle;
+    \ifstrempty{#7}{}{\node at(0.825,-0.175) [rotate=-45,scale=0.2] {#7};}
+    \ifstrempty{#6}{}{\node at(0.9,-0.1)  [nosep,scale=0.17] {#6};}
+    \ifstrempty{#5}{}{\node at(0.9,-0.9)  [nosep,scale=0.2] {#5};}
+    \ifstrempty{#4}{}{\node at(0.1,-0.1)  [nosep,anchor=west,scale=0.25]{#4};}
+    \ifstrempty{#3}{}{\node at(0.1,-0.85) [nosep,anchor=west,scale=0.3] {#3};}
+    \ifstrempty{#2}{}{\node at(0.1,-0.5)  [nosep,anchor=west,scale=1.5] {#2};}
+  \end{tikzpicture}
+}
+
+\setsecnumdepth{subsubsection}
+\settocdepth{subsection}
+\renewcommand{\partname}{}
+\renewcommand{\thepart}{}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{section}}
+%\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+%\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\alph{subsubsection}}
+
+
+% Chapter heading
+\usepackage{color,soul}
+\definecolor{nicered}{rgb}{.255,.363,.622}
+\makeatletter
+\newlength\dlf@normtxtw
+\setlength\dlf@normtxtw{\textwidth}
+\def\myhelvetfont{\def\sfdefault{mdput}}
+\newsavebox{\feline@chapter}
+\newcommand\feline@chapter@marker[1][4cm]{%
+    \sbox\feline@chapter{%
+        \resizebox{!}{#1}{\fboxsep=1pt%
+        \colorbox{nicered}{\color{white}\bfseries\rmfamily\thechapter}%
+    }
+}%
+\rotatebox{90}{%
+    \resizebox{%
+        \heightof{\usebox{\feline@chapter}}+\depthof{\usebox{\feline@chapter}}
+    }%
+    {!}{\scshape\so\@chapapp}}\quad%
+    \raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
+}
+\newcommand\feline@chm[1][4cm]{%
+\sbox\feline@chapter{\feline@chapter@marker[#1]}%
+\makebox[0pt][l]{% aka \rlap
+\makebox[1cm][r]{\usebox\feline@chapter}%
+}}
+\makechapterstyle{daleif1}{
+\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so}
+\renewcommand\chaptitlefont{\normalfont\huge\bfseries\scshape\color{nicered}}
+\renewcommand\chapternamenum{}
+\renewcommand\printchaptername{}
+\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par}
+\renewcommand\afterchapternum{\par\vskip\midchapskip}
+\renewcommand\printchaptertitle[1]{\chaptitlefont\raggedleft ##1\par}
+}
+\makeatother
+\chapterstyle{daleif1}
+
+% Head of the section
+
+\usepackage{titlesec}
+%\definecolor{colSec}{RGB}{0, 0, 255}
+%\definecolor{colSSec}{RGB}{0,173,239}
+%\definecolor{colSSSec}{RGB}{0,173,239}
+\colorlet{colSec}{MidnightBlue}
+\colorlet{colSSec}{Bittersweet}
+\colorlet{colSSSec}{Black}
+
+  \newcommand\boxedSection[3]{{
+      \begin{tikzpicture}[inner sep=#3,line width=1.5pt]
+          \node[anchor=east,rectangle,draw,fill=colSec] at (0,0) (counter) {\color{white}\hspace*{2ex}\textbf{#2}};
+              \draw (counter.south west) ++(.0pt,.5pt)-- ++($(\linewidth,0) - (2.5pt,0)$);
+ \node [right of=counter,anchor=west]{\color{black}#1};
+      \end{tikzpicture}
+  }}
+
+  \newcommand\boxedSubSection[3]{{
+      \begin{tikzpicture}[inner sep=#3,line width=1.5pt]
+          \node[anchor=east,rectangle,draw,fill=colSSec] at (0,0) (counter) {\color{white}\textbf{#2}};
+              \draw (counter.south west)  ++(.0pt,.5pt)-- ++($(\linewidth,0) - (2.5pt,0)$);
+ \node [right of=counter,anchor=west]{\hspace*{-0.5ex}\color{black}#1};
+      \end{tikzpicture}
+  }}
+ 
+  \newcommand\boxedSubSubSection[3]{{
+      \begin{tikzpicture}[inner sep=#3,line width=1.0pt]
+          \node[anchor=center,diamond,draw,fill=colSSSec] at (0,0) (counter) {\color{white}\textbf{#2}};
+             \draw (counter.south) ++(.0pt,4pt)-- ++($(\linewidth,0) - (2.5pt,0)$);
+     \node [right of=counter,anchor=west]{\hspace*{-2ex}#1};
+      \end{tikzpicture}
+  }}
+ 
+ \newcommand\boxedsection[1]{\boxedSection{#1}{\thesection}{2mm}}
+ \newcommand\boxedsubsection[1]{\boxedSubSection{#1}{\thesubsection}{1.7mm}}
+ \newcommand\boxedsubsubsection[1]{\boxedSubSubSection{#1}{\alph{subsubsection}}{0.7mm}}
+  
+  \titleformat{\section}[hang]%
+      {\Large\bfseries}%
+      {}%
+      {.0em}%
+      {\filright\boxedsection}%
+  \titlespacing{\section}
+	  {0pc}{-1ex}{-2ex}
+
+  \titleformat{\subsection}[hang]%
+      {\large\bfseries}%
+      {}%
+      {.0em}%
+      {\filright\boxedsubsection}%
+  \titlespacing{\subsection}
+	  {0pc}{-1ex}{-2ex}
+ 
+  \titleformat{\subsubsection}[hang]%
+      {\normalsize\bfseries}%
+      {}%
+      {.0em}%
+      {\filright\boxedsubsubsection}%
+  \titlespacing{\subsubsection}
+	  {0pc}{0ex}{0ex}
+
+
+\title{Search for heavy neutrinos in the T2K experiment and upgrade of the near detector ND280}
+\author{Suvorov Sergey}
+\date{August 2019}
+
+\begin{document}
+
+\maketitle
+\clearpage
+\tableofcontents*
+
+\part{Introduction}
+
+\chapter{Neutrino physics}
+\section{General overview}
+\section{Neutrino oscillations}
+\subsection{Theory}
+\subsection{Experiment overview}
+\chapter{HNL analysis motivation}
+\section{Theory}
+\section{Experiments and challenges}
+
+\part{The T2K experiment}
+
+\chapter{Neutrino beam}
+\chapter{ND280}
+\section{Time projection chambers (TPC)}
+\subsection{TPC concept}
+\section{Fine grained detectors (FGD)}
+\section{Elecromagnetic calorimeter (ECaL)}
+\chapter{SuperKamiokande}
+\chapter{Analysis overview}
+\section{Neutrino flux measurements}
+\section{Neutrino cross-section measurements}
+\section{Oscillation analysis}
+
+\part{Heavy neutrino study}
+
+\chapter{Prospects in T2K}
+\chapter{HNL flux simulations}
+\section{T2K flux simulation}
+\section{HNL production}
+\section{HNL decays}
+\chapter{Analysis}
+\section{Event selection}
+\subsection{Signal event selection}
+\subsection{Background suppression}
+\section{Systematic uncertainties}
+\subsection{Detector systematics}
+\subsection{Flux systematics}
+\subsection{Pile up}
+\section{Statistical methods}
+\chapter{Results}
+\section{MC sensitivity estimations}
+\section{Data unbinding}
+
+\part{ND280 upgrade}
+
+\chapter{Motivation}
+\section{T2K run plan}
+\section{Beamline upgrade}
+\section{Limits of the near detector}
+\chapter{Detector overview}
+\chapter{Simulations}
+
+\chapter{TPC}
+\section{Concept}
+\subsection{Resistive MicroMegas technology}
+\section{Beamtest}
+\subsection{Cosmic test}
+\subsection{CERN beamtest}
+\subsection{DESY beamtest}
+
+
+\chapter{Super FGD}
+\section{Concept}
+\subsection{Assembly}
+\section{Simulations}
+\section{Beamtest}
+\subsection{First CERN beamtest}
+\subsection{Second CERN beamtest}
+
+\chapter{Neutron tagging in SuperFGD}
+\section{Motivation}
+\section{Geant4 simulation}
+\section{Efficiency and energy resolution} 
+\section{Background estimatiuonsn}
+\section{Prospects for physics}
+
+\part{Conclusion}
+
+
+\end{document}
