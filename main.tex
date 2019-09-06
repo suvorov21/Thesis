@@ -24,6 +24,11 @@
 \usepackage{chngcntr}
 \counterwithin*{chapter}{part}
 
+\graphicspath{{fig/}{./2_T2K/fig/}}
+\DeclareGraphicsExtensions{.png, .pdf}
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+
 % TOC stuff
 % suppress page number in toc for parts
 \cftpagenumbersoff{part}
@@ -31,6 +36,7 @@
 \setlength{\cftpartindent}{6cm}
 % Rome number and part title separation
 \renewcommand\cftpartnumwidth{1cm}
+\renewcommand\cftpartname{}
 
 % Add a line at header
 \makeheadrule{headings}{\textwidth}{\normalrulethickness}
@@ -77,7 +83,7 @@
        mbrace/.style = { decorate, decoration={brace, amplitude=5pt, mirror} },
         label/.style = { black, midway, scale=0.5, align=center },
      toplabel/.style = { label, above=.5em, anchor=south },
-    leftlabel/.style = { label,rotate=-90,left=.5em,anchor=north },   
+    leftlabel/.style = { label,rotate=-90,left=.5em,anchor=north },
   bottomlabel/.style = { label, below=.5em, anchor=north },
         force/.style = { rotate=-90,scale=0.4 },
         round/.style = { rounded corners=2mm },
@@ -113,12 +119,12 @@
 
 \setsecnumdepth{subsubsection}
 \settocdepth{subsection}
-\renewcommand{\partname}{}
-\renewcommand{\thepart}{}
-\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\partname}{}
+\renewcommand{\thepart}{\Roman{part}}
+\renewcommand{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\arabic{section}}
-%\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
-%\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\alph{subsubsection}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\alph{subsubsection}}
 
 
 % Chapter heading
@@ -184,7 +190,7 @@
  \node [right of=counter,anchor=west]{\hspace*{-0.5ex}\color{black}#1};
       \end{tikzpicture}
   }}
- 
+
   \newcommand\boxedSubSubSection[3]{{
       \begin{tikzpicture}[inner sep=#3,line width=1.0pt]
           \node[anchor=center,diamond,draw,fill=colSSSec] at (0,0) (counter) {\color{white}\textbf{#2}};
@@ -192,11 +198,11 @@
      \node [right of=counter,anchor=west]{\hspace*{-2ex}#1};
       \end{tikzpicture}
   }}
- 
+
  \newcommand\boxedsection[1]{\boxedSection{#1}{\thesection}{2mm}}
  \newcommand\boxedsubsection[1]{\boxedSubSection{#1}{\thesubsection}{1.7mm}}
  \newcommand\boxedsubsubsection[1]{\boxedSubSubSection{#1}{\alph{subsubsection}}{0.7mm}}
-  
+
   \titleformat{\section}[hang]%
       {\Large\bfseries}%
       {}%
@@ -212,7 +218,7 @@
       {\filright\boxedsubsection}%
   \titlespacing{\subsection}
 	  {0pc}{-1ex}{-2ex}
- 
+
   \titleformat{\subsubsection}[hang]%
       {\normalsize\bfseries}%
       {}%
