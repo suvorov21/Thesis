@@ -24,7 +24,7 @@
 \usepackage{chngcntr}
 \counterwithin*{chapter}{part}
 
-\graphicspath{{fig/}{./2_T2K/fig/}}
+\graphicspath{{fig/}{./2_T2K/fig/}{./3_HNL/fig/}}
 \DeclareGraphicsExtensions{.png, .pdf}
 
 \newcommand{\todo}[1]{\textcolor{red}{#1}}
@@ -92,6 +92,9 @@
    generation/.style = { anchor=base }
 }
 
+% linenumbers
+\usepackage{lineno}
+
 
 % Tikz: particle table
 \newcommand\particle[7][white]{%
@@ -118,7 +121,7 @@
 }
 
 \setsecnumdepth{subsubsection}
-\settocdepth{subsection}
+\settocdepth{subsubsection}
 %\renewcommand{\partname}{}
 \renewcommand{\thepart}{\Roman{part}}
 \renewcommand{\thechapter}{\arabic{chapter}}
@@ -227,6 +230,27 @@
   \titlespacing{\subsubsection}
 	  {0pc}{0ex}{0ex}
 
+\usepackage[
+sorting=ydnt,
+citestyle=numeric,
+]{biblatex}
+\addbibresource{bib_main.bib}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=doi, final]
+      \step[fieldset=url, null]
+      \step[fieldset=eprint, null]
+      \step[fieldset=issn, null]
+    }
+    \map[overwrite]{
+      \step[fieldsource=eprint, final]
+      \step[fieldset=url, null]
+    }
+  }
+}
+
 
 \title{Search for heavy neutrinos in the T2K experiment and upgrade of the near detector ND280}
 \author{Suvorov Sergey}
@@ -238,6 +262,8 @@
 \clearpage
 \tableofcontents*
 
+\linenumbers
+
 % inclusion des chapitres
 \subfile{./1_Introduction/main.tex}
 \subfile{./2_T2K/main.tex}
@@ -245,6 +271,8 @@
 \subfile{./4_upgrade/main.tex}
 
 \part{Conclusion}
+
+\printbibliography
 
 
 \end{document}

@@ -6,3 +6,8 @@
 *.pdf
 *.synctex.gz
 *.toc
+*.run.xml
+*.blg
+*.bcf
+*.bbl
+*.bib

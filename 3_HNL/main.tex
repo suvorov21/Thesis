@@ -9,15 +9,86 @@
 
 \chapter{Prospects in T2K}
 
-In the current work I study a possibility of the improvement of the constraints on the mixing elements of the HNL in the T2K experiment. The details about the experimental setup are described~in~the~\autoref{T2K:general}. The J-PARC facility provides extremely intensive neutrino beam.
 
-As mentioned in the \nameref{intro:general}, heavy neutrinos could be produced in the mesons decays. As a result there are two possible strategies of the HNL search:
+In the current work we study a possibility of the improvement of the constraints on the mixing elements of the HNL in the T2K experiment. The details about the experimental setup are described~in~the~\autoref{T2K:general}. The main feature of the experiment for the HNL search is very intensive proton beam providing by J-PARC accelerator. The beam operation is overviewed~in~the~\autoref{T2K:nu_beam}. The focusing system allow to perform the analysis focusing positive or negative mesons from the proton interactions. As mentioned in the \nameref{intro:HNL}, heavy neutrinos could be produced in the mesons decays. As a result there are two possible strategies of the HNL search:
 \begin{itemize}
     \item measurement of the meson decay kinematics. The effect is proportional to $\left|U_l\right|^2$;
     \item search for decay products of the heavy neutrino. As both HNL production and decay are proportional to $\left|U_l\right|^2$, the final effect $\propto\left|U_l\right|^4$.
 \end{itemize}
 
-In our experiment we can't obtain the information about the parent meson kinematics, so we focused on the search for products of HNL decays with the near detector (ND280). The ND280 is the off-axis detector located 280m from the target station. The off-axis angle to ND280 from the target position is $2.5^\circ$. The constructed off-axis detector consists of: the P0D and the TPC/FGD sandwich (tracker), both of which are placed in-side of a metal frame container, called the “basket”; an electromagnetic calorimeter (ECal) that surrounds the basket; and the recycled UA1 magnet instrumented with scintillator to perform as a muon range detector (SMRD). The overall view of the ND280 is presented in~\autoref{T2K:fig:ND280}.
+The schema of the T2K experiment is shown in~\autoref{fig:HNL:t2k_schema}. The muon monitor is the only instrument that could measure the muons directly from the meson decay. In spite of its extreme usefulness for the neutrino beam intensity and direction measurements, it could not provide necessary precision for the search of the HNL through the detection of the muons from the meson decay. Thus the only way of the heavy neutrino study in the T2K is search for the HNL decays in the near detector complex. The near detector complex (\autoref{T2K:nd}) consists of on-axis INGRID detector and off-axis ND280. The most precise analysis could be done with the the ND280's time projections chambers. As we are looking for the HNL decays in the neutrino beam the gaseous detectors will observe much less background from the neutrino interactions comparing to scintillators.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{t2k_schema.png}
+    \caption{A schematic view of the neutrino beamline and the detectors in the T2K experiment.}
+    \label{fig:HNL:t2k_schema}
+\end{figure}
+
+With the 30 $GeV/c$ proton beam mainly pions are produced with some fractions of kaons. The comparison of the neutrino flux from different parent particles are presented~in~\autoref{fig:HNL:meson_flux}. As we want to study the maximum range of the HNL mass we will concentrate on the kaon decays. Thus we will be able to study the mass region up to 493 $MeV/c^2$. The overview of the HNL nature including the relation with the Standard Model particles is presented~in~\autoref{intro:HNL}. The particular production and decay modes of the heavy neutrino masses that are available for the analysis in our experiment are summarized in the kinematic scheme in~\autoref{fig:HNL:mass_scale} with specific HNL mass region for each of them.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{meson_flux}
+    \caption{The muon neutrino and anti-neutrino flux prediction at the ND280 broken down by the neutrino parent particle type.}
+    \label{fig:HNL:meson_flux}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{HNL_mass_scale}
+    \caption{Summary of the production and detection processes of the heavy neutrino available for the analysis with the ND280. The horizontal axis corresponds to the HNL mass}
+    \label{fig:HNL:mass_scale}
+\end{figure}
+
+As one can see from the scheme in our study we will concentrate on the two and tree body decays of the heavy neutrino.
+
+\begin{eqnarray}
+    &N\to\ell^{\pm}\pi^{\mp} &\\
+    &N\to\ell^{\pm}\ell^{\mp}\nu & \\
+\end{eqnarray}
+
+We would like to highlight the importance of the study of a HNL dimuon decay mode: $N\to\mu\mu\nu$. This decay has charge and neutral current contributions shown in Fig.~\ref{fig:DimuonFeynman} (from~\cite{Johnson1997}).
+
+\begin{figure}[h!]
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{DiMuonCC.png} \\ a) }
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{DiMuonNC.png} \\ b)}
+    \end{minipage}
+    \caption{Feynman diagrams for the HNL decay $N\to\mu\mu\nu$ via charged (a) and neutral (b) current.}
+    \label{fig:DimuonFeynman}
+\end{figure}
+
+If the HNL decays via NC, any type of the active neutrino could be produced ($\nu_{e}, \nu_{\mu}, \nu_{\tau}$), so we can study the mixing element including $|U\tau|$. This is interesting as the upper limits on this element are rather high\todo{reference to the figure in intro}.
+
+The first one requires applying some simple cuts and then study difference between data and MC estimation with a peak shape. We need a rather accurate background prediction for this method. Also invariant mass resolution is one of the most important issue. We have studied the possible resolution for the HNL signal samples. The events that pass all the cuts described in the~\autoref{HNL:sel} give as the reconstructed mass distribution. The examples of such distribution are presented in~\autoref{fig:HNL:InvMass}. The resolution of the invariant mass reconstruction on the HNL mass is shown in~\autoref{fig:HNL:InvMassPlot}. As one can see, RMS is quite large $\approx70MeV$. The main background processes for the HNL decay are  interactions of the active neutrinos. In near detector there are three TPCs filled with argon gas. The cross sections of the neutrino interactions in gas are not studied well. Studies of these events were performed by ArgoNeuT group~\cite{Acciarri2014}. In our momentum region ($\approx1GeV$) the uncertainties are relatively large. Other background processes can be $K^0, \Lambda, \eta$ decays, deep inelastic neutrino scattering, etc. (\autoref{HNL:bg}) that are also poorly studied. Because of this we can not provide needed accuracy of the background prediction and the method of the invariant mass peak search can not be applied.
+\begin{figure}[h!]
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{InvMass036}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{InvMass048}}
+    \end{minipage}
+    \caption{HNL invariant mass resolution. Left is for $M_{HNL}=360$ MeV, right is for $M_{HNL}=480$ MeV for the $\mu\pi$ mode.}
+    \label{fig:HNL:InvMass}
+\end{figure}
+
+\begin{figure}[h!]
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{InvMassMuPlot} \\ a)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{InvMassElePlot} \\ b) }
+    \end{minipage}
+    \caption{HNL invariant mass resolution (RMS) dependence on the HNL mass for (a) $N\to \mu\pi$ mode and (b) $N\to e\pi$ mode.}
+    \label{fig:HNL:InvMassPlot}
+\end{figure}
+
 
 
 
@@ -26,61 +97,8 @@ In our experiment we can't obtain the information about the parent meson kinemat
 
 
 \begin{comment}
-As mentioned in the introduction, heavy neutrinos could be produced in the mesons decays. As a result there are two possible strategies of the HNL search:
-\begin{itemize}
-    \item measurement of the meson decay kinematics. The effect is proportional to $\left|U_l\right|^2$;
-    \item search for decay products of the heavy neutrino. As both HNL production and decay are proportional to $\left|U_l\right|^2$, the final effect $\propto\left|U_l\right|^4$.
-\end{itemize}
-In our experiment we can't obtain the information about the parent meson kinematics, so we focused on the search for products of HNL decays with the near detector (ND280). The ND280 is the off-axis detector located 280m from the target station. The off-axis angle to ND280 from the target position is $2.5^\circ$. The constructed off-axis detector consists of: the P0D and the TPC/FGD sandwich (tracker), both of which are placed in-side of a metal frame container, called the “basket”; an electromagnetic calorimeter (ECal) that surrounds the basket; and the recycled UA1 magnet instrumented with scintillator to perform as a muon range detector (SMRD). The overall view of the ND280 is presented in Fig.~\ref{fig:ND280}.
-\begin{figure}[H]
-    \begin{center}
-    \includegraphics[width = 0.7\linewidth]{ND280}
-    \caption{An exploded view of the ND280 off-axis detector.}
-    \label{fig:ND280}
-    \end{center}
-\end{figure}
 
-The HNL can be produced in mesons decay
-\begin{equation}
-    H\to\ell_ lN,
-\end{equation}
-where $H$ is a parent meson, $\ell$ is a lepton, $l=e,\mu, \tau$. In the T2K experiment mainly pions and kaons are produced in the proton collisions at the target station. We will focus at the kaon decay as it allows to study wide range of the HNL mass. In the T2K at the moment there is no simulation for the hadrons heavier than kaons. The decay channels of the HNL with $M_{HNL}<M_K$ are:
-\begin{eqnarray}
-    \label{eq:2bd}
-    &N\to\ell\pi &\\
-    \label{eq:3bd}
-    &N\to\ell\ell\nu & \\
-    &N\to\gamma\nu, \hspace{2cm}   N\to3\nu, \hspace{2cm} N\to\nu\pi^0&
-    \label{eq:no}
-\end{eqnarray}
-
-
-We will study 2-body decays (\ref{eq:2bd}) and 3-body decays (\ref{eq:3bd}). Daughter particles from decays \ref{eq:no} are practically undetectable. The Fig.~\ref{fig:KaonMasReg} shows reactions of the HNL production and decay, that we are going to study and HNL mass region for each process.
-\begin{figure}[H]
-    \begin{center}
-    \includegraphics[width = \linewidth]{KaonMasReg}
-    \caption{Summary of the production and the detection processes of the heavy neutrino. The horizontal axis corresponds to the HNL mass.}
-    \label{fig:KaonMasReg}
-    \end{center}
-\end{figure}
-
-It is interesting to study a dimuon decay mode of the HNL: $N\to\mu\mu\nu$. This decay has charge and neutral current contributions shown in Fig.~\ref{fig:DimuonFeynman} (from~\cite{johnson1997extending}).
-
-\begin{figure}[H]
-    \begin{minipage}[h]{0.49\linewidth}
-        \center{\includegraphics[width=\linewidth]{DiMuonCC} \\ a) }
-    \end{minipage}
-    \hfill
-    \begin{minipage}[h]{0.49\linewidth}
-        \center{\includegraphics[width=\linewidth]{DiMuonNC} \\ b)}
-    \end{minipage}
-    \caption{Feynman diagrams for the HNL decay $N\to\mu\mu\nu$ via charged (a) and neutral (b) current.}
-    \label{fig:DimuonFeynman}
-\end{figure}
-
-As one can see if the HNL decay via NC, any type of the active neutrino can be produced ($\nu_{e}, \nu_{\mu}, \nu_{\tau}$), so we can study the mixing element including $|U\tau|$. This is interesting as the upper limits on this element are rather high.
-
-The T2K experiment uses neutrino beam from $\pi^\pm$ and $K^\pm$ decays. In our study a search of HNL from both $K^+$ and $K^-$ decays is carried out in order to increase sensitivity because of larger statistics. We assume the Majorana nature of a HNL, this allows to study decays of $K^+$, $K^-$ and both decay modes of a heavy neutrino to $\ell^{\pm}\pi^{\mp}$.
+The T2K experiment uses neutrino beam from $\pi^\pm$ and $K^\pm$ decays. In our study a search of HNL from both $K^+$ and $K^-$ decays is carried out in order to increase sensitivity because of the larger statistics. We assume the Majorana nature of a HNL, this allows to study decays of $K^+$, $K^-$ and both decay modes of a heavy neutrino to $\ell^{\pm}\pi^{\mp}$.
 
 As we focus on search of the HNL decay there are two analysis methods:
 \begin{itemize}
@@ -88,7 +106,7 @@ As we focus on search of the HNL decay there are two analysis methods:
   \item search for a rare event in a low background environment
 \end{itemize}
 
-The first one requires applying some simple cuts and then study difference between data and MC estimation with a peak shape. We need a rather accurate background prediction for this method. Also invariant mass resolution is one of the most important issue. We have studied the possible resolution for the HNL signal samples. The ePvents that pass all the cuts described in the section~\ref{sec:Ana} give as the reconstructed mass distribution. The examples of such distribution are presented in Fig.~\ref{fig:InvMass}. The resolution of the invariant mass reconstruction on the HNL mass is shown in Fig.~\ref{fig:InvMassPlot}. As one can see, RMS is quite large $\approx70MeV$. The main background processes for the HNL decay are  interactions of the active neutrinos. In near detector there are three TPCs filled with argon gas. The cross sections of the neutrino interactions in gas are not studied well. Studies of these events were performed by ArgoNeuT group~\cite{acciarri2014measurements}. In our momentum region ($\approx1GeV$) the uncertainties are really large. Other background processes can be $K^0, \Lambda, \eta$ decays, deep inelastic neutrino scattering, etc. (Sec~\ref{sec:bg}) that are also poorly studied. Because of this we can not provide needed accuracy of the background prediction and the method of the invariant mass peak search can not be applied.
+The first one requires applying some simple cuts and then study difference between data and MC estimation with a peak shape. We need a rather accurate background prediction for this method. Also invariant mass resolution is one of the most important issue. We have studied the possible resolution for the HNL signal samples. The events that pass all the cuts described in the section~\ref{sec:Ana} give as the reconstructed mass distribution. The examples of such distribution are presented in Fig.~\ref{fig:InvMass}. The resolution of the invariant mass reconstruction on the HNL mass is shown in Fig.~\ref{fig:InvMassPlot}. As one can see, RMS is quite large $\approx70MeV$. The main background processes for the HNL decay are  interactions of the active neutrinos. In near detector there are three TPCs filled with argon gas. The cross sections of the neutrino interactions in gas are not studied well. Studies of these events were performed by ArgoNeuT group~\cite{acciarri2014measurements}. In our momentum region ($\approx1GeV$) the uncertainties are really large. Other background processes can be $K^0, \Lambda, \eta$ decays, deep inelastic neutrino scattering, etc. (Sec~\ref{sec:bg}) that are also poorly studied. Because of this we can not provide needed accuracy of the background prediction and the method of the invariant mass peak search can not be applied.
 \begin{figure}[H]
     \begin{minipage}[h]{0.49\linewidth}
         \center{\includegraphics[width=\linewidth]{InvMass036}}
@@ -142,9 +160,12 @@ a Poisson parameter over the number n of observed events, for a specified confid
 \section{HNL production}
 \section{HNL decays}
 \chapter{Analysis}
+\label{HNL:ana}
 \section{Event selection}
+\label{HNL:sel}
 \subsection{Signal event selection}
 \subsection{Background suppression}
+\label{HNL:bg}
 \section{Systematic uncertainties}
 \subsection{Detector systematics}
 \subsection{Flux systematics}
