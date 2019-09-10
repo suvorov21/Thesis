@@ -22,7 +22,7 @@
 \usepackage{color,calc,graphicx,soul,fourier,lipsum}
 
 \usepackage{chngcntr}
-\counterwithin*{chapter}{part}
+%\counterwithin*{chapter}{part}
 
 \graphicspath{{fig/}{./2_T2K/fig/}{./3_HNL/fig/}}
 \DeclareGraphicsExtensions{.png, .pdf}
@@ -120,9 +120,9 @@
   \end{tikzpicture}
 }
 
+
+\settocdepth{subsection}
 \setsecnumdepth{subsubsection}
-\settocdepth{subsubsection}
-%\renewcommand{\partname}{}
 \renewcommand{\thepart}{\Roman{part}}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\arabic{section}}
@@ -231,7 +231,7 @@
 	  {0pc}{0ex}{0ex}
 
 \usepackage[
-sorting=ydnt,
+sorting=none,
 citestyle=numeric,
 ]{biblatex}
 \addbibresource{bib_main.bib}
