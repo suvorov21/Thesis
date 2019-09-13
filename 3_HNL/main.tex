@@ -103,10 +103,9 @@ The second method requires significant background suppression. Usage of the gase
 
 Thus we could perform a search of a few signal events in an extremely low background environment ($\approx1$). The details of the used statistical approach could be found in~\autoref{sec:HNL:stat}.
 
-
 \chapter{HNL flux simulations}
 
-First of all we need to estimate the sensitivity to mixing elements in our experiment. So we need to evaluate the HNL flux at the ND280. We decided to use the results of the neutrino flux simulation that was developed for the oscillation analysis within the T2K experiment. With this simulation we have all the information about the neutrinos entering the ND280 and their parent particles. Because of the kinematics the phase space of the meson decay into HNL is more limited then the decay into massless neutrino. E.g. the maximum angle of the HNL direction with respect to the parent meson direction is lower comparing to the massless neutrino case. Thus if we consider only mesons that could produce neutrino entering ND280 and omit all the others, we will definitely take all the possible HNL parent particles.
+First of all we need to estimate the sensitivity to the mixing elements in our experiment. So we need to evaluate the HNL flux at the ND280. We decided to use the results of the neutrino flux simulation that was developed for the oscillation analysis within the T2K experiment. With this simulation we have all the information about the neutrinos entering the ND280 and their parent particles. Because of the kinematics the phase space of the meson decay into HNL is more limited then the decay into massless neutrino. E.g. the maximum angle of the HNL direction with respect to the parent meson direction is lower comparing to the massless neutrino case. Thus if we consider only mesons that could produce neutrino entering ND280 and omit all the others, we will definitely take all the possible HNL parent particles.
 
 For the heavy neutrino simulation we take the particular meson decay and reweight is taking into account new kinematic and the branching ratios. Thus we will obtain the heavy neutrino spectrum in our detector.
 
@@ -179,7 +178,13 @@ The new branching ratio is calculated according to~\cite{Gorbunov2007}:
     \end{split}
     \label{eq:HNL:Kdecay}
 \end{equation}
-where $G_F$ is Fermi constant, $V_{us}$ is a CKM matrix element, $M_\ell$ and $M_{HNL}$ are the lepton and the HNL masses, $M_K, f_K, \tau_K$ are kaon mass, form-factor, lifetime respectively.
+where
+\begin{itemize}
+\item $G_F$ --- Fermi constant,
+\item $V_{us}$ --- a CKM matrix element,
+\item $M_\ell$ and $M_{HNL}$ --- the lepton and the HNL masses,
+\item $M_K, f_K, \tau_K$ --- kaon mass, form-factor, lifetime respectively.
+\end{itemize}
 
 HNL enters the detector front plane randomly. The geometry weight is calculated as a probability of a daughter particle to have a momentum with a certain angle $\theta$ w.r.t. the parent momentum. Modifying
 \begin{eqnarray}
@@ -247,7 +252,7 @@ Since we study both $K^+$ and $K^-$ modes we compare HNL fluxes from both parent
 
 From the spectra of the heavy neutrinos, we can estimate the number of events from HNLs' decays and a sensitivity to mixing elements. As already described we just need the number of expected signal events. Number of decays is
 \begin{equation}
-    N_{events}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot S_{det} \cdot P_{decay}^{TPC}\cdot Br_{mode},
+    N_{decays}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot S_{det} \cdot P_{decay}^{TPC}\cdot Br_{mode},
     \label{eq:HNL:Nevents}
 \end{equation}
 where
@@ -260,7 +265,7 @@ where
 The decay probability between two points with coordinates $z_1$ and $z_2$, assuming large mean free path, is
 \begin{equation}
     P_{decay}(z_2-z_1)=exp(-\frac{z_1}{c\beta\gamma\tau})-exp(-\frac{z_2}{c\beta\gamma\tau})\approx \frac{z_2-z_1}{c\beta\gamma\tau}
-    \label{eq:Pdecay}
+    \label{eq:HNL:Pdecay}
 \end{equation}
 where $\tau$ is HNL lifetime. Taking into account that
 \begin{equation}
@@ -268,14 +273,14 @@ where $\tau$ is HNL lifetime. Taking into account that
 \end{equation}
 finally have
 \begin{equation}
-    N_{events}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot\frac{V_{FV}}{c\beta\gamma}\cdot\Gamma_{mode},
+    N_{decays}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot\frac{V_{FV}}{c\beta\gamma}\cdot\Gamma_{mode},
     \label{eq:HNL:EventsN}
 \end{equation}
-where $V_{FV}$ is a sum of the fiducial volumes of 3 TPC's. The decay width is calculated according to~\cite{Gorbunov2007, Johnson1997}. For 2-body decay we have
+where $V_{FV}$ is a sum of the fiducial volumes of 3 TPC's. The decay width is calculated according to~\cite{Johnson1997, Gorbunov2007}. For 2-body decay we have
 \begin{equation}
     \begin{split}
-    \Gamma\left(N\to \pi^+\ell_\alpha^-\right)&=\frac{\left|U_\alpha\right|^2}{16\pi}G_F^2\left|V_{ud}\right|^2f_\pi^2M_HNL^3\left(\left(1-\frac{M_\ell^2}{M_HNL^2}\right)^2-\frac{M_{\pi}^2}{M_HNL^2}\left(1+\frac{M_\ell^2}{M_HNL^2}\right)\right)     \\
-    &\times \sqrt{\left(1-\frac{\left(M_{\pi}-M_\ell\right)^2}{M_HNL^2}\right)\left(1-\frac{\left(M_{\pi}+M_\ell\right)^2}{M_HNL^2}\right)}
+    \Gamma\left(N\to \pi^+\ell_\alpha^-\right)&=\frac{\left|U_\alpha\right|^2}{16\pi}G_F^2\left|V_{ud}\right|^2f_\pi^2M_{HNL}^3\left(\left(1-\frac{M_\ell^2}{M_{HNL}^2}\right)^2-\frac{M_{\pi}^2}{M_{HNL}^2}\left(1+\frac{M_\ell^2}{M_{HNL}^2}\right)\right)     \\
+    &\times \sqrt{\left(1-\frac{\left(M_{\pi}-M_\ell\right)^2}{M_{HNL}^2}\right)\left(1-\frac{\left(M_{\pi}+M_\ell\right)^2}{M_{HNL}^2}\right)}
     \end{split}
 \end{equation}
 where  $\ell$ means lepton, $G_F$ --- Fermi constant, $f_\pi$ --- pion form-factor, $V$ --- CKM matrix element. The dependence of the decay width on the HNL mass is shown in~\autoref{fig:HNL:decBr}.
@@ -292,11 +297,16 @@ where  $\ell$ means lepton, $G_F$ --- Fermi constant, $f_\pi$ --- pion form-fact
     \label{fig:HNL:decBr}
 \end{figure}
 
-As $\phi\propto\left|U\right|^2$ and $\Gamma_{mode}\propto\left|U\right|^2$ our sensitivity (\autoref{eq:HNL:constraints}) for zero background and 100\% efficiency of HNL daughter detection is
+Based on the known number of expected decays we could evaluate the sensitivity of our experiment to the mixing elements. This estimation will be done for the optimistic scenario of the 100\% efficiency, no background and no systematic uncertainties. According to~\cite{Cousins1992} the 90\% C.L. could be set with 0 events observed and 2.3 events expected. As the HNL flux $\phi\propto\left|U\right|^2$ and the decay width $\Gamma_{mode}\propto\left|U\right|^2$:
 \begin{equation}
-    \left|U\right|^2_{limit}=\sqrt{\frac{2.3}{N_{events}}},
+    \left|U\right|^4_{limit} \times N_{decays} = 2.3
 \end{equation}
-Where 2.3 is a statistical coefficient for 90\% C.L. according to ~\cite{Cousins1992}. The sensitivity of our experiment for two body decays is shown in Fig.~\ref{fig:HNL:Ue2Umu2TwoBody}, ~\ref{fig:HNL:UeUmuTwoBody}, in green. It's compared with current limits from PS191~\cite{Bernardi1988} (in red) and Asaka et al prediction~\cite{Asaka2012} (in blue).
+
+Thus the limit on the squared mixing element will be put with:
+\begin{equation}
+    \left|U\right|^2_{limit}=\sqrt{\frac{2.3}{N_{decays}}},
+\end{equation}
+The sensitivity of our experiment for two body decays is shown in Fig.~\ref{fig:HNL:Ue2Umu2TwoBody}, ~\ref{fig:HNL:UeUmuTwoBody}, in green. It's compared with current limits from PS191~\cite{Bernardi1988} (in red) and Asaka et al prediction~\cite{Asaka2012} (in blue).
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
         \center{\includegraphics[width=\linewidth]{Ue2TwoBody} \\ a) $K\to eN\to e(e\pi)$}
@@ -346,7 +356,20 @@ An important 3-body mode is $K^+\rightarrow e(\mu^-\mu^+\nu_{e,\mu,\tau})$ becau
 As one can see, all our results are close to the estimation made by Asaka et al.
 
 \subsection{HNL daughter particles}
-Now we have information on the HNLs that enter ND280 and we generate their decays by using ROOT class TGenPhaseSpace. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume. Cross-check (Fig.~\ref{fig:HNL:decayPos}) shows some deviations at the upper and bottom edges for the large HNL mass but it was also expected due to the off-axis flux.
+Now we have all the information about the HNLs that enter ND280. Thus we could generate the secondary particles that will be born in the heavy neutrino decay. The decay itself is simulated in the HNL rest frame. Then the boost is applied towards the heavy neutrino initial direction. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume. Cross-check (Fig.~\ref{fig:HNL:decayPos}) shows some deviations at the upper and bottom edges for the large HNL mass but it was also expected due to the off-axis flux.
+
+The simulation of the 2-body decay is straight forward. The direction of the first particle is thrown isotropically. Then base on both momentum and energy conservation laws all the decay is parametrized in the HNL rest frame. We will obtain the final kinematics of the daughters with the boost along the heavy neutrino momentum. For the each event the following weight is assigned:
+\begin{equation}
+    weight_{2-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\Gamma_{2-body},
+\end{equation}
+
+The 3-body decay case is a bit more complicated. For this case we can't just throw all the directions as we have one degree of freedom in the decay. To deal with it we used the normalization with the maximum width of the decay. For each event the following weight is assigned:
+
+\begin{equation}
+    weight_{3-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\cfrac{\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}}{max\left(\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}\right)}\cdot P,
+\end{equation}
+
+where $L$ is total length of HNL path in three TPCs. We normalize the weight of each particular decay with respect to the maximum possible value. This will make the absolute number of the events smaller, but as we use the signal sample only for the efficiency evoluation the effect will be compensated. That's important as the selection probability could depend on the kinematics and we need to assign proper weight to each generated event for proper efficiency treatment.
 
 \begin{figure}[!ht]
     \center{\includegraphics[width=0.7\linewidth]{DecayPos}}
@@ -354,16 +377,9 @@ Now we have information on the HNLs that enter ND280 and we generate their decay
     \label{fig:HNL:decayPos}
 \end{figure}
 
-Parameters of daughter particles are stored in the  nRooTracker tree for further work with nd280mc package. The weight of each HNL decay event is calculated as
-\begin{equation}
-    weight_{2-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\Gamma_{2-body},
-\end{equation}
-\begin{equation}
-    weight_{3-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\cfrac{\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}}{max\left(\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}\right)}\cdot P,
-\end{equation}
-where $L$ is total length of HNL path in three TPCs and $P$ is a kinematic weight of the decay of the HNL, generated by TGenPhaseSpace.
+\todo{HNL polarization description}
 
-After simulation of the HNL decays we have all information about kinematics of their daughter particles, i.e. momentum, direction, opening angles. This characteristics are presented in Fig.~\ref{fig:HNL:secondaryE}~and~\ref{fig:HNL:secondaryCos}. It's important to note that most of the particles have momentum below 2 GeV. Our TPCs was designed to reconstruct events in this energy region.
+After simulation of the HNL decays we have all information about kinematics of their daughter particles, i.e. momentum, direction, opening angles. This characteristics are presented in~\autoref{fig:HNL:secondaryE}~and~\autoref{fig:HNL:secondaryCos}. It's important to note that most of the particles have momentum below 2 GeV. Our TPCs was designed to reconstruct events in this energy region.
 \begin{figure}[!ht]
 \begin{center}
     \center{\includegraphics[width=0.8\linewidth]{SecMom}}
@@ -378,31 +394,281 @@ After simulation of the HNL decays we have all information about kinematics of t
     \label{fig:HNL:secondaryCos}
 \end{center}
 \end{figure}
-The example of a ``good'' MC event with the HNL decay in the first TPC and further evolution of a daughter muon and a pion is shown in Fig.\ref{fig:HNL:event}
+The heavy neutrino daughter particles are propagated through the detector with the help of the Geant4 package~\cite{Agostinelli2003}. All the secondary interactions, decays, etc. are considered.
+The example of a ``good'' MC event with the HNL decay in the first TPC and further evolution of a daughter muon and a pion is shown in Fig.\ref{fig:HNL:event}. The detector response is fully simulated from the initial ionization until the readout signal from the electronics. Thus we could develop the event selection and estimate its efficiency with the MC generated signal sample.
 \begin{figure}[!ht]
    \center{\includegraphics[width=0.8\linewidth]{goodeventMC}}
     \caption{Example of simulated event from HNL decay in the first TPC. Dashed green line corresponds to HNL track, green line to the muon track, brown line to the pion track.}
     \label{fig:HNL:event}
 \end{figure}
 
-\begin{comment}
-
-
-\end{comment}
-
-
 \chapter{Analysis}
 \label{ch:HNL:ana}
+The search for heavy neutrino consists of several parts. At the first step we apply the time correction to the signal sample. The correction is related to the time delay of the HNL with respect to the neutrino bunch. The details are presented in the~\autoref{sec:HNL:tof_corr}. Then the cut sequence was developed in order to select signal and suppress the background events. The details about the selection are described in the~\autoref{sec:HNL:sel}. Controlling the uncertainties in important part of any analysis. In our case the uncertainties will come from the detector response simulation and flux prediction (\autoref{sec:HNL:sys}). Finally we choose the appropriate statistical method for the results treatment (\autoref{sec:HNL:stat}).
 
 \section{Time of flight correction}
 \label{sec:HNL:tof_corr}
+Heavy neutrino time of flight is different from the active neutrino. The difference is calculated according to Eq.~\ref{eq:HNL:ToF}.
+\begin{equation}
+  \delta T=\frac{d}{\beta c}-\frac{d}{c}=\frac{d}{c}\left(\frac{1}{\beta}-1\right),
+  \label{eq:HNL:ToF}
+\end{equation}
+where $d$ is a distance between the HNL production and decay points, $\beta=\frac{v}{c}$ is a kinematic parameter of the HNL. The ToF modeling is not performed during the HNL simulation. So we apply the correction $T'=T+\delta T$ in the analysis, shifting all timestamps in the event by the $\delta T$. In the T2K the  neutrino beam repeats the proton beam spill structure with 8 bunches. The bunches are Gaussian with $\sigma\approx19ns$ (\autoref{ch:T2K:nu_beam}). Due to the ToF correction the HNL bunch will change its shape. The new bunch structure is shown in~\autoref{fig:HNL:bunch}.
+\begin{figure}[!ht]
+  \begin{center}
+  \includegraphics[width=0.7\linewidth]{Bunch}
+  \caption{The active neutrino bunch (in black) and the HNL bunch (in red) for $M_{HNL}=480MeV$.}
+  \label{fig:HNL:bunch}
+  \end{center}
+\end{figure}
+
+For active neutrino analysis the standard time gate is $\left|T_{event}-T_{bunch}\right|<60ns$. By the $T_{bunch}$ the mean value of the Gaussian distribution is considered. In our analysis we should widen the time window in order to increase the efficiency of the selection. Since the shape of the HNL bunch is asymmetric, we applied different cuts value for upper and lower boundaries of the time window. For the bounds we are limited by the electronics time gate. As the experimental setup was originally designed to deal with neutrino bunches the data recording time was limited. We widen the cut values as much as the data acquisition allow us to do it and put the limits to $-100ns<T_{vertex}-T_{bunch}<300ns$.
+
+We do not apply any additional time of flight cut to separate interactions of the active neutrinos and the HNLs decays as the bunches have a strong time overlap especially for low masses. Any attempts to suppress the active neutrinos by the ToF will cause the significant reduction of the HNL selection efficiency which is already small.
+
 \section{Event selection}
 \label{sec:HNL:sel}
-\subsection{Signal event selection}
+
+The next step is developing cut sequence for proper selection of the signal events and reduction of background. For selection of the HNL candidates decay we apply the following criteria:
+\begin{enumerate}
+  \item Global vertex in the TPC fiducial volume. Vertex should be ``good'', that means it should be reconstructed with $\chi^2<1000$, Position variance $<500$ mm. Two different charged ``good'' tracks start from this vertex;
+  \item Two different charged ``good'' tracks associated with this vertex;
+  \item No activity in the upstream detector;
+  \item One of the tracks use the same TPC as vertex. This was made to prevent vertex migration from the active neutrino interactions in the FGD;
+  \item No other tracks start in the same TPC;
+  \item Proper particle identification as $e\pi$ or $\mu \pi$ using $dE/dx$ in the TPC;
+  \item Invariant mass cut: $140MeV<M_{HNL}<850MeV$ for the $e\pi$ mode and $250MeV<M_{HNL}<750MeV$ for the $\mu \pi$ mode;
+  \item Polar angle for HNL candidate $\theta < 8.0^\circ$ for the $e\pi$ mode and $\theta < 3.7^\circ$ for the $\mu\pi$ mode, since the HNL direction should be extremely collinear to the neutrino beam;
+  \item Kinematic cut on the opening angle between daughter particles $cos\theta >0.00$;
+\end{enumerate}
+
+For the dimuon mode we apply additional cuts to select only muon tracks:
+
+\begin{enumerate}
+  \setcounter{enumi}{9}
+  \item Both tracks have the subtracks in ECal;
+  \item Both subtracks in ECal are MIP like (not electromagnetic shower);
+\end{enumerate}
+
+\subsection{Cuts description}
+\subsubsection{Quality and fiducial cut}
+\label{sec:HNL:qf}
+The basic idea of the current study is to search for heavy neutrino decays only in the TPC volume filled with argon. In this case we can avoid large amount of background from the active neutrino interactions. The limits of the fiducial volume were inherited from the study of the active neutrino interactions in argon. The volume doesn't contain the walls and the central cathode, so only argon gas is expected as a target.
+
+The density difference between gas (TPC) and polystyrene and water (FGD) is about 3 orders, that gives about the same reduction of the background. As we search for two or three body decays, the selection can be easily implemented with the global vertex approach. In the current ND280 reconstruction the global vertex analysis is performed with the Kalman filter. The main idea is to search for tracks with close start/end positions and then perform some iterations of filter to make fit more accurate and define $\chi^2$ and position uncertainties of the vertex reconstruction. As already described, in our study the vertex should be inside the TPC fiducial volume. Studying MC background, we found that the vertex association is completely wrong in some cases, i.e. two tracks from different origins are associated into one vertex or a broken track gives a vertex with two tracks. All these errors are often characterized with a large $\chi^2$ value or a position variance at the level of the detector length. To avoid misidentifying these events as a HNL candidate we added the ``vertex quality cut'' which requires $\chi^2<1000$ and the position variance $<500$ mm.
+
+\todo{Add info about Kalman filter algorithm}
+
+The next question is the efficiency of global vertex algorithm. We tested this method on our signal samples and found that only $\approx32\%$ of events pass first two cuts (``good'' vertex and two different charge ``good'' tracks. There are two possible reasons:
+\begin{itemize}
+  \item the problem is in the bad vertex association algorithm. In this case we need to develop our own method of tracks association, i.e. look at the tracks with close start positions;
+  \item  pure efficiency was caused by bad quality of the reconstructed tracks. This problem is unavoidable as we can't rewrite the whole reconstruction.
+\end{itemize}
+
+To check both possibilities we looked at the fraction of the good reconstructed tracks. Our study demonstrates that only for 50\% of the events we have successfully reconstructed two different charged ``good quality'' tracks. ``Good tracks'' means that the track has more then 18 nodes in its longest segment in TPC. It is the standard cut for for proper $dE/dx$ particle identification. For the active neutrino interaction studies one requests $>18$ nodes in the most upstream TPC. In our study we expect the vertices inside TPC FV, so the track length in the upstream TPC may not be long enough. In this case we use the same cut value but not for the most upstream segment of the track, but for the longest one among all TPCs. Applying the PID cut reduce this amount to 34\%. So the problem is not in the global vertex algorithm, but in the current tracks reconstruction. In this case we can't significantly increase the efficiency of our selection because we are limited by the track reconstruction performance. The main reasons of the drop of efficiency are:
+\begin{itemize}
+  \item TPC edge reconstruction failure. If the track has $<10$ hits in TPC, the current TPC segment will not be added to the global track. It will start in the next detector and can be treated as a background;
+  \item Pion scattering/showering. If a pion interacts in a scintillator (FGD), its TPC track can be not long enough for proper reconstruction;
+  \item Tracks separation. As two tracks can be extremely collinear they may be not separated in a TPC.
+\end{itemize}
+
+Z position for the reconstructed vertices is presented in Fig.~\ref{fig:HNL:vertexPos}. All the reconstructed vertices before fiducial cut are shown. The Z vertex distribution is not uniformed at the boundaries of the TPCs due to the edge reconstruction failure. Also we can conclude that the probability for location of vertex outside the TPC is rather small.
+\begin{figure}[!ht]
+  \center{\includegraphics[width=0.7\linewidth]{vertexPos}}
+  \caption{Vertex position for signal samples before the FV cut. Red lines are TPC bounds.}
+  \label{fig:HNL:vertexPos}
+\end{figure}
+
+\subsection{Signal selection efficiency}
+\label{sec:HNL:eff}
+
+Applying all these cuts to the signal samples give us the total selection efficiency (\autoref{fig:HNL:Eff1}, \autoref{fig:HNL:Eff2}). The efficiency of the HNL selection in our TN is defined as a ratio of the number of the selected events to the number of the generated HNL events inside the TPCs FV. The main reason for the dependence of the efficiency on the HNL mass is the track reconstruction. For the large HNL mass we have more events with successfully reconstructed ``good quality'' tracks associated into the vertex.
+
+\begin{figure}[!ht]
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{EffMu} \\ $K^+\to e^+N\to e^+\left(\mu^\mp\pi^\pm\right)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{EffEle} \\ $K^+\to e^+N\to e^+\left(e^\mp\pi^\pm\right)$}
+  \end{minipage}
+  \caption{Selection efficiency for two body decays of HNL.}
+  \label{fig:HNL:Eff1}
+\end{figure}
+
+\begin{figure}[!ht]
+   \centering{\includegraphics[width =0.4\linewidth]{EffDimuon}}
+  \caption{Selection efficiency for HNL decay mode $N\to\mu\mu\nu$.}
+  \label{fig:HNL:Eff2}
+\end{figure}
+The efficiency dependence on different cuts is shown in~\autoref{fig:HNL:EffDrop}. The main reason for the efficiency drop is ``quality and fiducial cut'' which is described in details in the~\autoref{sec:HNL:qf}.
+\begin{figure}[!ht]
+  \centering{\includegraphics[width = 0.8\linewidth]{EffDrop}}
+  \caption{Efficiency dependence on the applied cuts for mode $N\to\mu^\mp+\pi^\pm$ for all HNL masses.}
+  \label{fig:HNL:EffDrop}
+\end{figure}
+
+The dependence of the efficiency on the HNL momentum and opening angle of the daughter particles is shown in~\autoref{fig:HNL:EffDep}. As expected the maximum efficiency is for HNL with momentum below 2 GeV. The TPCs were designed for the event reconstruction in this energy region.
+\begin{figure}[!ht]
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{EffMom} \\ a)}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{EffCos} \\ b)}
+  \end{minipage}
+  \caption{The dependence of efficiency for mode $N\to\mu\pi$: (a) on the HNL momentum and (b) opening angle of daughter particles.}
+  \label{fig:HNL:EffDep}
+\end{figure}
+
+Since we study the HNL production from $K^+$,  $K^-$ and their decays into $\ell^{\pm}h^{\mp}$, the efficiency should be evaluated for each of them. Such result is presented in Fig.~\ref{fig:HNL:C_check}. We can see the agreement of the efficiency study for the different modes. The only difference is that the $\mu^-\pi^+$ selection efficiency is a bit higher than the $\mu^+\pi^-$ one.
+\begin{figure}[!ht]
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{C_checkMu} \\ $N\to \mu\pi$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width =\linewidth]{C_checkEle} \\ $N\to e\pi$}
+  \end{minipage}
+  \caption{HNL selection efficiencies for several production and decay modes.}
+  \label{fig:HNL:C_check}
+\end{figure}
+
 \subsection{Background suppression}
 \label{sec:HNL:bg}
+Applying the same selection cuts to MC data from the different generators NEUT, GENIE and NuWro, we can estimate the background. We use different generators for the cross-check as they use slightly different neutrino interactions parameters. For example, Genie is more common for the kaon analysis (we can expect BG from $K^0$); NuWro gives a large statistic for the TPC volume. Following statistics was studied, for NEUT $6.5\cdot 10^{21} POT$, for GENIE $5\cdot 10^{21}POT$, for $\bar{\nu}$ mode with NEUT $5.8\cdot 10^{21}$. We studied the MC data from interaction in the magnet volume for NEUT and GENIE. NuWro provides data with neutrino interactions only in TPC volume with statistics $4.7\cdot10^{22}$, $4.76\cdot10^{22}$, $4.69\cdot10^{22}$ POT for TPC1, TPC2 and TPC3 respectively. OOFV (Out Of Fiducial Volume) processes are not simulated with the NuWro and few events identified as OOFV have true vertices in TPC but not in FV. For comparison of the background all the results were normalized to $10^{21}POT$. The efficiency of signal event selection and the background reduction for the different reaction types of active neutrino interactions based on run 2-6 from the NEUT generator are shown in~\autoref{tbl:HNL:bgOrigMu},~\autoref{tbl:HNL:bgOrigEle},~\autoref{tbl:HNL:bgOrigDiMuon}. The efficiency is equal for the same modes as we use our own HNL generator and the result does not depend on the neutrino generator. For more detailed cut description see Sec.~\ref{sec:HNL:sel}. The relative angle cut (kinematic) is shown in the table only if it reduces the number of the background events comparing to the polar angle cut.We start with the ``Quality and fiducial'' cut which requires  vertex with two different charge tracks in the TPC fiducial volume. Here we have the main efficiency drop down to ~50\% (\autoref{sec:HNL:qf}).
+
+\begin{table}[!ht]
+%\begin{adjustbox}{width=1.1\linewidth,center}
+\begin{tabular}{|c|l|r|r|r|r|r|r|r|r|r|r|r|}
+  \hline
+  N & Cut           &  CCQE   &  RES  &  DIS  &  COH  &  NC  &  2P2H  &  OOFV  &$\bar{\nu_{\mu}}$& $\nu_{e}$ & Total  & Eff\\
+  \hline
+  1 & Vertex        & 140.11  & 30.88 & 20.34 & 4.57  & 8.48 & 1.65   & 647.31 & 2.39            &  3.63     & 859.34 & 44.0 \\
+  \hline
+  2 & Veto          & 136.47  & 27.86 & 17.58 & 4.25  & 8.15 & 1.65   & 514.72 & 2.10            &  3.45     & 716.23 & 43.9 \\
+  \hline
+  3 & Use TPC       & 135.77  & 27.31 & 17.19 & 4.25  & 8.15 & 1.48   & 505.18 & 2.10            &  3.45     & 704.88 & 41.9 \\
+  \hline
+  4 & TPC act.      & 122.44  & 21.24 & 10.75 & 3.89  & 6.55 & 0.82   & 281.47 & 1.80            &  2.43     & 451.39 & 39.1 \\
+  \hline
+  5 & PID 1         & 99.68   & 16.10 & 8.47  & 3.39  & 4.84 & 0.66   & 130.92 & 1.65            &  0.36     & 266.06 & 37.2 \\
+  \hline
+  6 & PID 2         & 5.08    & 5.51  & 5.60  & 2.03  & 1.25 & 0.00   & 48.64  & 1.37            &  0.19     &  69.66 & 31.3 \\
+  \hline
+  7 & Inv mass      & 0.83    & 3.52  & 2.17  & 1.67  & 0.90 & 0.00   & 43.17  & 0.92            &  0.00     &  53.18 & 29.2  \\
+  \hline
+  8 & $\theta$ cut  & 0.00    & 0.17  & 0.36  & 0.34  & 0.00 & 0.00   & 0.00   & 0.00            &  0.00     &  0.87  & 21.3 \\
+  \hline
+  9 & Kinematic     & 0.00    & 0.17  & 0.20  & 0.34  & 0.00 & 0.00   & 0.00   & 0.00            &  0.00     &  0.70  & 21.1 \\
+    \hline
+
+\end{tabular}
+\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT for $\mu\pi$ mode.}
+\label{tbl:HNL:bgOrigMu}
+%\end{adjustbox}
+\end{table}
+
+\begin{table}[!ht]
+%\begin{adjustbox}{width=1.1\linewidth,center}
+\begin{tabular}{|c|l|r|r|r|r|r|r|r|r|r|r|r|}
+  \hline
+  N & Cut           &  CCQE   &  RES  &  DIS  &  COH  &  NC  &  2P2H  &  OOFV  &$\bar{\nu_{\mu}}$& $\nu_{e}$ & Total  & Eff\\
+  \hline
+  1 & Vertex        & 140.11  & 30.88 & 20.34 & 4.57  & 8.48 & 1.65   & 647.31 & 2.39            &  3.63     & 859.34 & 34.5 \\
+  \hline
+  2 & Veto          & 136.47  & 27.86 & 17.58 & 4.25  & 8.15 & 1.65   & 514.72 & 2.10            &  3.45     & 716.23 & 34.4 \\
+  \hline
+  3 & Use TPC       & 135.77  & 27.31 & 17.19 & 4.25  & 8.15 & 1.48   & 505.18 & 2.10            &  3.45     & 704.88 & 33.6 \\
+  \hline
+  4 & TPC act.      & 122.44  & 21.24 & 10.75 & 3.89  & 6.55 & 0.82   & 281.47 & 1.80            &  2.43     & 451.39 & 31.1 \\
+  \hline
+  5 & PID 1         & 99.68   & 16.10 & 8.47  & 3.39  & 4.84 & 0.66   & 130.92 & 1.65            &  0.36     & 266.06 & 24.8 \\
+  \hline
+  6 & PID 2         & 5.74    & 0.17  & 0.92  & 0.17  & 0.20 & 0.00   & 13.91  & 0.00            &  0.00     &  21.11 & 17.8 \\
+  \hline
+  7 & Inv mass      & 0.66    & 0.17  & 0.37  & 0.17  & 0.20 & 0.00   & 13.32  & 0.00            &  0.00     &  14.87 & 17.1  \\
+  \hline
+  8 & $\theta$ cut  & 0.00    & 0.00  & 0.00  & 0.17  & 0.00 & 0.00   & 0.32   & 0.00            &  0.00     &  0.48  & 15.2 \\
+  \hline
+  9 & Kinematic     & 0.00    & 0.00  & 0.00  & 0.17  & 0.00 & 0.00   & 0.32   & 0.00            &  0.00     &  0.48  & 14.8 \\
+    \hline
+
+\end{tabular}
+\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT for $e\pi$ mode.}
+\label{tbl:HNL:bgOrigEle}
+%\end{adjustbox}
+\end{table}
+
+\begin{table}[!ht]
+%\begin{adjustbox}{width=1.1\linewidth,center}
+\begin{tabular}{|c|l|r|r|r|r|r|r|r|r|r|r|r|}
+  \hline
+  N & Cut           &  CCQE   &  RES  &  DIS  &  COH  &  NC  &  2P2H  &  OOFV  &$\bar{\nu_{\mu}}$& $\nu_{e}$ & Total  & Eff\\
+  \hline
+  1 & Vertex        & 140.11  & 30.88 & 20.34 & 4.57  & 8.48 & 1.65   & 647.31 & 2.39            &  3.63     & 859.34 & 42.1 \\
+  \hline
+  2 & Veto          & 136.47  & 27.86 & 17.58 & 4.25  & 8.15 & 1.65   & 514.72 & 2.10            &  3.45     & 716.23 & 42.0 \\
+  \hline
+  3 & Use TPC       & 135.77  & 27.31 & 17.19 & 4.25  & 8.15 & 1.48   & 505.18 & 2.10            &  3.45     & 704.88 & 40.5 \\
+  \hline
+  4 & TPC act.      & 122.44  & 21.24 & 10.75 & 3.89  & 6.55 & 0.82   & 281.47 & 1.80            &  2.43     & 451.39 & 38.2 \\
+  \hline
+  5 & PID 1         & 121.90  & 17.97 & 9.27  & 3.54  & 4.19 & 0.82   & 134.29 & 1.36            &  0.54     & 284.87 & 33.6 \\
+  \hline
+  6 & PID 2         & 4.38    & 5.01  & 5.22  & 1.70  & 0.91 & 0.00   & 27.59  & 1.08            &  0.91     &  46.09 & 22.5 \\
+  \hline
+  7 & Use ECal      & 2.12    & 1.79  & 1.89  & 0.68  & 0.34 & 0.00   & 2.56   & 0.33            &  0.00     &  9.72  &  9.9  \\
+  \hline
+  8 & ECal MIP      & 1.09    & 0.55  & 1.31  & 0.51  & 0.00 & 0.00   & 1.08   & 0.16            &  0.00     &  4.71  &  9.3  \\
+  \hline
+  9 & $\theta$ cut  & 0.93    & 0.36  & 0.39  & 0.51  & 0.00 & 0.00   & 0.00   & 0.00            &  0.00     & 2.18   &  9.1 \\
+  \hline
+
+\end{tabular}
+\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT for $\mu\mu\nu$ mode.}
+\label{tbl:HNL:bgOrigDiMuon}
+%\end{adjustbox}
+\end{table}
+
+Finally we have:
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{llllll}
+                            & NEUT w/o run 8      & NEUT w/ run 8         & GENIE                   & NuWro   & NEUT $\bar{\nu}$  \\
+  $\mu\pi$ \hspace{0.5cm}   & 0.70  \hspace{2cm}  & 0.79                    & 0.69  \hspace{2cm}      & 0.85    & 0.91              \\
+  $e\pi$                    & 0.48                & 0.69                    & 0.95                    & 0.38    & 0.23              \\
+  $\mu\mu\nu$               & 2.18                & 1.81                    & 1.63                    & 2.10    & 0.98              \\
+\end{tabular}
+\caption{The total number of MC background events for $10^{21} POT$.}
+\label{tbl:HNL:bg}
+\end{center}
+\end{table}
+
+As one can see, the different generators give nearly the same results. The reduction of background for mode $e\pi$ with NuWro generator caused by the lack of the data with neutrino events outside TPC --- on of the most influential BG process. For our estimations we take the worse result --- the maximum background.
+
+The statistics accumulated in the T2K experiment is divided into 8 runs. The total good quality data available for analysis is $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$. Scaling of the MC backgrounds to the real data, collected at ND280, gives us the expected number of the background events (Table~\ref{tbl:HNL:bgScale}).
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{llll}
+                            & run 2-8               \\
+  $\mu\pi$ \hspace{0.5cm}   & 1.44  \hspace{2cm}    \\
+  $e\pi$                    & 1.12                  \\
+  $\mu\mu\nu$               & 2.85                  \\
+\end{tabular}
+\caption{The total number of MC background events scaled to real data statistics.}
+\label{tbl:HNL:bgScale}
+\end{center}
+\end{table}
+
+The origin of the backgrounds for $N\to\mu\pi$ mode is interactions in gas, mainly coherent and resonance pion production. For the $N\to e\pi$ mode the main background process is $\pi^0$ decay into two gammas and further electron positron pair production and misreconstruction one of the pair component as a pion. For the $\mu\mu\nu$ mode the main background is CCQE. We select tracks for the muon candidates with ECal. The candidate should be MIP like so pions from the COH and RES processes are suppressed. But the protons that were misidentified as a muon in TPC can give a track in ECal. Such tracks can be reconstructed as MIP in some cases.
+
+Neutrino interactions in gas were not well studied and it leads to the large uncertainties of the background estimation. So, we are going this MC data only for comparison with the real data, but not for the final result estimation. This strategy was described in~\autoref{sec:HNL:stat}.
 
 \section{Systematic uncertainties}
+\label{sec:HNL:sys}
 \subsection{Detector systematics}
 \subsection{Flux systematics}
 \subsection{Pile up}

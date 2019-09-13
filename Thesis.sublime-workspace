@@ -1,0 +1,1249 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"unit",
+				"uninitMemberVar\t(gl-code-quality-report.json)"
+			],
+			[
+				"qual",
+				"quality_dn\tabc"
+			],
+			[
+				"GenT",
+				"GenerateTEventFile\tabc"
+			],
+			[
+				"ge",
+				"geom\tabc"
+			],
+			[
+				"_mult",
+				"_mult_graph\tabc"
+			],
+			[
+				"_mult_",
+				"_mult_graph\t(dEdxAna.hxx)"
+			],
+			[
+				"a_",
+				"a_den\tabc"
+			],
+			[
+				"_PRF",
+				"_PRF_histo\tabc"
+			],
+			[
+				"TE",
+				"TEvent\tabc"
+			],
+			[
+				"Spa",
+				"SpatialResol\t(Makefile)"
+			],
+			[
+				"Draw",
+				"DrawSelection\tabc"
+			],
+			[
+				"cluster",
+				"cluster_N\tabc"
+			],
+			[
+				"GetN",
+				"GetNDF\t(SpatialResolAna.cxx)"
+			],
+			[
+				"GetR",
+				"GetRMS\t(SpatialResolAna.cxx)"
+			],
+			[
+				"SetGr",
+				"SetGridx\t(SetT2KStyle.hxx)"
+			],
+			[
+				"SetT",
+				"SetT2KStyle\tabc"
+			],
+			[
+				"resol",
+				"resol_vs_iter\tabc"
+			],
+			[
+				"i",
+				"inc\t#include \"…\""
+			],
+			[
+				"file",
+				"filename\t(AnalysisBase.cxx)"
+			],
+			[
+				"si",
+				"size\tabc"
+			],
+			[
+				"_event",
+				"_EventList\t(AnalysisBase.cxx)"
+			],
+			[
+				"CP",
+				"CpuTime\t(AnalysisBase.cxx)"
+			],
+			[
+				"TST",
+				"TStopwatch\t(AnalysisBase.cxx)"
+			],
+			[
+				"TSt",
+				"TStopwatch\tabc"
+			],
+			[
+				"_event_",
+				"_event_file\tabc"
+			],
+			[
+				"Data",
+				"DataStorage\t(TPC_testbeam.sublime-project)"
+			],
+			[
+				"Geom",
+				"Geom.hxx\t(README.md)"
+			],
+			[
+				"Ge",
+				"Geom.hxx\t(README.md)"
+			],
+			[
+				"_stor",
+				"_store_event_tree\tabc"
+			],
+			[
+				"TFile",
+				"TFile\tabc"
+			],
+			[
+				"_store_",
+				"_store_event_tree\tabc"
+			],
+			[
+				"_store",
+				"_store_event\tabc"
+			],
+			[
+				"sw",
+				"sw_event\t(AnalysisBase.cxx)"
+			],
+			[
+				"CL",
+				"CL_progress_dump\t(AnalysisBase.cxx)"
+			],
+			[
+				"event",
+				"eventID\tabc"
+			],
+			[
+				"_out",
+				"_file_out_name\tabc"
+			],
+			[
+				"file_",
+				"file_out\t(submitter.py)"
+			],
+			[
+				"GetEn",
+				"GetEntries\t(SpatialResolAna.cxx)"
+			],
+			[
+				"TCh",
+				"TChain.h\t(AnalysisBase.hxx)"
+			],
+			[
+				"tree",
+				"tree_b\tabc"
+			],
+			[
+				"_do",
+				"_do_full_track_fit\tabc"
+			],
+			[
+				"_fu",
+				"_do_full_track_fit\tabc"
+			],
+			[
+				"TMath",
+				"TMath::Power\tabc"
+			],
+			[
+				"SetPa",
+				"SetParLimits\tabc"
+			],
+			[
+				"chi2_",
+				"chi2_map\tabc"
+			],
+			[
+				"Tgra",
+				"TGraphErrors.h\t(SpatialResolAna.hxx)"
+			],
+			[
+				"TCAN",
+				"TCanvas.h\t(AnalysisBase.hxx)"
+			],
+			[
+				"TFil",
+				"TFile.h\t(AnalysisBase.hxx)"
+			],
+			[
+				"b_x0_",
+				"b_x0_it\tabc"
+			],
+			[
+				"b_R_",
+				"b_R_it\tabc"
+			],
+			[
+				"GetBin",
+				"GetNbins\tabc"
+			],
+			[
+				"x_",
+				"x_bin\tabc"
+			],
+			[
+				"Project",
+				"ProjectionY\tabc"
+			],
+			[
+				"RY",
+				"RYX\tabc"
+			],
+			[
+				"xz_",
+				"xz_s\tabc"
+			],
+			[
+				"yz",
+				"yz_fit\tabc"
+			],
+			[
+				"nP",
+				"nPadx\tabc"
+			],
+			[
+				"Get",
+				"GetQ\tabc"
+			],
+			[
+				"GetCol",
+				"GetColsMaxSep\t(Selection.cxx)"
+			],
+			[
+				"max",
+				"maxsep\tabc"
+			],
+			[
+				"ma",
+				"maxsep\tabc"
+			],
+			[
+				"di",
+				"diff\tabc"
+			],
+			[
+				"it",
+				"it_x\tabc"
+			],
+			[
+				"SetP",
+				"SetParameters\tabc"
+			],
+			[
+				"track_",
+				"track_gr\tabc"
+			],
+			[
+				"geom",
+				"geom::nPadx\t(DBSCANReconstruction.cxx)"
+			],
+			[
+				"temp_",
+				"temp_filename\tabc"
+			],
+			[
+				"begi",
+				"begin\tabc"
+			],
+			[
+				"input",
+				"input_version\tabc"
+			],
+			[
+				"nPa",
+				"nPadx\tabc"
+			],
+			[
+				"prf_",
+				"prf_max\tabc"
+			],
+			[
+				"defau",
+				"default_error\t(SpatialResolAna.hxx)"
+			],
+			[
+				"defa",
+				"default_error\t(SpatialResolAna.hxx)"
+			],
+			[
+				"one",
+				"one_pad_error\t(SpatialResolAna.hxx)"
+			],
+			[
+				"_PRF_",
+				"_PRF_graph\tabc"
+			],
+			[
+				"_resi",
+				"_residual_mean\t(SpatialResolAna.hxx)"
+			],
+			[
+				"DEB",
+				"DEBUG_t\tabc"
+			],
+			[
+				"TSty",
+				"TStyle.h\t(DBSCANSelection.cxx)"
+			],
+			[
+				"TGra",
+				"TGraphErrors\tabc"
+			],
+			[
+				"DBS",
+				"DBSCANSelection.hxx\t(DBSCANSelection.cxx)"
+			],
+			[
+				"two",
+				"twoD_vector\t(SelectionBase.hxx)"
+			],
+			[
+				"GetE",
+				"GetEmptyEvent\tabc"
+			],
+			[
+				"Selectio",
+				"SelectionBase\tabc"
+			],
+			[
+				"Crossi",
+				"CrossingSelection.hxx\t(AnalysisBase.hxx)"
+			],
+			[
+				"_fi",
+				"_file_out\t(AnalysisBase.cxx)"
+			],
+			[
+				"Write",
+				"WriteOutput\t(SpatialResolAna.cxx)"
+			],
+			[
+				"Analys",
+				"AnalysisBase\tabc"
+			],
+			[
+				"Sele",
+				"SelectionBase\t(SpatialResolAna.cxx)"
+			],
+			[
+				"Selec",
+				"SelectionBase\tabc"
+			],
+			[
+				"Spati",
+				"SpatialResol\tabc"
+			],
+			[
+				"Spatial",
+				"SpatialResolAna\t(SpatialResolAna.cxx)"
+			],
+			[
+				"Process",
+				"ProcessEvent\t(SpatialResolAna.hxx)"
+			],
+			[
+				"_file",
+				"_file_out_name\tabc"
+			],
+			[
+				"Event",
+				"EventNumber\tabc"
+			],
+			[
+				"compl",
+				"Compiled"
+			],
+			[
+				"eve",
+				"events"
+			],
+			[
+				"block",
+				"block_size\tabc"
+			],
+			[
+				"Pad",
+				"PadAmpl\tabc"
+			],
+			[
+				"inp",
+				"inp_file\tabc"
+			],
+			[
+				"in",
+				"inp_file\tabc"
+			],
+			[
+				"out",
+				"out_path\tabc"
+			],
+			[
+				"CXX",
+				"CXXFLAGS\tabc"
+			],
+			[
+				"TAppl",
+				"TApplication.h\t(common_header.h)"
+			],
+			[
+				"first",
+				"first_hit_time\tabc"
+			],
+			[
+				"GetTra",
+				"GetTrackID\t(TND280UpHit.hh)"
+			],
+			[
+				"light",
+				"light_max\tabc"
+			],
+			[
+				"n_",
+				"n_fibers_not_cut\tabc"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"h3d",
+				"h3d_c\tabc"
+			],
+			[
+				"GetB",
+				"GetNbins\tabc"
+			],
+			[
+				"outfi",
+				"out_file\tabc"
+			],
+			[
+				"GetEntr",
+				"GetEntry\t(neutron_merge.C)"
+			],
+			[
+				"Int",
+				"Int_t\tabc"
+			],
+			[
+				"GetSa",
+				"GetSaveAllHits\t(ND280PersistencyManager.hh)"
+			],
+			[
+				"Ini",
+				"Initialize\t(ExN02RooTrackerKinematicsGenerator.cc)"
+			],
+			[
+				"GetNbin",
+				"GetNbinsX\tabc"
+			],
+			[
+				"Nbi",
+				"Nbins_cos"
+			],
+			[
+				"first_bin",
+				"first_binX"
+			],
+			[
+				"tes",
+				"test_light_n"
+			],
+			[
+				"TH",
+				"TH1F"
+			],
+			[
+				"hits_cl_X",
+				"hits_cl_XZ"
+			],
+			[
+				"GetPare",
+				"GetParentID\t(TND280UpTrack.hh)"
+			],
+			[
+				"SetBar",
+				"SetBarHorizLength"
+			],
+			[
+				"bar_",
+				"bar_width\t(ND280ToFConstructor.cc)"
+			],
+			[
+				"G4",
+				"G4cout"
+			],
+			[
+				"detna",
+				"detname_curr"
+			],
+			[
+				"HATPC",
+				"HATPCDown\t(configuration_cluster_SuperFGD.xml)"
+			],
+			[
+				"HA",
+				"HATPCUp\t(configuration_cluster_SuperFGD.xml)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"List",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"List",
+				""
+			]
+		],
+		[
+			[
+				[
+					"List",
+					""
+				],
+				[
+					"ROOT mydict",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"ROOT mydict",
+				""
+			]
+		],
+		[
+			[
+				[
+					"List",
+					""
+				],
+				[
+					"ROOT mydict",
+					""
+				],
+				[
+					"ROOT mydict2",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"ROOT mydict",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Traditional"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - PdfLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - XeLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Basic Builder - LuaLaTeX"
+				],
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					"Script Builder"
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				"PdfLaTeX"
+			]
+		],
+		[
+			[
+				[
+					"ROOT mydict",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"ROOT mydict",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"lintersetti",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"",
+				"Bookmarks: Select Previous"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"setting",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"reloa",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"sett",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"linter sett",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"relo",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"linter se",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"reload",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"lintersett",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"settings li",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"prewi",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Line Errors"
+			],
+			[
+				"linter relo",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"gitgutter show",
+				"GitGutter: Show Line Annotation"
+			],
+			[
+				"gitg",
+				"GitGutter: Goto Next Change"
+			],
+			[
+				"limter sett",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"linterse",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"git",
+				"GitGutter: Compare Against Origin"
+			],
+			[
+				"mater",
+				"Material Theme: Configuration"
+			],
+			[
+				"Sublimelinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"packageresou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"file",
+				"A File Icon: Settings"
+			],
+			[
+				"a fil",
+				"A File Icon: Settings"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"packagecontr",
+				"Package Control: Install Package"
+			],
+			[
+				"sublimelin",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"goto",
+				"GotoWindow: Switch Window"
+			],
+			[
+				"package co",
+				"Package Control: Install Package"
+			],
+			[
+				"package Co",
+				"Package Control: Install Package"
+			],
+			[
+				"packageView",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"latext",
+				"Build With: LaTeX - PdfLaTeX"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 533.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/local/home/ssuvorov/PAPER/Thesis"
+	],
+	"file_history":
+	[
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/.codeclimate.yml",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/.cppcheck_supressions",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/check.xml",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/.cppcheck_supressions\n.cppcheck_suppressions",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/submitter.py",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/test.py",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/AnalysisBase.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/AnalysisBase.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/test/test.sh",
+		"/local/home/ssuvorov/Downloads/ParallelFitting.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/.gitlab-ci.yml",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Makefile",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/test.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/TPC_testbeam.sublime-project",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/SpatialResol/SpatialResolAna.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/ReconstructionBase.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/bin/eventdict.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/THit.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/linkDef.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/dependences.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/DBSCANReconstruction.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/plotter/test.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/utils/SetT2KStyle.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/README.md",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/Selection.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/TEvent.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/TEvent.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/TTrack.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/THit.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage/TTrack.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage.hxx_bu",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage.cxx_bu",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/linkDef.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/test/test.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/LinkDef.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/temp/0.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/Selection.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/CERN_TestBeam/macros/spatial_resolution/prf_analysis_uniform.C",
+		"/local/home/ssuvorov/.config/sublime-text-3/Packages/User/SFTP.errors.log",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/dEdx/dEdxAna.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/dEdx/dEdxAna.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/utils/Geom.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/FileLists/gain.list",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/DBSCANReconstruction.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/sftp-config.json",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/.gitignore",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/temp/7.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/submit.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/Submit.sub",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/runner.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/script/gain.list",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/file_lists",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/macros/selection/selection_ana.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/macros/Makefile",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/converter/converter.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/DataStorage.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/CrossingReconstruction.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/SpatialResol/SpatialResolAna.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/ReconstructionBase.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/CrossingReconstruction.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Reconstruction/line.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/SpatialResol/runner.sh",
+		"/local/home/ssuvorov/Documents/Style_T2K.C",
+		"/local/home/ssuvorov/SOFT/OTHER/cppcheck/cfg/std.cfg",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/non_std.cfg",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/macros/selection/selection3D.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/macros/spatial_resolution/prf_analysis_uniform.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/SelectionBase.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/base/SelectionBase.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Selection/DBSCANSelection.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Selection/DBSCANSelection.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Selection/CrossingSelection.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/Selection/CrossingSelection.hxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/README.md",
+		"/local/home/ssuvorov/SOFT/OTHER/dependency-graph/README.md",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/sftp-config.json",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/src/SpatialResol/SpatialResolApp.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/CERN_TestBeam/sftp-config.json",
+		"/local/home/ssuvorov/SOFT/TPC_TestBeam/sftp-config.json",
+		"/local/home/ssuvorov/SOFT/TPC_TestBeam/tpc_testbeam.sublime-project",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/frame.h",
+		"/local/home/ssuvorov/SOFT/TPC_TestBeam/plotters/spacial_resol_gen.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/platform_spec.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/frame.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/fdecoder.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/datum_decoder.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/converter/converter.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/Mapping.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/DAQ.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/T2KConstants.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/README.md",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/datum_decoder.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/datum_decoder.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/src/datum_decoder.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DAQ_converter/.gitignore",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/sftp-config.json",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/setup.sh",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/fdecoder.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/frame.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/test.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/Makefile",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/converter/Makefile",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/treeBuilder/treeBuilder.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Monitoring/src/Pixel.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/Pixel.cxx",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/converter/T2KNewElectronics/Analysis_Display_Soft/src/DAQ.h",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/test.C",
+		"/local/home/ssuvorov/SOFT/TPC_testbeam/DESY_TestBeam/test.cpp",
+		"/local/home/ssuvorov/SOFT/TPC_TestBeam/macros/spatial_resolution_cosmic/Makefile",
+		"/local/home/ssuvorov/SOFT/TPC_TestBeam/macros/spatial_resolution_cosmic/drift_plotter.C",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ExN02ND280XML.hh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/macro/suvorov/neutron/rename_neutron.sh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ExN02TrackerHit.hh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/Reconstruction/src/PrototypeMC.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ND280RootPersistencyManager.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ExN02PrimaryGeneratorAction.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ExN02RooTrackerKinematicsGenerator.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ExN02RooTrackerKinematicsGenerator.hh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ND280PersistencyManager.hh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/Reconstruction/src/ReadOutSim/ND280UpTargReadOut.hh",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ND280PersistencyMessenger.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/EffStudy/src/ND280PersistencyManager.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/macro/suvorov/neutron/gRooTracker_reader.C",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/src/app/Reconstruction/src/LightYield.cc",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/macro/suvorov/neutron/signal_BG_sep_pur.C",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/macro/suvorov/neutron/OOFV_signal_merge_v2.C",
+		"/local/home/ssuvorov/T2K/t2k-nd280-upgrade/macro/suvorov/neutron/OOFV_signal_merge.C"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 151.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 127.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 127.0
+	},
+	"output.exec":
+	{
+		"height": 300.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.latextools":
+	{
+		"height": 102.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 102.0
+	},
+	"pinned_build_system": "",
+	"project": "Thesis.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"primare",
+				"src/app/EffStudy/include/ExN02PrimaryGeneratorAction.hh"
+			],
+			[
+				"trackerKinematicsGe",
+				"src/app/EffStudy/include/ExN02RooTrackerKinematicsGenerator.hh"
+			],
+			[
+				"numuCCMultiPiSelection",
+				"highlandUP/psycheSelections/v0r0/src/numuCCMultiPiSelection.cxx"
+			],
+			[
+				"Tndup",
+				"src/app/nd280UpEvent/TND280UpTrackPoint.hh"
+			],
+			[
+				"detde",
+				"highlandUP/psycheNDUPUtils/v0r0/src/DetectorDefinition.cxx"
+			],
+			[
+				"Exn02Detect",
+				"src/app/EffStudy/src/ExN02DetectorConstruction.cc"
+			],
+			[
+				"tnd280Trackpo",
+				"src/app/nd280UpEvent/TND280UpTrackPoint.hh"
+			],
+			[
+				"nd280uptra",
+				"src/app/nd280UpEvent/TND280UpTrack.hh"
+			],
+			[
+				"ndUpTrack",
+				"src/app/nd280UpEvent/TND280UpTrack.hh"
+			],
+			[
+				"ND280RootPersistencyManager.cc",
+				"src/app/EffStudy/src/ND280RootPersistencyManager.cc"
+			],
+			[
+				"nd280persista",
+				"src/app/EffStudy/src/ND280PersistencyManager.cc"
+			],
+			[
+				"geommana",
+				"DataWriter_devel/interface/geomManager.hh"
+			],
+			[
+				"addbe",
+				"macros/add_beam_info.C"
+			],
+			[
+				"commo",
+				"ilc_macros/common_header.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/T2K/etc/ND280HIGHLAND2.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "pdg",
+		"selected_items":
+		[
+			[
+				"pdg",
+				"PdgEnum"
+			],
+			[
+				"getpdg",
+				"GetPDG"
+			],
+			[
+				"PrintDaughters",
+				"PrintDaughters"
+			],
+			[
+				"TrackReconstruction",
+				"TrackReconstruction"
+			]
+		],
+		"width": 914.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
