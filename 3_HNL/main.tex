@@ -104,6 +104,7 @@ The second method requires significant background suppression. Usage of the gase
 Thus we could perform a search of a few signal events in an extremely low background environment ($\approx1$). The details of the used statistical approach could be found in~\autoref{sec:HNL:stat}.
 
 \chapter{HNL flux simulations}
+\label{ch:HNL:HNLsim}
 
 First of all we need to estimate the sensitivity to the mixing elements in our experiment. So we need to evaluate the HNL flux at the ND280. We decided to use the results of the neutrino flux simulation that was developed for the oscillation analysis within the T2K experiment. With this simulation we have all the information about the neutrinos entering the ND280 and their parent particles. Because of the kinematics the phase space of the meson decay into HNL is more limited then the decay into massless neutrino. E.g. the maximum angle of the HNL direction with respect to the parent meson direction is lower comparing to the massless neutrino case. Thus if we consider only mesons that could produce neutrino entering ND280 and omit all the others, we will definitely take all the possible HNL parent particles.
 
@@ -402,9 +403,9 @@ The example of a ``good'' MC event with the HNL decay in the first TPC and furth
     \label{fig:HNL:event}
 \end{figure}
 
-\chapter{Analysis}
+\chapter{HNL analysis}
 \label{ch:HNL:ana}
-The search for heavy neutrino consists of several parts. At the first step we apply the time correction to the signal sample. The correction is related to the time delay of the HNL with respect to the neutrino bunch. The details are presented in the~\autoref{sec:HNL:tof_corr}. Then the cut sequence was developed in order to select signal and suppress the background events. The details about the selection are described in the~\autoref{sec:HNL:sel}. Controlling the uncertainties in important part of any analysis. In our case the uncertainties will come from the detector response simulation and flux prediction (\autoref{sec:HNL:sys}). Finally we choose the appropriate statistical method for the results treatment (\autoref{sec:HNL:stat}).
+The search for heavy neutrino consists of several parts. At the first step we apply the time correction to the signal sample. The correction is related to the time delay of the HNL with respect to the neutrino bunch. The details are presented in the~\autoref{sec:HNL:tof_corr}. Then the cut sequence was developed in order to select signal and suppress the background events. The details about the selection are described in the~\autoref{sec:HNL:sel}. Controlling the uncertainties is an important part of any analysis. In our case the uncertainties will come from the detector response simulation and flux prediction (\autoref{sec:HNL:sys}). Finally we choose the appropriate statistical method for the results treatment (\autoref{sec:HNL:stat}).
 
 \section{Time of flight correction}
 \label{sec:HNL:tof_corr}
@@ -451,6 +452,7 @@ For the dimuon mode we apply additional cuts to select only muon tracks:
 \end{enumerate}
 
 \subsection{Cuts description}
+In this section the main cuts foe the signal event selection and background reduction will be briefly overviewed. Many of the cuts were inherited from the existing T2K analysis, e.g. the distinguishing the particle type was studied very carefully  for the oscillation analysis. We checked that the cut values are suitable for case of the HNL selection and developed several analysis specific cuts.
 \subsubsection{Quality and fiducial cut}
 \label{sec:HNL:qf}
 The basic idea of the current study is to search for heavy neutrino decays only in the TPC volume filled with argon. In this case we can avoid large amount of background from the active neutrino interactions. The limits of the fiducial volume were inherited from the study of the active neutrino interactions in argon. The volume doesn't contain the walls and the central cathode, so only argon gas is expected as a target.
@@ -472,12 +474,63 @@ To check both possibilities we looked at the fraction of the good reconstructed 
   \item Tracks separation. As two tracks can be extremely collinear they may be not separated in a TPC.
 \end{itemize}
 
-Z position for the reconstructed vertices is presented in Fig.~\ref{fig:HNL:vertexPos}. All the reconstructed vertices before fiducial cut are shown. The Z vertex distribution is not uniformed at the boundaries of the TPCs due to the edge reconstruction failure. Also we can conclude that the probability for location of vertex outside the TPC is rather small.
+Z position for the reconstructed vertices is presented in~\autoref{fig:HNL:vertexPos}. All the reconstructed vertices before fiducial cut are shown. The Z vertex distribution is not uniformed at the boundaries of the TPCs due to the edge reconstruction failure. Also we can conclude that the probability for location of vertex outside the TPC is rather small.
 \begin{figure}[!ht]
   \center{\includegraphics[width=0.7\linewidth]{vertexPos}}
   \caption{Vertex position for signal samples before the FV cut. Red lines are TPC bounds.}
   \label{fig:HNL:vertexPos}
 \end{figure}
+
+\subsubsection{Veto cuts}
+Signal events from the HNL decay can't have any activity in the upstream detector. But there are some background events from a neutral particle decay or interaction. For example, $\pi^0$ decay into to photons and further production of the electron-positron pair. Also some mesons or baryons that can be produced in the active neutrino interactions and can cause production signal-like events. To suppress such events we should apply some constraints on the upstream activity. There is a possibility of electronics noises in the detector. Also there can be some activity after the previous bunch. To reduce event pile up we didn't constrict all the upstream activity. We developed the veto cut only for the first upstream detector. For the TPC1, we look for the P0D tracks which start or ends in the last P0D layers (100 mm). For the TPC2 and the  TPC3, we look at the FGD time bins. We are interested only in the bins that have a time signature near the center of bunch as this is only possibility to cause the vertex with two tracks in current bunch. Possible time gates are defined as $4\sigma$, where $\sigma=50ns$. The ``4 sigma'' is inherited from the default beam bunching procedure but the sigma value was increased as the bunch size for the massive neutrinos is larger (\autoref{sec:HNL:tof_corr}).
+
+\subsubsection{HNL daughter-tracks start position}
+Some cases of the vertex migration were found in the background analysis~(\autoref{sec:HNL:bg}). An active neutrino can interact in the FGD and all tracks of this event start in the FGD, but because of the errors of the reconstruction algorithm the vertex is extrapolated into the TPC FV. We can easily avoid such background with checking the activity in the TPC with vertex. If there are no tracks the event will be rejected.
+
+\subsubsection{TPC additional activity cut}
+Some process with more than two daughter particles can take place in the TPC. If only two of them are associated into the vertex the event will be signal-like. To prevent such background we apply the cut on the TPC activity. Only the HNL candidate daughters should start in the TPC with the vertex. If there is any additional track's start point the event is rejected.
+
+\subsubsection{Particle identification}
+We study the heavy neutrino decay into the charged lepton and pion. For the particle identification the standard TPC $dE/dx$ methods were applied~\cite{Abgrall2011}. For the analysis we choose the longest TPC segment as containing the most reliable information. Then the likelihood is build for each of the considered particle option: electron, muon, pion, proton. For particular particle selection we are constraining its likelihood and also limiting other hypothesis likelihoods to stay at the low value.
+
+\subsubsection{Invariant mass cut}
+As we search a decay of a massive particle into two charged particles, the invariant mass can be calculated. The upper bound on the mass of the HNL produced from the kaon decay is $M_{HNL}<M_K\approx500MeV$ and the lower bound is $M_{HNL}>M_\ell+M_\pi$. But the resolution of the invariant mass reconstruction should be taken into account. The resolution of our detector is shown in Fig.~\ref{fig:HNL:InvMass}. We accept $4\sigma$ difference from the true value and assume cut value 750 MeV for the $\mu\pi$ mode and 850 MeV for the $e\pi$ mode. The lower bound is strictly defined by the invariant mass calculation method ($M_\ell+M_\pi$). The cut value is set to 250 MeV for the $\mu\pi$ and 140 MeV for the $e\pi$. This cut help to reject the events from active neutrino interactions with high reconstructed invariant mass that certainly can not be the HNL decays.
+
+\subsubsection{Kinematic cuts}
+The heavy neutrinos from the kaon decays in the decay volume have a momentum collinear to the beam axis. So the momenta of the reconstructed HNL candidate should have rather small polar angle. This constraint can significantly reduce the background because the direction of the charged particles from the active neutrino interactions is quite isotropic. Since the HNL is a rather massive particle its daughter particles shouldn't have large opening angle. We have studied angular distribution for both the background and the signal samples. Firstly we studied the distribution of the polar angle of the HNL candidate for events that passed all previous cuts, as it is the most strict kinematic cut. Then we looked at the opening angle of the HNL candidate daughters. The results are presented in Fig.~\ref{fig:HNL:kin1},~\ref{fig:HNL:kin2}~and~\ref{fig:HNL:kin3}. For this plots we use the NEUT MC results with a statistics $6.5\cdot 10^{21} POT$. On these plots the background is normalized to $10^{21}POT$. The total signal is normalized to 1, only the shape of the signal distribution is important. It can't be normalized to any POT as it is proportional to mixing element. The cut value were set in order to maximize the sensitivity.
+
+\begin{figure}[!ht]
+  \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=\linewidth]{HNLpolarMu}  \\ a)}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=\linewidth]{HNLpolarEle}  \\ b)}
+  \end{minipage}
+  \caption{Angular distribution of the HNL candidate events (a) for $\mu\pi$ mode and (b) for $e\pi$. Red is the signal samples, black is the BG and vertical line is a cut value. BG is normalized to $10^{21}POT$, signal is normalized to 1.}
+  \label{fig:HNL:kin1}
+\end{figure}
+
+\begin{figure}[!ht]
+  \center{\includegraphics[width=0.5\linewidth]{HNLpolarDiMu}}
+  \caption{Angular distribution of the HNL candidate events for $\mu\mu\nu$ mode. Red is the signal samples, black is the BG and vertical line is a cut value. BG is normalized to $10^{21}POT$, signal is normalized to 1.}
+  \label{fig:HNL:kin2}
+\end{figure}
+
+\begin{figure}[!ht]
+  \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=\linewidth]{HNLrelative1} \\ a)}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[h]{0.49\linewidth}
+    \center{\includegraphics[width=\linewidth]{HNLrelative2} \\ b)}
+  \end{minipage}
+  \caption{An opening angle for the HNL daughter particles for the $\mu\pi$ mode (a) before the polar angle cut was applied and (b) after. Red is the signal samples, black is the BG and vertical line is a cut value. BG is normalized to $10^{21}POT$, signal is normalized to 1.}
+  \label{fig:HNL:kin3}
+\end{figure}
+
+\subsubsection{\texorpdfstring{$N\to\mu\mu\nu$}{Lg}  mode cuts}
+As we need to select only two muons, we should determine the particle type very accurately. The main problem is muon/pion separation in TPC. Also some protons can be identified as a muon with the $dE/dx$ method. As a muon has a high penetration ability, it is expected to reach the detectors outside the tracker. The protons have a very low probability to leave the tracker, so they will be rejected. The pions can leave the tracker but they will cause a shower in the ECal. For the pion/proton misidentification as a muon we select only events in which both muons' tracks have the subtracks in the ECal and these subtracks should be identified as MIP, but not as EM shower.
 
 \subsection{Signal selection efficiency}
 \label{sec:HNL:eff}
@@ -669,8 +722,234 @@ Neutrino interactions in gas were not well studied and it leads to the large unc
 
 \section{Systematic uncertainties}
 \label{sec:HNL:sys}
+In general case the systematic uncertainty will come both from the signal expectations and from the estimations background. In our case (\autoref{sec:HNL:stat}) the background estimations are not affecting the final sensitivity result. Thus their systematics could be omitted.
+
+In this case we have the systematic uncertainties only from the number of predicted events. Assuming $\left|U\right|^2=1$ we calculated the events number according to \autoref{eq:HNL:Nevents}
+\begin{equation}
+  N_{events}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot\frac{V_{FV}}{c\beta\gamma}\cdot\Gamma_{mode}\cdot Eff,
+\end{equation}
+where $Eff$ is the selection efficiency. Possible uncertainties sources are:
+\begin{itemize}
+  \item $\phi(HNL/10^{21}p.o.t./cm^2)$ - a HNL flux. As it is calculated based on the kaon flux, the uncertainties of the kaon flux modeling should be included here,
+  \item $Eff$ - a selection efficiency uncertainties, the detector systematics should be included here.
+\end{itemize}
+
 \subsection{Detector systematics}
+To study detector uncertainties, we can use the results of the same study for the active neutrino interactions. But some changes should be applied as we use TPC instead of FGD. We consider the following systematics:
+\begin{itemize}
+    \item Magnetic Field distortions. Uncertainties in magnetic field map,
+    \item TPC momentum scale,
+    \item TPC momentum resolution,
+    \item TPC PID. Uncertainties in particle identification,
+    \item TPC tracking efficiency,
+    \item TPC charge ID efficiency. Uncertainties of charge identification,
+    \item TPC-FGD matching efficiency,
+    \item TPC cluster efficiency. Additional inefficiency of TPC cluster reconstruction,
+    \item Pion secondary interactions,
+    \item Global vertex association
+\end{itemize}
+
+For the mode $N\to\mu\mu\nu$ we should consider additional ECal systematics as we use this detector in our cut sequence:
+
+\begin{itemize}
+    \item TPC-ECal track clustering and matching efficiency,
+    \item ECal Particle Identification
+\end{itemize}
+
+\todo{put a comment about weight and variation systematics}
+
+
+The systematic that was estimated by ourselves for this particular analysis is the uncertainty of the track association into the global vertex (GV). We look at the GV in the TPC fiducial volume. So we should estimate the vertex association systematics. It's impossible for neutrino interactions in the TPC FV because of the lack of the statistics, so the FGD FV was chosen for this study.
+
+We check the efficiency of the successful association of the ``suitable'' tracks in vertex. Two samples are defined for the FGD1 and FGD2 respectively. ``Suitable'' means that the tracks should pass the following cuts:
+\begin{itemize}
+    \item both start in the FGD1/2 FV;
+    \item different charge;
+    \item close start position 50 mm for X and Y axis and 100 mm for Z axis;
+    \item only one sample (FGD1 or FGD2) was filled with tracks that passed upper cuts.
+\end{itemize}
+The efficiency of the vertex merger is defined as the ratio of the number of the tracks' pairs associated in vertex to tracks' pairs that passed the cuts that were listed above. We should check if this efficiency depends on the tracks parameters i.e. momentum, opening angle. The results are presented in~\autoref{fig:HNL:GVsysDEP}
+\begin{figure}[!ht]
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{MomWide}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{CosWide}}
+    \end{minipage}
+    \vfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{MomDifWide} \\ a)}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[h]{0.49\linewidth}
+        \center{\includegraphics[width=\linewidth]{CosDifWide} \\ b)}
+    \end{minipage}
+    \caption{Dependence of the global vertex association systematics on the  track momentum (a) and on the opening angle (b) for FGD1 sample in black for DATA and in red for MC.}
+    \label{fig:HNL:GVsysDEP}
+\end{figure}
+
+We conclude that there is neither angular nor momentum systematics dependence. The efficiency for MC and DATA are presented in~\autoref{tbl:HNL:GVsys}. The systematics for the HNL study was estimated using these efficiency differences with weight-like method.
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l|l|l|}
+    \hline
+    & FGD1 & FGD2 \\
+    \hline
+    DATA   & $0.958^{+0.0023}_{-0.0024}$ & $0.944^{+0.0027}_{-0.0026}$  \\
+    \hline
+    MC      & $0.962^{+0.0036}_{-0.0038}$ & $0.952^{+0.004}_{-0.0042}$  \\
+    \hline
+    Systematic uncertainty for $N\to\mu\pi$ & $0.58\%$ & $0.46\%$ \\
+    \hline
+    Systematic uncertainty for $N\to e\pi$ & $0.51\%$ & $0.4\%$ \\
+    \hline
+
+\end{tabular}
+\caption{Global vertex association efficiency and systematics.}
+\label{tbl:HNL:GVsys}
+\end{center}
+\end{table}
+One more check is the spatial resolution comparison between the data and MC. We checked the difference between the track start position and the vertex position. The results are shown in~\autoref{fig:HNL:res}, the statistics is summarized in~\autoref{tbl:HNL:res}. As we can see the mean value for MC and data are rather close, the difference between them is near fit error and much less than RMS.
+\begin{figure}[!ht]
+\begin{center}
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{ResolutionX}}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{ResolutionY}}
+    \end{minipage}
+    \vfill
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{ResolutionZ}}
+    \end{minipage}
+    \caption{Global vertex spatial resolution for experimental and MC data. Dots and left statistic box are experimental data, histograms and right statistic box is MC data.}
+    \label{fig:HNL:res}
+\end{center}
+\end{figure}
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+    \hline
+    Axis & & Mean & RMS \\
+    \hline
+    \multirow{2}{*}{X} & MC & $0.16 \pm 0.09$ & $7.20\pm0.06$\\
+
+    & DATA & $0.1\pm0.16$ & $7.67\pm0.11$ \\
+    \hline
+    \multirow{2}{*}{Y} & MC & $0.09 \pm 0.17$ & $8.29 \pm 0.12$\\
+
+    & DATA & $0.14 \pm 0.09$ & $7.5 \pm 0.06$ \\
+    \hline
+    \multirow{2}{*}{Z} & MC & $-5.76 \pm 0.22$ & $10.68 \pm 0.15$\\
+
+    & DATA & $-5.38 \pm 0.13$ & $10.78 \pm 0.09$ \\
+    \hline
+\end{tabular}
+\caption{Summary of the statistics for spatial resolution for experimental and MC data presented in~\autoref{fig:HNL:res}.}
+\label{tbl:HNL:res}
+\end{center}
+\end{table}
+
+The global vertex systematics can be obtained only for the FGD but tracks from HNL decays start in TPC. So the following strategy was used: for the TPC1 tracks we consider systematics from the FGD1 sample, for the TPC2 and TPC3 tracks we apply the FGD2 sample results. This method gives the uncertainties at level $0.5\%$.
+
+The results of all the systematic study are presented in~\autoref{tab:HNL:sys}.
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l |c| c| c|}
+  \hline
+   & $\mu\pi$ & $e\pi$ & $\mu\mu\nu$\\
+  \hline
+  \multicolumn{4}{||l|}{Variation-like} \\
+  \hline
+  B Field distortions                 & 0.48\%    & 0.37\%         &  0.02\%\\
+  TPC momentum scale                  & 0.03\%    & 0.01\%         & 0.04\%\\
+  TPC momentum resolution             & 2.34\%    & 0.78\%         & 0.46\%\\
+  TPC PID                             & 0.41\%    & 0.75\%         & 1\%\\
+  \hline
+  \multicolumn{4}{||l|}{Efficiency-like} \\
+  \hline
+  TPC cluster efficiency              &   $\ll1\%$   &   $\ll1\%$  &  0.01\%\\
+  TPC tracking efficiency             &   0.44\%     &  0.34 \%    & 0.46\% \\
+  TPC charge ID efficiency            &   0.04\%     &   0.21\%    &   0.76\%\\
+  TPC-FGD matching                    &   0.27\%     &    $\ll1\%$ & 0.03\%\\
+  Pion secondary interactions         &   3.88\%     &   2.91\%    &  - \\
+  Global vertex combining             &    0.58\%    &  0.52\%     & 0.48\%\\
+  ECal PID                            &     -        &     -       & 0.27\%\\
+  ECal TPC matching                   &     -        &     -       &  0.01\%\\
+  \hline
+  Total                               &   4.64\%     &  3.20\%     & 1.51\%\\
+  \hline
+\end{tabular}
+\caption{Detector systematics summary.}
+\label{tab:HNL:sys}
+\end{center}
+\end{table}
+
+The systematic dependence on HNL mass is shown in~\autoref{fig:HNL:sys} and~\autoref{fig:HNL:sysDimuon}.
+
+\begin{figure}[!ht]
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{MuPiSys} \\ $K^+\to e^+N\to e^+\left(\mu^-\pi^+\right)$}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{ElePiSys} \\ $K^+\to e^+N\to e^+\left(e^-\pi^+\right)$}
+  \end{minipage}
+  \caption{Detector systematics dependence on HNL mass}.
+  \label{fig:HNL:sys}
+\end{figure}
+
+\begin{figure}[!ht]
+    \centering{\includegraphics[width=0.49\linewidth]{DiMuonSys} \\ $K^+\to e^+N\to e^+\left(\mu^-\mu^+\nu\right)$}
+  \caption{Detector systematics dependence on HNL mass}.
+  \label{fig:HNL:sysDimuon}
+\end{figure}
+
+
 \subsection{Flux systematics}
+
+Heavy neutrino flux in the ND280 is calculated based on the kaon flux in the decay volume (\autoref{ch:HNL:HNLsim}). Because of this, uncertainties in the kaon flux will affect the number of events. The total flux error consists of the meson multiplicities, pion rescatter, interaction length, focusing and other errors~\cite{Abe2013}. These fractional errors and the total flux uncertainty are presented on the Fig.~\ref{fig:HNL:FluxError}. In the the active neutrino studies the meson multiplicity uncertainty is dominated by the pion multiplicities. In our analysis we are sensitive only to kaon multiplicity errors. For the HNL analysis we consider all the uncertainties except meson multiplicities are the same as for the active neutrino flux. Thus to estimate kaon flux errors we take total neutrino flux error subtract meson multiplicity error and add kaon multiplicity uncertainty.
+
+\begin{figure}[!ht]
+  \centering{\includegraphics[width=0.49\linewidth]{NuFluxError.png} }
+  \caption{$\nu_\mu$ Flux uncertainties.}
+  \label{fig:HNL:FluxError}
+\end{figure}
+
+To estimate the kaon multiplicity errors we use data from NA61. Relative uncertainties on the K multiplicities are presented on the~\autoref{fig:HNL:KaonMult}. For HNL analysis we deal mainly with the kaons collinear to beam axis. We consider a conservative estimation of the kaon multiplicity uncertainty as 20\%. For all the other errors we take the maximum value among all energy bins -- 11\%.
+
+\begin{figure}[!ht]
+  \centering{\includegraphics[width=0.49\linewidth]{KaonError.png} }
+  \caption{Kaon multiplicity uncertainties from TN-217.}
+  \label{fig:HNL:KaonMult}
+\end{figure}
+
+The additional source of uncertainties is the flux reweight. For the HNL simulation we take so called ``nominal'' flux. It is the average neutrino flux. The real flux changes a bit from run to run. The run change is realized with the help of the renormalization of the event weight for every run. We used the reweight files and checked that the run differences affect on our result in order $\ll1\%$. The error from this effect was summarized in quadrature with all other flux errors.
+
+The results of the systematics study are presented on the~\autoref{fig:HNL:AllSys}. The detector systematics is widely described in previous subsection. As we analyze all charge conjugated modes together we take the highest systematics uncertainties among them.
+
+\begin{figure}[!ht]
+    \begin{center}
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{FluxMu}  \\  $N\to\mu\pi$}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{FluxEle}  \\  $N\to e\pi$}
+    \end{minipage}
+    \vfill
+    \begin{minipage}{0.49\linewidth}
+        \centering{\includegraphics[width=\linewidth]{FluxDiMu}  \\  $N\to\mu\mu\nu$}
+    \end{minipage}
+    \caption{Detector and flux systematic errors for different modes.}
+    \label{fig:HNL:AllSys}
+        \end{center}
+\end{figure}
+
+
+
 \subsection{Pile up}
 
 \section{Statistical methods}
