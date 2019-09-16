@@ -25,7 +25,7 @@ The schema of the T2K experiment is shown in~\autoref{fig:HNL:t2k_schema}. The m
     \label{fig:HNL:t2k_schema}
 \end{figure}
 
-With the 30 $GeV$ proton beam mainly pions are produced with some fractions of kaons. The comparison of the neutrino flux from different parent particles are presented~in~\autoref{fig:HNL:meson_flux}. As we want to study the maximum range of the HNL mass we will concentrate on the kaon decays. Thus we will be able to study the mass region up to 493 $MeV/c^2$. The overview of the HNL nature including the relation with the Standard Model particles is presented~in~\autoref{ch:intro:HNL}. The particular production and decay modes of the heavy neutrino masses that are available for the analysis in our experiment are summarized in the kinematic scheme in~\autoref{fig:HNL:mass_scale} with specific HNL mass region for each of them.
+With the 30 GeV proton beam mainly pions are produced with some fractions of kaons. The comparison of the neutrino flux from different parent particles are presented~in~\autoref{fig:HNL:meson_flux}. As we want to study the maximum range of the HNL mass we will concentrate on the kaon decays. Thus we will be able to study the mass region up to 493 $MeV/c^2$. The overview of the HNL nature including the relation with the Standard Model particles is presented~in~\autoref{ch:intro:HNL}. The particular production and decay modes of the heavy neutrino masses that are available for the analysis in our experiment are summarized in the kinematic scheme in~\autoref{fig:HNL:mass_scale} with specific HNL mass region for each of them.
 
 \begin{figure}[!ht]
     \centering
@@ -45,7 +45,7 @@ As one can see from the scheme in our study we will concentrate on the two and t
 
 \begin{eqnarray}
     &N\to\ell^{\pm}\pi^{\mp} &\\
-    &N\to\ell^{\pm}\ell^{\mp}\nu & \\
+    &N\to\ell^{\pm}\ell^{\mp}\nu
 \end{eqnarray}
 
 We would like to highlight the importance of the study of a HNL dimuon decay mode: $N\to\mu\mu\nu$. This decay has charge and neutral current contributions shown in Fig.~\ref{fig:DimuonFeynman} (from~\cite{Johnson1997}).
@@ -74,7 +74,7 @@ As we focus on search of the HNL decay there are two analysis methods:
   \item search for a rare event in a low background environment
 \end{itemize}
 
-The first one requires applying some simple cuts and then study difference between data and MC estimation with a peak shape. We need a rather accurate background prediction for this method. Also invariant mass resolution is one of the most important issue. We have studied the possible resolution for the HNL signal samples. The events that pass all the cuts described in the~\autoref{sec:HNL:sel} give as the reconstructed mass distribution. The examples of such distribution are presented in~\autoref{fig:HNL:InvMass}. The resolution of the invariant mass reconstruction on the HNL mass is shown in~\autoref{fig:HNL:InvMassPlot}. As one can see, RMS is quite large $\approx70MeV$. The main background processes for the HNL decay are  interactions of the active neutrinos. In near detector there are three TPCs filled with argon gas. The cross sections of the neutrino interactions in gas are not studied well. Studies of these events were performed by ArgoNeuT group~\cite{Acciarri2014}. In our momentum region ($\approx1GeV$) the uncertainties are relatively large. Other background processes can be $K^0, \Lambda, \eta$ decays, deep inelastic neutrino scattering, etc. (\autoref{sec:HNL:bg}) that are also poorly studied. Because of this we can not provide needed accuracy of the background prediction and the method of the invariant mass peak search can not be applied.
+The first one requires applying some simple cuts and then study difference between data and MC estimation with a peak shape. We need a rather accurate background prediction for this method. Also invariant mass resolution is one of the most important issue. We have studied the possible resolution for the HNL signal samples. The events that pass all the cuts described in the~\autoref{sec:HNL:sel} give as the reconstructed mass distribution. The examples of such distribution are presented in~\autoref{fig:HNL:InvMass}. The resolution of the invariant mass reconstruction on the HNL mass is shown in~\autoref{fig:HNL:InvMassPlot}. As one can see, RMS is quite large $\approx70MeV$. The main background processes for the HNL decay are  interactions of the active neutrinos. In near detector there are three TPCs filled with argon gas. The cross sections of the neutrino interactions in gas are not studied well. Studies of these events were performed by ArgoNeuT group~\cite{Acciarri2014}. In our momentum region ($\approx1GeV$) the uncertainties are relatively large. Other background processes can be $K^0, \Lambda, \eta$ decays, deep inelastic neutrino scattering, etc. (\autoref{sec:HNL:bg}) that are also poorly studied. Because of this we can not provide necessary accuracy of the background prediction and the method of the invariant mass peak search can not be applied.
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
         \center{\includegraphics[width=\linewidth]{InvMass036}}
@@ -113,7 +113,23 @@ For the heavy neutrino simulation we take the particular meson decay and reweigh
 \section{T2K flux simulation}
 The accurate prediction of the neutrino flux is extremely important for the precise oscillation analysis. That's why the T2K collaboration have spent great effort on tuning the flux simulation in the most accurate way~\cite{Abe2013}. All the elements of the neutrino beamline (\autoref{ch:T2K:nu_beam}) are taken into account. The most tricky part is the evaluation of the meson production through the proton interactions in the carbon target. To reduce the systematic uncertainties the measurements from the NA61/SHINE experiment are used~\cite{Collaboration2018}.
 
-\todo{details about NA61}.
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{NA61/SHINE experiment}
+The NA61/SHINE (SPS Heavy Ion and Neutrino Experiment)~\cite{Abgrall2014} is a multi-propose facility at CERN that operates at Super Proton Synchrotron (SPS) in the North Area of CERN. The main physics goals are:
+\begin{itemize}
+    \item study the properties of the onset of deconfinement and search for the critical point of strongly interacting matter which is pursued by investigating p+p, p+Pb and nucleus-nucleus collisions,
+    \item precise hadron production measurements for improving calculations of the initial neutrino beam flux in the long-baseline neutrino oscillation experiments as well as for more reliable simulations of cosmic-ray air showers.
+\end{itemize}
+The detector operates at the fixed target made from different materials (carbon, beryllium, scandium). The detector scheme is presented in~\autoref{fig:HNL:NA61}. The setup consists of the trigger system, TPC tracking system with superconducting magnets, time of flight detectors and Projectile Spectator Detector (PSD).
+
+For the T2K propose the experiment perform the measurements of the hadron interaction multiplicities with a proton beam and a carbon T2K-replica target. This data allows to constrain the neutrino production at the T2K much more precisely.
+\end{bclogo}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\linewidth]{NA61.png}
+    \caption{The scheme of the NA61/SHINE experiment.}
+    \label{fig:HNL:NA61}
+\end{figure}
 
 The flow diagram of the neutrino flux simulation is shown in~\autoref{fig:HNL:nu_flux_sim}.
 
@@ -129,7 +145,7 @@ The proton beam spatial distribution and divergence are measured in the beamline
 
 After such simulation chain is performed and the outgoing neutrino is saved the hadronic chain in each event is reweighted based on the hadron interaction measurements. In our studies we are particularly interested in the kaon production. The generated kaon phase space and the coverage of the NA61 measurements are presented in~\autoref{fig:HNL:kaon_ps}.
 
-After the reweighing of the hadron chains the total accuracy of the prediction is evaluated. The main systematic errors come from the hadronic interactions, primary beam alignment, horn current and magnetic field. The resulting uncertainty of the neutrino flux predictions are shown in~\autoref{fig:HNL:nu_flux_uncert}.
+After the reweighing of the hadron chains the total accuracy of the prediction is evaluated~\cite{Abe2013}. The main systematic errors come from the hadronic interactions, primary beam alignment, horn current and magnetic field. The resulting uncertainty of the neutrino flux predictions are shown in~\autoref{fig:HNL:nu_flux_uncert}.
 
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
@@ -160,7 +176,7 @@ where
 \begin{itemize}
     \item $scale_{POT}$ --- $10^{21}$ POT normalization;
     \item $weight_{geom}$ --- probability of neutrino getting to the certain point of the detector plane, which was selected randomly;
-    \item$P_{save}^{-1}$ --- probability to save event, in order to have results of MC model in a wide spectrum;
+    \item$P_{save}^{-1}$ --- probability to save event. The energy spectrum has quite long tail and we want to keep its shape precisely. For this we save relatively more events in the tail with respect to the min peak. The appropriate weight is assigned to each event;
     \item $Br_{K\mu2}$ --- branching of $K\rightarrow\mu\nu_{\mu}$ decay.
 \end{itemize}
 
@@ -232,7 +248,7 @@ There are two effects, that cause the flux difference comparing to the active ne
     \label{fig:HNL:fluxMassKpos}
 \end{figure}
 
-The second effect is the modification of the branching ratio of the kaon decay. It is calculated according to~\autoref{eq:HNL:Kdecay}. The branching ratio dependence is shown in Fig.~\ref{fig:HNL:KdecayBR}.
+The second effect is the modification of the branching ratio of the kaon decay. It is calculated according to~\autoref{eq:HNL:Kdecay}. The branching ratio dependence is shown in~\autoref{fig:HNL:KdecayBR}. Notice that it could be larger then 1 as the mixing element is considered 1, in reality it will reduce the branching ratio below the level of one.
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
         \center{\includegraphics[width=\linewidth]{BrKMu} \\ a)}
@@ -245,13 +261,13 @@ The second effect is the modification of the branching ratio of the kaon decay. 
     \label{fig:HNL:KdecayBR}
 \end{figure}
 
-The difference of the time of flight for the active neutrino and HNL is described in the analysis~\autoref{sec:HNL:tof_corr}.
+The difference of the time of flight for the active neutrino and HNL is described in the analysis~\autoref{sec:HNL:tof_corr}~\autoref{ch:HNL:ana}.
 
 Since we study both $K^+$ and $K^-$ modes we compare HNL fluxes from both parent particles. The flux of HNL from $K^-$ decays is nearly three times lower than one from $K^+$ decays. It was expected since the cross section of $K^-$ production is approximately  tree times lower.
 
 \section{HNL decays}
 
-From the spectra of the heavy neutrinos, we can estimate the number of events from HNLs' decays and a sensitivity to mixing elements. As already described we just need the number of expected signal events. Number of decays is
+From the spectra of the heavy neutrinos, we can estimate the number of events from HNLs' decays and a sensitivity to mixing elements. As already described we just need the number of expected signal events. Number of HNL decays is
 \begin{equation}
     N_{decays}=\phi(HNL/10^{21}p.o.t./cm^2)\cdot S_{det} \cdot P_{decay}^{TPC}\cdot Br_{mode},
     \label{eq:HNL:Nevents}
@@ -284,7 +300,15 @@ where $V_{FV}$ is a sum of the fiducial volumes of 3 TPC's. The decay width is c
     &\times \sqrt{\left(1-\frac{\left(M_{\pi}-M_\ell\right)^2}{M_{HNL}^2}\right)\left(1-\frac{\left(M_{\pi}+M_\ell\right)^2}{M_{HNL}^2}\right)}
     \end{split}
 \end{equation}
-where  $\ell$ means lepton, $G_F$ --- Fermi constant, $f_\pi$ --- pion form-factor, $V$ --- CKM matrix element. The dependence of the decay width on the HNL mass is shown in~\autoref{fig:HNL:decBr}.
+where
+\begin{itemize}
+    \item $\ell$ means lepton,
+    \item $G_F$ --- Fermi constant,
+    \item $f_\pi$ --- pion form-factor,
+    \item $V$ --- CKM matrix element.
+\end{itemize}
+
+The dependence of the decay width on the HNL mass is shown in~\autoref{fig:HNL:decBr}.
 
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
@@ -307,7 +331,7 @@ Thus the limit on the squared mixing element will be put with:
 \begin{equation}
     \left|U\right|^2_{limit}=\sqrt{\frac{2.3}{N_{decays}}},
 \end{equation}
-The sensitivity of our experiment for two body decays is shown in Fig.~\ref{fig:HNL:Ue2Umu2TwoBody}, ~\ref{fig:HNL:UeUmuTwoBody}, in green. It's compared with current limits from PS191~\cite{Bernardi1988} (in red) and Asaka et al prediction~\cite{Asaka2012} (in blue).
+The sensitivity of our experiment for two body decays is shown in~\autoref{fig:HNL:Ue2Umu2TwoBody},~\autoref{fig:HNL:UeUmuTwoBody}, in green. It's compared with current limits from PS191~\cite{Bernardi1988} (in red) and Asaka et al prediction~\cite{Asaka2012} (in blue).
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
         \center{\includegraphics[width=\linewidth]{Ue2TwoBody} \\ a) $K\to eN\to e(e\pi)$}
@@ -326,7 +350,7 @@ The sensitivity of our experiment for two body decays is shown in Fig.~\ref{fig:
     \label{fig:HNL:UeUmuTwoBody}
 \end{figure}
 
-Three body decays of HNL were also studied. Possible improvement over the PS191 results is worse than for 2-body modes, the background for such events seems to be much larger due to the isotropic distribution of the charged daughter particles. In our study we will concentrate on 2-body decays and $N\to\mu\mu\nu$ mode. Three body sensitivity is shown in Fig.~\ref{fig:HNL:TreeBodyFirst} and Fig.~\ref{fig:HNL:ThreeBodySecond}.
+Three body decays of HNL were also studied. Possible improvement over the PS191 results is worse than for 2-body modes, the background for such events seems to be much larger due to the isotropic distribution of the charged daughter particles. In our study we will concentrate on 2-body decays and $N\to\mu\mu\nu$ mode. Three body sensitivity is shown in~\autoref{fig:HNL:TreeBodyFirst} and~\autoref{fig:HNL:ThreeBodySecond}.
 
 \begin{figure}[!ht]
     \begin{minipage}[!ht]{0.49\linewidth}
@@ -352,14 +376,14 @@ Three body decays of HNL were also studied. Possible improvement over the PS191 
     \label{fig:HNL:ThreeBodySecond}
 \end{figure}
 
-An important 3-body mode is $K^+\rightarrow e(\mu^-\mu^+\nu_{e,\mu,\tau})$ because $\ell\bar{\ell}$ pairs can be produced together with any kind of the active neutrino due to  the NC process ~\cite{Johnson1997}. The mixing element for this process looks like $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\mu}\right|^2+\left|U_{\tau}\right|^2}$. Assuming $\left|U_e\right|^2 \gg\left|U_{\mu}\right|^2$, we can get some constraints on $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\tau}\right|^2}$ that wasn't obtained before in PS191 and limits on $\left|U_{\tau}\right|$ are also rather poor. Results for this decay mode are shown in Fig. ~\ref{fig:HNL:ThreeBodySecond} b.
+An important 3-body mode is $K^+\rightarrow e(\mu^-\mu^+\nu_{e,\mu,\tau})$ because $\ell\bar{\ell}$ pairs can be produced together with any kind of the active neutrino due to  the NC process ~\cite{Johnson1997}. The mixing element for this process looks like $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\mu}\right|^2+\left|U_{\tau}\right|^2}$. Assuming $\left|U_e\right|^2 \gg\left|U_{\mu}\right|^2$, we can get some constraints on $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\tau}\right|^2}$ that wasn't obtained before in PS191 and limits on $\left|U_{\tau}\right|$ are also rather poor. Results for this decay mode are shown in~\autoref{fig:HNL:ThreeBodySecond} b.
 
 As one can see, all our results are close to the estimation made by Asaka et al.
 
 \subsection{HNL daughter particles}
-Now we have all the information about the HNLs that enter ND280. Thus we could generate the secondary particles that will be born in the heavy neutrino decay. The decay itself is simulated in the HNL rest frame. Then the boost is applied towards the heavy neutrino initial direction. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume. Cross-check (Fig.~\ref{fig:HNL:decayPos}) shows some deviations at the upper and bottom edges for the large HNL mass but it was also expected due to the off-axis flux.
+Now we have all the information about the HNLs that enter ND280. Thus we could generate the secondary particles that will be born in the heavy neutrino decay. The decay itself is simulated in the HNL rest frame. Then the boost is applied towards the heavy neutrino initial direction. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume. Cross-check (\autoref{fig:HNL:decayPos}) shows some deviations at the upper and bottom edges for the large HNL mass but it was also expected due to the off-axis flux.
 
-The simulation of the 2-body decay is straight forward. The direction of the first particle is thrown isotropically. Then base on both momentum and energy conservation laws all the decay is parametrized in the HNL rest frame. We will obtain the final kinematics of the daughters with the boost along the heavy neutrino momentum. For the each event the following weight is assigned:
+The simulation of the 2-body decay is straight forward. The direction of the first particle is thrown isotropically. Then base on both momentum and energy conservation laws whole the decay is parametrized in the HNL rest frame. We will obtain the final kinematics of the daughters with the boost along the heavy neutrino momentum. The kinematic evaluation is covered in~\cite{landau2013}, chapter 2. For the each event the following weight is assigned:
 \begin{equation}
     weight_{2-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\Gamma_{2-body},
 \end{equation}
@@ -369,7 +393,6 @@ The 3-body decay case is a bit more complicated. For this case we can't just thr
 \begin{equation}
     weight_{3-body}=weight_{K\rightarrow \ell N}\cdot\frac{L}{\beta\gamma c}\cdot\cfrac{\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}}{max\left(\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}\right)}\cdot P,
 \end{equation}
-
 where $L$ is total length of HNL path in three TPCs. We normalize the weight of each particular decay with respect to the maximum possible value. This will make the absolute number of the events smaller, but as we use the signal sample only for the efficiency evoluation the effect will be compensated. That's important as the selection probability could depend on the kinematics and we need to assign proper weight to each generated event for proper efficiency treatment.
 
 \begin{figure}[!ht]
@@ -378,7 +401,41 @@ where $L$ is total length of HNL path in three TPCs. We normalize the weight of 
     \label{fig:HNL:decayPos}
 \end{figure}
 
-\todo{HNL polarization description}
+ The polarization of the HNL is taken into account in the simulation according to the calculations from~\cite{Abgrall2014}. The HNL polarization during its production is given by:
+ \begin{equation}
+    \overrightarrow\prod=\frac{\left(\delta_\ell-\delta_{N}\right)\lambda^{1/2}\left(1,\delta_\ell, \delta_{N}\right)}{\delta_\ell+\delta_{N}-\left(\delta_{N}-\delta_\ell\right)^2}\overrightarrow{n}
+ \end{equation}
+where
+\begin{itemize}
+    \item $\delta_{N}=\left(M_{N}/m_K\right)^2$
+    \item $\delta_\ell=\left(m_\ell/m_K\right)^2$
+    \item $\lambda\left(x, y, z\right)=x^2+y^2+z^2-\left(xy+yz+xz\right)$
+    \item $\overrightarrow{n}$ is the kaon direction in the heavy neutrino rest frame
+\end{itemize}
+
+The polarization of the HNL as a function of its mass in the decay $K\to\mu+N$ is shown in~\autoref{fig:HNL:pol}. One could see that in the limit $M_N\to0$ the heavy neutrino behaves exactly as a massless neutrino and becomes a left-handed. Also it's interesting to see that the polarization vanishes when the HNL mass is equal to the muon one.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{HNL_pol.png}
+    \caption{The polarization of the HNL as a function of its mass in the decay $K\to\mu+N$~\cite{Abgrall2014}.}
+    \label{fig:HNL:pol}
+\end{figure}
+
+The polarization of the beam ($\overrightarrow{\prod}$) is a statistical effect. As the HNL is a fermion it could take only  discrete polarization: -1 or 1. In the simulation for each decay the polarization value is computed and then the random value is thrown in the range (-1; 1) to determine if the HNL is left-handed or right-handed. Then this characteristic is taken into account during the heavy neutrino decay simulation with:
+
+\begin{equation}
+    \frac{dN}{d\cos\theta}\left(N\to\ell\pi\right)\propto\left(1-\delta_\ell'\right)^2-\delta_\pi'\left(1+\delta_\ell'\right)-\frac{\sqrt{\lambda'}}{2}\left(1-\delta_\ell'\right)\prod\cos\theta
+\end{equation}
+
+where:
+\begin{itemize}
+    \item $\delta_\ell'=\left(m_\ell/M_N\right)^2$
+    \item $\delta_\pi=\left(m_\pi/M_N\right)^2$
+    \item $\lambda'=\lambda\left(1, \delta_\ell', delta_\pi'\right)$
+    \item $\theta$ is an angle between the outgoing lepton and the parent meson (kaon) in the HNL rest frame
+\end{itemize}
+
 
 After simulation of the HNL decays we have all information about kinematics of their daughter particles, i.e. momentum, direction, opening angles. This characteristics are presented in~\autoref{fig:HNL:secondaryE}~and~\autoref{fig:HNL:secondaryCos}. It's important to note that most of the particles have momentum below 2 GeV. Our TPCs was designed to reconstruct events in this energy region.
 \begin{figure}[!ht]
@@ -396,7 +453,7 @@ After simulation of the HNL decays we have all information about kinematics of t
 \end{center}
 \end{figure}
 The heavy neutrino daughter particles are propagated through the detector with the help of the Geant4 package~\cite{Agostinelli2003}. All the secondary interactions, decays, etc. are considered.
-The example of a ``good'' MC event with the HNL decay in the first TPC and further evolution of a daughter muon and a pion is shown in Fig.\ref{fig:HNL:event}. The detector response is fully simulated from the initial ionization until the readout signal from the electronics. Thus we could develop the event selection and estimate its efficiency with the MC generated signal sample.
+The example of a ``good'' MC event with the HNL decay in the first TPC and further evolution of a daughter muon and a pion is shown in~\autoref{fig:HNL:event}. The detector response is fully simulated from the initial ionization until the readout signal from the electronics. Thus we could develop the event selection and estimate its efficiency with the MC generated signal sample.
 \begin{figure}[!ht]
    \center{\includegraphics[width=0.8\linewidth]{goodeventMC}}
     \caption{Example of simulated event from HNL decay in the first TPC. Dashed green line corresponds to HNL track, green line to the muon track, brown line to the pion track.}
@@ -414,7 +471,7 @@ Heavy neutrino time of flight is different from the active neutrino. The differe
   \delta T=\frac{d}{\beta c}-\frac{d}{c}=\frac{d}{c}\left(\frac{1}{\beta}-1\right),
   \label{eq:HNL:ToF}
 \end{equation}
-where $d$ is a distance between the HNL production and decay points, $\beta=\frac{v}{c}$ is a kinematic parameter of the HNL. The ToF modeling is not performed during the HNL simulation. So we apply the correction $T'=T+\delta T$ in the analysis, shifting all timestamps in the event by the $\delta T$. In the T2K the  neutrino beam repeats the proton beam spill structure with 8 bunches. The bunches are Gaussian with $\sigma\approx19ns$ (\autoref{ch:T2K:nu_beam}). Due to the ToF correction the HNL bunch will change its shape. The new bunch structure is shown in~\autoref{fig:HNL:bunch}.
+where $d$ is a distance between the HNL production and decay points, $\beta=v/c$ is a kinematic parameter of the HNL. The ToF modeling is not performed during the HNL simulation. So we apply the correction $T'=T+\delta T$ in the analysis, shifting all timestamps in the event by the $\delta T$. In the T2K the  neutrino beam repeats the proton beam spill structure with 8 bunches. The bunches are Gaussian with $\sigma\approx19ns$ (\autoref{ch:T2K:nu_beam}). Due to the ToF correction the HNL bunch will change its shape. The new bunch structure is shown in~\autoref{fig:HNL:bunch}.
 \begin{figure}[!ht]
   \begin{center}
   \includegraphics[width=0.7\linewidth]{Bunch}
@@ -423,7 +480,10 @@ where $d$ is a distance between the HNL production and decay points, $\beta=\fra
   \end{center}
 \end{figure}
 
-For active neutrino analysis the standard time gate is $\left|T_{event}-T_{bunch}\right|<60ns$. By the $T_{bunch}$ the mean value of the Gaussian distribution is considered. In our analysis we should widen the time window in order to increase the efficiency of the selection. Since the shape of the HNL bunch is asymmetric, we applied different cuts value for upper and lower boundaries of the time window. For the bounds we are limited by the electronics time gate. As the experimental setup was originally designed to deal with neutrino bunches the data recording time was limited. We widen the cut values as much as the data acquisition allow us to do it and put the limits to $-100ns<T_{vertex}-T_{bunch}<300ns$.
+For active neutrino analysis the standard time gate is $\left|T_{event}-T_{bunch}\right|<60ns$. By the $T_{bunch}$ the mean value of the Gaussian distribution is considered. In our analysis we should widen the time window in order to increase the efficiency of the selection. Since the shape of the HNL bunch is asymmetric, we applied different cuts value for upper and lower boundaries of the time window. For the bounds we are limited by the electronics time gate. As the experimental setup was originally designed to deal with neutrino bunches the data recording time was limited. We widen the cut values as much as the data acquisition allow us to do it and put the limits to
+\begin{equation}
+    -100ns<T_{vertex}-T_{bunch}<300ns
+\end{equation}
 
 We do not apply any additional time of flight cut to separate interactions of the active neutrinos and the HNLs decays as the bunches have a strong time overlap especially for low masses. Any attempts to suppress the active neutrinos by the ToF will cause the significant reduction of the HNL selection efficiency which is already small.
 
@@ -432,10 +492,10 @@ We do not apply any additional time of flight cut to separate interactions of th
 
 The next step is developing cut sequence for proper selection of the signal events and reduction of background. For selection of the HNL candidates decay we apply the following criteria:
 \begin{enumerate}
-  \item Global vertex in the TPC fiducial volume. Vertex should be ``good'', that means it should be reconstructed with $\chi^2<1000$, Position variance $<500$ mm. Two different charged ``good'' tracks start from this vertex;
+  \item Global vertex in the TPC fiducial volume. Vertex should be ``good'', that means it should be reconstructed with $\chi^2<1000$, Position variance $<500$ mm;
   \item Two different charged ``good'' tracks associated with this vertex;
-  \item No activity in the upstream detector;
   \item One of the tracks use the same TPC as vertex. This was made to prevent vertex migration from the active neutrino interactions in the FGD;
+  \item No activity in the upstream detector;
   \item No other tracks start in the same TPC;
   \item Proper particle identification as $e\pi$ or $\mu \pi$ using $dE/dx$ in the TPC;
   \item Invariant mass cut: $140MeV<M_{HNL}<850MeV$ for the $e\pi$ mode and $250MeV<M_{HNL}<750MeV$ for the $\mu \pi$ mode;
@@ -452,14 +512,24 @@ For the dimuon mode we apply additional cuts to select only muon tracks:
 \end{enumerate}
 
 \subsection{Cuts description}
-In this section the main cuts foe the signal event selection and background reduction will be briefly overviewed. Many of the cuts were inherited from the existing T2K analysis, e.g. the distinguishing the particle type was studied very carefully  for the oscillation analysis. We checked that the cut values are suitable for case of the HNL selection and developed several analysis specific cuts.
+In this section the main cuts for the signal event selection and background reduction will be briefly overviewed. Many of the cuts were inherited from the existing T2K analysis, e.g. the distinguishing the particle type was studied very carefully  for the oscillation analysis. We checked that the cut values are suitable for the case of the HNL selection and developed several analysis specific cuts.
 \subsubsection{Quality and fiducial cut}
 \label{sec:HNL:qf}
 The basic idea of the current study is to search for heavy neutrino decays only in the TPC volume filled with argon. In this case we can avoid large amount of background from the active neutrino interactions. The limits of the fiducial volume were inherited from the study of the active neutrino interactions in argon. The volume doesn't contain the walls and the central cathode, so only argon gas is expected as a target.
 
 The density difference between gas (TPC) and polystyrene and water (FGD) is about 3 orders, that gives about the same reduction of the background. As we search for two or three body decays, the selection can be easily implemented with the global vertex approach. In the current ND280 reconstruction the global vertex analysis is performed with the Kalman filter. The main idea is to search for tracks with close start/end positions and then perform some iterations of filter to make fit more accurate and define $\chi^2$ and position uncertainties of the vertex reconstruction. As already described, in our study the vertex should be inside the TPC fiducial volume. Studying MC background, we found that the vertex association is completely wrong in some cases, i.e. two tracks from different origins are associated into one vertex or a broken track gives a vertex with two tracks. All these errors are often characterized with a large $\chi^2$ value or a position variance at the level of the detector length. To avoid misidentifying these events as a HNL candidate we added the ``vertex quality cut'' which requires $\chi^2<1000$ and the position variance $<500$ mm.
 
-\todo{Add info about Kalman filter algorithm}
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Vertexing with Kalman filter}
+    The Kalman filter is a recursive filter that estimates the internal state of a dynamic system from number of noisy measurements. Originally was developed for the rocket science and is still actively used in this field. The flow of the method is shown in~\autoref{fig:HNL:kalman}. As one could see we start with the prior measurements, make a prediction about the next step based on the model, then correct the prediction with the actual measurement.
+
+    In the case of the vertex finding in the detector the model is the track propagation through the detector in magnetic field. For the prior we extrapolate the reconstructed tracks to the closest intersection point. Then we go through several iterations using the observed detector hits as a data. At the end we come to the precise reconstruction of the vertex position with the know uncertainty and the quality of the fit.
+\end{bclogo}
+
+\begin{figure}[!ht]
+  \center{\includegraphics[width=0.6\linewidth]{kalman.png}}
+  \caption{The flow of the Kalman filter usage.}
+  \label{fig:HNL:kalman}
+\end{figure}
 
 The next question is the efficiency of global vertex algorithm. We tested this method on our signal samples and found that only $\approx32\%$ of events pass first two cuts (``good'' vertex and two different charge ``good'' tracks. There are two possible reasons:
 \begin{itemize}
@@ -481,11 +551,11 @@ Z position for the reconstructed vertices is presented in~\autoref{fig:HNL:verte
   \label{fig:HNL:vertexPos}
 \end{figure}
 
-\subsubsection{Veto cuts}
-Signal events from the HNL decay can't have any activity in the upstream detector. But there are some background events from a neutral particle decay or interaction. For example, $\pi^0$ decay into to photons and further production of the electron-positron pair. Also some mesons or baryons that can be produced in the active neutrino interactions and can cause production signal-like events. To suppress such events we should apply some constraints on the upstream activity. There is a possibility of electronics noises in the detector. Also there can be some activity after the previous bunch. To reduce event pile up we didn't constrict all the upstream activity. We developed the veto cut only for the first upstream detector. For the TPC1, we look for the P0D tracks which start or ends in the last P0D layers (100 mm). For the TPC2 and the  TPC3, we look at the FGD time bins. We are interested only in the bins that have a time signature near the center of bunch as this is only possibility to cause the vertex with two tracks in current bunch. Possible time gates are defined as $4\sigma$, where $\sigma=50ns$. The ``4 sigma'' is inherited from the default beam bunching procedure but the sigma value was increased as the bunch size for the massive neutrinos is larger (\autoref{sec:HNL:tof_corr}).
-
 \subsubsection{HNL daughter-tracks start position}
 Some cases of the vertex migration were found in the background analysis~(\autoref{sec:HNL:bg}). An active neutrino can interact in the FGD and all tracks of this event start in the FGD, but because of the errors of the reconstruction algorithm the vertex is extrapolated into the TPC FV. We can easily avoid such background with checking the activity in the TPC with vertex. If there are no tracks the event will be rejected.
+
+\subsubsection{Veto cuts}
+Signal events from the HNL decay can't have any activity in the upstream detector. But there are some background events from a neutral particle decay or interaction. For example, $\pi^0$ decay into to photons and further production of the electron-positron pair. Also some mesons or baryons that can be produced in the active neutrino interactions and can cause production signal-like events. To suppress such events we should apply some constraints on the upstream activity. There is a possibility of electronics noises in the detector. Also there can be some activity after the previous bunch. To reduce event pile up we didn't constrict all the upstream activity. We developed the veto cut only for the first upstream detector. For the TPC1, we look for the P0D tracks which start or ends in the last P0D layers (100 mm). For the TPC2 and the  TPC3, we look at the FGD time bins. We are interested only in the bins that have a time signature near the center of bunch as this is only possibility to cause the vertex with two tracks in current bunch. Possible time gates are defined as $4\sigma$, where $\sigma=50ns$. The ``4 sigma'' is inherited from the default beam bunching procedure but the sigma value was increased as the bunch size for the massive neutrinos is larger (\autoref{sec:HNL:tof_corr}).
 
 \subsubsection{TPC additional activity cut}
 Some process with more than two daughter particles can take place in the TPC. If only two of them are associated into the vertex the event will be signal-like. To prevent such background we apply the cut on the TPC activity. Only the HNL candidate daughters should start in the TPC with the vertex. If there is any additional track's start point the event is rejected.
@@ -494,10 +564,10 @@ Some process with more than two daughter particles can take place in the TPC. If
 We study the heavy neutrino decay into the charged lepton and pion. For the particle identification the standard TPC $dE/dx$ methods were applied~\cite{Abgrall2011}. For the analysis we choose the longest TPC segment as containing the most reliable information. Then the likelihood is build for each of the considered particle option: electron, muon, pion, proton. For particular particle selection we are constraining its likelihood and also limiting other hypothesis likelihoods to stay at the low value.
 
 \subsubsection{Invariant mass cut}
-As we search a decay of a massive particle into two charged particles, the invariant mass can be calculated. The upper bound on the mass of the HNL produced from the kaon decay is $M_{HNL}<M_K\approx500MeV$ and the lower bound is $M_{HNL}>M_\ell+M_\pi$. But the resolution of the invariant mass reconstruction should be taken into account. The resolution of our detector is shown in Fig.~\ref{fig:HNL:InvMass}. We accept $4\sigma$ difference from the true value and assume cut value 750 MeV for the $\mu\pi$ mode and 850 MeV for the $e\pi$ mode. The lower bound is strictly defined by the invariant mass calculation method ($M_\ell+M_\pi$). The cut value is set to 250 MeV for the $\mu\pi$ and 140 MeV for the $e\pi$. This cut help to reject the events from active neutrino interactions with high reconstructed invariant mass that certainly can not be the HNL decays.
+As we search a decay of a massive particle into two charged particles, the invariant mass can be calculated. The upper bound on the mass of the HNL produced from the kaon decay is $M_{HNL}<M_K\approx500MeV$ and the lower bound is $M_{HNL}>M_\ell+M_\pi$. But the resolution of the invariant mass reconstruction should be taken into account. The resolution of our detector is shown in~\autoref{fig:HNL:InvMass}. We accept $4\sigma$ difference from the true value and assume cut value 750 MeV for the $\mu\pi$ mode and 850 MeV for the $e\pi$ mode. The lower bound is strictly defined by the invariant mass calculation method ($M_\ell+M_\pi$). The cut value is set to 250 MeV for the $\mu\pi$ and 140 MeV for the $e\pi$. This cut help to reject the events from active neutrino interactions with high reconstructed invariant mass that certainly can not be the HNL decays.
 
 \subsubsection{Kinematic cuts}
-The heavy neutrinos from the kaon decays in the decay volume have a momentum collinear to the beam axis. So the momenta of the reconstructed HNL candidate should have rather small polar angle. This constraint can significantly reduce the background because the direction of the charged particles from the active neutrino interactions is quite isotropic. Since the HNL is a rather massive particle its daughter particles shouldn't have large opening angle. We have studied angular distribution for both the background and the signal samples. Firstly we studied the distribution of the polar angle of the HNL candidate for events that passed all previous cuts, as it is the most strict kinematic cut. Then we looked at the opening angle of the HNL candidate daughters. The results are presented in Fig.~\ref{fig:HNL:kin1},~\ref{fig:HNL:kin2}~and~\ref{fig:HNL:kin3}. For this plots we use the NEUT MC results with a statistics $6.5\cdot 10^{21} POT$. On these plots the background is normalized to $10^{21}POT$. The total signal is normalized to 1, only the shape of the signal distribution is important. It can't be normalized to any POT as it is proportional to mixing element. The cut value were set in order to maximize the sensitivity.
+The heavy neutrinos from the kaon decays in the decay volume have a momentum collinear to the beam axis. So the momenta of the reconstructed HNL candidate should have rather small polar angle. This constraint can significantly reduce the background because the direction of the charged particles from the active neutrino interactions is quite isotropic. Since the HNL is a rather massive particle its daughter particles shouldn't have large opening angle. We have studied angular distribution for both the background and the signal samples. Firstly we studied the distribution of the polar angle of the HNL candidate for events that passed all previous cuts, as it is the most strict kinematic cut. Then we looked at the opening angle of the HNL candidate daughters. The results are presented in~\autoref{fig:HNL:kin1},~\autoref{fig:HNL:kin2}~and~\autoref{fig:HNL:kin3}. For this plots we use the NEUT MC results with a statistics $6.5\cdot 10^{21} POT$. On these plots the background is normalized to $10^{21}POT$. The total signal is normalized to 1, only the shape of the signal distribution is important. It can't be normalized to any POT as it is proportional to mixing element. The cut value were set in order to maximize the sensitivity.
 
 \begin{figure}[!ht]
   \begin{minipage}[h]{0.49\linewidth}
@@ -530,7 +600,7 @@ The heavy neutrinos from the kaon decays in the decay volume have a momentum col
 \end{figure}
 
 \subsubsection{\texorpdfstring{$N\to\mu\mu\nu$}{Lg}  mode cuts}
-As we need to select only two muons, we should determine the particle type very accurately. The main problem is muon/pion separation in TPC. Also some protons can be identified as a muon with the $dE/dx$ method. As a muon has a high penetration ability, it is expected to reach the detectors outside the tracker. The protons have a very low probability to leave the tracker, so they will be rejected. The pions can leave the tracker but they will cause a shower in the ECal. For the pion/proton misidentification as a muon we select only events in which both muons' tracks have the subtracks in the ECal and these subtracks should be identified as MIP, but not as EM shower.
+As we need to select only two muons, we should determine the particle type very accurately. The main problem is muon/pion separation in the TPC. Also some protons can be identified as a muon with the $dE/dx$ method. As a muon has a high penetration ability, it is expected to reach the detectors outside the tracker. The protons have a very low probability to leave the tracker, so they will be rejected. The pions can leave the tracker but they will cause a shower in the ECal. For the pion/proton misidentification as a muon we select only events in which both muons' tracks have the subtracks in the ECal and these subtracks should be identified as MIP, but not as EM shower.
 
 \subsection{Signal selection efficiency}
 \label{sec:HNL:eff}
@@ -556,7 +626,7 @@ Applying all these cuts to the signal samples give us the total selection effici
 \end{figure}
 The efficiency dependence on different cuts is shown in~\autoref{fig:HNL:EffDrop}. The main reason for the efficiency drop is ``quality and fiducial cut'' which is described in details in the~\autoref{sec:HNL:qf}.
 \begin{figure}[!ht]
-  \centering{\includegraphics[width = 0.8\linewidth]{EffDrop}}
+  \centering{\includegraphics[width = 0.6\linewidth]{EffDrop}}
   \caption{Efficiency dependence on the applied cuts for mode $N\to\mu^\mp+\pi^\pm$ for all HNL masses.}
   \label{fig:HNL:EffDrop}
 \end{figure}
@@ -589,7 +659,7 @@ Since we study the HNL production from $K^+$,  $K^-$ and their decays into $\ell
 
 \subsection{Background suppression}
 \label{sec:HNL:bg}
-Applying the same selection cuts to MC data from the different generators NEUT, GENIE and NuWro, we can estimate the background. We use different generators for the cross-check as they use slightly different neutrino interactions parameters. For example, Genie is more common for the kaon analysis (we can expect BG from $K^0$); NuWro gives a large statistic for the TPC volume. Following statistics was studied, for NEUT $6.5\cdot 10^{21} POT$, for GENIE $5\cdot 10^{21}POT$, for $\bar{\nu}$ mode with NEUT $5.8\cdot 10^{21}$. We studied the MC data from interaction in the magnet volume for NEUT and GENIE. NuWro provides data with neutrino interactions only in TPC volume with statistics $4.7\cdot10^{22}$, $4.76\cdot10^{22}$, $4.69\cdot10^{22}$ POT for TPC1, TPC2 and TPC3 respectively. OOFV (Out Of Fiducial Volume) processes are not simulated with the NuWro and few events identified as OOFV have true vertices in TPC but not in FV. For comparison of the background all the results were normalized to $10^{21}POT$. The efficiency of signal event selection and the background reduction for the different reaction types of active neutrino interactions based on run 2-6 from the NEUT generator are shown in~\autoref{tbl:HNL:bgOrigMu},~\autoref{tbl:HNL:bgOrigEle},~\autoref{tbl:HNL:bgOrigDiMuon}. The efficiency is equal for the same modes as we use our own HNL generator and the result does not depend on the neutrino generator. For more detailed cut description see Sec.~\ref{sec:HNL:sel}. The relative angle cut (kinematic) is shown in the table only if it reduces the number of the background events comparing to the polar angle cut.We start with the ``Quality and fiducial'' cut which requires  vertex with two different charge tracks in the TPC fiducial volume. Here we have the main efficiency drop down to ~50\% (\autoref{sec:HNL:qf}).
+Applying the same selection cuts to MC data from the different generators NEUT~\cite{Hayato2002}, GENIE~\cite{Andreopoulos2010} and NuWro~\cite{Zmuda2015}, we can estimate the background. We use different generators for the cross-check as they use slightly different neutrino interactions parameters. For example, Genie is more common for the kaon analysis (we can expect BG from $K^0$); NuWro gives a large statistic for the TPC volume. Following statistics was studied, for NEUT $6.5\cdot 10^{21} POT$, for GENIE $5\cdot 10^{21}POT$, for $\bar{\nu}$ mode with NEUT $5.8\cdot 10^{21}$. We studied the MC data from interaction in the magnet volume for NEUT and GENIE. NuWro provides data with neutrino interactions only in TPC volume with statistics $4.7\cdot10^{22}$ POT. OOFV (Out Of Fiducial Volume) processes are not simulated with the NuWro and few events identified as OOFV have true vertices in TPC but not in FV. For comparison of the background all the results were normalized to $10^{21}POT$. The efficiency of signal event selection and the background reduction for the different reaction types of active neutrino interactions based on run 2-6 from the NEUT generator are shown in~\autoref{tbl:HNL:bgOrigMu},~\autoref{tbl:HNL:bgOrigEle},~\autoref{tbl:HNL:bgOrigDiMuon}. The efficiency is equal for the same modes as we use our own HNL generator and the result does not depend on the neutrino generator. For more detailed cut description see~\autoref{sec:HNL:sel}. The relative angle cut (kinematic) is shown in the table only if it reduces the number of the background events comparing to the polar angle cut.We start with the ``Quality and fiducial'' cut which requires  vertex with two different charge tracks in the TPC fiducial volume. Here we have the main efficiency drop down to ~50\% (\autoref{sec:HNL:qf}).
 
 \begin{table}[!ht]
 %\begin{adjustbox}{width=1.1\linewidth,center}
@@ -756,7 +826,17 @@ For the mode $N\to\mu\mu\nu$ we should consider additional ECal systematics as w
     \item ECal Particle Identification
 \end{itemize}
 
-\todo{put a comment about weight and variation systematics}
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Systematic evaluation in the ND280}
+    The systematic uncertainties are estimated in the ND280 detector with two methods:
+    \begin{itemize}
+        \item Observable-variation systematic
+        \item Efficiency-like systematic
+    \end{itemize}
+
+    The variation systematic is applied for all variables that are reconstructed quantities on which we have an uncertainty. The method of propagation includes varying the observable, applying all the selection cuts and study the selected event number variation. This variation will be the uncertainty estimation of the analysis result.
+
+    The efficiency-like (weight) systematic concerns all the variables that correspond to a reconstruction/detection probability. For example the probably to have or not to have the reconstructed track. The uncertainty estimation starts from choosing the appropriate control samples with lots of events with and without successful detection. Then we study the difference between MC and data samples. The mean of the difference will be used as the correction for the MC, while the variation will be used as the uncertainty of the value. This method is much faster from the computing point of view, as do not require to run the selection many times.
+\end{bclogo}
 
 
 The systematic that was estimated by ourselves for this particular analysis is the uncertainty of the track association into the global vertex (GV). We look at the GV in the TPC fiducial volume. So we should estimate the vertex association systematics. It's impossible for neutrino interactions in the TPC FV because of the lack of the statistics, so the FGD FV was chosen for this study.
@@ -888,7 +968,7 @@ The results of all the systematic study are presented in~\autoref{tab:HNL:sys}.
 \end{center}
 \end{table}
 
-The systematic dependence on HNL mass is shown in~\autoref{fig:HNL:sys} and~\autoref{fig:HNL:sysDimuon}.
+The detector systematic dependence on HNL mass is shown in~\autoref{fig:HNL:sys} and~\autoref{fig:HNL:sysDimuon}. As one could see the most critical uncertainty comes from the pion secondary interactions for the modes $e\pi$ and $\mu\pi$. As the dimuon mode $\mu\mu\nu$ doesn't produce pions in the final state it's free from that uncertainty and the total error is much smaller.
 
 \begin{figure}[!ht]
   \begin{minipage}{0.49\linewidth}
@@ -910,21 +990,24 @@ The systematic dependence on HNL mass is shown in~\autoref{fig:HNL:sys} and~\aut
 
 \subsection{Flux systematics}
 
-Heavy neutrino flux in the ND280 is calculated based on the kaon flux in the decay volume (\autoref{ch:HNL:HNLsim}). Because of this, uncertainties in the kaon flux will affect the number of events. The total flux error consists of the meson multiplicities, pion rescatter, interaction length, focusing and other errors~\cite{Abe2013}. These fractional errors and the total flux uncertainty are presented on the Fig.~\ref{fig:HNL:FluxError}. In the the active neutrino studies the meson multiplicity uncertainty is dominated by the pion multiplicities. In our analysis we are sensitive only to kaon multiplicity errors. For the HNL analysis we consider all the uncertainties except meson multiplicities are the same as for the active neutrino flux. Thus to estimate kaon flux errors we take total neutrino flux error subtract meson multiplicity error and add kaon multiplicity uncertainty.
+Heavy neutrino flux in the ND280 is calculated based on the kaon flux in the decay volume (\autoref{ch:HNL:HNLsim}). Because of this, uncertainties in the kaon flux will affect the number of events. The total flux error consists of the meson multiplicities, pion rescatter, interaction length, focusing and other errors~\cite{Abe2013}. These fractional errors and the total flux uncertainty are presented on the~\autoref{fig:HNL:FluxError}. In the the active neutrino studies the meson multiplicity uncertainty is dominated by the pion multiplicities. In our analysis we are sensitive only to kaon multiplicity errors. For the HNL analysis we consider all the uncertainties except meson multiplicities are the same as for the active neutrino flux. Thus to estimate kaon flux errors we take total neutrino flux error subtract meson multiplicity error and add kaon multiplicity uncertainty.
 
 \begin{figure}[!ht]
-  \centering{\includegraphics[width=0.49\linewidth]{NuFluxError.png} }
+\begin{minipage}{0.49\linewidth}
+  \centering{\includegraphics[width=\linewidth]{NuFluxError.png} }
   \caption{$\nu_\mu$ Flux uncertainties.}
   \label{fig:HNL:FluxError}
-\end{figure}
-
-To estimate the kaon multiplicity errors we use data from NA61. Relative uncertainties on the K multiplicities are presented on the~\autoref{fig:HNL:KaonMult}. For HNL analysis we deal mainly with the kaons collinear to beam axis. We consider a conservative estimation of the kaon multiplicity uncertainty as 20\%. For all the other errors we take the maximum value among all energy bins -- 11\%.
-
-\begin{figure}[!ht]
+\end{minipage}
+\hfill
+\begin{minipage}{0.49\linewidth}
   \centering{\includegraphics[width=0.49\linewidth]{KaonError.png} }
-  \caption{Kaon multiplicity uncertainties from TN-217.}
+  \caption{Kaon multiplicity uncertainties.}
   \label{fig:HNL:KaonMult}
+\end{minipage}
 \end{figure}
+
+To estimate the kaon multiplicity errors we use data from NA61. Relative uncertainties on the K multiplicities are presented on the~\autoref{fig:HNL:KaonMult}. For HNL analysis we deal mainly with the kaons collinear to beam axis. We consider a conservative estimation of the kaon multiplicity uncertainty as 20\%. For all the other sources of the flux errors we take the maximum value among all energy bins -- 11\%.
+
 
 The additional source of uncertainties is the flux reweight. For the HNL simulation we take so called ``nominal'' flux. It is the average neutrino flux. The real flux changes a bit from run to run. The run change is realized with the help of the renormalization of the event weight for every run. We used the reweight files and checked that the run differences affect on our result in order $\ll1\%$. The error from this effect was summarized in quadrature with all other flux errors.
 
@@ -1015,13 +1098,26 @@ The statistical approach to the low level signal analysis is described in the Hi
   \left|U_i\right|^2_{limit}=\sqrt{\frac{U_n}{N_{events}}}
   \label{eq:HNL:constraints}
 \end{equation}
-where $i=e,\mu$, $U_n$ is 90\% C.L. Poisson limit for $n$ observed events and $N_{events}$ is expected number of signal events assuming $\left|U\right|^2=1$. If we take into account the detector acceptance uncertainty, the result can be calculated according to~\cite{Cousins1992}:
+where
+\begin{itemize}
+    \item $i=e,\mu$ is a lepton flavor,
+    \item $U_n$ is 90\% C.L. Poisson limit for $n$ observed events,
+    \item $N_{events}$ is expected number of signal events assuming $\left|U\right|^2=1$.
+\end{itemize}
+If we take into account the detector acceptance uncertainty, the result can be calculated according to~\cite{Cousins1992}:
 \begin{equation}
   U_n=U_{n0}\left\{1+E_n\frac{\sigma^2_{Acc}}{2}\left(1+\left(\frac{E_n\sigma_{Acc}}{2}\right)^2\right)\right\}
   \label{eq:HNL:constrainsAcc}
 \end{equation}
-where $U_{n0}$ is 90\% C.L. Poisson limit for $n$ observed events, $\sigma_{Acc}$ is the acceptance error, $E_n=U_{n0}-n$ represents the excess of the upper limit of a Poisson parameter over the number n of observed events, for a specified confidence level. This approach can be applied only while $\sigma_{Acc}<1/E_n$. We will show that in our study $\sigma_{Acc}\approx0.3$ and $1/E_n>0.5$ (this values are described in the section~\ref{sec:HNL:sys}). So this method can be applied for the analysis.
+where
+\begin{itemize}
+    \item $U_{n0}$ is 90\% C.L. Poisson limit for $n$ observed events,
+    \item $\sigma_{Acc}$ is the acceptance error,
+    \item $E_n=U_{n0}-n$ represents the excess of the upper limit of a Poisson parameter over the number n of observed events, for a specified confidence level.
+\end{itemize}
+This approach can be applied only while $\sigma_{Acc}<1/E_n$. We already showed that in our study $\sigma_{Acc}\approx0.3$ and $1/E_n>0.5$ (this values are described in the section~\ref{sec:HNL:sys}). So this method could be applied for the analysis.
 
+One more important feature of the current analysis is that we don't consider the background and its uncertainty. We used the background estimations to tune our selection. For the final result we will treat all the observed events as a signal and then put a conservative limit on the mixing elements. Such approach will be indeed conservative, but the pros is that we are free from the background uncertainty at all. If during the unblinding plenty of events was found we would put the worse limits on the mixing. Such method could be improved in the future (see~\autoref{sec:HNL:prosp}).
 
 \chapter{Results}
 \section{MC sensitivity estimations}
@@ -1059,7 +1155,7 @@ After studying the MC efficiency (\autoref{sec:HNL:eff}), background processes (
 As one can see the improvements of PS191 limits can be obtained with the current statistics.
 
 \section{Data unblinding}
-The current analysis was approved for the data unblinding. The numbers of observed events in data are presented in the~\autoref{tbl:HNL:Ndata}. As mentioned above (\autoref{sec:HNL:bg}) run 8 data samples are available only for the preliminary analysis. So all the results are presented for full ND280 data set (run 2-8).
+The current analysis was approved for the data unblinding. The numbers of observed events in data are presented in the~\autoref{tbl:HNL:Ndata}. All the results are presented for full ND280 data set (run 2-8).
 
 \begin{table}[!ht]
 \begin{center}
@@ -1091,7 +1187,7 @@ One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and
 
 More accurate study shows that the invariant mass of this muon pair is too high for the heavy neutrino decay $M_{inv}\approx$ GeV. But based on blind analysis method and our analysis strategy this event will be treated as a signal and appropriate upper limit on the mining element will be set.
 
-Based on this numbers final sensitivity to mixing elements based on our analysis can be estimated. The results are presented in~\autoref{fig:HNL:LimitsData1} and~\autoref{fig:HNL:LimitsData2}.
+Based on this numbers final sensitivity to mixing elements based on our analysis can be estimated. The results are presented in~\autoref{fig:HNL:LimitsData1} and~\autoref{fig:HNL:LimitsData2}. The data statistics $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$ was used.
 
 \begin{figure}[!ht]
     \begin{center}
@@ -1120,5 +1216,15 @@ Based on this numbers final sensitivity to mixing elements based on our analysis
   \end{center}
 \end{figure}
 
+\clearpage
 \section{Prospects}
+\label{sec:HNL:prosp}
+The current study put a conservative limit on the mixing elements of the heavy neutrino. The more accurate result could be obtained with the precise background estimations
+
+This work was continued by other collaborators and other methods were used for the data treatment. The accurate background estimations were developed and a new Markov Chain Monte Carlo method was used for the mixing elements limitation. All the production and decay modes of the heavy neutrino are analyzed together and the solid final result is obtained. The joint analysis including all the methods was published~\cite{Abe2019c}.
+
+The T2K experiment will continue taking data. The preliminary plan is to accumulate $20\times10^{21}$ POT~\cite{Abe2016e}. With larger statistics (x11 to current) we will obviously be more sensitive to the HNL mixing elements. As the result is proportional to square root from the expected events number the limits could be improved by the factor of 3.
+
+The upgrade of the near detector complex is ongoing now~\cite{Abe2019} (also \autoref{pt:up}). Two additional TPC will be installed. For the current study it means that the fiducial volume will be extended by $\approx$10\%. That will also slightly improve the final result.
+
 \end{document}
