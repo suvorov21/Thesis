@@ -951,15 +951,174 @@ The results of the systematics study are presented on the~\autoref{fig:HNL:AllSy
 
 
 \subsection{Pile up}
+\label{sec:HNL:pileup}
+For the veto cuts we look for the activity in the upstream detector. Also we reject the events that have tracks in the TPC with HNL candidate that doesn't correspond to the HNL daughters. These are possible sources for the pile ups. The percentages of such events in the real data are summarized in~\autoref{tbl:HNL:pileUp}. In the table we use symbol ``A'' to mark the run period when P0D was filled with air and ``W'' when it was filled with water. The content of the P0D may have influence on the result of applying our veto cut. We have studied both $\nu$ and $\bar{\nu}$ runs as the pile ups can be different for them. Also the two main sources of pile ups are separated for each TPC. For the correction we use the maximum pile up value from all the runs in the each TPC which is shown in red. In fact with this method effect of the pileups is overestimated.
+\begin{table}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|c|}
+  \hline
+  Cut         &Run 1W   &Run 2W   & Run 2A  & Run 3b A&Run 3c A\\
+  \hline
+  TPC1 start  & 0.3\%   & 0.61\%  & 0.69\%  & 0.64\%  & 0.75\%  \\
+  TPC1 veto   & 0.32\%  & 0.43\%  & 0.49\%  & 1.83\%  & 2.15\%  \\
+  TPC1 all    & 0.57\%  & 0.96\%  & 1.00\%  & 1.08\%  & 2.75\%   \\
+  \hline
+  TPC2 start  & 0.25\%  & 0.48\%  & 0.55\%  & 0.52\%  & 0.6\%  \\
+  TPC2 veto   & 1.03\%  & 1.73\%  & 2\%     & 1.83\%  & 2.18\% \\
+  TPC2 all    & 1.19\%  & 2.05\%  & 2.36\%  & 2.18\%  & 2.57\%  \\
+  \hline
+  TPC3 start  & 0.26\%  & 0.46\%  & 0.53\%  & 0.48\%  & 0.57\%  \\
+  TPC3 veto   & 0.93\%  & 1.56\%  & 1.78\%  & 1.64\%  & 1.95\%  \\
+  TPC3 all    & 1.1\%   & 1.85\%  & 2.11\%  & 1.95\%  & 2.3\%  \\
+  \hline
+  \hline
+              &Run 4W   &Run 4A   &Run 5W   &Run 5W$\bar{\nu}$  &Run 6A$\bar{\nu}$\\
+  \hline
+  TPC1 start  & 0.89\%  & 0.95\% & 0.7\% & 0.35\% & 0.45\% \\
+  TPC1 veto   & 2.55\%  & 2.76\% & 1.95\% & 0.96\% & 1.26\% \\
+  TPC1 all    & 3.25\%  &\textcolor{red}{3.45\%} & 2.51\% & 1.25\% & 1.62\% \\
+  \hline
+  TPC2 start  & 0.71\%  & 0.76\% & 0.55\% & 0.29\% & 0.38\% \\
+  TPC2 veto   & 2.65\%  & 2.76\% & 2.03\% & 1.15\% & 1.47\% \\
+  TPC2 all    & 3.1\%   & 3.24\% & 2.39\% & 1.34\% & 1.71\% \\
+  \hline
+  TPC3 start  & 0.68\%  & 0.72\% & 0.53\% & 0.28\% & 0.35\% \\
+  TPC3 veto   & 2.34\%  & 2.46\% & 1.81\% & 1.02\% & 1.31\% \\
+  TPC3 all    & 2.75\%  & 2.89\% & 2.15\% & 1.2\% & 1.54\% \\
+  \hline
+  \hline
+              &Run 7b   &Run 7c   &Run 8A   &Run 8A  & \\
+  \hline
+  TPC1 start  & 0.62\%  & 1.74\% & 1.76\% & 1.27\% & \\
+  TPC1 veto   & 0.55\%  & 1.46\% & 1.26\% & 0.93\% &  \\
+  TPC1 all    & 1.07\%  & 2.93\% & 2.77\% & 2.02\% & \\
+  \hline
+  TPC2 start  & 0.52\%  & 2.30\% & 1.37\% & 0.99\% & \\
+  TPC2 veto   & 2.03\%  & 4.73\% & 4.63\% & 3.42\% &  \\
+  TPC2 all    & 2.35\%  & \textcolor{red}{5.53\%} & 5.43\% & 2.83\% &\\
+  \hline
+  TPC3 start  & 0.49\%  & 1.30\% & 1.33\% & 0.96\% & \\
+  TPC3 veto   & 1.81\%  & 4.23\% & 4.14\% & 3.06\% &  \\
+  TPC3 all    & 2.11\%  & \textcolor{red}{4.94\%} & 4.84\% & 3.57\% &  \\
+  \hline
+\end{tabular}
+\caption{Event pile up in real data.}
+\label{tbl:HNL:pileUp}
+\end{center}
+\end{table}
+
 
 \section{Statistical methods}
 \label{sec:HNL:stat}
+The statistical approach to the low level signal analysis is described in the Highland and Cousins work~\cite{Cousins1992}. As number of the HNL decay events is proportional to the forth power of the mixing element (\autoref{ch:HNL:HNLsim}), constraints on $\left|U_i\right|^2$ without systematics looks like:
+\begin{equation}
+  \left|U_i\right|^2_{limit}=\sqrt{\frac{U_n}{N_{events}}}
+  \label{eq:HNL:constraints}
+\end{equation}
+where $i=e,\mu$, $U_n$ is 90\% C.L. Poisson limit for $n$ observed events and $N_{events}$ is expected number of signal events assuming $\left|U\right|^2=1$. If we take into account the detector acceptance uncertainty, the result can be calculated according to~\cite{Cousins1992}:
+\begin{equation}
+  U_n=U_{n0}\left\{1+E_n\frac{\sigma^2_{Acc}}{2}\left(1+\left(\frac{E_n\sigma_{Acc}}{2}\right)^2\right)\right\}
+  \label{eq:HNL:constrainsAcc}
+\end{equation}
+where $U_{n0}$ is 90\% C.L. Poisson limit for $n$ observed events, $\sigma_{Acc}$ is the acceptance error, $E_n=U_{n0}-n$ represents the excess of the upper limit of a Poisson parameter over the number n of observed events, for a specified confidence level. This approach can be applied only while $\sigma_{Acc}<1/E_n$. We will show that in our study $\sigma_{Acc}\approx0.3$ and $1/E_n>0.5$ (this values are described in the section~\ref{sec:HNL:sys}). So this method can be applied for the analysis.
 
 
 \chapter{Results}
 \section{MC sensitivity estimations}
+\label{sec:HNL:MCres}
+
+After studying the MC efficiency (\autoref{sec:HNL:eff}), background processes (\autoref{sec:HNL:bg}), systematics (\autoref{sec:HNL:sys}) and pile ups (\autoref{sec:HNL:pileup}),  sensitivity to the mixing elements based on MC could be estimated according to~\autoref{eq:HNL:constrainsAcc}). The results are shown in~\autoref{fig:HNL:LimitsMC1} and~\autoref{fig:HNL:LimitsMC2}. Because of the small background the acceptance uncertainties have a small effect on the sensitivity.
+
+\begin{figure}[!ht]
+    \begin{center}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{Ue2fullMC}  \\  $K^+\to e(e\pi)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{Umu2fullMC}  \\  $K^+\to \mu(\mu\pi)$}
+  \end{minipage}
+  \caption{Sensitivity to mixing elements $\left|Ue\right|^2, \left|U\mu\right|^2$ based on MC samples analysis}
+  \label{fig:HNL:LimitsMC1}
+    \end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+    \begin{center}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{UeUmufullMC}  \\  $K^+\to \mu(e\pi)$ and $K^+\to e(\mu\pi)$}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{UeMixfullMC}  \\  $K^+\to e(\mu\mu\nu)$}
+  \end{minipage}
+  \caption{Sensitivity to mixing elements $\left|UeU\mu\right|$ and $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\tau}\right|^2}$ based on MC samples analysis.}
+  \label{fig:HNL:LimitsMC2}
+  \end{center}
+\end{figure}
+
+As one can see the improvements of PS191 limits can be obtained with the current statistics.
 
 \section{Data unblinding}
+The current analysis was approved for the data unblinding. The numbers of observed events in data are presented in the~\autoref{tbl:HNL:Ndata}. As mentioned above (\autoref{sec:HNL:bg}) run 8 data samples are available only for the preliminary analysis. So all the results are presented for full ND280 data set (run 2-8).
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{llll}
+                            & Events in data      \\
+  $\mu\pi$ \hspace{0.5cm}   & 0  \hspace{2cm}     \\
+  $e\pi$                    & 0                   \\
+  $\mu\mu\nu$               & 1                   \\
+\end{tabular}
+\caption{The total number of events observed in data.}
+\label{tbl:HNL:Ndata}
+\end{center}
+\end{table}
+
+One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and looks like the signal event: two muon-like tracks with the direction extremely collinear to beam axis. The event display for this event is presented in~\autoref{fig:HNL:DataEvent}.
+
+\begin{figure}[!ht]
+    \begin{center}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{DataEvent2}}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{DataEvent1}}
+  \end{minipage}
+  \caption{Event observed in the $N\to\mu\mu\nu$ mode in the data sample in the TPC3.}
+  \label{fig:HNL:DataEvent}
+  \end{center}
+\end{figure}
+
+More accurate study shows that the invariant mass of this muon pair is too high for the heavy neutrino decay $M_{inv}\approx$ GeV. But based on blind analysis method and our analysis strategy this event will be treated as a signal and appropriate upper limit on the mining element will be set.
+
+Based on this numbers final sensitivity to mixing elements based on our analysis can be estimated. The results are presented in~\autoref{fig:HNL:LimitsData1} and~\autoref{fig:HNL:LimitsData2}.
+
+\begin{figure}[!ht]
+    \begin{center}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{Ue2fullDATA}  \\  $K^+\to e(e\pi)$}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{Umu2fullDATA}  \\  $K^+\to \mu(\mu\pi)$}
+  \end{minipage}
+  \caption{Sensitivity to mixing elements $\left|Ue\right|^2, \left|U\mu\right|^2$ based on the data samples analysis.}
+  \label{fig:HNL:LimitsData1}
+    \end{center}
+\end{figure}
+
+\begin{figure}[!ht]
+    \begin{center}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{UeUmufullDATA}  \\  $K^+\to \mu(e\pi)$ and $K^+\to e(\mu\pi)$}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering{\includegraphics[width=\linewidth]{UeMixfullDATA}  \\  $K^+\to e(\mu\mu\nu)$}
+  \end{minipage}
+  \caption{Sensitivity to mixing elements $\left|UeU\mu\right|$ and $\left|U_{e}\right|\sqrt{\left|U_{e}\right|^2+\left|U_{\tau}\right|^2}$ based on the data samples analysis.}
+  \label{fig:HNL:LimitsData2}
+  \end{center}
+\end{figure}
 
 \section{Prospects}
 \end{document}
