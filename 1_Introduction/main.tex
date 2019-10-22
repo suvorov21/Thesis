@@ -1,19 +1,109 @@
 \documentclass[../main.tex]{subfiles}
 
 \begin{document}
+
+\renewcommand{\labelitemi}{\ding{226}}
+\renewcommand{\labelitemii}{\ding{227}}
+
+
 \part{Introduction}
 \label{part:intro:general}
 
 \chapter{Neutrino physics}
-\section{General overview}
+Exploration of the neutrinos is relatively young but perspective direction of the research in the particle physics. Over the last 60 years since its first experimental observation lots of breakthroughs were made. Many of them have been awarded with notable prizes. All this speaks of the great interest of the community in this topic. Many puzzles are still unsolved, plenty of challenging experiments are ongoing.
+
+In this chapter the history of the neutrino research will be overviewed (\autoref{sec:hist}) as well as the current studies and experiments (\autoref{sec:exp}). The topic of the neutrino oscillations (\autoref{sec:osc}) will be described in more details as the main subject of the current thesis.
+
+\section{Historical overview}
+\label{sec:hist}
+The prerequisites of the neutrino existence were found in the beginning if the XX century. The spectrum of the electrons from the neutron decay (called $\beta$-decay) was measured as continuous but not discrete~\cite{Chadwick1914}. At that time the neutron decay was imagined as $n\to p+e$. Non-discrete spectrum provoked plenty of theories such as energy non-conservation (by N. Bohr) or existence of the new hypothetical particle (by W. Pauli). Later Enrico Fermi developed a complete theory of beta decay~\cite{Fermi1934}. In the modern notation the decay process was presented as $n\to p^++e^-+\bar{\nu}_e$. Where neutrino is noted as $\nu$.
+
+\subsection{Discovery of the neutrino}
+The experimental discovery of the neutrino was pretty challenging. Neutrinos are not taking part in the electromagnetic or strong interactions. The only way to detect them is a weak interaction. Based on the Fermi's theory the inverse beta decay process should exist that will allow the direct observation of the neutrino. But the expected cross-section for such process was estimated at the level of $10^{-44} cm^2$. That was about couple of dozen orders less then cross-sections of the processed that were usually observed in the experiments at that time. That's why the neutrino discovery happened only 26 years after the proposal of the new particle.
+
+After the proposal of the new particle few indirect measurements were performed, but the direct observation still remained a challenge. The first successful neutrino detection were done by group leading by Frederick Reines and Clyde Cowan~\cite{Cowan1956}. They performed series of experiments trying to detect neutrino from the most powerful source at that time - nuclear power plant. Relatively brand new material a liquid scintillator was used as a target and detector. The inverse beta decay was used as a detection reaction:
+\begin{equation}
+\bar{\nu}+p\to n+e^+
+\end{equation}
+The positron shortly annihilates with emitting of photons. In order to suppress background the Cadmium isotope was added to the detector. Thus the neutrons would be also detected with reaction
+\begin{equation}
+n+{}^{108}Cd\to{}^{109m}Cd\to{}^{109}Cd+\gamma
+\end{equation}
+As the ${109m}Cd$ lifetime is few tens microseconds the signal will have the unique signature: positron annihilation, and after a known time delay the gamma ray emission. Both signals will come with the fix energies. Thus rare signal events could be easily separated from the variety of the backgrounds.
+
+Such strategy lead to the successful discovery of the particle that supposed to be ``undetectable'' before.
+
+\subsection{Different types of neutrino}
+\label{sec:dublet}
+The first neutrino detection was made using the reactor as a particle source. Such source is extremely powerful, but isotropic. For the precise measurements is will be extremely useful to gain the statistics with the focused particle beam. For this the accelerators could be used. The general idea is to use proton beam hitting the target for the massive meson production. The charged meson could be focused and further decay producing the focused neutrino beam with high intensity. The description of such scheme in the modern experiment could be found in~\autoref{ch:T2K:nu_beam}. First time such approach was used to determine if the neutrino has flavors~\cite{Danby1962}. The main idea of the experiment is to use the neutrino flux produced from the pion decay. Because of the mass difference between electron and muon and the fixed neutrino helicity (\autoref{sec:anti}) charged pions decays mainly to muon, e.g. $\pi^+\to\mu^++\nu$. The question is could neutrino be ``muon'' or ``electron''. The experiment showed clearly that the reaction~\autoref{eq:notallowed} is severely suppressed comparing the reaction~\autoref{eq:allowed}.
+
+\begin{eqnarray}
+\label{eq:allowed}
+\nu_\mu+p\rightarrow n+\mu \\
+\nu_\mu+p\nrightarrow n+e
+\label{eq:notallowed}
+\end{eqnarray}
+
+That means that neutrino has flavors. It could be either produced or detected with the lepton of the same flavor. The existence of the different types of the neutrino confirmed the doublet structure of the leptons. This fact will play an important rope in the theory of the neutrino oscillations.
+
+\subsection{Neutrino and anti-neutrino}
+\label{sec:anti}
+
+\subsection{Neutrino in Standard Model}
+\label{sec:sm}
+
+The model unifying the weak and electromagnetic interactions was created by Glashow, Salam and Weinberg.
+
+Fermions are described as a doublets (\autoref{sec:dublet}). For each charged lepton there is an ... neutrino. While charged lepton could be either right-handed or left-handed, the neutrino could be only left-handed. This part of theory is based on the empirical observations (\autoref{sec:anti}) and this is strictly fixed in the model. Neutrino could interact with the charge current (CC) or neutral current (NC). The appropriate interaction terms are defined as:
+
+\begin{eqnarray}
+-\mathcal{L}_{CC}=\frac{g}{2}\sum_\alpha\bar{\nu_{L\alpha}}\gamma^\mu\ell_{L\alpha}W^+_\mu+h.c. \\ \nonumber
+-\mathcal{L}_{NC}=\frac{g}{\sqrt{2\cos{\theta_W}}}\sum_\alpha\bar{\nu_{L\alpha}}\gamma^\mu\nu_{L\alpha}Z^0_\mu
+\end{eqnarray}
+
+Thus there is no chance for production or detection of the right-handed neutrino (left-handed anti-neutrino).
+
+
+
+
 \section{Neutrino oscillations}
+\label{sec:osc}
+
 \subsection{Theory}
+
 \subsection{Experiment overview}
+\label{sec:exp}
+
+
+
+\section{Prospects of the neutrino physics}
+
+
+
+
+
 \chapter{HNL analysis motivation}
 \label{ch:intro:HNL}
+
+As presented in the \autoref{sec:osc} during the exploration of the neutrino oscillation phenomenon, non-zero difference between neutrino eigenstates was observed. That leads to the conclusion that at least two of the three eigenstates should be massive. While in the SM the neutrinos are massless (\autoref{sec:sm}). The theory explaining the mass origin of the neutrino is required.
+
+The easiest solution is try to implement the same process that gives mass to all other particles in the SM --- Higgs mechanism~\cite{Higgs1964} (also called Englert–Brout–Higgs–Guralnik–Hagen–Kibble mechanism for all contributed scientists). There are several problems on this way:
+\begin{itemize}
+  \item the scale of the neutrino mass is very different from the other particles in the SM. The neutrino masses are less then 1 eV~\cite{Aker2019}, while the other particles mass scale is around 1 MeV, that gives us a difference of 6 orders. It could be event larger up to 8 orders in case of minimum possible neutrino mass. It's hard to believe that the same mechanism is responsible of the generation of mass at so different scales.
+  \item as described in the~\autoref{sec:anti} only left-handed neutrinos and right-handed anti-neutrinos were observed. While for the Higgs mechanism both left and right handed particles are required.
+\end{itemize}
+
+That leads to the fact that we need to implement some new mechanism or/and new fundamental particles to explain the origin of the neutrino masses.
+
+
+
 \section{Theory}
+
 \subsection{Motivation}
+
 \subsection{Prospects}
+
+
 \section{Experiments and challenges}
 
 \end{document}
