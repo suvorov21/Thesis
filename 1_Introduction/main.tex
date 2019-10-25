@@ -16,7 +16,7 @@ In this chapter the history of the neutrino research will be overviewed (\autore
 
 \section{Historical overview}
 \label{sec:hist}
-The prerequisites of the neutrino existence were found in the beginning if the XX century. The spectrum of the electrons from the neutron decay (called $\beta$-decay) was measured as continuous but not discrete~\cite{Chadwick1914}. At that time the neutron decay was imagined as $n\to p+e$. Non-discrete spectrum provoked plenty of theories such as energy non-conservation (by N. Bohr) or existence of the new hypothetical particle (by W. Pauli). Later Enrico Fermi developed a complete theory of beta decay~\cite{Fermi1934}. In the modern notation the decay process was presented as $n\to p^++e^-+\bar{\nu}_e$. Where neutrino is noted as $\nu$.
+The prerequisites of the neutrino existence were found in the beginning if the XX century. The spectrum of the electrons from the neutron decay (called $\beta$-decay) was measured as continuous but not discrete~\cite{Chadwick1914}. At that time the neutron decay was imagined as $n\to p+e$. Non-discrete spectrum provoked plenty of theories such as energy non-conservation (by N. Bohr) or existence of the new hypothetical particle (by W. Pauli~\cite{Pauli1930}). Later Enrico Fermi developed a complete theory of beta decay~\cite{Fermi1934}. In the modern notation the decay process was presented as $n\to p^++e^-+\bar{\nu}_e$. Where neutrino is noted as $\nu$.
 
 \subsection{Discovery of the neutrino}
 The experimental discovery of the neutrino was pretty challenging. Neutrinos are not taking part in the electromagnetic or strong interactions. The only way to detect them is a weak interaction. Based on the Fermi's theory the inverse beta decay process should exist that will allow the direct observation of the neutrino. But the expected cross-section for such process was estimated at the level of $10^{-44} cm^2$. That was about couple of dozen orders less then cross-sections of the processed that were usually observed in the experiments at that time. That's why the neutrino discovery happened only 26 years after the proposal of the new particle.
@@ -33,6 +33,63 @@ As the ${109m}Cd$ lifetime is few tens microseconds the signal will have the uni
 
 Such strategy lead to the successful discovery of the particle that supposed to be ``undetectable'' before.
 
+\subsection{Neutrino and anti-neutrino}
+\label{sec:anti}
+Soon after the neutrino discovery the question of its equivalence with the anti-neutrino was risen. Neutrino was the only known fermion without electric charge. So it was the only candidate for such equivalence. Raymond Davis performed the attempt to detect neutrino interactions with induction either electron or positron~\cite{Davis1955}. He use a clear beam of anti-neutrinos fro the reactor. If both reactions~\autoref{eq:nu} and~\autoref{eq:antinu} were detected that would mean that the neutrino ant anti-neutrino are equal.
+
+\begin{eqnarray}
+\label{eq:nu}
+\bar{\nu}+p\rightarrow n+e^+ \\
+\nu+n\rightarrow p+e^-
+\label{eq:antinu}
+\end{eqnarray}
+
+He used the nuclear reaction with chlorine proposed by the Pontecorvo $\nu+{}^{37}Cl\to e^-+{}^{37}Ar$ with further decay of the ${}^{37}Ar$ with $\tau_{1/2}=35 days$. Such reaction was not observed that meant that neutrino interacted in different way comparing to anti-neutrino.
+
+Goldhaber performed other extremely interesting experiment trying to measure the neutrino helicity~\cite{Goldhaber1958}. The electron capture by the Europium atom was used. The produced excited atom of Samarium further decay with photon emission. The photon polarity strictly depends on the neutrino helicity, that's how the last could be measured.
+
+\begin{eqnarray}
+Eu+e^-\to\nu+Sm^* \\ \nonumber
+Sm^*\to Sm+\gamma
+\end{eqnarray}
+
+Goldhaber found that neutrino has only left helicity.
+
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Helicity, polarity, chirality}
+
+\end{bclogo}
+
+Combining results from Davis and Goldhaber we could conclude that neutrino and anti-neutrino interact in the different way, their helicity is different. Thus we still have possibility to describe the neutrino and anti-neutrino as the same particle but with different helicity. Such formalism was developed long before the described experiments by Ettore Majorana~\cite{Majorana1937}. He found a particular solution of the Dirac equation.
+
+\begin{equation}
+\left(i\gamma^\mu\partial_\mu-m\right)\psi=0
+\end{equation}
+
+In particular case of fermions the particle could be described in terms of spinors
+
+\begin{eqnarray}
+i\gamma^\mu\partial_\mu\psi_L=m\psi_R\\ \nonumber
+i\gamma^\mu\partial_\mu\psi_R=m\psi_L
+\end{eqnarray}
+
+In case of massless fermion, like neutrino in the Standard Model (\autoref{sec:sm}) such notation is called Weyl spinors with two components. If the fermion is massive it could be described with four component spinors but only if $\psi_L$ and $\psi_R$ are dependent. That's how the Majorana equation was obtained
+
+\begin{equation}
+i\gamma^\mu\partial_\mu\psi_L=m\mathcal{C}\bar{\psi_L}^{T}
+\end{equation}
+
+This equation works only in case $\psi=\psi^C$. It means that such approach is not suitable for any charge fermion as their charge conjugation states are different because of e.g. different electric charge. But the neutrino is a unique particle to which this approach may be applicable.
+
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Symmetries: C, P, T}
+There are three fundamental symmetries
+
+Charge symmetry (C) transform particle to its anti-particle. $\mathcal{C}\lvert\psi\rangle=\lvert\bar{\psi}\rangle$
+
+Together they form a CPT symmetry. It's proved that any Lorentz invariant local quantum field theory with a hermitian Hamiltonian must be invariant under CPT.
+\end{bclogo}
+
+
+
 \subsection{Different types of neutrino}
 \label{sec:dublet}
 The first neutrino detection was made using the reactor as a particle source. Such source is extremely powerful, but isotropic. For the precise measurements is will be extremely useful to gain the statistics with the focused particle beam. For this the accelerators could be used. The general idea is to use proton beam hitting the target for the massive meson production. The charged meson could be focused and further decay producing the focused neutrino beam with high intensity. The description of such scheme in the modern experiment could be found in~\autoref{ch:T2K:nu_beam}. First time such approach was used to determine if the neutrino has flavors~\cite{Danby1962}. The main idea of the experiment is to use the neutrino flux produced from the pion decay. Because of the mass difference between electron and muon and the fixed neutrino helicity (\autoref{sec:anti}) charged pions decays mainly to muon, e.g. $\pi^+\to\mu^++\nu$. The question is could neutrino be ``muon'' or ``electron''. The experiment showed clearly that the reaction~\autoref{eq:notallowed} is severely suppressed comparing the reaction~\autoref{eq:allowed}.
@@ -46,8 +103,6 @@ The first neutrino detection was made using the reactor as a particle source. Su
 
 That means that neutrino has flavors. It could be either produced or detected with the lepton of the same flavor. The existence of the different types of the neutrino confirmed the doublet structure of the leptons. This fact will play an important rope in the theory of the neutrino oscillations.
 
-\subsection{Neutrino and anti-neutrino}
-\label{sec:anti}
 
 \subsection{Neutrino in Standard Model}
 \label{sec:sm}
@@ -63,7 +118,9 @@ Fermions are described as a doublets (\autoref{sec:dublet}). For each charged le
 
 Thus there is no chance for production or detection of the right-handed neutrino (left-handed anti-neutrino).
 
+\subsection{Neutrino flavors}
 
+\subsection{Neutrino mass measurements}
 
 
 \section{Neutrino oscillations}
