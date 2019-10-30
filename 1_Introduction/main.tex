@@ -35,7 +35,7 @@ Such strategy lead to the successful discovery of the particle that supposed to 
 
 \subsection{Neutrino and anti-neutrino}
 \label{sec:anti}
-Soon after the neutrino discovery the question of its equivalence with the anti-neutrino was risen. Neutrino was the only known fermion without electric charge. So it was the only candidate for such equivalence. Raymond Davis performed the attempt to detect neutrino interactions with induction either electron or positron~\cite{Davis1955}. He use a clear beam of anti-neutrinos fro the reactor. If both reactions~\autoref{eq:nu} and~\autoref{eq:antinu} were detected that would mean that the neutrino ant anti-neutrino are equal.
+Soon after the neutrino discovery the question of its equivalence with the anti-neutrino was risen. Neutrino was the only known fermion without electric charge. So it was the only candidate for such equivalence. Raymond Davis performed the attempt to detect neutrino interactions with induction either electron or positron~\cite{Davis1955}. He use a clear beam of anti-neutrinos from the reactor. If both reactions~\autoref{eq:nu} and~\autoref{eq:antinu} were detected that would mean that the neutrino ant anti-neutrino are equal.
 
 \begin{eqnarray}
 \label{eq:nu}
@@ -201,41 +201,251 @@ More details about the neutrino mixing will be presented in~\autoref{sec:osc}.
 \subsubsection{Neutrinoless double beta decay}
 In case neutrino has a Majorana nature it's possible to measure the $m_{ee}$.
 \begin{equation}
-m_{ee}=\sum_i U^2_{ei}m_i
+m_{\beta\beta}=\sum_i U^2_{ei}m_i
 \end{equation}
 
-All the $0\nu\beta\beta$ experiments are putting the limits of the current value. The most precise result was obtained by KamLAND-Zen experiment $m_\beta\beta < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. One should keep in mind that successful measurement possible only in case of Majorana neutrino nature.
+All the $0\nu\beta\beta$ experiments are putting the limits of the current value. The most precise result was obtained by KamLAND-Zen experiment $m_{\beta\beta} < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. One should keep in mind that successful measurement possible only in case of Majorana neutrino nature.
 
 \subsubsection{Cosmology}
 Cosmology provides different possibilities for neutrino mass measurements. On of the earliest attempts was done based on the timing measurements of the neutrinos from SN1987 --- the earliest and the only at the moment observation of the neutrino from the supernova collapse.
 
-The other method is precise observation of the cosmic microwave background (CMB). The CMB observables depends on the neutrino masses. Thus within the known model of the early Universe the limit on the neutrino mass could be set.
+The other method is precise observation of the evolution of the early Universe. The combination of the cosmic microwave background (CMB) and baryon oscillation provides the limit on the neutrino mass $m_\nu=\sum_i m_{\nu_i}<0.12eV$ 90\% C.L.~\cite{Palanque-Delabrouille2015}.
 
-The main problem of such analysis is a dependence on the theoretical models such as supernova collapse or the Universe evolution.
-
-Sn1987
-Plank
-
+The main problem of such analysis is a dependence on the theoretical models such as supernova collapse or early Universe evolution.
 
 \section{Neutrino oscillations}
 \label{sec:osc}
 
 \subsection{Theory}
-pontecrvo proposel nu - anti-nu
-proposal towards flavours
-pontecorvo matrix
-matrix parametrisation - three different matrices
-delta Cp mayorana fases
-simple formulas
+Soon after neutrino discovery the experimental confirmation that neutrino and anti-neutrino interact in the different way came. Inspired by the observed oscillations of neutral kaons $K^0\to\bar{K^0}$ Pontecorvo proposed the oscillations $\nu\to\bar\nu$~\cite{Pontecorvo1957}. For such process neutrino should have small but non-zero mass. At that time the experimental conservation of such hypothesis was very challenging as the could not be measured in the laboratory but with a cosmological observations only.
+
+The discovery of the muon neutrino provoked a different hypothesis of the neutrino flavor oscillations $nu_e\to\nu_\mu$. Maki, Nagava and Sakata proposed the theory of the 2-flavor neutrino oscillations~\cite{Maki1962}.
+
+\subsubsection{Phenomenology}
+The phenomenology of the neutrino oscillation will be described below with the quantum mechanics approach. The state could be described either with flavor basis $\lvert\nu_\alpha\rangle$ or with a mass basis $\lvert\nu_k\rangle$. The relations between them is defined with the mixing matrix $U_{\alpha k}$.
+
+\begin{equation}
+\label{eq:intro:mixing}
+\lvert\nu_\alpha\rangle = \sum_kU^*_{\alpha k}\lvert\nu_k\rangle
+\end{equation}
+where $\alpha = e, \mu, \tau$ and $k=1, 2, 3$. The key idea of the oscillation theory is to describe the neutrino production and detection with flavor eigenstates while the evolution of the system is described with mass eigenstates. The Schroedinger equation will describe the changes of the system with a time.
+
+\begin{equation}
+i\frac{d}{dt}\lvert\nu_k(t)\rangle=\mathcal{H}\lvert\nu_k\rangle
+\end{equation}
+where the Hamiltonian of the system is defined as
+\begin{equation}
+\mathcal{H}\lvert\nu_k\rangle=E_k\lvert\nu_k\rangle
+\end{equation}
+
+The changes with a time will be described with the operator of the evolution
+\begin{equation}
+\label{eq:intro:evol}
+\lvert\nu_k(t)\rangle=e^{-iE_kt}\lvert\nu_k\rangle
+\end{equation}
+
+As was mentioned above the production and detection of the neutrino should be described in the flavor states. Modifying~\autoref{eq:intro:evol} with~\autoref{eq:intro:mixing} we will get
+\begin{equation}
+\lvert\nu_\alpha(t)\rangle=\sum_{\beta=e, \mu, \tau}\left(\sum_k U^*_{\alpha k}e^{-iE_kt}U_{\beta k} \right)\lvert\nu_\beta\rangle
+\end{equation}
+
+The oscillation probability is a square of the matrix element
+
+\begin{align}
+P_{\nu_\alpha\to\nu_\beta}&=\left|A_{\nu_\alpha\to\nu_\beta}(t)\right|^2=\left|\langle\nu_\beta\vert\nu_\alpha(t)\rangle\right|^2 \\ \nonumber
+{}&=\sum_{k, j}U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}e^{-i\left(E_k-E_j\right)t}
+\end{align}
+
+Neutrino masses are expected to be extremely small $\leqslant 1eV$ while we want to describe the energy scale from few keV. In this case ultra relativistic approximation is applicable.
+\begin{align}
+E_k-E_j \simeq&\frac{\Delta m_{kj}^2}{2E} \\
+&\Delta m_{kj}^2 \equiv m^2_k-m^2_j \nonumber
+\end{align}
+Thus the oscillation probability versus the travel distance and neutrino energy will be defined as
+
+\begin{equation}
+P_{\nu_\alpha\to\nu_\beta}(L, E)=\sum_{k, j}U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}\exp\left(-i\frac{\Delta m^2_{kj}L}{2E}\right)
+\end{equation}
+
+The neutrino oscillations could be classified into two major types:
+\begin{itemize}
+  \item ``disappearance'' --- the phenomena of observation less neutrino with the given flavor comparing to produced amount
+  \item ``appearance'' --- the phenomena of the observation of neutrino flavor which was not initially produced, e.g. $\nu_e$, while only $\nu_\mu$ was produced
+\end{itemize}
+There is a common practice to split the real and imaginary part of the oscillation probability as they will demonstrate different behavior. For example, real part is CP conservative, while the imaginary part violates CP symmetry. The ``appearance'' probability will be calculated with
+\begin{align}
+\nonumber
+P_{\nu_\alpha\to\nu_\beta}(L, E)=\delta_{\alpha\beta}&-4\sum_{k>j}\mathfrak{Re}\left[U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}\right]\sin^2\left(\frac{\Delta m^2_{kj}L}{4E}\right) \\
+&+2\sum_{k>j}\mathfrak{Im}\left[U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}\right]\sin\left(\frac{\Delta m^2_{kj}L}{2E}\right)
+\label{eq:intro:app}
+\end{align}
+
+In its turn the ``disappearance'' phenomena will be described with
+\begin{equation}
+\label{eq:intro:dis}
+P_{\nu_\alpha\to\nu_\alpha}(L, E)=1-4\sum_{k>j}\left|U_{\alpha k}\right|^2\left|U_{\alpha j}\right|^2\sin^2\left(\frac{\Delta m^2_{kj}L}{4E}\right)
+\end{equation}
+
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Mixing matrix unitarity}
+In this section we assumed the unitarity of the mixing matrix
+\begin{equation}
+U^\dag U=1 \Longleftrightarrow\sum_\alpha U^*_{\alpha k}U_{\alpha j}=\delta_{jk}
+\end{equation}
+
+This assumption came from the fundamental laws of QFT. And it indeed should be true for mixing matrix of any dimension. As will be described in~\autoref{ch:intro:HNL} the model with 3x3 mixing matrix is not essential for the explanation of the neutrino mass. Thus due to existence of other neutrino states the mixing matrix of 3 left-handed neutrino is not unitary.
+
+\begin{equation}
+\sum_{\alpha=e, \mu, \tau} U^*_{\alpha k}U_{\alpha j}\neq\delta_{jk}
+\end{equation}
+Though at the moment there is no experimental conservation of such effect as it's expected to be much smaller then the sensitivity of the experiments.
+\end{bclogo}
+
+\subsubsection{Mixing matrix parametrization}
+In this subsection we will describe the most common parametrization of the 3-flavor neutrino mixing matrix. This matrix was named Pontecorvo-Maki-Nagava-Sakata in odred of the pioneers of the oscillation theory. In the common representation the matrix consists of 9 elements
+
+\begin{equation}
+\begin{pmatrix}
+\nu_e \\ \nu_\mu \\ \nu_\tau
+\end{pmatrix}
+=
+\begin{pmatrix}
+U_{e1} & U_{e2} & U_{e3} \\
+U_{\mu 1} & U_{\mu 2} & U_{\mu 3} \\
+U_{\tau 1} & U_{\tau 2} & U_{\tau 3} \\
+\end{pmatrix}
+\begin{pmatrix}
+\nu_1 \\ \nu_2 \\ \nu_3
+\end{pmatrix}
+\end{equation}
+while for easier parametrization it's usually written as a multiplication of four matrices
+
+\begin{align}
+\nonumber
+U=&
+\begin{pmatrix}
+1   & 0                 & 0 \\
+0   & \cos\theta_{23}   & \sin\theta_{23} \\
+0   & -\sin\theta_{23}  & \cos\theta_{23}
+\end{pmatrix}
+\times
+\begin{pmatrix}
+\cos\theta_{13}                           & 0     & \sin\theta_{13}e^{-i\delta} \\
+0                                         & 1     & 0 \\
+-\sin\theta_{13}e^{+i\delta}              & 0     & \cos\theta_{13}
+\end{pmatrix} \times \\
+\times &
+\begin{pmatrix}
+\cos\theta_{12}   & \sin\theta_{12} & 0 \\
+-\sin\theta_{12}  & \cos\theta_{12} & 0 \\
+0                 & 0               & 1
+\end{pmatrix}
+\times
+\begin{pmatrix}
+\exp\frac{i\alpha_1}{2}   & 0                         & 0 \\
+0                         & \exp\frac{i\alpha_2}{2}   & 0 \\
+0                         &                           & 1
+\end{pmatrix}
+\end{align}
+
+Such parametrization is done with three mixing angles: $\theta_{12}, \theta_{13}, \theta_{12}$) and three CP-violating phases: $\delta$ and $\alpha_1, \alpha_2$. Mixing angles define the transition from the mass state basis to the flavor state basis. The clear schema of such rotation is shown on~\autoref{fig:intro:basis}.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.4\linewidth]{basis.jpg}
+  \caption{Reference rotation of the flavor basis versus the mass basis. The corresponding mixing angles are shown.}
+  \label{fig:intro:basis}
+\end{figure}
+
+With rewriting equations~\autoref{eq:intro:app} and~\autoref{eq:intro:dis} with the new parametrization for the $\nu_e$ and $\nu_\mu$ will result
+
+\begin{align}
+P_{\nu_\mu\to\nu_\mu}=&1-\sin^22\theta_{23}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu} \\
+&+\left(\frac{1}{2}\cos^2\theta_{12}\sin^22\theta_{23}-\sin\theta_{13}\sin^2\theta_{23}\sin2\theta_{23}\sin2\theta_{12}\cos\delta\right)\times \nonumber \\
+&\times\sin\frac{\Delta m^2_{12}L}{4E_\nu}\sin\frac{\Delta m^2_{13}L}{4E_\nu}  \nonumber \\
+P_{\nu_\mu\to\nu_e}=&\sin^2\theta_{23}\sin^2 2\theta_{13}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu}+\frac{1}{2}\sin2\theta_{23}\sin2\theta_{12}\cos^2\theta_{13}\sin\frac{\Delta m^2_{12}L}{2E_\nu} \times \\
+\times & \sin\frac{\Delta m^2_{13}L}{2E_\nu}\cos\delta-\sin2\theta_{23}\sin2\theta_{13}\cos^2\theta_{13}\sin\theta_{13}\times\frac{\Delta m_{12}^2L}{2E_\nu}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu}\sin\delta \nonumber
+\end{align}
+
+The visualization of the formulas above are provided on~\autoref{fig:intro:osc1}. The oscillation curves for each initial state ($e, \mu, \tau$) and two $E/L$ are shown. From such plot it's much easier to understand the meaning of the oscillation parameters. The mixing angles define oscillation amplitude and the mass difference define frequency.
+
+\begin{figure}[!ht]
+\centering
+\begin{minipage}{0.4\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{osc_ele_large.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\linewidth}
+  \centering
+  \includegraphics[width=\linewidth]{osc_ele_short.png}
+\end{minipage}
+\caption{Oscillation probabilities for the initial electron neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\label{fig:intro:osc1}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{0.4\linewidth}
+  \includegraphics[width=\linewidth]{osc_muon_large.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\linewidth}
+  \includegraphics[width=\linewidth]{osc_muon_short.png}
+\end{minipage}
+\caption{Oscillation probabilities for the initial muon neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\label{fig:intro:osc2}
+\end{figure}
+
+\begin{figure}
+\centering
+\begin{minipage}{0.4\linewidth}
+  \includegraphics[width=\linewidth]{osc_tau_large.png}
+\end{minipage}
+\hfill
+\begin{minipage}{0.4\linewidth}
+  \includegraphics[width=\linewidth]{osc_tau_short.png}
+\end{minipage}
+\caption{Oscillation probabilities for the initial tau neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\label{fig:intro:osc3}
+\end{figure}
+
+
+\subsubsection{2--flavor oscillations}
+In the previous section the modern framework of the neutrino oscillations were described. Historically the neutrino mixing theory was developed for 2 flavors. While 3-flavor oscillation probability equations are quite complicated, a 2--flavor approximation often provides sufficient accuracy. In this approach the mixing matrix transforms to a usual 2x2 rotation matrix
+\begin{equation}
+U=
+\begin{pmatrix}
+\cos\theta    & \sin\theta     \\
+-\sin\theta   & \cos\theta
+\end{pmatrix}
+\end{equation}
+and the oscillation probabilities will be written as
+
+\begin{align}
+P_{\nu_\alpha\to\nu_\alpha}=1-&\sin^22\theta\sin^2\frac{1.27\Delta m^2L}{E_\nu} \\
+P_{\nu_\alpha\to\nu_\beta}=&\sin^22\theta\sin^2\frac{1.27\Delta m^2L}{E_\nu}
+\end{align}
+in this notation the neutron energy unit is supposed to be GeV, the distance unit is km and the mass difference unit is $eV^2/c^2$.
+
+\subsubsection{Oscillation in matter}
+The framework presented above describes the oscillations in vacuum. In case of neutrino propagation in matter the effect will be different. Going through medium neutrino suffers from the forward elastic scattering with electrons and nucleons. This effect is similar to the phenomena of the light propagation in matter. The new potential which is equivalent to the refraction index, need to be taken into account. But the interaction types are slightly different for different neutrinos. All neutrino types may scatter over electrons, protons and neutrons through the neutral current exchange. In addition, electron neutrino scatters over the electrons with the charge current. The framework of the neutrino oscillations in mater was developed by Wolfenstein~\cite{Wolfenstein1978}. The mixing angle and the mass difference should be replaced by the effective ones, depending on the matter density.
+
+Later it was discovered that in case of slightly changing density of the matter there is a region where the mixing angle reachs it's maximum possible value $\pi/4$~\cite{Mikheyev1985}. This phenomena is called Mikheyev–Smirnov–Wolfenstein (MSW) effect.
+
+It's interesting to notice that non-zero mass difference is not necessary for the neutrino oscillations in matter. The flavor change is observable even in case of $\Delta m=0$ only because of the non-zero mixing angles~\cite{Smirnov2016}.
+
+
+\subsubsection{Modern neutrino oscillation understanding}
+In spite of the clear explanation of the neutrino oscillation phenomena within the quantum mechanics framework (\autoref{sec:osc}), this method suffers from incompleteness. For instance the assumption of the same momentum (or the same energy) of the different eigenstates is quite strong, but fully empirical. Also the normalization of the transition amplitude is not properly justified.
+
+Another approach could solve some of the problems above. In case of the neutrino description only as a propagator between production and detection point the normalization and all the conservation laws will come out of the box without manual tuning~\cite{Akhmedov2010a}.
+
+Another interesting notice refers to the charge lepton oscillation problem. For instance mixing in the quark sector involves all the 9 quarks, while the oscillations in the lepton sector are usually notated as ``neutrino oscillations'' that affects only 3 uncharged leptons. In fact Pontecorvo-Maki-Nagava-Sakata matrix affects also charge leptons. But the coherence will be imminently ruined when the macroscopic sizes of source and detector are taken into account~\cite{Akhmedov2007}.
 
 \subsection{Experiment overview}
 \label{sec:exp}
 
-
-
 \section{Prospects of the neutrino physics}
-
-
 
 
 
