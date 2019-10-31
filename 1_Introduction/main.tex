@@ -10,6 +10,7 @@
 \label{part:intro:general}
 
 \chapter{Neutrino physics}
+\label{ch:nu_phys}
 Exploration of the neutrinos is relatively young but perspective direction of the research in the particle physics. Over the last 60 years since its first experimental observation lots of breakthroughs were made. Many of them have been awarded with notable prizes. All this speaks of the great interest of the community in this topic. Many puzzles are still unsolved, plenty of challenging experiments are ongoing.
 
 In this chapter the history of the neutrino research will be overviewed (\autoref{sec:hist}) as well as the current studies and experiments (\autoref{sec:exp}). The topic of the neutrino oscillations (\autoref{sec:osc}) will be described in more details as the main subject of the current thesis.
@@ -438,7 +439,7 @@ It's interesting to notice that non-zero mass difference is not necessary for th
 \subsubsection{Modern neutrino oscillation understanding}
 In spite of the clear explanation of the neutrino oscillation phenomena within the quantum mechanics framework (\autoref{sec:osc}), this method suffers from incompleteness. For instance the assumption of the same momentum (or the same energy) of the different eigenstates is quite strong, but fully empirical. Also the normalization of the transition amplitude is not properly justified.
 
-Another approach could solve some of the problems above. In case of the neutrino description only as a propagator between production and detection point the normalization and all the conservation laws will come out of the box without manual tuning~\cite{Akhmedov2010a}.
+Another approach could solve some of the problems above. In case of the neutrino description only as a propagator between production and detection point (QFT framework) the normalization and all the conservation laws will come out of the box without manual tuning~\cite{Akhmedov2010a}.
 
 Another interesting notice refers to the charge lepton oscillation problem. For instance mixing in the quark sector involves all the 9 quarks, while the oscillations in the lepton sector are usually notated as ``neutrino oscillations'' that affects only 3 uncharged leptons. In fact Pontecorvo-Maki-Nagava-Sakata matrix affects also charge leptons. But the coherence will be imminently ruined when the macroscopic sizes of source and detector are taken into account~\cite{Akhmedov2007}.
 
@@ -452,23 +453,67 @@ Another interesting notice refers to the charge lepton oscillation problem. For 
 \chapter{HNL analysis motivation}
 \label{ch:intro:HNL}
 
-As presented in the \autoref{sec:osc} during the exploration of the neutrino oscillation phenomenon, non-zero difference between neutrino eigenstates was observed. That leads to the conclusion that at least two of the three eigenstates should be massive. While in the SM the neutrinos are massless (\autoref{sec:sm}). The theory explaining the mass origin of the neutrino is required.
+As presented in the \autoref{sec:osc} of~\autoref{ch:nu_phys} during the exploration of the neutrino oscillation phenomenon, non-zero difference between neutrino eigenstates was observed. That leads to the conclusion that at least two of the three eigenstates should be massive. While in the SM the neutrinos are massless (\autoref{sec:sm} of ~\autoref{ch:nu_phys}). The theory explaining the mass origin of the neutrino is required.
 
 The easiest solution is try to implement the same process that gives mass to all other particles in the SM --- Higgs mechanism~\cite{Higgs1964} (also called Englert–Brout–Higgs–Guralnik–Hagen–Kibble mechanism for all contributed scientists). There are several problems on this way:
 \begin{itemize}
-  \item the scale of the neutrino mass is very different from the other particles in the SM. The neutrino masses are less then 1 eV~\cite{Aker2019}, while the other particles mass scale is around 1 MeV, that gives us a difference of 6 orders. It could be event larger up to 8 orders in case of minimum possible neutrino mass. It's hard to believe that the same mechanism is responsible of the generation of mass at so different scales.
+  \item the scale of the neutrino mass is very different from the other particles in the SM. The neutrino masses are less then 1 eV~\cite{Aker2019}, while the other particles masses are $\gtrism 1$ MeV, that gives us a difference of at least 6 orders. It could be event larger up to 8 orders in case of minimum possible neutrino mass. It's hard to believe that the same mechanism is responsible of the generation of mass at so different scales.
   \item as described in the~\autoref{sec:anti} only left-handed neutrinos and right-handed anti-neutrinos were observed. While for the Higgs mechanism both left and right handed particles are required.
 \end{itemize}
 
 That leads to the fact that we need to implement some new mechanism or/and new fundamental particles to explain the origin of the neutrino masses.
 
-
-
 \section{Theory}
+In this section the main models of neutrino mass generation will be overviewed. Dirac and Majorana mass terms will be presented as well as a ``mixed'' model of merging this two approaches (seesaw mechanism).
 
-\subsection{Motivation}
+\subsection{Dirac mass term}
+In the Standard Model of the particle physics the mass all the particles is generated with the Higgs mechanism. For example the Higgs-lepton Yukawa Lagrangian provides a natural explanation for the masses for the charged leptons
+\begin{equation}
+\mathcal{L}_{H, L}=-\sum_{\alpha, \beta=e,\mu,\tau}Y'^\ell_{\alpha\beta}\overline{L'_{\alphaL}}\Phi\ell'_{\beta R}+h.c
+\end{equation}
+Applying the same approach for the neutrino mass generation we will get the Lagrangian
+\begin{align}
+\mathcal{L}&=-\sum_{\alpha\beta=e,\mu,\tau}\bar{\nu}_{L,\alpha}(m_D)_{\alpha\beta}\nu_{R,\beta}+h.c. =\nonumber \\
+&=-\overline{\nu_L}m_D\nu_R+h.c.
+\end{align}
+where $m_D$ is a 3x3 complex matrix. It could be diagonalized $m_D=U^\dag m V$, where U and V are unitary and $m_i\delta_{ik}$, $m_i>0$. After digitalization we could separate
 
-\subsection{Prospects}
+\begin{align}
+\nu_{\alpha L}&=\sum_iU_{\alpha i}\nu_{iL} \nonumber \\
+\nu_{\alpha R}&=\sum_iV_{\alpha i}\nu_{iR}
+\end{align}
+and define $\nu\equiv\nu_L+\nu_R$. Thus the Dirac mass term will be expressed as
+\begin{equation}
+\label{eq:intro:dirac}
+\mathcal{L}^{D}_{mass}=-\sum_im_i\overline{\nu_i}\nu_i
+\end{equation}
+where $\nu_i$, $i=1, 2, 3$ are neutrino mass eigenstates and $\nu_{\alpha L}$ are left-handed neutrino flavor eigenstate. The transition between them is defined with PMNS matrix (\autoref{eq:intro:mixing}).
+
+\subsection{Majorana mass term}
+As mentioned in the~\autoref{sec:anti} neutrino could be described with the Majorana equation in case $\psi=\psi^C$. To generate the mass for such a particle we need only one chiral fermion field. As neutrino is left-handed let us notate is at $\nu_L$. To write the mass term for this specific case we need to use $\nu_L$ alone. Modifying~\autoref{eq:intro:dirac}
+\begin{equation}
+\mathcal{L}^D_{mass}=-m\overline{\nu}\nu=-m\left(\overline{\nu_R}\nu_L+\overline{\nu_L}\nu_R\right)=-m\overline{\nu_R}\nu_L+h.c.
+\end{equation}
+
+Here $\nu_R$ should be replaced with right-handed function of the $\nu_L$. in fact it's a charge conjugated field
+\begin{equation}
+\nu_L^C=\mathcal{C}\overline{\nu_L}^T
+\end{equation}
+Thus the Majorana mass term could be expressed as
+\begin{equation}
+\mathcal{L}^M_{mass}=-\frac{1}{2}m\overline{\nu_L^C}\nu_L+h.c.
+\end{equation}
+
+The Majorana mass term provides an interesting mechanism of the generation of the neutrino mass. But it implements also physics beyond the SM. The lepton number is an invariant in the SM because of the U(1) symmetry. With the Majorana model it there is no such symmetry anymore. This leeds to the processes when the lepton number is violated, e.g. neutrino-less double beta decay.
+
+Also such theory contains a product of fields with energy dimensions five
+
+
+\subsection{Mixing Dirac and Majorana terms}
+The most perspective approach is a combination the both Dirac and Majorana terms. In this case the model is very flexible and could provide the natural explanation of the neutrino masses with minimum extensions over the Standard Model.
+
+\subsubsection{Seesaw mechanism}
+
 
 
 \section{Experiments and challenges}
