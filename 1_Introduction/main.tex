@@ -11,107 +11,32 @@
 
 \chapter{Neutrino physics}
 \label{ch:nu_phys}
-Exploration of the neutrinos is relatively young but perspective direction of the research in the particle physics. Over the last 60 years since its first experimental observation lots of breakthroughs were made. Many of them have been awarded with notable prizes. All this speaks of the great interest of the community in this topic. Many puzzles are still unsolved, plenty of challenging experiments are ongoing.
+Exploration of the neutrinos is a relatively young but perspective direction of the research in particle physics. Over the last 60 years since its first experimental observation, lots of breakthroughs were made. Many of them have been awarded notable prizes. All this speaks of the great interest of the community on this topic. Many puzzles are still unsolved, plenty of challenging experiments are ongoing.
 
-In this chapter the history of the neutrino research will be overviewed (\autoref{sec:hist}) as well as the current studies and experiments (\autoref{sec:exp}). The topic of the neutrino oscillations (\autoref{sec:osc}) will be described in more details as the main subject of the current thesis.
+In this chapter, the brief history of the neutrino research and the current theory of the neutrino will be overviewed (\autoref{sec:hist}). The topic of the neutrino oscillations (\autoref{sec:intro:osc}) will be described in more detail as the main subject of the current thesis. The experimental overview and the ongoing researches on this topic will be described in the \autoref{sec:intro:osc_exp}.
 
 \section{Historical overview}
 \label{sec:hist}
-The prerequisites of the neutrino existence were found in the beginning if the XX century. The spectrum of the electrons from the neutron decay (called $\beta$-decay) was measured as continuous but not discrete~\cite{Chadwick1914}. At that time the neutron decay was imagined as $n\to p+e$. Non-discrete spectrum provoked plenty of theories such as energy non-conservation (by N. Bohr) or existence of the new hypothetical particle (by W. Pauli~\cite{Pauli1930}). Later Enrico Fermi developed a complete theory of the beta decay~\cite{Fermi1934}. In the modern notation the decay process was presented as $n\to p^++e^-+\overline{\nu}_e$. Where neutrino is noted as $\nu$.
+The prerequisites of the neutrino existence were found at the beginning of the XXth century. The spectrum of the electrons from the $\beta$-decay was measured as continuous but not discrete~\cite{Chadwick1914}. The $\beta$-decay was observed as a neutron transformation into electron and proton. Following the laws of both momentum and energy conservation, the electron produced in the 2-body decay should have fixed energy defined by the mass difference between the neutron and the proton. Non-discrete spectrum provoked plenty of theories such as energy non-conservation (by N. Bohr) or existence of the new hypothetical particle (by W. Pauli~\cite{Pauli1930}). Later Enrico Fermi developed a complete theory of beta decay~\cite{Fermi1934}. In the modern notation, the decay process was presented as $n\to p^++e^-+\overline{\nu}_e$, where neutrino is noted as $\nu$.
 
 \subsection{Discovery of the neutrino}
-The experimental discovery of the neutrino was pretty challenging. Neutrinos are not taking part in the electromagnetic or strong interactions. The only way to detect them is a weak interaction. Based on the Fermi's theory the inverse beta decay process should exist that will allow the direct observation of the neutrino. But the expected cross-section for such process was estimated at the level of $10^{-44} cm^2$. That was about couple of dozen orders less then cross-sections of the processes that were usually observed in the experiments at that time. That's why the neutrino discovery happened only 26 years after the proposal of the new particle.
+The experimental discovery of the neutrino was pretty challenging. Neutrinos are not taking part in the electromagnetic or strong interactions. The only way to detect them is through the weak interaction. Based on Fermi's theory the inverse beta decay $n+\nu\to p+e$ should exist that will allow the direct observation of the neutrino. But the expected cross-section for such a process was estimated at the level of $10^{-44} cm^2$. That was about a couple of dozen orders less then cross-sections of the processes that were usually observed in the experiments at that time. That's why the neutrino discovery happened only 26 years after the idea of the neutrino existence had come.
 
-After the proposal of the new particle few indirect measurements were performed, but the direct observation still remained a challenge. The first successful neutrino detection were done by group leading by Frederick Reines and Clyde Cowan~\cite{Cowan1956}. They performed series of experiments trying to detect neutrino from the most powerful source at that time - nuclear power plant. Relatively brand new material a liquid scintillator was used as a target and detector. The inverse beta decay was used as a detection reaction:
+After the proposal of the new particle few indirect measurements were performed, but the direct observation remained a challenge. The first successful neutrino detection was done by the group led by Frederick Reines and Clyde Cowan~\cite{Cowan1956}. They performed a series of experiments trying to detect neutrino from the most powerful source at that time - nuclear power plant. Relatively brand new material a liquid scintillator was used as a target and detector. The inverse beta decay was used as a detection reaction:
 \begin{equation}
 \bar{\nu}+p\to n+e^+
 \end{equation}
-The positron shortly annihilates with emitting of photons. In order to suppress background the Cadmium isotope was added to the detector. Thus the neutrons would be also detected with reaction
+The positron shortly annihilates with the emitting of the two photons that could be detected with PMTs. But not only neutrino interactions could cause such a signal. To suppress the background, the Cadmium isotope was added to the detector. Thus the neutrons would also be detected with reaction
 \begin{equation}
 n+{}^{108}Cd\to{}^{109m}Cd\to{}^{109}Cd+\gamma
 \end{equation}
-As the ${}^{109m}Cd$ lifetime is few tens microseconds the signal will have the unique signature: positron annihilation, and after a known time delay the gamma ray emission. Both signals will come with the fix energies. Thus rare signal events could be easily separated from the variety of the backgrounds.
+As the ${}^{109m}Cd$ lifetime is few tens of microseconds the signal will have the unique signature: positron annihilation, and after a known time delay the gamma-ray emission. Both signals will come with well-defined energies. Thus rare signal events could be easily separated from the variety of the backgrounds.
 
-Such strategy lead to the successful discovery of the particle that supposed to be ``undetectable'' before.
+Such a strategy lead to the successful discovery of the particle that was supposed to be ``undetectable'' before.
 
-\subsection{Neutrino and anti-neutrino}
-\label{sec:anti}
-Soon after the neutrino discovery the question of its equivalence with the anti-neutrino was risen. Neutrino was the only known fermion without electric charge. So it was the only candidate for such equivalence. Raymond Davis performed the attempt to detect neutrino interactions with induction either electron or positron~\cite{Davis1955}. He used a clear beam of anti-neutrinos from the reactor. If both reactions~\autoref{eq:nu} and~\autoref{eq:antinu} were detected that would mean that the neutrino ant anti-neutrino are equal.
-
-\begin{eqnarray}
-\label{eq:nu}
-\bar{\nu}+p\rightarrow n+e^+ \\
-\nu+n\rightarrow p+e^-
-\label{eq:antinu}
-\end{eqnarray}
-
-He used the nuclear reaction with chlorine proposed by the Pontecorvo $\nu+{}^{37}Cl\to e^-+{}^{37}Ar$ with further decay of the ${}^{37}Ar$ with $\tau_{1/2}=35$ days. Such reaction was not observed that meant that neutrino interacted in different way comparing to anti-neutrino.
-
-Goldhaber performed other extremely interesting experiment trying to measure the neutrino helicity~\cite{Goldhaber1958}. The electron capture by the Europium atom was used. The produced excited atom of Samarium further decay with photon emission. The photon polarity strictly depends on the neutrino helicity, that's how the last could be measured.
-
-\begin{align}
-Eu+e^-\to\nu+&Sm^* \\ \nonumber
-&Sm^*\to Sm+\gamma
-\end{align}
-
-Goldhaber found that neutrino has only left helicity.
-
-\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Helicity, polarity, chirality}
-Helicity is a projection of the spin onto the direction of the momentum.
-\begin{equation}
-h=\frac{\vec{s}\cdot\vec{p}}{\left|\vec{s}\right|\left|\vec{p}\right|}
-\end{equation}
-
-The helicity could be ``left'' or ``right'' that corresponds to the spin direction opposite or co-directed with momentum. For the massless particles helicity is Lorentz invariant. The polarization of the particle beam is a percentage of the particles with a given helicity. For example 50\% polarization means that half of the particles are ``left'' and half are ``right''.
-
-The chirality is a more fundamental characteristic versus helicity. It is determined by whether the particle wave function transforms with a right- or left-handed representation of the Poincare group.
-
-Massless fermions keep chiral symmetry, i.e. independent rotation of the left- and right- handed components doesn't affect the theory. For them the helicity is always the same as chirality.
-
-The massive particles break the chiral symmetry explicitly. Also for the massive fermions helicity is never more equivalent to the chirality as one could choose the reference frame moving faster then the particle and inverse the helicity.
-\end{bclogo}
-
-Combining results from Davis and Goldhaber we could conclude that neutrino and anti-neutrino interact in the different way, their helicity is different. Thus we still have possibility to describe the neutrino and anti-neutrino as the same particle but with different helicity. Such formalism was developed long before the described experiments by Ettore Majorana~\cite{Majorana1937}. He found a particular solution of the Dirac equation.
-
-\begin{equation}
-\left(i\gamma^\mu\partial_\mu-m\right)\psi=0
-\end{equation}
-
-In particular case of fermions the particle could be described in terms of spinors
-
-\begin{align}
-i\gamma^\mu\partial_\mu\psi_L&=m\psi_R\\ \nonumber
-i\gamma^\mu\partial_\mu\psi_R&=m\psi_L
-\end{align}
-
-In case of massless fermion, like neutrino in the Standard Model (\autoref{sec:sm}) such notation is called Weyl spinors with two components. If the fermion is massive it could be described with four component spinors but only if $\psi_L$ and $\psi_R$ are dependent. That's how the Majorana equation was obtained
-
-\begin{equation}
-i\gamma^\mu\partial_\mu\psi_L=m\mathcal{C}\bar{\psi_L}^{T}
-\end{equation}
-
-This equation works only in case $\psi=\psi^C$. It means that such approach is not suitable for any charge fermion as their charge conjugation states are different because of e.g. different electric charge. But the neutrino is a unique particle to which this approach may be applicable.
-
-Is neutrino a Majorana fermion or a Dirac fermion is still an open question. Neutrino oscillation experiments are not sensitive to this difference. The only way at the moment to find if the neutrino is a Majorana fermion is to detect the neutrinoless double beta decay. Plenty of experiments are challenging in this study~\cite{Bilenky2015}.
-
-\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Symmetries: C, P, T}
-In particle physics there are three important symmetries: charge (C), parity (P) ant time (T).
-
-Parity inversion (P) flip the sign of the spatial coordinate $\mathcal{P}\overrightarrow{r}=-\overrightarrow{r}$ . In the QFT it's described as $\mathcal{P}\lvert\psi\rangle=c\lvert\psi\rangle$. Where $c$ is the eigenvalue of $\mathcal{P}$. The parity violation means a process that change the eigenvalue of the parity transformation for some system. The theory of such process was developed by Lee and Yang~\cite{Lee1956} and found in the Wu's experiment~\cite{Wu1957}. The asymmetry of the outgoing electrons from the Cobalt with respect to the nucleus polarization was the nice and clear proof for the effect.
-
-Charge symmetry (C) transform particle to its anti-particle. $\mathcal{C}\lvert\psi\rangle=\eta_{C}\lvert\bar{\psi}\rangle$, where $\eta_{C}$ is the eigenvalue of the transformation. The example of the eigenvalue non-conservation experimental observation could be found in~\cite{Gormley1968}.
-
-Time transformation (T) inverse the time direction. After the discovery of the separate P and C violations the combined symmetry breaking became the puzzle.
-
-As it will be a hint towards T-symmetry breaking. The CP-violation was observed in the neutral kaons oscillations process~\cite{Christenson1964}. Later such process was confirmed with the direct measurements of kaon decays~\cite{AlaviHarati1999}~and~\cite{Fanti1999}, B-meson decays~\cite{Aubert2001}~and~\cite{Abe2001}, D-mesons~\cite{Aaij2019}.
-
-Together they form a CPT symmetry. It's proved that any Lorentz invariant local quantum field theory with a hermitian Hamiltonian must be invariant under CPT.
-\end{bclogo}
-
-
-\subsection{Different types of neutrino}
+\subsection{Neutrino flavors}
 \label{sec:dublet}
-The first neutrino detection was made using the reactor as a particle source. Such source is extremely powerful, but isotropic. For the precise measurements is will be extremely useful to gain the statistics with the focused particle beam. For this the accelerators could be used. The general idea is to use proton beam hitting the target for the massive meson production. The charged meson could be focused and further decay producing the focused neutrino beam with high intensity. The description of such scheme in the modern experiment could be found in~\autoref{ch:T2K:nu_beam}. First time such approach was used to determine if the neutrino has flavors~\cite{Danby1962}. The main idea of the experiment is to use the neutrino flux produced from the pion decay. Because of the mass difference between electron and muon and the fixed neutrino helicity (\autoref{sec:anti}) charged pion decays mainly to muon, e.g. $\pi^+\to\mu^++\nu$. The question is could neutrino be ``muon'' or ``electron''. The experiment showed clearly that the reaction~\autoref{eq:notallowed} is severely suppressed comparing the reaction~\autoref{eq:allowed}.
+The first neutrino detection was made using the nuclear reactor as a particle source. Such a source is extremely powerful but isotropic. For the precise measurements, it will be extremely useful to gain the statistics with the focused particle beam. For this, the accelerators could be used. The general idea is to use a proton beam hitting the target for the massive meson production. The charged meson could be focused with the magnetic field and further decay, producing the focused neutrino beam with high intensity. The description of such a scheme in the modern experiment could be found in \autoref{ch:T2K:nu_beam}. First-time such an approach was used to determine if the neutrino has flavors~\cite{Danby1962}. At that time it was known that there are two generations of the charged leptons: electron and muon. The question was if the electron neutrino was different from the muon neutrino. The main idea of the experiment is to use the neutrino flux produced from the pion decay. Because of the mass difference between electron and muon charged pion decays mainly to the muon, e.g. $\pi^+\to\mu^++\nu$. The experiment showed clearly that the reaction \autoref{eq:notallowed} is severely suppressed comparing the reaction \autoref{eq:allowed}.
 
 \begin{align}
 \label{eq:allowed}
@@ -120,26 +45,25 @@ The first neutrino detection was made using the reactor as a particle source. Su
 \label{eq:notallowed}
 \end{align}
 
-That means that neutrino has flavors. It could be either produced or detected with the lepton of the same flavor. The existence of the different types of the neutrino confirmed the doublet structure of the leptons. This fact will play an important rope in the theory of the neutrino oscillations.
-
+That means that neutrino has flavors. It could be either produced or detected with the lepton of the same flavor. The existence of the different types of neutrino confirmed the doublet structure of the leptons. This fact will play an important role in the theory of neutrino oscillations.
 
 \subsection{Neutrino in the Standard Model}
 \label{sec:sm}
 
-The first step towards the general model of particle physics was done by Yang and Mills with extending of the concept of the gauge theory to the nonabelian groups. This made possible to describe the phenomena of strong interactions~\cite{Yang1954}. Later Glashow found a way to unify the electromagnetic and weak interactions~\cite{Glashow1961}. Salam and Weinberg finished the theory with implementation of the Higgs mechanism into the Glashow theory~\cite{Weinberg1967}.
+The first step towards the general model of particle physics was done by Yang and Mills by extending the concept of the gauge theory to the nonabelian groups. This made possible to describe the phenomenon of strong interactions~\cite{Yang1954}. Later Glashow found a way to unify the electromagnetic and weak interactions~\cite{Glashow1961}. Salam and Weinberg finished the theory with the implementation of the Higgs mechanism into the Glashow theory~\cite{Weinberg1967}.
 
-Plenty of experiments brilliantly confirmed the proposed model and demonstrated its incredible predictive power. For example in the part of the electroweak interactions the most breakthrough observations were: neutral current discovery~\cite{Cundy1974}, Z and W boson discovery~\cite{Arnison1983}, $\gamma-Z$ interference, neutrino generation number~\cite{Arnison1983}, Higgs boson discovery~\cite{Aad2012}, and many others.
+Plenty of experiments brilliantly confirmed the proposed model and demonstrated its incredible predictive power. For example, in the part of the electroweak interactions, the most breakthrough observations were: neutral current discovery~\cite{Cundy1974}, Z and W boson discovery~\cite{Arnison1983}, $\gamma-Z$ interference, neutrino generation number~\cite{Arnison1983}, Higgs boson discovery~\cite{Aad2012}, and many others.
 
-The schema describing the Standard Model is presented on~\autoref{fig:intro:SM}.
+The schema describing the Standard Model is presented in \autoref{fig:intro:SM}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\linewidth]{SM.png}
-    \caption{A schematic view of the Standard Model (SM) of the particle physics.}
+    \caption{A schematic view of the Standard Model (SM) of particle physics.}
     \label{fig:intro:SM}
 \end{figure}
 
-In general the SM is based on the Yang–Mills theory with local $SU(3)\times SU(2)\times U(1)$ gauge symmetry. It could be divided into several parts:
+In general, the SM is based on the Yang–Mills theory with local $SU(3)\times SU(2)\times U(1)$ gauge symmetry. It could be divided into several parts:
 \begin{itemize}
   \item Quantum chromodynamics sector
   \item Electroweak sector
@@ -147,36 +71,52 @@ In general the SM is based on the Yang–Mills theory with local $SU(3)\times SU
   \item Yukawa sector
 \end{itemize}
 
-In context of current thesis the electroweak sector is the most interesting. It is based on the group $U(1)\times SU(2)_L$. It mean that we well have two generators: the weak hypercharge ($Y_W$) for $U(1)$ and Pauli matrices for $SU(2)_L$. Index $L$ mean that it affects only left-chiral fermions.
+In the context of the current thesis, we will discuss in detail the electroweak sector. It is based on the group $U(1)\times SU(2)_L$. It means that we will have two sets of generators: the weak hypercharge $Y_W$ for $U(1)$ and Pauli matrices for $SU(2)_L$. Index $L$ means that it affects only left-chiral fermions.
 
-In the SM fermions are described as a doublets (\autoref{sec:dublet}). For each charged lepton there is an appropriate neutrino. While charged lepton could be either right-handed or left-handed, the neutrino could be only left-handed. This part of theory is based on the empirical observations (\autoref{sec:anti}) and this is strictly fixed in the model. Neutrino could interact with the charge current (CC) or neutral current (NC). The appropriate interaction terms are defined as:
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Helicity, polarity, chirality}
+Helicity is a projection of the spin onto the direction of the momentum.
+\begin{equation}
+h=\frac{\vec{s}\cdot\vec{p}}{\left|\vec{s}\right|\left|\vec{p}\right|}
+\end{equation}
+
+The helicity could be ``left'' or ``right'' that corresponds to the spin direction opposite or co-directed with momentum. For the massless particles, helicity is Lorentz invariant. The polarization of the particle beam is a percentage of the particles with a given helicity. For example, 50\% polarization means that half of the particles are ``left'' and half are ``right''.
+
+The chirality is a more fundamental characteristic comparing to helicity. It is determined by whether the particle wave function transforms with a right- or left-handed representation of the Poincare group.
+
+Massless fermions keep chiral symmetry, i.e. independent rotation of the left- and right- handed components doesn't affect the theory. For them, the helicity is always the same as chirality.
+
+The massive particles break the chiral symmetry explicitly. Also for the massive fermions, the helicity is not equivalent to the chirality as one could choose the reference frame moving faster than the particle and inverse the helicity.
+\end{bclogo}
+
+In the SM fermions are described as doublets (\autoref{sec:dublet}). For each charged lepton there is an appropriate neutrino. While charged lepton could be either right-handed or left-handed, the neutrino could be only left-handed. This part of the theory is based on the empirical observations~\cite{Goldhaber1958} and this is strictly fixed in the model. Neutrino could interact with the charge current (CC) or neutral current (NC). The appropriate interaction terms are defined as:
 
 \begin{align}
 -\mathcal{L}_{CC}&=\frac{g}{2}\sum_\alpha\bar{\nu}_{L\alpha}\gamma^\mu\ell_{L\alpha}W^+_\mu+h.c. \\ \nonumber
 -\mathcal{L}_{NC}&=\frac{g}{\sqrt{2\cos{\theta_W}}}\sum_\alpha\bar{\nu}_{L\alpha}\gamma^\mu\nu_{L\alpha}Z^0_\mu
 \end{align}
 
-Thus there is no chance for production or detection of the right-handed neutrino (left-handed anti-neutrino).
+Thus there is no chance for production or detection of the right-handed neutrino (left-handed anti-neutrino). The existence of such ``exotic'' particles is proposed in the various theories (\autoref{sec:intro:HNL}).
 
-\subsection{Neutrino flavors}
-After the magnificent confirmation of the Standard Model with discovery of the neutral current and W and Z bosons, it became possible to measure precisely the number of neutrino generations. This analysis became possible with massive production of the Z-bosons on so-called Z-factory such as Large Electron-Positron Collider (LEP) at CERN.
+\subsubsection{Number of neutrino flavors}
+\label{sec:intro:LEP}
+After the magnificent confirmation of the Standard Model with the discovery of the neutral current and W and Z bosons, it became possible to measure precisely the number of the neutrino generations. This analysis became possible with the massive production of the Z-bosons on the so-called Z-factory such as Large Electron-Positron Collider (LEP) at CERN.
 
 The general idea of the study is to look at the different modes of the Z decays. All the decays could be classified into several groups:
 
 \begin{align}
-Z&\to hadrons \nonumber \\
+Z&\to q\overline{q} \nonumber \\
 Z&\to \ell^+\ell^- \\
 Z&\to \nu\bar{\nu} \nonumber
 \end{align}
 
-The total width of the boson decay sums up from these three parts. As width of $Z\to \ell^+\ell^-$ is the same of all charge leptons and $Z\to \nu\bar{\nu}$ is the same for all neutrino types they could be multiplied with an appropriate number:
+The total width of the boson decay sums up from these three parts. As for the width of $Z\to \ell^+\ell^-$ is the same of all charged leptons and $Z\to \nu\bar{\nu}$ is the same for all neutrino types because of the lepton uniformity they could be multiplied by an appropriate number:
 
 \begin{equation}
 \Gamma_Z=\Gamma(Z\to hadrons)+N_{\ell}\times\Gamma(Z\to \ell^+\ell^-) + N_{\nu}\times\Gamma(Z\to \nu\bar{\nu})
 \label{eq:intro:nnu}
 \end{equation}
 
-During the experiment the $\Gamma_Z$, $\Gamma(Z\to hadrons)$ and $\Gamma(Z\to \ell^+\ell^-)$ were measured. The equality of the $\Gamma(Z\to e^+e^-)$ and $\Gamma(Z\to \mu^+\mu^-)$ was checked. The width of the decay into neutrons came from the theory. The number of neutrino generations remained the only unknown variable in the~\autoref{eq:intro:nnu}. The results of the precise measurements of the Z-boson resonance and predictions for 2, 3 and 4 neutrino generations are shown in~\autoref{fig:intro:NuGen}. From these studies the $N_{\nu}=2.9840\pm0.0082$. So we could conclude that there are only three types of the left-handed neutrino with masses less than Z-boson mass.
+During the experiment, the $\Gamma_Z$, $\Gamma(Z\to q\overline{q})$ and $\Gamma(Z\to \ell^+\ell^-)$ were measured. The equality of the $\Gamma(Z\to e^+e^-)$ and $\Gamma(Z\to \mu^+\mu^-)$ was checked. The width of the decay into neutrinos came from the theory. The number of the neutrino generations remained the only unknown variable in the \autoref{eq:intro:nnu}. The results of the precise measurements of the Z-boson resonance and predictions for 2, 3 and 4 neutrino generations are shown in \autoref{fig:intro:NuGen}. During the research at LEP, the number of neutrino generations was measured as $N_{\nu}=2.9840\pm0.0082$. So we could conclude that in Standard Model there are only three types of the left-handed neutrino with masses less than Z-boson mass.
 
 \begin{figure}[!ht]
     \centering
@@ -185,51 +125,140 @@ During the experiment the $\Gamma_Z$, $\Gamma(Z\to hadrons)$ and $\Gamma(Z\to \e
     \label{fig:intro:NuGen}
 \end{figure}
 
+\subsection{Neutrino interactions}
+The precise measurements in neutrino physics such as neutrino oscillation and search for CP--violation require accurate knowledge about the neutrino interactions' rates. This is still one of the dominating uncertainties in the neutrino oscillation experiments. Roughly we could divide the neutrino interactions with the matter on the interactions with electron and nucleus. The neutrino interactions with the single fermion are described very accurately with the Standard Model. So far no deviations are found in the experiment.
 
-\subsection{Neutrino mass measurements}
-In spite of the Standard Model assumption about the neutrino massless nature there were plenty attempts to measure its mass. After the confirmation of the fact that neutrino has mass from neutrino oscillation phenomena (\autoref{sec:osc}) these measurements became essential.
+\subsubsection{Interactions with electron}
+Neutrino interactions with the single electron are the simplest ones. They could be described with the tree-level Feynman diagrams presented in \autoref{fig:intro:f_nu}. Electron neutrino could interact with the electron both through the scattering through the charged current (\autoref{fig:intro:f_nu} (a)) and neutral current (\autoref{fig:intro:f_nu} (c)), while muon and tau neutrino could scatter only via neutral current. These processes play an important role in the discovery of the neutrino oscillation as will be described in the \autoref{sec:intro:osc_exp}.
 
-\subsubsection{Beta decay}
-The straight-forward way for the neutrino mass measurements is a search for the effect of the nonzero neutrino mass in the beta decay spectrum. One need to measure the energy of outgoing electrons and look at the far end of the distribution. The variation of the neutrino mass change dramatically the energy spectrum in this particular region. For the electron source the deuterium or a tritium isotope is usually chosen. The main technological issues is to perform extremely precise measurements of the electron energy. The most accurate limits obtained with this method for a long time belonged to Mainz~\cite{Kraus2005} and Troitsk~\cite{Aseev2011} experiments. Recently KATRIN experiment announced more precise neutrino mass limits $m_\nu < 1.1 eV$ with 90\%CL.~\cite{Aker2019}.
+The muon neutrino could also scatter over the electron through the charged current (\autoref{fig:intro:f_nu} (b)), but this is a threshold process. The minimal neutron energy could be estimated by $E_\nu^{th}=\left(m_\mu^2-m_e^2\right)/\left(2m_e\right)=10.9GeV$ neglecting the neutrino mass. Thus the muon could not be produced by the neutrino from the Sun or other low-energy neutrinos.
 
-It's important to notice what is a ``neutrino mass'' $m_\nu$ that is measured in the beta decay.
-\begin{equation}
-m_\nu\equiv m_\beta\equiv\sqrt{\sum_i\left|U_{ei}\right|^2m_i^2}
-\end{equation}
+\begin{figure}[!ht]
+\centering
+  \begin{minipage}[t]{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{fa_nue} \\ (a)
+  \end{minipage}
+  \begin{minipage}[t]{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{fa_numu} \\ (b)
+  \end{minipage}
+  \begin{minipage}[t]{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{fa_nu_NC} \\ (c)
+  \end{minipage}
+  \caption{Tree-level Feynman diagrams of the neutrino interactions with electron: (a) and (b) electron and muon neutrino scattering through the charged current, (c) all-type neutrino scattering through the neutral current.}
+  \label{fig:intro:f_nu}
+\end{figure}
 
-More details about the neutrino mixing will be presented in~\autoref{sec:osc}.
+The anti-neutrino interaction with the electron could be described with the Feynman diagrams of the \autoref{fig:intro:f_anu}. Comparing with the neutrino, a muon anti-neutrino could not interact with the electron because of the charge conservation law.
 
-\subsubsection{Neutrinoless double beta decay}
-In case neutrino has a Majorana nature it's possible to measure the $m_{ee}$.
-\begin{equation}
-m_{\beta\beta}=\sum_i U^2_{ei}m_i
-\end{equation}
+\begin{figure}[!ht]
+\centering
+  \begin{minipage}[t]{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{fa_anue} \\ (a)
+  \end{minipage}
+  \begin{minipage}[t]{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{fa_anu_NC} \\ (b)
+    \end{minipage}
+  \caption{Tree-level Feynman diagrams of the anti-neutrino interactions with electron: (a) electron anti-neutrino scattering through the charged current, (c) all-type anti-neutrino scattering through the neutral current.}
+  \label{fig:intro:f_anu}
+\end{figure}
 
-All the $0\nu\beta\beta$ experiments are putting the limits of the current value. The most precise result was obtained by KamLAND-Zen experiment $m_{\beta\beta} < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. One should keep in mind that successful measurement possible only in case of Majorana neutrino nature.
+The cross-sections for the processes mentioned above are presented on the \autoref{fig:intro:nue_xsec}.
 
-\subsubsection{Cosmology}
-Cosmology provides different possibilities for neutrino mass measurements. On of the earliest attempts was done based on the timing measurements of the neutrinos from SN1987 --- the earliest and the only at the moment observation of the neutrino from the supernova collapse.
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.6\linewidth]{nu_e_xsec}
+  \caption{Neutrino–electron cross-sections as a functions of the neutrino energy $E$. Solid line: $\nu_e+e^-\to\nu_e+e^-$. Dashed line: $\overline{\nu}_e+e^-\to\overline{\nu}_e+e^-$. Dotted line: $\nu_{\mu, \tau}+e^-\to\nu_{\mu, \tau}+e^-$. Dash-dotted line: $\overline{\nu}_{\mu. \tau}+e^-\to\overline{\nu}_{\mu. \tau}+e^-$. For each scattering process the upper curve is the cross-section without a threshold for the kinetic energy of the recoil electron, whereas the lower curve is obtained with $T_e^{th}=4.50 MeV$, which corresponds to $E_\nu^{th} = 4.74 MeV$. From~\cite{auerbach2001measurement}}
+  \label{fig:intro:nue_xsec}
+\end{figure}
 
-The other method is precise observation of the evolution of the early Universe. The combination of the cosmic microwave background (CMB) and baryon oscillation provides the limit on the neutrino mass $m_\nu=\sum_i m_{\nu_i}<0.12eV$ 90\% C.L.~\cite{Palanque-Delabrouille2015}.
 
-The main problem of such analysis is a dependence on the theoretical models such as supernova collapse or early Universe evolution.
+\subsubsection{Interactions with nuclei}
+Neutrino interactions with a single fermion (e.g. quark) are very well described. But the atomic nuclei are complicated structures consists of plenty of particles that make the neutrino interaction description much more complicated. The reaction topology severely depends on the neutrino energy. The following energy scales could be set:
+\begin{itemize}
+  \item $E_\nu <$ 0.1 GeV: neutrino interacts with the whole nucleus,
+  \item $E_\nu\sim$ 0.1 -- 20 GeV: neutrino interacts with one or few nucleons inside the nucleus,
+  \item $E>$ few GeV: neutrino interacts with the individual quarks
+\end{itemize}
+
+The energy scales above could be easily understood with De Broglie's wave approach. The incoming neutrino wavelength should be compared with the target size.
+
+From the experimental point of view, we could classify the neutrino interactions based on the outgoing particles. Thus we could divide all the reactions in the charged current and neutral current exchange. In the case of a charged current exchange, one will observe an outgoing charged lepton, while in case of neutral current exchange only hadrons and photons could be seen. Now we will define several topologies for the interactions via charged current. At the energies $\le1$ GeV neutrino mostly interacts in the quasi-elastic way, transforming neutron into a proton. For the neutrinos with energies ~1 GeV the most probable reaction is a $\Delta^{++}$ production with its further decay into proton and pion. Also at this energy region, we could see the coherent pion production, when a neutrino interacts with the whole nucleus or interactions with two nucleons simultaneously (2p2h interactions). With the energy growth, one will observe the dominance of the deep inelastic scattering with the various hadron production as a result of the broken nucleon. The Feynman diagrams for the processes mentioned above are shown in \autoref{fig:intro:f_nu_nucl}.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{f_nu_CCQE} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{f_nu_RES} \\ (b)
+  \end{minipage}
+  \begin{minipage}{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{f_nu_COH} \\ (c)
+  \end{minipage}
+  \vfill
+  \begin{minipage}{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{f_nu_2p2h} \\ (d)
+  \end{minipage}
+  \begin{minipage}{0.29\linewidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{f_nu_DIS} \\ (e)
+  \end{minipage}
+  \caption{Feynman diagrams for the neutrino interactions with nucleus. The following reactions are shown: (a) quasi elastic scattering, (b) resonance pion production, (c) coherent pion production, (d) 2p2h, (e) deep inelastic scattering.}
+  \label{fig:intro:f_nu_nucl}
+\end{figure}
+
+The evaluation of the neutrino and anti-neutrino cross sections with the energy is shown in \autoref{fig:intro:nu_xsec}.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{nu_xsec} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{anu_xsec} \\ (b)
+  \end{minipage}
+  \caption{(a) neutrino and (b) anti-neutrino per nucleon CC cross sections from~\cite{formaggio2012ev}.}
+  \label{fig:intro:nu_xsec}
+\end{figure}
+
+Discussing the neutrino interaction with nucleon it's worth mentioning the main problems of these reactions observation. Above we discussed mostly the interactions on the single nucleon. While in fact, it happens only for targets made from Hydrogen. In most of the experiments, the heavier targets are used to gain the number of neutrino interactions and detection accuracy. As a result, the neutrino interactions are affected by the following nuclear effects:
+\begin{itemize}
+  \item Fermi motion. The nucleons are not at rest inside the nucleus. This effect is called Fermi motion. Several models could be used to parametrize this phenomenon, e.g. Relative Fermi Gas (RFG) with the typical momentum depending on the nucleus. For example for Carbon $p_F\approx 220 MeV/c^2$,
+  \item Final State Interactions (FSI). After the initial neutrino reaction, final state particles such as pions or nuclei could interact while propagating inside the nucleus. For example, pion could be absorbed, or additional hadrons could be produced. All these processes distort the neutrino reaction outcomes.
+  \item collective effects. The neutrino could interact with several nucleons at the same time. The most common case is the interaction with 2 particles -- 2p2h. As the models of nucleons interactions are not precise enough this effect introduces relatively large uncertainty in the analysis.
+\end{itemize}
+
+The detailed description of the neutrino-nuclei interactions could be found in~\cite{formaggio2012ev}.
+
 
 \section{Neutrino oscillations}
-\label{sec:osc}
+\label{sec:intro:osc}
+The neutrino oscillation phenomenon research is a very long story started from the phenomenological prediction, followed by the puzzle of the small neutrino flux from the Sun, and reached a milestone recently with the robust confirmation of the effect. Many interesting discoveries were made in this way, e.g. non-zero neutrino mass, large mixing angles, hints for the CP-violation; many different ways to produced and study neutrinos were found. But many discoveries are still awaiting. In this section, the modern understanding of the phenomenon will be presented as well as the latest experimental results.
 
 \subsection{Theory}
-Soon after neutrino discovery the experimental confirmation that neutrino and anti-neutrino interact in the different way came. Inspired by the observed oscillations of neutral kaons $K^0\to\bar{K^0}$ Pontecorvo proposed the oscillations $\nu\to\bar\nu$~\cite{Pontecorvo1957}. For such process neutrino should have small but non-zero mass. At that time the experimental conservation of such hypothesis was very challenging as the could not be measured in the laboratory but with a cosmological observations only.
+Soon after neutrino discovery, the experimental confirmation that neutrino and anti-neutrino interact differently came. Inspired by the observed oscillations of neutral kaons $K^0\to\bar{K^0}$ Pontecorvo proposed the oscillations $\nu\to\bar\nu$~\cite{Pontecorvo1957}. For such process neutrino should have small but non-zero mass. At that time the experimental confirmation of such a hypothesis was very challenging as the could not be measured in the laboratory but with cosmological observations only.
 
-The discovery of the muon neutrino provoked a different hypothesis of the neutrino flavor oscillations $nu_e\to\nu_\mu$. Maki, Nagava and Sakata proposed the theory of the 2-flavor neutrino oscillations~\cite{Maki1962}.
+The discovery of the muon neutrino provoked a different hypothesis of the neutrino flavor oscillations $\nu_e\to\nu_\mu$. Maki, Nagava and Sakata proposed the theory of the 2-flavor neutrino oscillations~\cite{Maki1962}.
 
 \subsubsection{Phenomenology}
-The phenomenology of the neutrino oscillation will be described below with the quantum mechanics approach. The state could be described either with flavor basis $\lvert\nu_\alpha\rangle$ or with a mass basis $\lvert\nu_k\rangle$. The relations between them is defined with the mixing matrix $U_{\alpha k}$.
+The phenomenology of the neutrino oscillation will be described below with the quantum mechanics approach. The state could be described either with a flavor basis $\lvert\nu_\alpha\rangle$ or with a mass basis $\lvert\nu_k\rangle$. The relation between them is defined with the mixing matrix $U_{\alpha k}$.
 
 \begin{equation}
 \label{eq:intro:mixing}
 \lvert\nu_\alpha\rangle = \sum_kU^*_{\alpha k}\lvert\nu_k\rangle
 \end{equation}
-where $\alpha = e, \mu, \tau$ and $k=1, 2, 3$. The key idea of the oscillation theory is to describe the neutrino production and detection with flavor eigenstates while the evolution of the system is described with mass eigenstates. The Schroedinger equation will describe the changes of the system with a time.
+where $\alpha = e, \mu, \tau$ and $k=1, 2, 3$. Thus the mixing between the flavor and the mass states of the leptons is allowed. We measure the flavor of both produced and interacted neutrino with the flavor of the accompanying charged lepton. But the propagation of the particle is defined by its mass. Within the quantum mechanics approach the Schroedinger equation will describe the changes of the system with time.
 
 \begin{equation}
 i\frac{d}{dt}\lvert\nu_k(t)\rangle=\mathcal{H}\lvert\nu_k\rangle
@@ -239,13 +268,13 @@ where the Hamiltonian of the system is defined as
 \mathcal{H}\lvert\nu_k\rangle=E_k\lvert\nu_k\rangle
 \end{equation}
 
-The changes with a time will be described with the operator of the evolution
+The changes with time will be described with the operator of the evolution
 \begin{equation}
 \label{eq:intro:evol}
 \lvert\nu_k(t)\rangle=e^{-iE_kt}\lvert\nu_k\rangle
 \end{equation}
 
-As was mentioned above the production and detection of the neutrino should be described in the flavor states. Modifying~\autoref{eq:intro:evol} with~\autoref{eq:intro:mixing} we will get
+As was mentioned above the production and detection of the neutrino should be described in the flavor states. Modifying \autoref{eq:intro:evol} with \autoref{eq:intro:mixing} we will get
 \begin{equation}
 \lvert\nu_\alpha(t)\rangle=\sum_{\beta=e, \mu, \tau}\left(\sum_k U^*_{\alpha k}e^{-iE_kt}U_{\beta k} \right)\lvert\nu_\beta\rangle
 \end{equation}
@@ -257,7 +286,7 @@ P_{\nu_\alpha\to\nu_\beta}&=\left|A_{\nu_\alpha\to\nu_\beta}(t)\right|^2=\left|\
 {}&=\sum_{k, j}U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}e^{-i\left(E_k-E_j\right)t}
 \end{align}
 
-Neutrino masses are expected to be extremely small $\leqslant 1eV$ while we want to describe the energy scale from few keV. In this case ultra relativistic approximation is applicable.
+Neutrino masses are expected to be extremely small $\leqslant 1eV$ while we want to describe the energy scale above a few keV. In this case, an ultra-relativistic approximation is applicable.
 \begin{align}
 E_k-E_j \simeq&\frac{\Delta m_{kj}^2}{2E} \\
 &\Delta m_{kj}^2 \equiv m^2_k-m^2_j \nonumber
@@ -270,10 +299,10 @@ P_{\nu_\alpha\to\nu_\beta}(L, E)=\sum_{k, j}U^*_{\alpha k}U_{\beta k}U_{\alpha j
 
 The neutrino oscillations could be classified into two major types:
 \begin{itemize}
-  \item ``disappearance'' --- the phenomena of observation less neutrino with the given flavor comparing to produced amount
-  \item ``appearance'' --- the phenomena of the observation of neutrino flavor which was not initially produced, e.g. $\nu_e$, while only $\nu_\mu$ was produced
+  \item ``disappearance'' --- the phenomenon of observation less neutrino with the given flavor comparing to the produced amount
+  \item ``appearance'' --- the phenomenon of the observation of neutrino flavor which was not initially produced, e.g. $\nu_e$, while only $\nu_\mu$ was produced
 \end{itemize}
-There is a common practice to split the real and imaginary part of the oscillation probability as they will demonstrate different behavior. For example, real part is CP conservative, while the imaginary part violates CP symmetry. The ``appearance'' probability will be calculated with
+There is a common practice to split the real and imaginary part of the oscillation probability as they will demonstrate different behavior. For example, the real part is CP conservative, while the imaginary part violates CP symmetry. The ``appearance'' probability will be calculated with
 \begin{align}
 \nonumber
 P_{\nu_\alpha\to\nu_\beta}(L, E)=\delta_{\alpha\beta}&-4\sum_{k>j}\mathfrak{Re}\left[U^*_{\alpha k}U_{\beta k}U_{\alpha j}U^*_{\beta j}\right]\sin^2\left(\frac{\Delta m^2_{kj}L}{4E}\right) \\
@@ -281,7 +310,7 @@ P_{\nu_\alpha\to\nu_\beta}(L, E)=\delta_{\alpha\beta}&-4\sum_{k>j}\mathfrak{Re}\
 \label{eq:intro:app}
 \end{align}
 
-In its turn the ``disappearance'' phenomena will be described with
+In its turn the ``disappearance'' phenomenon will be described by
 \begin{equation}
 \label{eq:intro:dis}
 P_{\nu_\alpha\to\nu_\alpha}(L, E)=1-4\sum_{k>j}\left|U_{\alpha k}\right|^2\left|U_{\alpha j}\right|^2\sin^2\left(\frac{\Delta m^2_{kj}L}{4E}\right)
@@ -293,16 +322,16 @@ In this section we assumed the unitarity of the mixing matrix
 U^\dag U=1 \Longleftrightarrow\sum_\alpha U^*_{\alpha k}U_{\alpha j}=\delta_{jk}
 \end{equation}
 
-This assumption came from the fundamental laws of QFT. And it indeed should be true for mixing matrix of any dimension. As will be described in~\autoref{ch:intro:HNL} the model with 3x3 mixing matrix is not essential for the explanation of the neutrino mass. Thus due to existence of other neutrino states the mixing matrix of 3 left-handed neutrino is not unitary.
+This assumption came from the fundamental laws of QFT. And it indeed should be true for mixing matrix of any dimension. As will be described in \autoref{ch:intro:HNL} the model with 3x3 mixing matrix is not essential for the explanation of the neutrino mass. Thus due to the existence of other neutrino states the mixing matrix of 3 left-handed neutrino is not unitary.
 
 \begin{equation}
 \sum_{\alpha=e, \mu, \tau} U^*_{\alpha k}U_{\alpha j}\neq\delta_{jk}
 \end{equation}
-Though at the moment there is no experimental conservation of such effect as it's expected to be much smaller then the sensitivity of the experiments.
+Though at the moment there is no experimental confirmation of such effect as it's expected to be much smaller than the sensitivity of the experiments.
 \end{bclogo}
 
 \subsubsection{Mixing matrix parametrization}
-In this subsection we will describe the most common parametrization of the 3-flavor neutrino mixing matrix. This matrix was named Pontecorvo-Maki-Nagava-Sakata in odred of the pioneers of the oscillation theory. In the common representation the matrix consists of 9 elements
+In this subsection, we will describe the most common parametrization of the 3-flavor neutrino mixing matrix. This matrix was named Pontecorvo-Maki-Nagava-Sakata in order of the pioneers of the oscillation theory. In the common representation, the matrix consists of 9 elements
 
 \begin{equation}
 \begin{pmatrix}
@@ -318,7 +347,7 @@ U_{\tau 1} & U_{\tau 2} & U_{\tau 3} \\
 \nu_1 \\ \nu_2 \\ \nu_3
 \end{pmatrix}
 \end{equation}
-while for easier parametrization it's usually written as a multiplication of four matrices
+for easier parametrization it's usually written as a multiplication of four matrices
 
 \begin{align}
 \nonumber
@@ -346,9 +375,10 @@ U=&
 0                         & \exp\frac{i\alpha_2}{2}   & 0 \\
 0                         &                           & 1
 \end{pmatrix}
+\label{eq:intro:osc_param}
 \end{align}
 
-Such parametrization is done with three mixing angles: $\theta_{12}, \theta_{13}, \theta_{12}$) and three CP-violating phases: $\delta$ and $\alpha_1, \alpha_2$. Mixing angles define the transition from the mass state basis to the flavor state basis. The clear schema of such rotation is shown on~\autoref{fig:intro:basis}.
+Such parametrization is done with three mixing angles: $\theta_{12}, \theta_{13}, \theta_{12}$) and three CP-violating phases: $\delta$ and $\alpha_1, \alpha_2$. Mixing angles define the transition from the mass state basis to the flavor state basis. The clear schema of such rotation is shown in \autoref{fig:intro:basis}.
 
 \begin{figure}[!ht]
   \centering
@@ -357,17 +387,25 @@ Such parametrization is done with three mixing angles: $\theta_{12}, \theta_{13}
   \label{fig:intro:basis}
 \end{figure}
 
-With rewriting equations~\autoref{eq:intro:app} and~\autoref{eq:intro:dis} with the new parametrization for the $\nu_e$ and $\nu_\mu$ will result
+Rewriting equations \autoref{eq:intro:app} and \autoref{eq:intro:dis} with the new parametrization for the $\nu_e$ and $\nu_\mu$ will result
 
-\begin{align}
+\begin{equation}
+\begin{split}
 P_{\nu_\mu\to\nu_\mu}=&1-\sin^22\theta_{23}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu} \\
-&+\left(\frac{1}{2}\cos^2\theta_{12}\sin^22\theta_{23}-\sin\theta_{13}\sin^2\theta_{23}\sin2\theta_{23}\sin2\theta_{12}\cos\delta\right)\times \nonumber \\
-&\times\sin\frac{\Delta m^2_{12}L}{4E_\nu}\sin\frac{\Delta m^2_{13}L}{4E_\nu}  \nonumber \\
+&+\left(\frac{1}{2}\cos^2\theta_{12}\sin^22\theta_{23}-\sin\theta_{13}\sin^2\theta_{23}\sin2\theta_{23}\sin2\theta_{12}\cos\delta\right)\times \\
+&\times\sin\frac{\Delta m^2_{12}L}{4E_\nu}\sin\frac{\Delta m^2_{13}L}{4E_\nu}
+\end{split}
+\label{eq:intro:disapp_p}
+\end{equation}
+\begin{equation}
+\begin{split}
 P_{\nu_\mu\to\nu_e}=&\sin^2\theta_{23}\sin^2 2\theta_{13}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu}+\frac{1}{2}\sin2\theta_{23}\sin2\theta_{12}\cos^2\theta_{13}\sin\frac{\Delta m^2_{12}L}{2E_\nu} \times \\
-\times & \sin\frac{\Delta m^2_{13}L}{2E_\nu}\cos\delta-\sin2\theta_{23}\sin2\theta_{13}\cos^2\theta_{13}\sin\theta_{13}\times\frac{\Delta m_{12}^2L}{2E_\nu}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu}\sin\delta \nonumber
-\end{align}
+\times & \sin\frac{\Delta m^2_{13}L}{2E_\nu}\cos\delta-\sin2\theta_{23}\sin2\theta_{13}\cos^2\theta_{13}\sin\theta_{13}\times\frac{\Delta m_{12}^2L}{2E_\nu}\sin^2\frac{\Delta m^2_{13}L}{4E_\nu}\sin\delta
+\end{split}
+\label{eq:intro:app_p}
+\end{equation}
 
-The visualization of the formulas above are provided on~\autoref{fig:intro:osc1}. The oscillation curves for each initial state ($e, \mu, \tau$) and two $E/L$ are shown. From such plot it's much easier to understand the meaning of the oscillation parameters. The mixing angles define oscillation amplitude and the mass difference define frequency.
+The visualization of the formulas above is provided in \autoref{fig:intro:osc1}. The oscillation curves for each initial state ($e, \mu, \tau$) and two $E/L$ are shown. From such a plot, it's much easier to understand the meaning of the oscillation parameters. The mixing angles define oscillation amplitude and the mass difference defines frequency.
 
 \begin{figure}[!ht]
 \centering
@@ -380,7 +418,7 @@ The visualization of the formulas above are provided on~\autoref{fig:intro:osc1}
   \centering
   \includegraphics[width=\linewidth]{osc_ele_short.png}
 \end{minipage}
-\caption{Oscillation probabilities for the initial electron neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\caption{Oscillation probabilities for the initial electron neutrino state for two different L/E scales. The black line corresponds to the electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
 \label{fig:intro:osc1}
 \end{figure}
 
@@ -393,7 +431,7 @@ The visualization of the formulas above are provided on~\autoref{fig:intro:osc1}
 \begin{minipage}{0.4\linewidth}
   \includegraphics[width=\linewidth]{osc_muon_short.png}
 \end{minipage}
-\caption{Oscillation probabilities for the initial muon neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\caption{Oscillation probabilities for the initial muon neutrino state for two different L/E scales. The black line corresponds to the electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
 \label{fig:intro:osc2}
 \end{figure}
 
@@ -406,13 +444,34 @@ The visualization of the formulas above are provided on~\autoref{fig:intro:osc1}
 \begin{minipage}{0.4\linewidth}
   \includegraphics[width=\linewidth]{osc_tau_short.png}
 \end{minipage}
-\caption{Oscillation probabilities for the initial tau neutrino state for two different L/E scales. Black line corresponds to electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
+\caption{Oscillation probabilities for the initial tau neutrino state for two different L/E scales. The black line corresponds to the electron neutrino component, blue line for muon neutrino and red line for tau neutrino.}
 \label{fig:intro:osc3}
 \end{figure}
 
+\subsubsection{CP violation in the neutrino oscillations}
+
+The phenomenon of the CP-violation in the neutrino oscillation is worth emphasizing. In the Universe the dominance of matter over the anti-matter was observed. The modern cosmology facing the problem of explanation of such a phenomenon. The fundamental conditions for the matter-dominance generation were developed by Sakharov~\cite{sakharov1967violation}. One of the key conditions is the CP-violation. This phenomenon was observed in the quark sector~\cite{Tanabashi2018}. But the precise measurements show that the amplitude of the CP-violation is not sufficient enough to generate the observed asymmetry in the Universe.
+
+Plenty of hypotheses propose the generation of the matter dominance through the lepton sector~\cite{Davidson2008}. The non-zero CP-violation phase (\autoref{eq:intro:osc_param}) is essential for such an effect. From the \autoref{eq:intro:disapp_p} and \autoref{eq:intro:app_p} we could clearly see that the CP-violating phase could be measured only in the appearance channel and the total effect is scaled by the value of the mixing angle $\theta_{13}$. According to the latest measurements, the value of the mixing angle is relatively large (in normal mass order assumption $\theta_{13}=8.45^{+0.16}_{-0.14}$~\cite{DeSalas2018}) that allows the direct search for the leptonic CP-violation in the experiment.
+
+The latest results of the CP-violation in the neutrino oscillations will be presented in \autoref{sec:intro:osc_exp}. It's important to note that the CP-violation is not essential to generate the matter-dominance in the early Universe. The existence of heavy neutrinos (\autoref{sec:intro:HNL}) is also necessary.
+
+\begin{bclogo}[couleur=blue!2, arrondi=0.1, logo=\bcinfo, nobreak=true]{Symmetries: C, P, T}
+In particle physics there are three important symmetries: charge (C), parity (P) ant time (T).
+
+Parity inversion (P) flip the sign of the spatial coordinate $\mathcal{P}\overrightarrow{r}=-\overrightarrow{r}$ . In the QFT it's described as $\mathcal{P}\lvert\psi\rangle=c\lvert\psi\rangle$. Where $c$ is the eigenvalue of $\mathcal{P}$. The parity violation means a process that changes the eigenvalue of the parity transformation for some system. The theory of such a process was developed by Lee and Yang~\cite{Lee1956} and found in the Wu's experiment~\cite{Wu1957}. The asymmetry of the outgoing electrons from the Cobalt with respect to the nucleus polarization was the nice and clear proof for the effect.
+
+Charge symmetry (C) transform particle to its anti-particle. $\mathcal{C}\lvert\psi\rangle=\eta_{C}\lvert\bar{\psi}\rangle$, where $\eta_{C}$ is the eigenvalue of the transformation. The example of the eigenvalue non-conservation experimental observation could be found in~\cite{Gormley1968}.
+
+Time transformation (T) inverse the time direction. After the discovery of the separate P and C violations, the combined symmetry breaking became the puzzle.
+
+As it will be a hint towards T-symmetry breaking. The CP-violation was observed in the neutral kaons oscillations process~\cite{Christenson1964}. Later such a process was confirmed with the direct measurements of kaon decays~\cite{AlaviHarati1999}~and~\cite{Fanti1999}, B-meson decays~\cite{Aubert2001}~and~\cite{Abe2001}, D-mesons~\cite{Aaij2019}.
+
+Together they form a CPT symmetry. It's proved that any Lorentz invariant local quantum field theory with a hermitian Hamiltonian must be invariant under CPT.
+\end{bclogo}
 
 \subsubsection{2--flavor oscillations}
-In the previous section the modern framework of the neutrino oscillations were described. Historically the neutrino mixing theory was developed for 2 flavors. While 3-flavor oscillation probability equations are quite complicated, a 2--flavor approximation often provides sufficient accuracy. In this approach the mixing matrix transforms to a usual 2x2 rotation matrix
+In the previous section, the modern framework of the neutrino oscillations was described. Historically the neutrino mixing theory was developed for 2 flavors. While 3-flavor oscillation probability equations are quite complicated, a 2--flavor approximation often provides sufficient accuracy and suitable for the many experiments. In this approach, the mixing matrix transforms to a usual 2x2 rotation matrix
 \begin{equation}
 U=
 \begin{pmatrix}
@@ -429,45 +488,135 @@ P_{\nu_\alpha\to\nu_\beta}=&\sin^22\theta\sin^2\frac{1.27\Delta m^2L}{E_\nu}
 in this notation the neutron energy unit is supposed to be GeV, the distance unit is km and the mass difference unit is $eV^2/c^2$.
 
 \subsubsection{Oscillation in matter}
-The framework presented above describes the oscillations in vacuum. In case of neutrino propagation in matter the effect will be different. Going through medium neutrino suffers from the forward elastic scattering with electrons and nucleons. This effect is similar to the phenomena of the light propagation in matter. The new potential which is equivalent to the refraction index, need to be taken into account. But the interaction types are slightly different for different neutrinos. All neutrino types may scatter over electrons, protons and neutrons through the neutral current exchange. In addition, electron neutrino scatters over the electrons with the charge current. The framework of the neutrino oscillations in mater was developed by Wolfenstein~\cite{Wolfenstein1978}. The mixing angle and the mass difference should be replaced by the effective ones, depending on the matter density.
+\label{sc:intro:mat}
+The framework presented above describes the oscillations in the vacuum. In the case of neutrino propagation in matter, the effect will be different. Going through medium neutrino suffers from the forward elastic scattering with electrons and nucleons. This effect is similar to the phenomenon of light propagation in the matter. The new potential which is equivalent to the refraction index needs to be taken into account. But the interaction types are slightly different for different neutrinos. All neutrino types may scatter over electrons, protons and neutrons through the neutral current exchange. In addition, electron neutrino scatters over the electrons with the charge current. The framework of the neutrino oscillations in mater was developed by Wolfenstein~\cite{Wolfenstein1978}. The mixing angle and the mass difference should be replaced by the effective ones, depending on the matter density.
 
-Later it was discovered that in case of slightly changing density of the matter there is a region where the mixing angle reachs it's maximum possible value $\pi/4$~\cite{Mikheyev1985}. This phenomena is called Mikheyev–Smirnov–Wolfenstein (MSW) effect.
+Later it was discovered that in case of slightly changing density of the matter there is a region where the mixing angle reaches its maximum possible value $\pi/4$~\cite{Mikheyev1985}. This phenomenon is called Mikheyev–Smirnov–Wolfenstein (MSW) effect.
 
-It's interesting to notice that non-zero mass difference is not necessary for the neutrino oscillations in matter. The flavor change is observable even in case of $\Delta m=0$ only because of the non-zero mixing angles~\cite{Smirnov2016}.
+It's interesting to notice that non-zero mass difference is not necessary for the neutrino oscillations in matter. The flavor change is observable even in the case of $\Delta m=0$ only because of the non-zero mixing angles~\cite{Smirnov2016}.
 
 
 \subsubsection{Modern neutrino oscillation understanding}
-In spite of the clear explanation of the neutrino oscillation phenomena within the quantum mechanics framework (\autoref{sec:osc}), this method suffers from incompleteness. For instance the assumption of the same momentum (or the same energy) of the different eigenstates is quite strong, but fully empirical. Also the normalization of the transition amplitude is not properly justified.
+In spite of the clear explanation of the neutrino oscillation phenomenon within the quantum mechanics framework (\autoref{sec:intro:osc}), this method suffers from incompleteness. For instance, the assumption of the same momentum (or the same energy) of the different eigenstates is quite strong but fully empirical. Also, the normalization of the transition amplitude is not properly justified.
 
-Another approach could solve some of the problems above. In case of the neutrino description only as a propagator between production and detection point (QFT framework) the normalization and all the conservation laws will come out of the box without manual tuning~\cite{Akhmedov2010a}.
+Another approach could solve some of the problems above. In the case of the neutrino description only as a propagator between production and detection point (QFT framework) the normalization and all the conservation laws will come out of the box without manual tuning~\cite{Akhmedov2010a}.
 
-Another interesting notice refers to the charge lepton oscillation problem. For instance mixing in the quark sector involves all the 9 quarks, while the oscillations in the lepton sector are usually notated as ``neutrino oscillations'' that affects only 3 uncharged leptons. In fact Pontecorvo-Maki-Nagava-Sakata matrix affects also charge leptons. But the coherence will be imminently ruined when the macroscopic sizes of source and detector are taken into account~\cite{Akhmedov2007}.
+Another interesting notice refers to the charged lepton oscillation problem. For instance, mixing in the quark sector involves all the 9 quarks, while the oscillations in the lepton sector are usually notated as ``neutrino oscillations'' affecting only 3 uncharged leptons. In fact Pontecorvo-Maki-Nagava-Sakata matrix affects also charged leptons. But the coherence will be imminently ruined when the macroscopic sizes of source and detector are taken into account~\cite{Akhmedov2007}.
 
 \subsection{Experiment overview}
-\label{sec:exp}
-
-\section{Prospects of the neutrino physics}
-
-
-
-\chapter{HNL analysis motivation}
-\label{ch:intro:HNL}
-
-As presented in the \autoref{sec:osc} of~\autoref{ch:nu_phys} during the exploration of the neutrino oscillation phenomenon, non-zero difference between neutrino eigenstates was observed. That leads to the conclusion that at least two of the three eigenstates should be massive. While in the SM the neutrinos are massless (\autoref{sec:sm} of ~\autoref{ch:nu_phys}). The theory explaining the mass origin of the neutrino is required.
-
-The easiest solution is try to implement the same process that gives mass to all other particles in the SM --- Higgs mechanism~\cite{Higgs1964} (also called Englert–Brout–Higgs–Guralnik–Hagen–Kibble mechanism for all contributed scientists). There are several problems on this way:
+\label{sec:intro:osc_exp}
+The neutrino oscillation story starts from the Raymond Davis experiment in the Homestake mine (USA)~\cite{Davis1968}. The idea of the experiment was to measure the neutrino flux from the Sun core using the 400 ${m^3}$ barrel with ${C_2Cl_4}$. The inverse beta-decay was used to detect the neutrinos $\nu_e+{}^{37}Cl\to{}^{37}Ar+e^+$. After every 70 days of the exposition the radioactive ${}^{37}Ar$ isotopes were blown up from the reservoir, and their decays were counted. The total neutrino flux was estimated as one third of the expectations. The observation was confirmed later with the following experiments: GALLEX~\cite{Kirsten1999}, SAGE~\cite{Abdurashitov1999}, Kamiokande~\cite{Oyama1989}. Thus it was two possible results interpretation:
 \begin{itemize}
-  \item the scale of the neutrino mass is very different from the other particles in the SM. The neutrino masses are less then 1 eV~\cite{Aker2019}, while the other particles masses are $\gtrsim 1$ MeV, that gives us a difference of at least 6 orders. It could be event larger up to 8 orders in case of minimum possible neutrino mass. It's hard to believe that the same mechanism is responsible of the generation of mass at so different scales.
-  \item as described in the~\autoref{sec:anti} only left-handed neutrinos and right-handed anti-neutrinos were observed. While for the Higgs mechanism both left and right handed particles are required.
+  \item The Standard Solar Model (SSM) is incorrect and the number of the produced neutrino is different from expectations
+  \item Neutrinos are oscillating (changing flavor) on the way from the production to detection. Since only electron neutrino was used for the observations the possible transformation of the electron neutrino to muon and tau neutrino could explain the anomaly
+  \item All the experiments had the same uncounted systematic error
+\end{itemize}
+The third option is very disfavorable as the different targets ad different analysis methods were used. The decision between the first and second options could be done with the detection of all kinds of neutrinos from the Sun. Such an experiment, called SNO, was performed in the Sudbury mine. The heavy water $D_2O$ was used as a neutrino target. The benefits of usage of the deuterium are the possibility to measure both the electron neutrino flux through the charge current (CC) interactions and the total neutrino flux through the neutral current (NC) interactions. Also, the electron neutrino flux estimations could be cross-checked with the measurements of the electron neutrino elastic scattering over electrons through both CC and NC.
+
+\begin{align}
+\nu_e+d&\to p+p+e^+ \\
+\nu_\alpha+d&\to p+n+\nu_\alpha\hspace{1cm} \alpha =e,\mu,\tau \\
+\nu_e+e^-&\to\nu_e+e^+
+\end{align}
+
+Thus it could be found out is it a deficit of all kinds of neutrinos or only electron ones. It was proved that the total neutrino flux is in a perfect agreement with SSM, but the electron neutrino flux is lower than expected~\cite{Ahmad2002}. The Super-Kamiokande confirmed the SNO result with measurements of both solar and atmospheric neutrinos~\cite{Fukuda1999}. The discovery of the atmospheric neutrino oscillations was a breakthrough since the solar neutrino oscillation points only to the non-zero mixing angles, while the atmospheric ones point to the non-zero mass-difference between neutrino eigenstates (\autoref{sc:intro:mat}). Thus the neutrino mass was discovered.
+
+\begin{figure}
+  \centering
+  \begin{minipage}{0.49\linewidth}
+  \centering
+    \includegraphics[width=\linewidth]{sno}
+    \caption{The comparison of the fluxes $\nu_e$ and $\nu_{\mu,\tau}$ based on the measurements by SNO and Super-Kamiokande.}
+    \label{fig:intro:sno}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+  \centering
+    \includegraphics[width=\linewidth]{sk}
+    \caption{The angular distribution of the through-going muons in the Super-Kamiokande. In the absence of neutrino oscillations nearly no angular dependence is expected.}
+    \label{fig:intro:sk}
+  \end{minipage}
+\end{figure}
+
+But even after such brilliant confirmations of the phenomena the prove of the effect with the well-known source was essential. Such confirmation came with the measurements of the reactor antineutrinos with the KamLAND experiment~\cite{Eguchi2003}. It was the final confirmation of the neutrino oscillation phenomena.
+
+\begin{figure}
+  \centering
+  \begin{minipage}{0.45\linewidth}
+  \centering
+    \includegraphics[width=\linewidth]{kam1}
+    \caption{The ratio of the observed and expected neutrino flux from reactors. Figure from~\cite{Eguchi2003}.}
+    \label{fig:intro:kam1}
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
+  \centering
+    \includegraphics[width=\linewidth]{kam2}
+    \caption{The energy spectrum of the neutrinos observed in the KamLAND experiment comparing to the expectations w/o neutrino oscillations. Figure from~\cite{Eguchi2003}.}
+    \label{fig:intro:kam2}
+  \end{minipage}
+\end{figure}
+
+\subsubsection{Modern experimental results}
+After the discovery of the neutrino oscillations, many experiments study the phenomenon with different techniques.
+\begin{itemize}
+  \item Solar neutrinos: experiments Borexino, Super-Kamiokande. These experiments are powerful in $\theta_{12}$ could also measure $\Delta m{21}^2$ and $\theta_{13}$
+  \item Reactor experiments: KamLand~\cite{Eguchi2003}, RENO~\cite{Ahn2012}, Double Chooz~\cite{Abe2014}, Daya Bay~\cite{An2014}. These experiments study the electron anti-neutrino disappearance and are very sensitive to the $\theta_{13}$ and could measure $\theta_{12}$, $\Delta m_{21}^2$, $\Delta m_{32}^2$
+  \item Accelerator experiments: MINOS~\cite{Adamson2014}, K2K~\cite{Ahn2006}, ICARUS, T2K~\cite{Abe2020a}, NOvA~\cite{Acero2019}. These experiments started with studying muon (anti-)neutrino disappearance and MINOS, T2K and NOvA managed to observe the electron neutrino appearance, OPERA observed the tau neutrino appearance. Thus these experiments are very precise in measurements of the $\theta_{23}$ and sensitive to the CP-violation. They could also measure $\theta_{13}$ and $\delta m_{32}$
+  \item Atmospheric and cosmology neutrinos: Super-Kamiokande~\cite{Jiang2019}, IceCube. They could probe the interesting processes in cosmology and also measure $\theta_{23}$, $\theta_{13}$, $\Delta m_{32}$ and $\delta_{CP}$
 \end{itemize}
 
-That leads to the fact that we need to implement some new mechanism or/and new fundamental particles to explain the origin of the neutrino masses.
+So far the neutrino oscillation parameters are measured very precisely (\autoref{tbl:intro:osc}), but there is still room for the improvements.
+
+\begin{table}[!ht]
+\centering
+  \begin{tabular}{||l|ll||ll|}
+  \hline
+  & \multicolumn{2}{c}{Normal Order} & \multicolumn{2}{c}{Inverse Order} \\
+  \hline
+  param                                   & best fit value  & 3$\sigma$range    & best fit value  & 3$\sigma$range \\
+  \hline
+  $\frac{\sin^2\theta_{12}}{10^{-1}}$     & 3.20            & 2.73$\to$3.79     & 3.20            & 2.73$\to$3.79 \\
+  $\theta_{12}/^\circ$                    & 34.5            & 31.5$\to$38.0     & 34.5            & 31.5$\to$38.0 \\
+  $\frac{\sin^2\theta_{23}}{10^{-1}}$     & 5.47            & 4.45$\to$5.99     & 5.51            & 4.53$\to$5.98 \\
+  $\theta_{23}/^\circ$                    & 47.7            & 41.8$\to$50.7     & 47.9            & 42.3$\to$50.7 \\
+  $\frac{\sin^2\theta_{13}}{10^{-2}}$     & 2.160           & 1.96$\to$2.41     & 2.220           & 1.99$\to$2.44 \\
+  $\theta_{13}/^\circ$                    & 8.45            & 8.0$\to$8.9       & 8.53            & 8.1$\to$9.0 \\
+  $\delta_{CP}/^\circ$                    & 218             & 157$\to$349       & 281             & 202$\to$349 \\
+  $\frac{\delta m_{21}^2}{10^{-5}eV^2}$   & 7.55            & 7.05$\to$8.24     & 7.55            & 7.05$\to$8.24 \\
+  $\frac{\delta m_{32}^2}{10^{-3}eV^2}$   & 2.42            & 2.334$\to$8.24    & -2.50           & -2.59$\to$-2.39 \\
+  \hline
+
+  \end{tabular}
+  \caption{Summary of the neutrino oscillation parameters measurements from~\cite{Tanabashi2018} for both normal and inverse neutrino mass order.}
+  \label{tbl:intro:osc}
+\end{table}
+
+The visual representation of the neutrino oscillation parameters constrains is presented in \autoref{fig:intro:osc_tot}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{osc_tot}
+  \caption{The global fit of the neutrino oscillation parameters and results from the particular experiments used in the fit. The upper figures corresponds to the normal mass order and lower figures for inverted mass order.}
+  \label{fig:intro:osc_tot}
+\end{figure}
+
+\chapter{Neutrino mass}
+\label{ch:intro:HNL}
+
+As presented in the \autoref{sec:intro:osc} of \autoref{ch:nu_phys} during the exploration of the neutrino oscillation phenomenon, the non-zero difference between neutrino eigenstates was observed. That leads to the conclusion that at least two of the three eigenstates should be massive. While in the SM the neutrinos are massless (\autoref{sec:sm} of  \autoref{ch:nu_phys}). The theory explaining the mass origin of the neutrino is required.
+
+The easiest solution is to try to implement the same process which gives mass to all other particles in the SM --- Higgs mechanism~\cite{Higgs1964} (also called Englert–Brout–Higgs–Guralnik–Hagen–Kibble mechanism for all contributed scientists). There are several problems in this way:
+\begin{itemize}
+  \item the scale of the neutrino mass is very different from the other particles in the SM. The neutrino masses are less than 1 eV~\cite{Aker2019}, while the other particles masses are $\gtrsim 1$ MeV, which gives us a difference of at least 6 orders. It could be even larger up to 8 orders in the case of minimum possible neutrino mass. It's hard to believe that the same mechanism is responsible for the generation of mass at so different scales.
+  \item as described in the \autoref{sec:sm} only left-handed neutrinos and right-handed anti-neutrinos were observed. While for the Higgs mechanism both left and right-handed particles are required.
+\end{itemize}
+
+That leads to the fact that we need to implement some new mechanisms or/and new fundamental particles to explain the origin of the neutrino masses.
 
 \section{Theory}
-In this section the main models of neutrino mass generation will be overviewed. Dirac and Majorana mass terms will be presented as well as a ``mixed'' model of merging this two approaches (seesaw mechanism).
+In this section, the main models of neutrino mass generation will be overviewed. Dirac and Majorana mass terms will be presented as well as a ``mixed'' model of merging these two approaches (a seesaw mechanism).
 
 \subsection{Dirac mass term}
-In the Standard Model of the particle physics the mass all the particles is generated with the Higgs mechanism. For example the Higgs-lepton Yukawa Lagrangian provides a natural explanation for the masses for the charged leptons
+In the Standard Model of particle physics, the masses of all the particles are generated with the Higgs mechanism. For example, the Higgs-lepton Yukawa Lagrangian provides a natural explanation for the masses for the charged leptons
 \begin{equation}
 \mathcal{L}_{H, L}=-\sum_{\alpha, \beta=e,\mu,\tau}Y'^\ell_{\alpha\beta}\overline{L'_{\alpha L}}\Phi\ell'_{\beta R}+h.c
 \end{equation}
@@ -476,7 +625,7 @@ Applying the same approach for the neutrino mass generation we will get the Lagr
 \mathcal{L}&=-\sum_{\alpha\beta=e,\mu,\tau}\bar{\nu}_{L,\alpha}(m_D)_{\alpha\beta}\nu_{R,\beta}+h.c. =\nonumber \\
 &=-\overline{\nu_L}m_D\nu_R+h.c.
 \end{align}
-where $m_D$ is a 3x3 complex matrix. It could be diagonalized $m_D=U^\dag m V$, where U and V are unitary and $m_i\delta_{ik}$, $m_i>0$. After digitalization we could separate
+where $m_D$ is a 3x3 complex matrix. It could be diagonalized $m_D=U^\dag m V$, where U and V are unitary and $m_i\delta_{ik}$, $m_i>0$. After diagonalization, we could separate
 
 \begin{align}
 \nu_{\alpha L}&=\sum_iU_{\alpha i}\nu_{iL} \nonumber \\
@@ -490,12 +639,12 @@ and define $\nu\equiv\nu_L+\nu_R$. Thus the Dirac mass term will be expressed as
 where $\nu_i$, $i=1, 2, 3$ are neutrino mass eigenstates and $\nu_{\alpha L}$ are left-handed neutrino flavor eigenstate. The transition between them is defined with PMNS matrix (\autoref{eq:intro:mixing}).
 
 \subsection{Majorana mass term}
-As mentioned in the~\autoref{sec:anti} neutrino could be described with the Majorana equation in case $\psi=\psi^C$. To generate the mass for such a particle we need only one chiral fermion field. As neutrino is left-handed let us notate is at $\nu_L$. To write the mass term for this specific case we need to use $\nu_L$ alone. Modifying~\autoref{eq:intro:dirac}
+Neutrino could be described with the Majorana equation in the case $\psi=\psi^C$. This equation gives a definition to the Majorana fermion - this is a particle invariant under C symmetry or the particle that is equal to its anti-particle. Is it true in the case of the neutrino is still an open question. To generate the mass for such a particle we need only one chiral fermion field. As neutrino is left-handed let us notate is at $\nu_L$. To write the mass term for this specific case we need to use $\nu_L$ alone. Modifying \autoref{eq:intro:dirac}
 \begin{equation}
 \mathcal{L}^D_{mass}=-m\overline{\nu}\nu=-m\left(\overline{\nu_R}\nu_L+\overline{\nu_L}\nu_R\right)=-m\overline{\nu_R}\nu_L+h.c.
 \end{equation}
 
-Here $\nu_R$ should be replaced with right-handed function of the $\nu_L$. in fact it's a charge conjugated field
+Here $\nu_R$ should be replaced with the right-handed function of the $\nu_L$. in fact it's a charge conjugated field
 \begin{equation}
 \nu_L^C=\mathcal{C}\overline{\nu_L}^T
 \end{equation}
@@ -504,13 +653,11 @@ Thus the Majorana mass term could be expressed as
 \mathcal{L}^M_{mass}=-\frac{1}{2}m\overline{\nu_L^C}\nu_L+h.c.
 \end{equation}
 
-The Majorana mass term provides an interesting mechanism of the generation of the neutrino mass. But it implements also physics beyond the SM. The lepton number is an invariant in the SM because of the U(1) symmetry. With the Majorana model it there is no such symmetry anymore. This leeds to the processes when the lepton number is violated, e.g. neutrino-less double beta decay.
-
-Also such theory contains a product of fields with energy dimensions five
+The Majorana mass term provides an interesting mechanism of the generation of the neutrino mass. But it implements also physics beyond the SM. The lepton number is invariant in the SM because of the U(1) symmetry. With the Majorana model it there is no such symmetry anymore. This leads to the processes when the lepton number is violated, e.g. neutrino-less double beta decay. Also, such theory contains a product of fields with energy dimensions five.
 
 
 \subsection{Mixing Dirac and Majorana terms}
-The most perspective approach is a combination the both Dirac and Majorana terms. In this case the model is very flexible and could provide the natural explanation of the neutrino masses with minimum extensions over the Standard Model. The mass term will be written with
+The most perspective approach is a combination the both Dirac and Majorana terms. In this case, the model is very flexible and could provide the natural explanation of the neutrino masses with minimum extensions over the Standard Model. The mass term will be written with
 \begin{equation}
 \label{eq:intro:comb}
 \mathcal{L}_{mass}^{D+M}=\mathcal{L}^D_{mass}+\mathcal{L}^R_{mass}+\mathcal{L}^L_{mass}
@@ -519,10 +666,10 @@ where
 \begin{align}
 \mathcal{L}^L_{mass}&=\frac{1}{2}\sum_{\alpha,\beta}\nu'^T_{\alpha L}\mathcal{C}^\dagger M^L_{\alpha\beta}\nu'_{\beta L}+h.c. \\
 \mathcal{L}^R_{mass}&=\frac{1}{2}\sum_{s, s'}\nu^T_{s R}\mathcal{C}^\dagger M^R_{ss'}\nu'_{s' R}+h.c. \\
-\mathcal{L}^D_{mass}&=-\sum_{s=s_1, ..., s_{N_s}}\sum{\alpha}\overline{\nu_{sR}}M^D_{ss'}\nu'_{\alpha L} +h.c.
+\mathcal{L}^D_{mass}&=-\sum_{s=s_1, ..., s_{N_s}}\sum{\alpha}\overline{\nu}_{sR}M^D_{ss'}\nu'_{\alpha L} +h.c.
 \end{align}
 
-In the equations above the Greek indexes as usual corresponds to the flavor states, L and R illustrate the chirality and $s_i$ describes the sterile neutrino types. Thus matrix $M^L$ will be symmetric 3x3, $M^R$ --- symmetric $N_s\times N_x$ and $M^D$ --- $N_s\times3$. The mass matrix for the some of this three components will be written with
+In the equations above the Greek indexes, as usual, corresponds to the flavor states, L and R illustrate the chirality and $s_i$ describes the sterile neutrino types. Thus matrix $M^L$ will be symmetric 3x3, $M^R$ --- symmetric $N_s\times N_x$ and $M^D$ --- $N_s\times3$. The mass matrix for some of these three components will be written with
 \begin{equation}
 M^{D+M}\equiv
 \begin{pmatrix}
@@ -547,12 +694,12 @@ N'_L\equiv
 \end{pmatrix}
 \end{align}
 
-And the mass term~\autoref{eq:intro:comb} with new noteations will be rewritten as
+And the mass term \autoref{eq:intro:comb} with new notations will be rewritten as
 \begin{equation}
 \mathcal{L}_{mass}^{D+M}=\frac{1}{2}N'^T\mathcal{C}^\dagger M^{D+M}N'_L+h.c.
 \end{equation}
 
-There are plenty ways to combine Dirac and Majorana terms. With different initial assumptions the theory result could be quite different. Here there are the main hypothesis. In the notation below $m_D$ describes the Dirac mass, $m_L$, $m_R$ describe Majorana mass and the $m_{1,2}$ describes the mass eigenstates observable in the experiment.
+There are plenty of ways to combine Dirac and Majorana terms. With different initial assumptions, the theory result could be quite different. Here there are the main hypotheses. The notation below $m_D$ describes the Dirac mass, $m_L$, $m_R$ describe Majorana mass and the $m_{1,2}$ describes the mass eigenstates observable in the experiment.
 \begin{itemize}
   \item Maximal mixing. $m_L=m_R$, $m_{2, 1}=m_L\pm m_D$, $\Delta m^2=m_2^2-m_1^2=4m_L m_D$
   \item Dirac limit. $m_L=m_R=0$, $m_{2,1}=\pm m_D$
@@ -564,12 +711,12 @@ There are plenty ways to combine Dirac and Majorana terms. With different initia
 Among all of the theories with Dirac and Majorana mixing the seesaw mechanism seems to be the most perspective. Here are the main advantages of this hypothesis:
 \begin{itemize}
   \item The gauge symmetry is not broken as $m_L=0$
-  \item The only ``exotic'' part (Sm extension) is implementation of $m_R$
+  \item The only ``exotic'' part (SM extension) is the implementation of $m_R$
   \item The Dirac mass could be easily explained with the Higgs method as $m_D$ is close to the mass of the SM particles
   \item Tiny mass of the observed neutrino eigenstates could be described with mixing
 \end{itemize}
 
-So, how could we explain the fact that observed neutrino mass is so small? $m_D$ is generated with a Higgs mechanism and could be GeV scale. $m_R$ is an exotic part of the theory. As it is a Majorana term it will violate the lepton number. But it will take place only at extremely high energies, much more then electroweak scale. The observed neutrino mass will be given by the mixing:
+So, how could we explain the fact that observed neutrino mass is so small? $m_D$ is generated with a Higgs mechanism and could be GeV scale. $m_R$ is an exotic part of the theory. As it is a Majorana term it will violate the lepton number. But it will take place only at extremely high energies, much more than the electroweak scale. The observed neutrino mass will be given by the mixing:
 \begin{align}
 m_1\approx\frac{m_D^2}{m_R} \ll m_D && m_2\approx m_R \gg m_D
 \end{align}
@@ -580,10 +727,149 @@ and the mixing angle will be set as
 \theta\approx\frac{m_D}{m_R} \ll 1
 \end{equation}
 
-For example, imagine the Dirac mass is fixed with $m_D=170 GeV$ and observed neutrino mass $m_1=5\times 10^-2 eV$, then the Majorana mass will be at the extremely high energy scale $M_R\approx10^{15}GeV$.
+For example, imagine the Dirac mass is fixed with $m_D=170 GeV$ and observed neutrino mass $m_1=5\times 10^{-2} eV$, then the Majorana mass will be at an extremely high energy scale $M_R\approx10^{15}GeV$.
 
+\subsection{Heavy Neutral Lepton}
+\label{sec:intro:HNL}
+In the previous section, it was proved that the extension of the SM is necessary to explain the neutrino mass. The seesaw mechanism is a minimal extension that could provide such an explanation. But there is no hint for the mass scale of the proposed new particles.
 
+For example, the implementation of the ~1 eV neutrino will mostly affect the neutrino oscillation probabilities. To meet the agreement with the LEP results of the Z boson decay measurements (\autoref{sec:intro:LEP}) the 4th neutrino should not couple with the Z boson. That's why such a particle is notated as a ``sterile'' neutrino. Also, their mixing with the other three active neutrinos should be quite small $\left|U_{e4},\right|, \left|U_{\mu4},\right|, \left|U_{\tau4},\right| \ll \left|U_{s4},\right|$ as in most of the neutrino oscillation experiments 3-flavor neutrino model describes the observation pretty well. However, in some experiments, the anomaly that could be explained with the 4th neutrino with $\Delta m_{41}^2~1eV$ was found. The first such an experiment was LSND~\cite{Athanassopoulos1997}, that inspired the short-baseline neutrino oscillation research program. Some anomalies are also found in the reactor experiments. Though there is no final statement is it a significant observation or the result of the unaccounted systematic error. Plenty of experiments are running now in order to figure out the nature of the phenomenon. We could generally divide them in the short-baseline accelerator experiments: MicroBooNE, ARAPUCA, ICARUS and others and reactor experiments: NEOS, DANSS, STEREO, PROSPECT, NEUTRINO-4, SoLid, and others.
 
-\section{Experiments and challenges}
+More information about the light sterile neutrino could be found in~\cite{Abazajian2012}. The implementation of the heavier neutrinos will be overviewed in the next section.
+
+\subsubsection{Neutrino Minimal Standard Model ($\nu MSM$)}
+The minimal extension of the SM introducing the neutrino mass explanation was developed by the Asaka and Shaposhnikov~\cite{Asaka2005}. The existence of three heavy neutrinos $N_1$, $N_2$, $N_3$ was proposed. It's worth mentioning that there are plenty of extensions of the SM with different numbers of additional particles. $\nu MSM$ is highlighted because of this minimalism, which has always been an advantage of the physics theory.
+
+Long living (comparing to the Universe's age) $N_1$ with a mass around keV could be responsible for the phenomenon of the Dark Matter. It could be produced in the early Universe and still exists. $N_1$ could explain the known middle-distance gravitational anomalies such as galaxies mass and galaxy rotation speed.
+
+$N_2$ and $N_3$ are two nearly degenerated fermions with mass $140 MeV < M < 80 GeV$. The model contains 6 CP-violating phases that allow the violating of the lepton number $L$. Through the mixing with the active neutrino, such an asymmetry could be transferred to the active leptons. With the help of the sphaleron mechanism, the violation of the lepton number could cause the violation of the baryon number $B$, but conserving the $B-L$. Such a model could explain the observed baryon asymmetry of the Universe~\cite{Asaka2005a}.
+
+\section{Experiments}
+Despite the Standard Model assumption about the neutrino massless nature, there were plenty of attempts to measure its mass. After the confirmation of the fact that neutrino has mass from the neutrino oscillation phenomenon (\autoref{sec:intro:osc}), these measurements became essential.
+
+\subsection{Neutrino mass measurements}
+In this section, both direct and non-direct methods of the neutrino mass measurements will be overviewed. The latest experimental results will be presented.
+
+\subsubsection{Beta decay}
+The straightforward way for the neutrino mass measurements is a search for the effect of the nonzero neutrino mass in the beta decay spectrum. One needs to measure the energy of outgoing electrons and look at the far end of the distribution. The variation of the neutrino mass changes dramatically the energy spectrum in this particular region. For the electron source, the deuterium or a tritium isotope is usually chosen. The main technological issues are to perform extremely precise measurements of the electron energy. The most accurate limits obtained with this method for a long time belonged to Mainz~\cite{Kraus2005} and Troitsk~\cite{Aseev2011} experiments. Recently KATRIN experiment announced more precise neutrino mass limits $m_\nu < 1.1 eV$ with 90\%C.L.~\cite{Aker2019}.
+
+It's important to notice what is a ``neutrino mass'' $m_\nu$ that is measured in the beta decay.
+\begin{equation}
+m_\nu\equiv m_\beta\equiv\sqrt{\sum_i\left|U_{ei}\right|^2m_i^2}
+\end{equation}
+
+More details about the neutrino mixing will be presented in \autoref{sec:intro:osc}.
+
+\subsubsection{Neutrinoless double beta decay}
+In case neutrino has a Majorana nature, it's possible to measure the $m_{ee}$ in the process of the neutrinoless double beta decay. The Feynman diagram of the process is shown in \autoref{fig:intro:bb}.
+\begin{equation}
+m_{\beta\beta}=\sum_i U^2_{ei}m_i
+\end{equation}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\linewidth]{beta_beta}
+  \caption{Feynman diagram for the neutrinoless double beta decay}
+  \label{fig:intro:bb}
+\end{figure}
+
+All the $0\nu\beta\beta$ experiments are putting the limits of the current value. The most precise result was obtained by KamLAND-Zen experiment $m_{\beta\beta} < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. One should keep in mind that successful measurement possible only in the case of Majorana neutrino nature.
+
+\subsubsection{Cosmology}
+Cosmology provides different possibilities for neutrino mass measurements. One of the earliest attempts was done based on the timing measurements of the neutrinos from SN1987 --- the earliest and so far the only observation of the neutrino from the supernova collapse.
+
+The other method is a precise observation of the evolution of the early Universe. The combination of the cosmic microwave background (CMB) and baryon oscillation provides the limit on the neutrino mass $m_\nu=\sum_i m_{\nu_i}<0.12eV$ 90\% C.L.~\cite{Palanque-Delabrouille2015}.
+
+The main problem of such analysis is a dependence on the theoretical models such as supernova collapse or early Universe evolution.
+
+\subsection{Search for Heavy Neutral Lepton}
+\label{sec:intro:HNL_exp}
+As mentioned in the \autoref{sec:intro:HNL}, there is plenty of hypotheses proposing the existence of the Heavy neutral Lepton (HNL). Various analyses in different experiments were performed in order to find the HNL. In this section we will describe the search for the HNL in the context of the $\nu MSM$ framework, but the results could be applied for any other models introducing the heavy neutrino via mixing with the active one.
+
+\subsubsection{HNL at keV scale}
+The lightest HNL at the keV scale could be detected through its decays $N_1\to \nu\nu\overline{\nu}$ and $N_1\to\gamma\nu$. While the first reaction is undetectable from the practical point of view, the latter will produce the observable X-rays. There is plenty of analyses searching for the X-ray signal from the cosmological object (e.g. Galaxy core, other galaxies, etc.)~\cite{Ng2019, Perez2017}. The latest results are presented in \autoref{fig:intro:hnl_kev}.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{kev_gen} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{kev_det} \\ (b)
+  \end{minipage}
+  \caption{The constrains on the mixing angle of the $N_1$ with respect to its mass: (a) the general figure and (b) the detailed view at the region of interest. Figure provided by~\cite{Perez2017}.}
+  \label{fig:intro:hnl_kev}
+\end{figure}
+
+So far the region is almost excluded but there is still a possibility to find $N_1$ from $\nu MSM$~\cite{Caputo2020}.
+
+\subsubsection{HNL at GeV scale}
+This is a scale where we expect to find the heavy neutrinos $N_1$ and $N_2$ from the $\nu MSM$. Its mass allowed the direct search through the decay into SM particles. The work~\cite{Gorbunov2007} provides a detailed overview of the HNL production and the decay modes. The main production mode it a meson two-body decay.
+\begin{equation}
+H\to\ell+N
+\end{equation}
+Thus we could expect the HML production in the decays of $\pi$, $K$, $D$, $B$ and heavier mesons. The HNL is unstable hence the decay channel into the active lepton is open. While the decay modes to the lighter HNL $N_{1,2}\to N_1+...$ is strongly suppressed. The most probable modes are
+\begin{equation}
+N\to\overline{\nu}\nu\nu, \mu e\nu, \pi^0\nu, \pi e, \mu\mu\nu, \pi\mu, Ke, K\mu, \eta\nu, \rho\nu,...
+\end{equation}
+
+Two-body decay mode is more probable over the three-body decay modes, hence there are more preferable for the direct search in the experiment. Also, the channels with at least two charged particles in the final state are much easier for the observation. Thus $3\nu$ and $\pi^0\nu$ modes are often not considered in the analysis due to extremely hard detection.
+
+In general, the HNL search could be separated into several categories:
+\begin{itemize}
+  \item analysis of the meson decay. The effect is proportional to $\left|U\right|^2$. For example, E949 and NA62 explored the decay $K^+\to\mu^+N$. Thus the region of the HNL mass $M_{HNL} < m_K-m_\mu=388 MeV/c^2$ could be explored.
+  \item direct search for the HNL decay. For example, PS191 experiment searched for the HNL produced with $\pi/K\to eN$ and $\pi/K\to\mu N$ and further decayed into $e\pi$, $\mu\pi$, $\mu e\nu$. Slightly different analyzes were done by DELPHI and LHCb. They still look for the HNL decays, but produced in the Z boson decay.
+  \item joint search for HNL production and decay. For example, ATLAS and CMS performed the search for the two leptons with the same charge: one lepton along with HNL production the other comes from its decay. Such a process is possible only in the Majorana nature of the HNL.
+\end{itemize}
+
+So far, no evidence of the HNL existence was found and the upper limits on the mixing elements were set. The latest results from all the experiments could be found in \autoref{fig:umuh}, \autoref{fig:ueh} and \autoref{fig:utauh}.
+
+\begin{figure}[!ht]
+\includegraphics[width=0.7\linewidth]{umuh}
+\caption{Constraints on the mixing matrix element $|U_{\mu}|^2$ from the experiments CMS~\cite{cms}, DELPHI~\cite{delphi}, L3~\cite{l3}, LHCb~\cite{lhcb}, BELLE~\cite{belle}, BEBC~\cite{bebc}, FMMF~\cite{fmmf}, E949~\cite{e949}, PIENU~\cite{pienu}, TRIUMF/TINA~\cite{triumf}, PS191~\cite{bernardi1988further}, CHARMII~\cite{charm2}, NuTeV~\cite{nutev}, NA3~\cite{na3} and kaon decays in~\cite{kaon1,kaon2}. The plot is similar to Ref.~\cite{drewes}, some comments on the interpretation can be found in that article and references therein.}
+\label{fig:umuh}
+\end{figure}
+\begin{figure}[!ht]
+\includegraphics[width=0.7\linewidth]{ueh}
+\caption{Constraints on the mixing matrix element $|U_{e}|^2$ from the experiments  DELPHI~\cite{delphi},  L3~\cite{l3}, PIENU~\cite{pienu}, TRIUMF/TINA~\cite{triumf}, PS191~\cite{bernardi1988further}, CHARM~\cite{charm}, NA3~\cite{na3}, IHEP-JINR~\cite{jinr} and kaon decays~\cite{kaon1}. The plot is similar to Ref.~\cite{drewes}, some comments on the interpretation can be found in that article and references therein.}
+\label{fig:ueh}
+\end{figure}
+\begin{figure}[!ht]
+\includegraphics[width=0.7\linewidth]{utauh}
+\caption{Constraints on the mixing matrix element $|U_{\tau}|^2$ from the experiments  CHARM~\cite{orloff2002limits}, NOMAD~\cite{baldisseris2001search}, DELPHI~\cite{delphi} and L3~\cite{l3}, some comments on the interpretation can be found in that article and references therein.}
+\label{fig:utauh}
+\end{figure}
+
+\chapter{Prospects of the neutrino physics}
+The the introduction part there was highlighted several times that we still have plenty of open questions in the neutrino physics. The most important among them are:
+\begin{itemize}
+  \item CP-violation in the lepton sector. Does it exist?
+  \item Is neutrino a Dirac or a Majorana fermion?
+  \item What is the neutrino mass order? $m_1<m_2<m_3$ or $m_3<m_1<m_2$?
+  \item What are the absolute values of the neutrino mass?
+  \item What is the nature of the neutrino mass?
+  \item What are the other neutrinos except known 3 generations?
+  \item Could neutrino (or heavy neutrino) solve the problems of modern cosmology: Dark Matter existence and the matter-dominance in the Universe?
+\end{itemize}
+
+Answer for any of them will be a remarkable step forward in our understanding of fundamental physics.
+
+\section{Future neutrino experiments}
+\label{intro:future}
+Plenty of experiments are working on solving the problems above. Many proposals were made about future experiments.
+
+The ongoing long-baseline accelerator experiments T2K and NOvA already observed a hint for the maximal CP-violation in the neutrino oscillations. The T2K experiment will be able to reach $3\sigma$ sensitivity for some values of the $\delta_{CP}$~\cite{Abe2016e}. The future experiments Hyper-Kamiokande~\cite{Proto-Collaboration2018} and DUNE~\cite{Acciarri2016} are proposed to reach $5\sigma$ sensitivity for almost all the values of the $\delta_{CP}$.
+
+The JUNO experiment~\cite{Cerna2020} is going to perform the extremely precise measurements of the reactor neutrino oscillations. With the help of these observations the neutrino mass order could be determined.
+
+Plenty of experiments are looking for the neutrino-less double-beta decay. They are looking for the small signal in the low background environment. Different isotopes are used as a supposed source of the $0\nu\beta\beta$ decay. KamLAND-ZEN uses the ${}^{136}Xe$ isotope, GERDA~\cite{DiMarco2020} uses ${}^{76}Ge$, CUORE~\cite{Cardani2020} ${}^{82}Se$ and SNO+ ${}^{130}Te$. Any of the positive results will indicate the Majorana nature of the neutrino.
+
+Astrophysics experiments are studying neutrino from the sources outside the Solar System. Usually, they are using Cerenkov light from the lepton or other particles produced in the neutrino interactions. The probability of such events is relatively low, so the fiducial volume is extended as much as possible. But the energy of such events is quite high. The examples of such experiments are IceCube~\cite{Aartsen2017} using 1 $km^3$ of ice at the South Pole; Antares --- the first sea neutrino telescope; proposed experiment KM3NeT~\cite{LeBreton2019} is a one cubic kilometer neutrino telescope in the Meridian sea. These experiments could detect the neutrinos from the supernova core or active galaxy core that makes them very powerful for testing the cosmological models.
+
+The very important class of the experiments are searching for sterile neutrino in the reactor experiment. Some anomalies, e.g. lack of the neutrino events in the short-baseline reactor experiments or Gallium experiments could be explained with the implementation of the 4th neutrino flavor. The extremely short-baseline reactor experiments are very sensitive to its existence. Some of them are able to change the baseline with the detector moving. The oscillations are modulated by the ration of the energy to distance $E/L$. With the unmovable detector, the effect is measured only varying the energy, hence the very precise knowledge of the reactor energy spectrum is essential. With the movable detector, this source of uncertainty is severely suppressed. The experiment examples are: NEOS~\cite{Ko2017}, DANSS~\cite{Alekseev2018}, STEREO~\cite{Almazan2018}, PROSPECT~\cite{Ashenfelter2018}, NEUTRINO-4~\cite{Serebrov2015}, SoLid. These experiments will give a clear answer about the existence of the sterile neutrino in the near future.
+
+In the context of current tithes the future experiments dedicated to the search of the heavy neutrino worth mentioning. Actually, any experiment with the intensive meson production could be used for this propose. Thus DUNE~\cite{Acciarri2016}, Hyper-Kamiokande~\cite{Proto-Collaboration2018}, FCC~\cite{Collaboration2019} experiments will be able to perform HNL search. But there is a proposal of the standalone experiment aimed only for the heavy neutrino search. SHiP (Search for Hidden Particles) will study exclusively decays of the HNL in the vacuum vessel. SHiP (Search for Hidden Particles) experiment~\cite{SHiPCollaboration2018a} will use 400 GeV/c proton beam for the production of the D and B mesons. The wide range of the heavy neutrino mass will be explored with this setup.
 
 \end{document}
