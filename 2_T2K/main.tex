@@ -6,45 +6,69 @@
 \renewcommand{\labelitemii}{\ding{227}}
 
 \chapter{The T2K experiment}
-\label{part:T2K:general}
+\label{ch:T2K:general}
 
-The T2K (Tokai to Kamioka) is a long-baseline accelerator neutrino experiment. Its main propose is precise measurements of the neutrino oscillation parameters. T2K is a continuation of the successful history of the previous accelerator experiments: KEK, MINOS, etc. At the beginning of the T2K era, the main goal was the measurements of the $\theta_{13}$ mixing angle. At that moment its value was not measured at all and $\theta{13}=0$ was possible. The value of this angle is important as the amplitude of the CP--violation (\autoref{sec:intro:cp} of \autoref{ch:nu_phys}) is scaled with $\theta_{13}$. Even with the maximum value of the $\delta_{CP}$ the effect could vanish with zero mixing angle. Thus $\theta_{13}$ became the main goal at the beginning of the T2K era.
+The T2K (Tokai to Kamioka) is a long-baseline accelerator neutrino experiment. Its main propose is precise measurements of the neutrino oscillation parameters. T2K is a continuation of the successful history of the previous accelerator experiments: KEK, MINOS, etc. At the beginning of the T2K era, the main challenge was the measurements of the $\theta_{13}$ mixing angle. Its value was not measured at all at that moment and $\theta_{13}=0$ was possible. The value of this angle is important as the amplitude of the CP--violation (\autoref{sec:intro:cp} of \autoref{ch:nu_phys}) is scaled with $\theta_{13}$. Even with the maximum value of the $\delta_{CP}$, the effect could vanish with zero mixing angle. Thus $\theta_{13}$ measurements became the main goal at the beginning of the T2K era.
 
-The concept of the experiment is the following:
+The $\theta_{13}$ could be measured in both appearance ($\nu_\alpha\to\nu_\beta$) and disappearance ($\nu_\alpha\to\nu_\alpha$) channels. The reactor experiments are very powerful in the analysis of the $\overline{\nu}_e\to\overline{\nu}_e$ disappearance process and thus could measure $\theta_{13}$ precisely. But the CP--violation effect could take place only in the appearance channel (\autoref{sec:intro:cp} of \autoref{ch:nu_phys}). The $\nu_e\to\nu_\mu$ channel is extremely challenging from the experimental point of view. To reconstruct the flavor of the $\nu_\mu$ the charged muon need to be produced. Thus the neutrino energy should be greater than the muon mass $m_\mu=105\text{ MeV/c}^2$. There is no easy way to create an intensive pure beam of high energetic electron neutrinos. On the contrary, the $\nu_\mu\to\nu_e$ channel is very promising. The charged mesons (e.g. pions, kaons) decay mainly into the muon neutrino. And the intensive and focused beam of charged mesons could be easily created with the particle accelerator. Thus the accelerator experiments are the only way to probe the CP--violation. Also, they are very powerful in the measurements of the $\theta_{13}$, $\theta_{23}$ and $\Delta m^2_{32}.$
+
+The approach of the accelerator oscillation experiment is to measure the energy spectrum of the neutrino beam at the far detector and compare it to the expectations without the oscillations. The reconstruction of the energy is critical as neutrino oscillates along $L/E_\nu$. While the baseline $L$ is fixed neutrino with different energies will arrive at the far detector in the different phase of the oscillation. The expected neutrino flux could be constrained with the measurements of the unoscillated neutrinos with the near detector. In the T2K the neutrino energy is reconstructed with the water Cherenkov detector Super--Kamiokande (\autoref{sec:T2K:sk}) and the magnetized near detector ND280 (\autoref{sec:T2K:nd280}). The water detector measures the energy of the particle with the opening angle of Cherenkov radiation and the ND280 measures the momentum with the track curvature in the magnetic field. The energy of all the products of the neutrino interaction should be reconstructed for the precise neutrino energy estimation. The easiest way to do it is to work in the energy region where the most probable neutrino interaction is quasi-elastic $\nu_\ell+n\to\ell^-+p$ ($\overline{\nu}_\ell+p\to\ell^++n$ ). As this is a two-body process and the incoming neutrino direction is known the neutrino energy could be calculated with the outgoing lepton kinematics only. This reaction dominates at energies below 1 GeV. But if the neutrino has higher energy then plenty of particles could be produced. Some of them could be low energetic or neutral. That makes the neutrino energy reconstruction extremely tricky. The problem is that the mesons with the wide energy range are produced in the proton beam interactions in the target. That results in a very wide neutrino spectrum. To deal with this T2K uses the ``off-axis'' beam to produce quasi-monoenergetic neutrino flux (\autoref{sec:T2K:oa_flux}).
+
+T2K was designed to measure the appearance process $\overset{\scriptscriptstyle(-)}{\nu}_\mu\to\overset{\scriptscriptstyle(-)}{\nu}_e$ which was expected to be extremely rare. First of all the signal rate should be enlarged as much as possible. The J-PARC accelerator provides a very intensive muon neutrino beam. Further improvement is considered (\autoref{sec:up:beam} of \autoref{ch:up:motif}). Secondly, all the processes that could mimic the $\nu_\mu\to\nu_e$ signal should be suppressed or precisely controlled. One of the main concerns is the electron neutrinos initially produced in the beamline. The meson's decay mostly leads to the muon and muon neutrino production. But the muon decay will result in the electron anti-neutrino $\mu\to e\overline{\nu}_e\nu_\mu$. To suppress such a process, the length of the meson decay volume is limited. Produced muons are stopped in the dump just after the decay pipe and emit the electron neutrinos isotropically, not pointed towards the far detector. The second process of concern is the neutral pion production in the neutrino interactions through the neutral current. The $\pi^0$ will further decay into two photons. At our energies, photons will convert into the electron-positron pair. One of the components of the pair could be lost resulting in the detection of the electron-like event. To estimate the rate of the neutral pion production the special $\pi^0$ subdetector was built in the near detector complex (\autoref{sec:t2k:pod}).
+
+When studying the CP--violation it's critical to distinguish neutrino and anti-neutrino oscillations since the effect is the opposite for them. The Super---Kamiokande could not separate electrons from positrons and $\mu^-$ from $\mu^+$ as Cherenkov rings will be similar for them. Thus the neutrino could not be distinguished from the anti-neutrino. The near detector ND280 is magnetized. Neutrino and anti-neutrino will produce leptons of the opposite charge. Their tracks will curve in the contrary directions and could be easily separated.
+
+The sketch of the T2K setup is shown in \autoref{fig:t2k:t2k_scheme}. In brief, the working process of the T2K experiment is the following:
 \begin{enumerate}
-  \item 30 $GeV/c^2$ proton beam produced with the J-PARC accelerator hits the carbon target producing mesons. At these energies mainly pions and kaons are born.
-  \item The mesons are focused with three horns into the decay volume. The horn polarity defines whether positive or negative mesons will be focused.
-  \item In the decay volume the mesons decay mostly into the muon neutrino or anti-neutrino. Thus the horn polarity defines the neutrino mode ($H\to\mu^+\nu_{\mu}$ or $\overline{H}\to\mu^-\overline{\nu}_{\mu}$). The energy spectrum of the off-axis neutrino beam is quasi-monoenergetic peaking around 0.6 GeV.
-  \item The non-oscillated neutrino beam is studied with the near detector complex: on-axis INGRID and off-axis ND280 (\autoref{ch:T2K:nd})
-  \item After traveling 295 km neutrino beam fix the far detector complex Super-Kamiokande (\autoref{ch:T2K:sk}). The baseline and neutrino energy are tuned to the first oscillation maximum ($\Delta m ^2_{32}L/E\approx1$).
+  \item Proton beam hits the carbon target producing mesons.
+  \item The mesons are focused with horns into the decay volume. The horn polarity defines whether positive or negative mesons will be focused.
+  \item In the decay volume, the mesons decay mostly into the muon neutrino or anti-neutrino. Thus the horn polarity defines the neutrino mode: ($H\to\mu^+\nu_{\mu}$ or $\overline{H}\to\mu^-\overline{\nu}_{\mu}$). The energy spectrum of the off-axis neutrino beam is quasi-monoenergetic peaking around 0.6 GeV. 
+  \item The muons from the meson decays are mostly stopped in the beam dump, preventing the large electron neutrino contribution in the flux.
+  \item The neutrino beam intensity and direction are constantly monitored by the muon monitor and the on-axis detector INGRID.
+  \item The energy spectrum of the non-oscillated neutrino beam is measured with the off-axis ND280 detector(\autoref{sec:T2K:nd})
+  \item After traveling 295 km neutrino beam reach the far detector complex Super-Kamiokande (\autoref{sec:T2K:sk}). The baseline and neutrino energy are tuned to the first oscillation maximum ($\Delta m ^2_{32}L/E\approx1$).
 \end{enumerate}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.95\linewidth]{t2k_scheme}
+  \caption{The sketch of the T2K setup shows all the key elements of the experiment.}
+  \label{fig:t2k:t2k_scheme}
+\end{figure}
 
 The main goals of the T2K experiment are:
 \begin{itemize}
   \item precise measurements of the oscillation parameters $\Delta m^2_{23}$ and $\theta_{23}$ with the muon neutrino disappearance $\nu_\mu\to\nu_\mu$ and $\overline{\nu}_\mu\to\overline{\nu}_\mu$
   \item measurements of the  $\theta_{13}$ with the electron appearance $\nu_\mu\to\nu_e$ and $\overline{\nu}_\mu\to\overline{\nu}_e$
-  \item search for the CP violation $sin\delta_{CP}\neq0$ with studying the difference between $\nu_\mu\to\nu_e$ and $\overline{\nu}_\mu\to\overline{\nu}_e$
-  \item along with the oscillation measurements the neutrino interactions are studied carefully in order to reduce the systematic uncertainty. Thus the neutrino cross-sections on carbon, water and iron.
+  \item search for the CP violation $\sin\delta_{CP}\neq0$ with studying the difference between $\nu_\mu\to\nu_e$ and $\overline{\nu}_\mu\to\overline{\nu}_e$
+  \item along with the oscillation measurements, the neutrino interactions are studied carefully to reduce the systematic uncertainty. Thus the neutrino cross-sections on carbon, water and iron are measured.
 \end{itemize}
 
-Alongside reactor experiments T2K successfully measured the non-zero value of the $\theta_{13}$ thus opening the way for the CP--violation search. At the moment it's a major goal of the experiment together with more precise measurements of other oscillation parameters. In this chapter the details about the T2K setup as well as an analysis technique will be overviewed.
+Alongside reactor experiments, T2K successfully measured the non-zero value of the $\theta_{13}$~\cite{Abe2014} thus opening the way for the CP--violation search. At the moment it's a major goal of the experiment together with more precise measurements of other oscillation parameters. In this chapter, the details about the T2K setup as well as an analysis technique will be overviewed.
 
 \section{Neutrino beam}
 \label{ch:T2K:nu_beam}
 
-In order to perform the precise measurements of the neutrino oscillation parameters accurate knowledge about the initial neutrino beam is essential. Accelerator experiments are able to use the benefits of the well-known and controlled man-made neutrino beam to reduce the uncertainty of the measurements. In this section the details about the beam production and monitoring within the T2K experiment will be presented.
-\subsection{General concept}
-The T2K experiment use so-called ``off-axis'' concept to obtain quasi-monoenergetic neutrino beam. The dominating neutrino production mode in the T2K is pion decay $\pi\to\mu\nu$. The neutrino energy in the two-body decay will be given by
+For the production of the T2K neutrino beam the proton accelerator is used. The 30 GeV/c protons from the J-PARC accelerator hit the target producing mesons. At these energies mainly pions are produced. There is still some minor contribution of kaons in the meson flux. Mesons with the proper charge are focused in the decay volume. At the same moment, wrong-charged mesons are dis-focused and neutral particles remain unfocused. In the decay volume, the mesons decay mainly into the muon and muon neutrino. The decay to the electron and electron neutrino is suppressed by 4 orders by the kinematics of the decay. The mesons of the same charge always produce neutrino or anti-neutrino. Thus the wrong-sign component of the neutrino beam is severely suppressed with the meson focusing system. The polarity of the focusing system may be changed resulting in the pure neutrino or anti-neutrino beam.
+
+The accelerator neutrino experiment has lots of benefits from the man-made neutrino beam. It is focused, thus extremely intensive, high energetic and precisely controlled. It mostly consists of the neutrino of the same flavor. The possibility to switch between the neutrinos or anti-neutrinos beam is very helpful for the CP--violation search. To constrain the $\delta_{CP}$ the difference between neutrino and anti-neutrino oscillations should be studied. The beam monitoring reduces a lot the systematic uncertainties related to the flux. The intensive pure beam of the muon neutrino is essential for the precise studies of the $\nu_\mu\to\nu_e$ oscillations. The purity of the beam will minimize the electron neutrino events in the far detector that are the background for the $\nu_e$ appearance process. The lower background will make easier the signal observation. In this section, the details about the beam production and monitoring within the T2K experiment will be presented.
+
+\subsection{Off-axis flux}
+\label{sec:T2K:oa_flux}
+Mesons produced in the proton collisions have a wide energy spectrum. That leads to a wide range of neutrino energies. It makes the oscillation analysis pretty tricky. Neutrino oscillates along $L/E_\nu$. Thus only neutrinos with the given energy will demonstrate the maximum appearance or disappearance. All the neutrinos with other energies will be less affected by the oscillations and could mask the process of interest. As mentioned in the introduction, to gain energy reconstruction precision only quasi-elastic interactions are used. It means that we are looking for events with one lepton and nothing more. The energy is estimated assuming the quasi-elastic interaction as well. This is a dominant topology of the neutrino interactions at the energies below 1 GeV. With energy growth, the cross-section of the neutrino interactions dramatically increases. The main reaction becomes the inelastic processes with a production of plenty of different particles. If the particle energy is lower then the threshold of Cherenkov radiation emission it is completely invisible in the Super--Kamiokande. Thus high energy neutrinos are very dangerous for the T2K. They interact more often and produce many particles that could be low energetic. Hence we could recognize such an event as quasi-elastic and reconstruct the neutrino energy with the completely wrong assumption. It will lead to the wrong oscillation measurement.
+
+To handle this T2K experiment uses a so-called ``off-axis'' concept to obtain a quasi-monoenergetic neutrino beam. The key idea is to use not the neutrinos pointed along the beam axis, but directed at a slight angle. Such neutrinos will have a relatively narrow energy spectrum. The dominating neutrino production mode in the T2K is a pion decay $\pi\to\mu\nu$. The neutrino energy in the two-body decay will be given by
 \begin{equation}
 E_\nu\approx\left(1-\frac{m_\mu^2}{m_\pi^2}\right)\frac{E_\pi}{1+\gamma^2\theta^2}
 \end{equation}
 
-where $\gamma$ is the pion kinematic parameter ant $\theta$ is a neutrino direction angle w.r.t. pion momentum. The equality of the derivative of the neutrino energy over the pion energy to zero means full independence of the first from the latter. In case $\theta=\gamma^{-1}$ $dE_\nu/dE_\pi=0$ that means that neutrino energy depends weakly on the parent pion energy. Finally we will get
+where $\gamma$ is the pion kinematic parameter and $\theta$ is a neutrino direction angle w.r.t. pion momentum. The equality of the derivative of the neutrino energy over the pion energy to zero means full independence of the first from the latter. In case $\theta=\gamma^{-1}$ $dE_\nu/dE_\pi=0$ that means that neutrino energy depends weakly on the parent pion energy. Finally, we will get
 \begin{equation}
 E_\nu\approx\left(1-\frac{m_\mu^2}{m_\pi^2}\right)\frac{m_\pi}{2\theta}\approx\frac{29.8MeV}{\theta}
 \end{equation}
 
-The T2K beamline allows varying of the peak neutrino energy by tuning the off-axis angle. The energy spectra for different angles are provided in \autoref{fig:t2k:nu_beam_oa}. The figure provides also the oscillation probability of the muon neutrino at the distance of 295 km versus the energy. Thus with the off-axis angle tuning the maximum oscillation effect could be measured.
+The T2K beamline allows varying of the peak neutrino energy by tuning the off-axis angle. The energy spectra for different angles are provided in \autoref{fig:t2k:nu_beam_oa}. The figure provides also the oscillation probability of the muon neutrino at a distance of 295 km versus the energy. Thus with the off-axis angle tuning the maximum oscillation effect could be measured. Though the high energy neutrinos are harmful to the oscillation analysis nevertheless high energy mesons could be useful for other studies. For example, they could be helpful for the Heavy Neutral Lepton (HNL \autoref{sec:intro:HNL}) search. High energy mesons decay will result in the focused HNL beam while low energy mesons will produce HNL in a very wide angle. The heavy neutrino study is one of the main topics of the current thesis (\autoref{ch:hnl}). 
+
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.5\linewidth]{nu_beam}
@@ -53,7 +77,7 @@ The T2K beamline allows varying of the peak neutrino energy by tuning the off-ax
 \end{figure}
 
 \subsection{Neutrino beamline}
-The T2K neutrino beamline could be generally divided into two stages: primary beamline and secondary beamline. The first takes the protons from the J-PARC accelerator main ring, performs measurements of the beam parameters and focuses it on a carbon target. The secondary beamline focuses the produced mesons with the horns into the decay volume and monitor its decay. The general scheme of the beamline is shown in \autoref{fig:t2k:beamline}. The detailed description could be found in~\cite{Abe2013}.
+The T2K neutrino beamline could be generally divided into two stages: primary beamline and secondary beamline. The first takes the protons from the J-PARC accelerator main ring, performs measurements of the beam parameters and focuses it on a carbon target. The secondary beamline focuses the produced mesons with the horns into the decay volume and monitors its decay. The general scheme of the beamline is shown in \autoref{fig:t2k:beamline}. The detailed description could be found in~\cite{Abe2013}.
 
 \begin{figure}[!ht]
   \centering
@@ -63,7 +87,7 @@ The T2K neutrino beamline could be generally divided into two stages: primary be
 \end{figure}
 
 \subsubsection{Primary beamline}
-The primary beamline takes the proton from the J-PARC main ring. The beam is structured into the spills coming with 0.5 Hz rate. Each spill is 5 $\mu s$ wide and consists of 8 bunches with $\sigma\approx18 ns$ and 58 ns separation. Per each spill $3\times10^{14}$ protons could be delivered. Thus the total maximum power of the beamline could be estimated as 750 kW. The total number of protons hit into the target is used as a main characteristic of the statistics collected in T2K experiment (POT - Protons On Target). The evolution of the accumulated statistics as well as the beam power is shown in \autoref{fig:t2k:POT}.
+The primary beamline takes the proton from the J-PARC main ring. The beam is structured into the spills coming with 0.5 Hz rate. Each spill is 5 $\mu\text{s}$ wide and consists of 8 bunches with $\sigma\approx18 \text{ ns}$ and 58 ns separation. Per each spill, $3\times10^{14}$ protons could be delivered. Thus the total maximum power of the beamline could be estimated as 750 kW. The total number of protons hit into the target is used as the main characteristic of the statistics collected in the T2K experiment (POT - Protons On Target). The evolution of the accumulated statistics, as well as the beam power, is shown in \autoref{fig:t2k:POT}.
 
 \begin{figure}[!ht]
   \centering
@@ -72,14 +96,21 @@ The primary beamline takes the proton from the J-PARC main ring. The beam is str
   \label{fig:t2k:POT}
 \end{figure}
 
-The initial beam is bounded with the arc section made with superconducting magnets and horizontally aligned with the direction to the detectors. At this stage the measurements of the beam parameters are performed. The beam intensity is measured with current transformers that use toroidal coils around a cylindrical ferromagnetic core. The uncertainties of the measurements are estimated at the level of 2\%. The beam position is measured with electrostatic monitors and secondary emission monitors. First measures the beam position with the accuracy of 450 $\mu m$ the latter measures the beam width with the precision 200 $\mu m$. After the measurements the beam is directed downward and focused on the carbon target.
+The initial beam is bounded with the arc section made with superconducting magnets and horizontally aligned with the direction to the detectors. At this stage, the measurements of the beam parameters are performed. The beam intensity is measured with current transformers that use toroidal coils around a cylindrical ferromagnetic core. The uncertainties of the measurements are estimated at the level of 2\%. The beam position is measured with electrostatic monitors and secondary emission monitors. First measures the beam position with the accuracy of 450 $\mu \text{m}$ the latter measures the beam width with the precision 200 $\mu m$. After the measurements, the beam is directed downward and focused on the carbon target.
 
 \subsubsection{Secondary beamline}
-The secondary beamline is responsible for neutrino production. The target for protons is made of Carbon cylinder 2.6 cm width and 91.4 cm length (1.9 interaction length). During the irradiation target heats up to 800$^\circ$C. The core is put with the titanium case for fast heat transfer to the water cooling system. The target is inserted into the first magnetic horn, so the mesons are affected by the focusing magnetic field from the moment of production.
+The secondary beamline is responsible for neutrino production. The target for protons is made of Carbon cylinder 2.6 cm width and 91.4 cm length (1.9 interaction length). Target heats up to 800$^\circ$C during the irradiation. The core is put with the titanium case for fast heat transfer to the water cooling system. The target is inserted into the first magnetic horn, so the mesons are affected by the focusing magnetic field from the moment of production.
 
-The meson focusing system consists of three magnetic horns. The first one contains the target where the mesons are produced. The horns are operated with the pulsed current at the level of 250-320 kA. The polarity could be changed in order to focus negative or positive mesons resulting in neutrino or anti-neutrino production. The dramatic gain of the horn usage for the neutrino beam intensity is shown in \autoref{fig:t2k:horn}.
+The meson focusing system consists of three magnetic horns. The first one contains the target where the mesons are produced. The horns are operated with the pulsed current at the level of 250-320 kA. The polarity could be changed to focus negative or positive mesons resulting in neutrino or anti-neutrino production. The dramatic gain of the horn usage for the neutrino beam intensity is shown in \autoref{fig:t2k:horn}.
 
-The hadrons are focused into the decay volume. It's a 96 m tunnel widening from 1.4x1.7 $m^2$ at the beginning up to the 3.0x5.0 $m^2$ at the end. The volume is filled with argon gas and is cooled with water. The parent particles are considered as possible neutron sources are $\pi^\pm$, $K^\pm$, $K^0_L$ and $\mu^\pm$. The most probable neutrino production reactions are:
+\begin{figure}[!ht]
+  \centering
+    \includegraphics[width=0.5\linewidth]{horn}
+    \caption{The effect of horn usage on the beam intensity at the far detector}
+    \label{fig:t2k:horn}
+\end{figure}
+
+The hadrons are focused into the decay volume. It's a 96 m tunnel widening from $1.4\times1.7\text{ m}^2$ at the beginning up to the $3.0\times5.0 \text{ m}^2$ at the end. The volume is filled with argon gas and is cooled with water. The parent particles are considered as possible neutron sources are $\pi^\pm$, $K^\pm$, $K^0_L$ and $\mu^\pm$. The most probable neutrino production reactions are:
 \begin{align}
 \pi^\mp&\to\mu^\mp\overset{\scriptscriptstyle(-)}{\nu_\mu} \hspace{2cm} &K^\mp\to\mu^\mp\overset{\scriptscriptstyle(-)}{\nu_\mu} \\
 K^\mp&\to\pi^0e^\mp\overset{\scriptscriptstyle(-)}{\nu_e} \hspace{2cm}  &\mu^\mp\to e^\mp\overset{\scriptscriptstyle(-)}{\nu_\mu}\overset{\scriptscriptstyle(-)}{\nu_e}
@@ -88,32 +119,31 @@ K^\mp&\to\pi^0e^\mp\overset{\scriptscriptstyle(-)}{\nu_e} \hspace{2cm}  &\mu^\mp
 The energy spectra divided into neutrino flavor and parent particle are provided in \autoref{fig:t2k:nu_beam}.
 
 \begin{figure}[!ht]
-  \centering
-  \begin{minipage}{0.32\linewidth}
+  \begin{minipage}{0.49\linewidth}
     \centering
-    \includegraphics[width=\linewidth]{horn}
-    \caption{The effect of horn usage on the beam intensity at the far detector}
-    \label{fig:t2k:horn}
+    \includegraphics[width=0.5\linewidth]{nu_flux_flavor.pdf} \\ (a)
   \end{minipage}
-  \begin{minipage}{0.66\linewidth}
+  \begin{minipage}{0.49\linewidth}
     \centering
-    \begin{minipage}{0.49\linewidth}
-    \centering
-      \includegraphics[width=\linewidth]{nu_flux_flavor} \\ (a)
-    \end{minipage}
-    \begin{minipage}{0.49\linewidth}
-    \centering
-      \includegraphics[width=\linewidth]{nu_flux_parent} \\ (b)
-    \end{minipage}
-    \caption{The neutrino beam at the near detector side divided into (a) neutrino flavor and (b) parent particle.}
-    \label{fig:t2k:nu_beam}
+    \includegraphics[width=\linewidth]{nu_flux_parent} \\ (b)
   \end{minipage}
+  \caption{The neutrino beam at the near detector side divided into (a) neutrino flavor and (b) parent particle.}
+  \label{fig:t2k:nu_beam}
 \end{figure}
 
-Just after the decay pipe the beam dump is placed. It's made of 75 tons of graphite and the main goal is to suppress the charge particle beam +as much as possible. Thus mesons will interact in the dump and will not produce neutrino behind the decay volume. Such neutrinos will have the different off-axis angle and will not have the proper energy, that's why the meson beam should be stopped. Though muons with high energies (> 5 GeV) could go through the beam dump. They are used to measure the stability of the neutrino beam. Muons are produced in the hadron decays along with neutrino, thus the muon spectrum fluctuation will explicitly indicate the fluctuation of the neutrino beam.
+The beam dump is placed just after the decay pipe. It's made of 75 tons of graphite \todo{and suppress all the charged particles except the high energy muons (E>5 GeV). Thus low energy muons will not decay in flight, producing electron neutrinos pointed to the far detector. It's critical for the successful oscillation analysis. High energy muons could be used for the neutrino beam stability monitoring. They are mostly produced along with neutrino in the 2-body meson decays. Thus the muon direction fluctuation will explicitly indicate the fluctuation of the neutrino beam. The detector is made with an array of ionization chambers and another array of silicon PIN photodiodes. The center of the muon profile is reconstructed with 3 cm precision resulting in 0.25 mrad angular accuracy.}
+
+\todo{The overview of the T2K secondary beamline together with the near detector complex is presented in \autoref{fig:t2k:horns}.}
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\linewidth]{horns}
+  \caption{The overview of the T2K secondary beamline and the near detectors.}
+  \label{fig:t2k:horns}
+\end{figure}
 
 \section{Near detector}
-\label{ch:T2K:nd}
+\label{sec:T2K:nd}
 Precise knowledge about the initial neutrino beam is essential for the accurate oscillation measurements. The T2K near detector complex is placed in 280 meters from the proton target and its main goal is the monitoring of the unoscillated beam. Two detectors are used for this propose: on-axis INGRID and off-axis ND280. The schematic views of both detectors are presented in \autoref{fig:T2K:ND280}.
 
 \begin{figure}[!ht]
@@ -130,10 +160,10 @@ Precise knowledge about the initial neutrino beam is essential for the accurate 
     \label{fig:T2K:ND280}
 \end{figure}
 
-\subsection {INGRID}
-The main goal of the INGRID detector is controlling the position and intensity of the neutrino beam. It consists of 14 modules arranged in a cross with two additional modules placed outside the main cross (\autoref{fig:T2K:ND280} (a)). The center of the cross is placed at 0$^\circ$ angle w.r.t. proton beam direction. Each detector module consists of sandwich of iron and tracking planes. With the T2K intensities we expect enough neutrino interactions in the iron targets everyday for the day-to-day monitoring of the neutrino beam parameters. The \autoref{fig:t2k:ingrid_beam} represent the results of such measurements. Both intensity and direction variations are small and the resulting uncertainty in the oscillation analysis is far from dominating.
+\subsection{INGRID}
+The main goal of the INGRID detector is controlling the position and intensity of the neutrino beam. It consists of 14 modules arranged in a cross with two additional modules placed outside the main cross (\autoref{fig:T2K:ND280} (a)). The center of the cross is placed at 0$^\circ$ angle w.r.t. proton beam direction. Each detector module consists of a sandwich of iron and tracking planes. We expect enough neutrino interactions in the iron targets every day for the day-to-day monitoring of the neutrino beam parameters. \autoref{fig:t2k:ingrid_beam} represents the results of such measurements. Both intensity and direction variations are small and the related uncertainties in the oscillation analysis are far from dominating.
 
-\begin{figure}{!ht}
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=0.8\linewidth]{ingrid_beam}
   \caption{The INGRID measurements of the neutrino beam intensity and position.}
@@ -142,26 +172,30 @@ The main goal of the INGRID detector is controlling the position and intensity o
 
 \subsection{Near detector ND280}
 \label{sec:T2K:nd280}
-The ND280 is an off-axis detector placed at the direction from the target towards the far detector Super-Kamiokande. Its goal is neutrino interaction measurements dividing them into neutrino sign, flavor and the reaction topology. For this propose the detector is composed of plenty of different sub-detectors. The Fine Grained Detectors (FGD) are used as a target for neutrino interaction and the tracking of the outgoing particles. The Time Projection Chambers (TPC) are used for particle identification with the ionization energy loss. Also they help with the momentum reconstruction of the track with its curvature in the magnetic field. Electromagnetic calorimeter (ECAL) detect the gamma conversion and improve electron and muon separation. The SMRD detector works as a trigger for the cosmic rays and may help with the muon identification. The P0D detector is used for the measurements of the $\pi^0$ production in the neutrino interactions. At the beginning of the T2K it was a big concern about the neutral pion production as the main background for the far detector. The $\pi^0$ could be produced in the neutrino interactions and decays mainly into two photons. The photons at these energies are mostly subject to conversion into electron-positron pair. With the water Cherenkov detector we could easily confuse such an event with the single electron production indicating the rare process of electron neutrino appearance --- the main subject of the T2K experiment. That's why the precise measurements of the $\pi^0$ production with the near detector were required.
+The ND280 is an off-axis detector placed at the direction from the target towards the far detector Super-Kamiokande. Its goal is neutrino interaction measurements dividing them into neutrino sign, flavor and the reaction topology. The neutrino energy is measured as well. For this propose the detector is composed of plenty of different sub-detectors. The Fine Grained Detectors (FGD) are used as a target for neutrino interaction and the tracking of the outgoing particles. The gaseous Time Projection Chambers (TPC) are used for the charged particle tracking. The particle sign and momentum are measured with the track curvature in gas. The type of the particle is also reconstructed with the ionization energy losses. Thus the incoming neutrino type (neutrino/anti-neutrino), flavor and energy could be determined. Electromagnetic calorimeter (ECAL) detect the gamma conversion and improve electron and muon separation. The SMRD detector works as a trigger for the cosmic rays and may help with the muon identification. The P0D detector is used for the measurements of the $\pi^0$ production in the neutrino interactions. At the beginning of the T2K, it was a big concern about the neutral pion production as the main background for the far detector.
 
-The ND280 measurements are used to constrain the parameters of the flux and the theoretical models of the neutrino interactions. The fact that we have knowledge about the neutrino sign, flavor and reaction type allows us to probe plenty of the models' parameters independently. This will result in the smaller uncertainty of the global oscillation analysis. In the following subsections the subdetectors structure and features will be overviewed.
+The ND280 measurements are used to constrain the parameters of the flux and the theoretical models of the neutrino interactions. The fact that we know the neutrino sign, flavor, energy and the reaction type allows us to probe plenty of the models' parameters independently. This will result in the smaller uncertainty of the global oscillation analysis. The subdetectors structure and features will be overviewed in the following subsections.
+
+\subsubsection{$\pi^0$ detector (P0D)}
+\label{sec:t2k:pod}
+The primary goal of the P0D detector is to measure the cross-section of the $\pi^0$ production in the neutrino interactions through the neutral current (NC). As was mentioned in the introduction it was supposed to be the main background in the far detector. The photons from the $\pi^0$ decay could be misreconstructed as $\nu_\mu\to\nu_e$ signal and bias the oscillation analysis a lot. The same flux and the same target material should be used for the accurate background treatment. As the detector is aimed to detect the NC$\pi^0$ production it should be good in the charged particle tracking to distinguish CC and NC interactions. Also, it should be effective for photon detection. The sensitive volume of the P0D is made from the scintillator bars aligned along X and Y axis (perpendicular to the beam axis). The readout is done with the wavelength shifting fibers (WLS). The XY scintillator layers are alternated with brass sheets and water bags. Such a structure allows efficient reconstruction of the charged particle tracks as well as electromagnetic showers. The latter are used for photon detection. The scintillator layers are alternated with the lead sheets instead of water bags in the upstream and downstream parts of the detector. This improves the containment of the EM showers. The measurements of the $NC\pi^0$ production could be done with and without water target, thus the cross-section on water could be extracted.
 
 \subsubsection{Fine grained detectors (FGD)}
-Two FGD modules~\cite{Amaudruz2012} are used as a target for the neutrino interactions. The size of the module is 2x2x0.3 $m^3$. They consists of sandwich structure of bars made with plastic scintillators and oriented along X and Y axis, while beam is coming along Z axis. The bars are pierced with wavelength shifting fibers (WLS) for the light collection and transportation to the photosensors. The light readout is done with multi-pixel photo counters (MPPC) that provide high detection efficiency and sufficient dynamic range.
+Two FGD modules~\cite{Amaudruz2012} are used as a target for the neutrino interactions. The size of the module is $2\times2\times0.3$ $\text{m}^3$. They consist of a sandwich structure of bars made with plastic scintillators and oriented along X and Y axis, while the beam is coming along Z axis. The bars are pierced with WLS for the light collection and transportation to the photosensors. The light readout is done with multi-pixel photo counters (MPPC) that provide high detection efficiency and sufficient dynamic range.
 
-In the second FGD the plastic layers are alternated with the water modules. Thus the measurements of the neutrino interaction with the water could be done. In the context of T2K such a measurement is important as far detector uses water target only. The difference between neutrino interaction cross-section with Carbon and Oxygen could be a source of systematic uncertainty.
+In the second FGD the plastic layers are alternated with the water modules. Thus the measurements of the neutrino interaction with the water could be done. Such a measurement is important in the context of T2K as far detector uses water target only. The difference between neutrino interaction cross-section with Carbon and Oxygen could be a source of systematic uncertainty.
 
 \subsubsection{Time projection chambers (TPC)}
 The TPCs~\cite{Abgrall2011} are gaseous detectors that perform the 3D reconstruction of the charged particle's track. The scheme of the detector is presented in \autoref{fig:t2k:tpc}.
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\linewidth]{tpc}
+  \includegraphics[width=0.6\linewidth]{tpc_module}
   \caption{The scheme of the TPC module}
   \label{fig:t2k:tpc}
 \end{figure}
 
-The general principle of the TPC operation and the key characteristics of the T2K TPCs are presented in \autoref{fig:t2k:tpc_p}. The active volume of the detector is filled with the gas mixture of Argon, $CF_4$ (tetrafluoromethane) and $iC_4H_{10}$ (isobutane) in the volume proportions 95:3:2. A charged particle going through the gas volume it loses the energy through the ionization. The electrons from the ionization drift against the direction of the electric field - from the cathode towards the MicroMegas. The positive ions are drifting towards the cathode. The Argon was chosen as a main component of the gas mixture because a noble gas will minimize the secondary interactions and transport the electrons with minimum distortions. Isobutane also serves for the higher precision of the measurements absorbing photons emitted in the gas thus preventing secondary avalanches. $CF_4$ is responsible for the electron drift speed slow down.
+The general principle of the TPC operation and the key characteristics of the T2K TPCs are presented in \autoref{fig:t2k:tpc_p}. The active volume of the detector is filled with the gas mixture of Argon, $\text{CF}_4$ (tetrafluoromethane) and $\text{iC}_4\text{H}_{10}$ (isobutane) in the volume proportions 95:3:2. A charged particle going through the gas volume loses the energy through the ionization. The electrons from the ionization drift against the direction of the electric field --- from the cathode towards the micromegas. The positive ions are drifting towards the cathode. The Argon was chosen as a main component of the gas mixture because it's a noble gas. It's very easy to ionize thus we will have a lot of initial electrons. Also, it will not subject to a chemical reaction. It is especially important in the amplification region, where chemical reactions are most probable. Isobutane also serves for the higher precision of the measurements absorbing photons emitted in the electron avalanches and prevent quenching. $\text{CF}_4$ is responsible for the speed up of the electron drift. Such a mixture is very powerful resulting in high speed, low diffusion, and good performance with micromegas chambers.
 
 \begin{figure}[!ht]
   \centering
@@ -170,22 +204,22 @@ The general principle of the TPC operation and the key characteristics of the T2
   \label{fig:t2k:tpc_p}
 \end{figure}
 
-The electric field strength is constant in the drift region, ideally there should be no amplification there. The voltage between the cathode and micro mesh is 25 kV at a distance of ~1 meter. At the micro mesh the signal is dramatically amplified as the voltage 350 V is applied for the 128 $\mu m$ gap. The resulting avalanches are detected with the 6.9x9.7 $mm^2$ pads. Here the electrons are transformed into the analog signal that will be later digitized with the electronics.
+The electric field strength is constant in the drift region, ideally, there should be no amplification there. The voltage between the cathode and micro mesh is 25 kV at a distance of ~1 meter. The signal is dramatically amplified between the micro mesh and micromegas as the voltage 350 V is applied for the 128 $\mu \text{m}$ gap. The produced avalanches are detected with the $6.9\times9.7$ $\text{mm}^2$ pads. Here the electrons are transformed into the analog signal that will be later digitized with the electronics.
 
-In total the readout surface of one TPC module consists of 12 MicroMegas 48x36 pads each. For each track the 2D projection (YZ) could be easily reconstructed with the hit pads. The X coordinate depends on the electron drift time. Though the time delay from different parts of the is measured precisely this is an arbitrary measurement. The track curvature in XY plane is known but for the absolute position the external detector (FGD) is essential.
+In total, the readout surface of one TPC module consists of 12 micromegas $48\times36$ pads each. The 2D projection (YZ) of the track could be easily reconstructed with the hit pads. The X coordinate depends on the electron drift time. Though the time delay from different parts of the track is measured precisely this is an arbitrary measurement. The track curvature in XY plane is known but the external detector (FGD) is essential for the absolute position.
 
-The core of the ND280 - the tracker, consists of 3 TPCs alternated with 2 FGDs. Such a structure is aimed for the effective detection of the lepton produced in the neutrino interactions inside FGDs.
+The core of the ND280 --- the tracker, consists of 3 TPCs alternated with 2 FGDs. Such a structure is aimed at the effective detection of the lepton produced in the neutrino interactions inside FGDs. The particle type, sign and momentum could be precisely measured with such a setup.
 
 \subsubsection{Electromagnetic calorimeter (ECaL)}
-The calorimeters are used for the detection of the gammas from the $pi^0$, produced in the neutrino interactions. They also could help with the particle identification as electrons and hadrons will produce showers while muons will have a clear clean track. The calorimeters are surrounding the inner detectors of the ND280. They consists of the sandwich structure of plastic bars 4x1 $cm^2$ in cross section, alternating with 1.75 mm thick absorber layers made with lead. The downstream ECaL consists of 34 layers and provide the most precise results, while P0D and barrel ECaL consists of 31 layers.
+The calorimeters are used for the detection of the gammas from the $\pi^0$, produced in the neutrino interactions. They also could help with the particle identification. Electrons and hadrons will produce showers while muons will have a clear clean track. The calorimeters are surrounding the inner detectors of the ND280. They consist of the sandwich structure of plastic bars $4\times1$ $\text{cm}^2$ in cross-section, alternating with 1.75 mm thick absorber layers made with lead. The downstream ECaL consists of 34 layers and provides the most precise results, while P0D and barrel ECaL consists of 31 layers.
 
 \subsubsection{Side muon range detector (SMRD)}
-The SMRD is surrounding the whole ND280 and is a multifunction detector. It could eject the events triggered by the cosmic rays or the neutrino interactions in the outer detectors or concrete of the pit. SMRD is useful for detection of the muons that exit the detector with high angles. Since there is no TPC at this direction the momentum measurement could be done only with SMRD. The detector itself consists of 440 1.7 cm thick plastic scintillator modules that are inserted in the gaps between 4.8 thick steel plates of the magnet yoke.
+The SMRD is surrounding the whole ND280 and is a multifunction detector. It could eject the events triggered by the cosmic rays or the neutrino interactions in the outer detectors or concrete of the pit. SMRD is useful for the detection of the muons that exit the detector with high angles. Since there is no TPC in this direction the momentum measurement could be done only with SMRD. The detector itself consists of 440 1.7 cm thick plastic scintillator modules that are inserted in the gaps between 4.8 thick steel plates of the magnet yoke.
 
 
-\section{SuperKamiokande}
-\label{ch:T2K:sk}
-The far detector of the T2K experiment is Super-Kamiokande (SK) located 295 km away from the proton target in the Kamioka mine under the Ikenoyama mountain. 50 tons of water are used as a target for the neutrino. The water tank is viewed by 13 thousand of the photomultipliers (PMT) aimed the detection of the Cherenkov light from the charged lepton produced in the neutrino interactions. The schematic view of the detector is presented in \autoref{fig:t2k:sk}.
+\section{Super--Kamiokande}
+\label{sec:T2K:sk}
+The far detector of the T2K experiment is Super--Kamiokande (SK)~\cite{Fukuda2003} located 295 km away from the proton target in the Kamioka mine. 50 tons of water is used as a target for the neutrino. The water tank is viewed by 13 thousand of the photomultipliers (PMT) aimed at the detection of Cherenkov light from the charged lepton produced in the neutrino interactions. The schematic view of the detector is presented in \autoref{fig:t2k:sk}.
 
 \begin{figure}[!ht]
   \centering
@@ -194,15 +228,15 @@ The far detector of the T2K experiment is Super-Kamiokande (SK) located 295 km a
   \label{fig:t2k:sk}
 \end{figure}
 
-The working principle of the detector is based on the effect of Cherenkov radiation. When a charged particle passes through a dielectric medium at a speed greater than the phase velocity of light in that medium the conic wave front in formed. The opening angle of the cone is defined by the particle speed and the refraction coefficient of the medium $\cos{\theta}=1/n\beta$, where $\beta=v/c$. The emission of the radiation in a threshold effect. As could be seen from the equation above, the wavefront could be formed only if the particle is fast enough $\beta>1/n$. For the water detector the thresholds are: 1.4 GeV for protons, 160 MeV for muons and 775 keV for electrons. The maximum angle is also limited by $\theta_{max}=arccos(1/n)\approx42^\circ$.
+The working principle of the detector is based on the effect of Cherenkov radiation. When a charged particle passes through a dielectric medium at a speed greater than the phase velocity of light in that medium the conic wavefront is formed. The opening angle of the cone is defined by the particle speed and the refraction coefficient of the medium $\cos{\theta}=1/n\beta$, where $\beta=v/c$. The emission of the radiation is a threshold effect. As could be seen from the equation above, the wavefront could be formed only if the particle is fast enough $\beta>1/n$. For the water detector, the thresholds are 1.4 GeV for protons, 160 MeV for muons and 775 keV for electrons. The maximum angle is also limited by $\theta_{max}=\arccos(1/n)\approx42^\circ$.
 
-Super-Kamiokande continues the successful history of the neutrino detectors in the Kamioka mine. The first experiment KamiokaNDE (Kamioka Nucleon Decay experiment) started looking for the nucleon decays in 1983. The neutrino interactions were supposed to be the main background. During the detector operation nice performance of the neutrino detection was observed and the experiment was refocused on the neutrino analysis. Since then the detector was massively improved, new setups were build: Kamiokande II, Super-Kamiokande. The latter is operating now as a far detector of the T2K experiment. The ultimate experience collected during the studies in Kamioka allows the excellent physics performance.
+Super-Kamiokande continues the successful history of the neutrino detectors in the Kamioka mine. The first experiment KamiokaNDE (Kamioka Nucleon Decay experiment) started looking for the nucleon decays in 1983. The neutrino interactions were supposed to be the main background. During the detector operation, nice performance of the neutrino detection was observed and the experiment was refocused on the neutrino analysis. Since then the detector was massively improved, new setups were built: Kamiokande II, Super-Kamiokande. The latter is operating now as a far detector of the T2K experiment. The ultimate experience collected during the studies in Kamioka allows excellent physics performance.
 
-There are many challenges in neutrino studies with water Cherenkov detectors. First of all, due to the small cross-section the statistics is limited. In order to increase the number of events the detector was enlarged several times from 3 kt (KamiokaNDE) to 50 kt (Super-Kamiokande). With the larger tank the detection of the Cherenkov light becomes as issue. The intensity of such a light is quite low. Resulting the hard work of the SK collaboration the water purity is remaining extremely high keeping the transparency at the level of 100 meters. The other issue is photon detection itself. The photo coverage of the active area surface is 40\% aiming to collect as much photons as possible. Large 20-inch PMT with high detection efficiency are used for it. The wavelength of the Cherenkov light is tending to the ultraviolet region, while the efficiency of the photocathods is quite low in this region. The light intensity decreased as $\lambda^3$ with the increasing of the wavelength, that's why the excellent performance of the PMT is essential for the successful detector operation.
+There are many challenges in neutrino studies with water Cherenkov detectors. First of all, the statistics is limited due to the small cross-section. To increase the number of events the detector was enlarged several times from 3 kt (KamiokaNDE) to 50 kt (Super-Kamiokande). But the detection of Cherenkov light becomes an issue with larger tank. The intensity of such a light is quite low. Thanks to the hard work of the SK collaboration the water purity is remaining extremely high. The transparency is very stable at the level of 100 meters. The other issue is photon detection itself. The photo coverage of the active area surface is 40\% aiming at the collection as many photons as possible. Large 20-inch PMTs with high detection efficiency are used for it. The wavelength of Cherenkov light is tending to the ultraviolet region, while the efficiency of the photocathodes is quite low there. The light intensity decreases as $\lambda^3$ with the increasing of the wavelength, that's why the excellent performance of the PMT is essential for the successful detector operation.
 
-The other challenge is a background suppression. The detector is placed in mine in order to reduce the flux of the cosmic rays. Though extremely high muons could reach the water tank. The SuperKamiokande is divided into two volumes: inner and outer detectors. There isolated for the light, so the detection of the light in the outer volume will explicitly indicate the out of tank particle production. For the neutrino analysis only leptons produced in the inner detector are considered. For safety the active volume is reduced with 2m tolerance from each wall reducing the fiducial volume to 22.5 tons.
+The other challenge is a background suppression. The detector is placed in the mine in order to reduce the flux of the cosmic rays. Though extremely high muons could reach the water tank. Also, muons could be produced by the neutrino interactions in the rock close to the detector. The Super--Kamiokande is divided into two volumes: inner and outer detectors. They are isolated for the light, so the signal detection in the outer volume will explicitly indicate the out-of-tank particle production. Only leptons produced in the inner detector are considered for the neutrino analysis. The active volume is reduced with 2 m tolerance from each wall reducing the fiducial volume to 22.5 tons. It was done because the outer detector could fail to detect the external particle and the part of the inner detector works as an additional veto. The vertex position reconstruction accuracy is close to 2 meters, so if the particle is detected 2 m away from the wall we are quite sure that it originates from the inner volume.
 
-The detector allows separating Cherenkov ring produced by muon and electron. Due to lighter mass electrons are more subject to breaking radiation. Since the critical energy for the electrons in water is tens MeV and the typical electrons energy produced by the T2K neutrinos is hundreds MeV, we expect to see electromagnetic showers that will distort the Cherenkov ring. The examples of the events are presented in \autoref{fig:T2K:sk_PID}. The left image demonstrated mush less distorted ring from the muon while the right image demonstrates the result of the electron showering. Up to now the Super Kamiokande separates these two topologies with the excellent purity of 99\%. That's extremely important for the oscillation experiment. The neutrino will produce the charged lepton of the same flavor and we are studying disappearance of the muon neutrino and appearance of the electron neutrino.
+The detector allows separating Cherenkov ring produced by muon and electron. Due to lighter mass electrons are more subject to breaking radiation. Since the critical energy for the electrons in water is tens MeV and the typical energy of the electrons produced by the T2K neutrinos is hundreds MeV, we expect to see electromagnetic showers that will distort Cherenkov ring. The examples of the events are presented in \autoref{fig:T2K:sk_PID}. The left image demonstrated a much less distorted ring from the muon while the right image demonstrates the result of the electron showering. Up to now the Super--Kamiokande separates these two topologies with the excellent purity of 99\%. That's extremely important for the oscillation experiment. The neutrino will produce the charged lepton of the same flavor and we are studying a very rare process of the electron neutrino appearance. That's why any confusion between muon and electron is extremely dangerous.
 
 \begin{figure}[!ht]
   \centering
@@ -218,44 +252,90 @@ The detector allows separating Cherenkov ring produced by muon and electron. Due
     \label{fig:T2K:sk_PID}
 \end{figure}
 
-The SuperKamiokande provides powerful shielding from the cosmic rays, but the atmospheric neutrino could easily go through the rock and interacts inside the inner detector. That's how the atmospheric studies are done, but for the T2K we need to distinguish neutrinos from the atmosphere and from J-PARC accelerator. The timing is the most useful information for this propose. As mentioned in the \autoref{ch:T2K:nu_beam} the beam is grouped in 8 bunches 19 ns width coming each 2 second. The time synchronization between J-PARC and Super-Kamiokande allow to select accurately neutrinos that fall into bunches and suppress the atmospheric background that is uniform in time. Thus the background is suppressed at the level of 8 orders.
+The Super--Kamiokande provides powerful shielding from the cosmic rays, but the atmospheric neutrino could easily go through the rock and interacts inside the inner detector. That's how the atmospheric studies are done, but for the T2K we need to distinguish neutrinos from the atmosphere and J-PARC accelerator. For this propose the timing information is the most useful one. As mentioned in \autoref{ch:T2K:nu_beam} the beam is grouped in 8 bunches 19 ns width coming every 2 seconds. The time synchronization between J-PARC and Super-Kamiokande allows us to select accurately neutrinos that fall into bunches and suppress the atmospheric background that is uniform in time. Thus the background is suppressed at the level of 8 orders.
 
 
 \section{Analysis overview}
 \subsection{Oscillation analysis}
-As mentioned in the introduction the main goal of the T2K experiment is precise measurements of the neutrino oscillation parameters and search for the CP--violation. The scheme of the analysis workflow is presented in \autoref{fig:t2k:ana}. Different colors at the block-scheme represent the measurements (green), models (violet) and fit algorithms (blue).
+\subsubsection{General overview}
+As mentioned in the introduction the main goal of the T2K experiment is precise measurements of the neutrino oscillation parameters and search for the CP--violation. This is done by measuring the neutrino energy spectrum at the far detector and comparing it with the expectation without the oscillations. Spectra are divided into the neutrino flavor (muon and electron) and sign, thus 4 spectra are the basic input for the oscillation analysis. Super--Kamiokande measures neutrino energy in the assumption of the quasi--elastic interaction (\autoref{eq:t2k:sk_e}).
 
-\begin{figure}[ht!]
+\begin{equation}
+\label{eq:t2k:sk_e}
+E_\nu^{rec}=\frac{m_f^2-(m_i')^2-m_\ell^2+2m_iE_\ell}{2\left(m_i'-E_\ell+p_\ell\cos\theta_\ell\right)}
+\end{equation}
+where $E_b = 27\text{ MeV}$ is binding energy for the Oxygen nucleus, $m_i'=m_i-E_b$, $m_i$ and $m_f$ are initial and final nuclei mass respectively, $m_\ell$, $E_\ell$, $p_\ell$, $\theta_\ell$ are outgoing lepton mass, energy, momentum and angle w.r.t neutrino beam respectively. 
+
+Four neutrino spectra are essential for the minimal oscillation analysis, but the precision could be dramatically improved with the near detector. ND280 is used for the constraints of the flux and cross-section models. 
+
+Despite neutrino production is well controlled the resulting flux could be slightly different from the expectations. The possible reasons are not accurate predictions of the pion rescattering, meson production multiplicity, interaction length, etc. The ND280 could constrain exactly the same off-axis flux that will pass through Super--Kamiokande but before the oscillations. The measurements are sampled in the neutrino flavor, sign and energy. The example of the prior and ND280 constrains on the $\nu_\mu$ flux are presented in \autoref{fig:T2K:banff} (a). 
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{banff_flux} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{banff_xsec} \\ (b)
+  \end{minipage}
+    \caption{The priors (blue) and the results of the ND280 fit (red) for $\nu_\mu$ (a) flux and (b) cross-section parameters. The T2K is operating in neutrino mode. Figure from~\cite{Abe2017}.}
+    \label{fig:T2K:banff}
+\end{figure}
+
+The neutrino interaction models are also tuned with the ND280 data. Different types of neutrino interactions are used for particular model parameters. For example, quasi--elastic interactions (CCQE) are very sensitive to so-called axial quasi--elastic mass ($M^{QE}_A$), resonance production (e.g. $\Delta^++$) is affected resonant axial mass ($M_A^{RES}$) so on. The detailed list of the various models used and constrained is provided in~\cite{Abe2017}. The problem is that certain reactions could not be measured independently. For example, neutrino could produce a resonance that will further decay into pion. But the pion will be absorbed in the nucleus. Thus the reaction could not be distinguished from the CCQE. To deal with this, we sample the neutrino interactions in ND280 not in the reactions type, but in the ``topologies''. Topology tells us what was observed in the detector, but not the initial neutrino reaction type. The observations in the ND280 are divided into CC interactions with no pions ($CC0\pi$), interactions with 1 pion ($CC1\pi$) and other CC ($CCOther$). The detection of the charged lepton is essential for all of these topologies as we are working with the charged current interactions. The examples of the $CC0\pi$ and $CC1\pi$ samples measured with ND280 are shown in \autoref{fig:T2K:nd_obs}. 
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{nd280_0pi} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{nd280_1pi} \\ (b)
+  \end{minipage}
+    \caption{Data MC comparison for the (a) $CC0\pi$ and (b) $CC1\pi$ samples measured with the ND280 in the neutrino mode. Figure from~\cite{Abe2017}.}
+    \label{fig:T2K:nd_obs}
+\end{figure}
+
+The non-negligible contribution of the non-CCQE interactions in the $CC0\pi$ sample is extremely important. As mentioned above, SK reconstructs the neutrino energy in the CCQE assumption. There could be only lepton in the final state, but the reaction is not CCQE. It will lead to the completely wrong reconstructed neutrino energy and bias oscillation analysis a lot. That's why non-CCQE interactions should be precisely controlled. The $CC1\pi$ and $CCOther$ samples could help a lot with this, as they are dedicated to the detection of the non-elastic reactions.
+
+\subsubsection{Analysis machinery}
+The scheme of the analysis workflow is presented in \autoref{fig:t2k:ana}. Different colors at the block-scheme represent the measurements (green), models (violet) and fit algorithms (blue).
+
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=0.8\linewidth]{t2k_ana_scheme}
   \caption{The scheme of the T2K oscillation analysis workflow. The measurements are presented in green (light --- external, dark --- T2K), the models are presented in violet and the fitter tools are presented in blue.}
   \label{fig:t2k:ana}
 \end{figure}
 
-The measurements start with the beamline monitors where the parameters of the proton beam are estimated. Then the data from the NA61 experiment is used to estimate the meson production in the target. The resulting neutrino beam intensity and direction are monitored with the near on-axis detector INGRID. All these results allow us to build the neutrino flux model.
+The measurements start with the beamline monitors where the parameters of the proton beam are estimated. Then the data from the NA61 experiment is used to estimate the meson production in the target. The neutrino beam intensity and direction are monitored with the on-axis near detector INGRID. All these results allow us to build the neutrino flux model.
 
 The near detector ND280 performs the measurements of the off-axis neutrino flux. The observations are sampled in the neutrino sign and the reaction topology: quasi-elastic, pion production, deep inelastic. We use the results of other experiments as a prior estimation for the rate of neutrino interactions. But there are plenty of the parameters in the model that could be tuned precisely using all the samples collected in the ND280. Thus flux and the cross-section model are tuned together with the ND280 control samples.
 
-The long history of the atmospheric neutrino measurements in Super-Kamiokande provides the accurate knowledge of the detector operation. This model is used together with the T2K events in thew SK for the final oscillation measurements. The spectrum of the observed electron neutrinos in the far detector is presented in \autoref{fig:t2k:nu_e}.
+The long history of the atmospheric neutrino measurements in Super-Kamiokande provides accurate knowledge of the detector operation. This model is used together with the T2K events in the SK for the final oscillation measurements. The spectrum of the observed electron neutrinos in the far detector is presented in \autoref{fig:t2k:nu_e}.
 
-\begin{figure}[ht!]
+\begin{figure}[!ht]
   \centering
   \includegraphics[width=0.9\linewidth]{nu_e}
   \caption{The spectrum of the electron neutrinos observed with the far detector comparing to the expectations without oscillation.}
   \label{fig:t2k:nu_e}
 \end{figure}
 
-As one could see the oscillation fit is a heart of the analysis. Three independent methods were developed for the fit machinery.
+As one could see the oscillation fit is the heart of the analysis. Three independent methods were developed for the fit machinery.
 \begin{itemize}
-  \item BANFF (Beam And ND280 Flux extrapolation task Force) is not an oscillation analysis tool, but it is a prefit method that use the data from both flux, near detector and cross-section models to constrain the initial parameters of the neutrino beam before the oscillations and precisely constrain the neutrino interactions model as well
-  \item PiTheta analysis is based on the Poisson statistics and constrains the oscillation parameters with the likelihood minimization. It is using data binned in the lepton momentum and direction for the oscillation fit. This approach uses BANFF results and then fir the SK data to obtain the final result
-  \item VaLOR (ValenciaLancaster-Oxford-Rutherford) is one more analysis using the minimization of the likelihood within Poisson statistics. It uses the samples binned in the neutrino energy and lepton direction
-  \item MaCH3 (Markov CHain) approach is based on Bayesian statistics. Instead of using the near detector fit and propagating it to the far detector the both detectors' samples are fit together. The oscillation parameters are estimated with a Markov chain method. The data samples are binned in the neutrino energy and lepton direction
+  \item  At the beginning, we perform the prefit using the data from both flux, near detector and cross-section models to constrain the initial parameters of the neutrino beam before the oscillations and precisely constrain the neutrino interactions model as well
+  \item  The first analysis is based on the Poisson statistics and constrains the oscillation parameters with the likelihood minimization. It is using data binned in the lepton momentum and direction for the oscillation fit. This approach uses the prefit results and then fit the SK data to obtain the final result
+  \item  The second analysis although uses the minimization of the likelihood within Poisson statistics. But the samples are binned in the neutrino energy and lepton direction
+  \item  The final, Markov Chain approach is based on Bayesian statistics. Instead of using the near detector prefit and propagating it to the far detector the both detectors' samples are fit together. The oscillation parameters are estimated with a Markov chain method. The data samples are binned in the neutrino energy and lepton direction
 \end{itemize}
 
 The result is considered as robust only if all the methods are in a good agreement about the confidence/creditable intervals. The oscillation results are presented in \autoref{fig:T2K:osc_res}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
   \centering
   \begin{minipage}{0.49\linewidth}
     \centering
@@ -270,7 +350,7 @@ The result is considered as robust only if all the methods are in a good agreeme
 \end{figure}
 
 \subsection{Neutrino cross-section measurements}
-Alongside the oscillation analysis T2K performs very precise measurements of the neutrino cross-sections. The knowledge of the neutrino interactions' rates is essential for the oscillation analysis as the most realistic theoretical model could be chosen. The ND280 provides an opportunity to study neutrino interaction with carbon, oxygen and iron with both neutrino and anti-neutrino and with both flavors: muon and electron. The dominating sample in the ND280 is a muon neutrino interaction with no pions in the final state. For the T2K energies it's a main process that's why it's studied pretty well~\cite{Abe2020a}. Much more complicated analyzes are the interaction of the electron neutrinos. The result of the comparison of the $\nu_e$ and $\overline{\nu}_e$ cross-section is presented in \autoref{fig:t2k:nue_Xsec}~\cite{Abe2020}.
+Alongside the oscillation analysis, T2K performs very precise measurements of the neutrino cross-sections. The knowledge of the neutrino interactions' rates is essential for the oscillation analysis as the most realistic theoretical model could be chosen. The ND280 provides an opportunity to study neutrino interaction with carbon, oxygen and iron with both neutrino and anti-neutrino and with both flavors: muon and electron. The dominating sample in the ND280 is a muon neutrino interaction with no pions in the final state. It's the main process for the T2K energies that's why it's studied pretty well~\cite{Abe2020a}. Much more complicated analyzes are the interaction of the electron neutrinos. The result of the comparison of the $\nu_e$ and $\overline{\nu}_e$ cross-section is presented in \autoref{fig:t2k:nue_Xsec}~\cite{Abe2020}.
 
 \begin{figure}[!ht]
   \centering

@@ -178,6 +178,7 @@ The cross-sections for the processes mentioned above are presented on the \autor
 
 
 \subsubsection{Interactions with nuclei}
+\label{sec:intro:nuclei}
 Neutrino interactions with a single fermion (e.g. quark) are very well described. But the atomic nuclei are complicated structures consists of plenty of particles that make the neutrino interaction description much more complicated. The reaction topology severely depends on the neutrino energy. The following energy scales could be set:
 \begin{itemize}
   \item $E_\nu <$ 0.1 GeV: neutrino interacts with the whole nucleus,
@@ -490,9 +491,20 @@ in this notation the neutron energy unit is supposed to be GeV, the distance uni
 
 \subsubsection{Oscillation in matter}
 \label{sc:intro:mat}
-The framework presented above describes the oscillations in the vacuum. In the case of neutrino propagation in matter, the effect will be different. Going through medium neutrino suffers from the forward elastic scattering with electrons and nucleons. This effect is similar to the phenomenon of light propagation in the matter. The new potential which is equivalent to the refraction index needs to be taken into account. But the interaction types are slightly different for different neutrinos. All neutrino types may scatter over electrons, protons and neutrons through the neutral current exchange. In addition, electron neutrino scatters over the electrons with the charge current. The framework of the neutrino oscillations in mater was developed by Wolfenstein~\cite{Wolfenstein1978}. The mixing angle and the mass difference should be replaced by the effective ones, depending on the matter density.
+The framework presented above describes the oscillations in the vacuum. In the case of neutrino propagation in matter, the effect will be different. Going through medium neutrino suffers from the forward elastic scattering with electrons and nucleons. This effect is similar to the phenomenon of light propagation in the matter. The new potential which is equivalent to the refraction index needs to be taken into account. But the interaction types are slightly different for different neutrinos. All neutrino types may scatter over electrons, protons and neutrons through the neutral current exchange. In addition, electron neutrino scatters over the electrons with the charge current. The framework of the neutrino oscillations in mater was developed by Wolfenstein~\cite{Wolfenstein1978}. The mixing angle and the mass difference should be replaced by the effective ones, depending on the matter density. 
 
-Later it was discovered that in case of slightly changing density of the matter there is a region where the mixing angle reaches its maximum possible value $\pi/4$~\cite{Mikheyev1985}. This phenomenon is called Mikheyev–Smirnov–Wolfenstein (MSW) effect.
+\todo{The propogation of the neutrino in matter could be described with a Hamiltonian function that will be a sum of the neutrino energy and the potential of the neutrino interactions with electron.}
+\begin{equation}
+H_{i,j}=\left(E_\nu+\frac{m_i^2}{2E_\nu}\right)\delta_{i,j}+U_{ei}^*U_{ej}\sqrt2G_Fn_e
+\end{equation}
+where $U$ is a neutrino mixing matrix, $G_F$ is a Fermi constant and $n_e$ is electron density in matter. For the simplification I will estimate the changing of the oscillation parameters in the 2--flavor framework in the matter with a constant density. In vacuum the mixing angle and the mass difference are defined with $\theta$ and $\Delta m$. The new effective values in matter could be computed with:
+\begin{align}
+\sin^22\theta_M&=\frac{\sin^22\theta}{\cos^22\theta(1-\lambda)^2+\sin^22\theta} \\
+\Delta m^2_M&=\Delta m^2\frac{\sin2\theta}{\sin2\theta_M} \\
+\lambda&=\frac{2\sqrt2G_FE_\nu n_e}{\Delta m^2\cos2\theta}
+\end{align}
+
+In case of slightly changing density of the matter there is a region where the mixing angle reaches its maximum possible value $\pi/4$~\cite{Mikheyev1985}. This phenomenon is called Mikheyev–Smirnov–Wolfenstein (MSW) effect.
 
 It's interesting to notice that non-zero mass difference is not necessary for the neutrino oscillations in matter. The flavor change is observable even in the case of $\Delta m=0$ only because of the non-zero mixing angles~\cite{Smirnov2016}.
 
@@ -533,7 +545,7 @@ Thus it could be found out is it a deficit of all kinds of neutrinos or only ele
   \begin{minipage}{0.49\linewidth}
   \centering
     \includegraphics[width=\linewidth]{sk}
-    \caption{The angular distribution of the through-going muons in the Super-Kamiokande. In the absence of neutrino oscillations nearly no angular dependence is expected.}
+    \caption{The angular distribution of the muon and electron events in the Super-Kamiokande. The dotted histograms represented the simulation results w/o the neutrino oscillations and solid histograms corresponds to the best fit with oscillation hypothesis.}
     \label{fig:intro:sk}
   \end{minipage}
 \end{figure}
@@ -561,7 +573,7 @@ After the discovery of the neutrino oscillations, many experiments study the phe
 \begin{itemize}
   \item Solar neutrinos: experiments Borexino, Super-Kamiokande. These experiments are powerful in $\theta_{12}$ could also measure $\Delta m{21}^2$ and $\theta_{13}$
   \item Reactor experiments: KamLand~\cite{Eguchi2003}, RENO~\cite{Ahn2012}, Double Chooz~\cite{Abe2014}, Daya Bay~\cite{An2014}. These experiments study the electron anti-neutrino disappearance and are very sensitive to the $\theta_{13}$ and could measure $\theta_{12}$, $\Delta m_{21}^2$, $\Delta m_{32}^2$
-  \item Accelerator experiments: MINOS~\cite{Adamson2014}, K2K~\cite{Ahn2006}, ICARUS, T2K~\cite{Abe2020a}, NOvA~\cite{Acero2019}. These experiments started with studying muon (anti-)neutrino disappearance and MINOS, T2K and NOvA managed to observe the electron neutrino appearance, OPERA observed the tau neutrino appearance. Thus these experiments are very precise in measurements of the $\theta_{23}$ and sensitive to the CP-violation. They could also measure $\theta_{13}$ and $\delta m_{32}$
+  \item Accelerator experiments: K2K~\cite{Ahn2006}, MINOS~\cite{Adamson2014}, T2K~\cite{Abe2020a}, NOvA~\cite{Acero2019}. These experiments started with studying muon (anti-)neutrino disappearance and MINOS, T2K and NOvA managed to observe the electron neutrino appearance, OPERA observed the tau neutrino appearance. Thus these experiments are very precise in measurements of the $\theta_{23}$ and sensitive to the CP-violation. They could also measure $\theta_{13}$ and $\delta m_{32}$
   \item Atmospheric and cosmology neutrinos: Super-Kamiokande~\cite{Jiang2019}, IceCube. They could probe the interesting processes in cosmology and also measure $\theta_{23}$, $\theta_{13}$, $\Delta m_{32}$ and $\delta_{CP}$
 \end{itemize}
 
@@ -596,7 +608,7 @@ The visual representation of the neutrino oscillation parameters constrains is p
 \begin{figure}
   \centering
   \includegraphics[width=0.8\linewidth]{osc_tot}
-  \caption{The global fit of the neutrino oscillation parameters and results from the particular experiments used in the fit. The upper figures corresponds to the normal mass order and lower figures for inverted mass order.}
+  \caption{The global fit of the neutrino oscillation parameters and results from the particular experiments used in the fit. The upper figures corresponds to the normal mass order and lower figures for inverted mass order. The figure from~\cite{Esteban2019}.}
   \label{fig:intro:osc_tot}
 \end{figure}
 
@@ -734,7 +746,7 @@ For example, imagine the Dirac mass is fixed with $m_D=170 GeV$ and observed neu
 \label{sec:intro:HNL}
 In the previous section, it was proved that the extension of the SM is necessary to explain the neutrino mass. The seesaw mechanism is a minimal extension that could provide such an explanation. But there is no hint for the mass scale of the proposed new particles.
 
-For example, the implementation of the ~1 eV neutrino will mostly affect the neutrino oscillation probabilities. To meet the agreement with the LEP results of the Z boson decay measurements (\autoref{sec:intro:LEP}) the 4th neutrino should not couple with the Z boson. That's why such a particle is notated as a ``sterile'' neutrino. Also, their mixing with the other three active neutrinos should be quite small $\left|U_{e4},\right|, \left|U_{\mu4},\right|, \left|U_{\tau4},\right| \ll \left|U_{s4},\right|$ as in most of the neutrino oscillation experiments 3-flavor neutrino model describes the observation pretty well. However, in some experiments, the anomaly that could be explained with the 4th neutrino with $\Delta m_{41}^2~1eV$ was found. The first such an experiment was LSND~\cite{Athanassopoulos1997}, that inspired the short-baseline neutrino oscillation research program. Some anomalies are also found in the reactor experiments. Though there is no final statement is it a significant observation or the result of the unaccounted systematic error. Plenty of experiments are running now in order to figure out the nature of the phenomenon. We could generally divide them in the short-baseline accelerator experiments: MicroBooNE, ARAPUCA, ICARUS and others and reactor experiments: NEOS, DANSS, STEREO, PROSPECT, NEUTRINO-4, SoLid, and others.
+For example, the implementation of the ~1 eV neutrino will mostly affect the neutrino oscillation probabilities. To meet the agreement with the LEP results of the Z boson decay measurements (\autoref{sec:intro:LEP}) the 4th neutrino should not couple with the Z boson. That's why such a particle is notated as a ``sterile'' neutrino. Also, their mixing with the other three active neutrinos should be quite small $\left|U_{e4},\right|, \left|U_{\mu4},\right|, \left|U_{\tau4},\right| \ll \left|U_{s4},\right|$ as in most of the neutrino oscillation experiments 3-flavor neutrino model describes the observation pretty well. However, in some experiments, the anomaly that could be explained with the 4th neutrino with $\Delta m_{41}^2~1eV$ was found. The first such an experiment was LSND~\cite{Athanassopoulos1997}, that inspired the short-baseline neutrino oscillation research program. \todo{Some anomalies have also been found in the experiments with neutrinos from reactors and with solar neutrinos in the gallium experiments}. Though there is no final statement is it a significant observation or the result of the unaccounted systematic error. Plenty of experiments are running now in order to figure out the nature of the phenomenon. We could generally divide them in the short-baseline accelerator experiments: MicroBooNE, ARAPUCA, ICARUS and others and reactor experiments: NEOS~\cite{Ko2017}, DANSS~\cite{Alekseev2018}, STEREO~\cite{Almazan2018}, PROSPECT~\cite{Ashenfelter2018}, NEUTRINO-4~\cite{Serebrov2015}, SoLid, and others.
 
 More information about the light sterile neutrino could be found in~\cite{Abazajian2012}. The implementation of the heavier neutrinos will be overviewed in the next section.
 
@@ -762,19 +774,26 @@ m_\nu\equiv m_\beta\equiv\sqrt{\sum_i\left|U_{ei}\right|^2m_i^2}
 More details about the neutrino mixing will be presented in \autoref{sec:intro:osc}.
 
 \subsubsection{Neutrinoless double beta decay}
-In case neutrino has a Majorana nature, it's possible to measure the $m_{ee}$ in the process of the neutrinoless double beta decay. The Feynman diagram of the process is shown in \autoref{fig:intro:bb}.
+In case neutrino has a Majorana nature, it's possible to measure the $m_{\beta\beta}$ in the process of the neutrinoless double beta decay. The Feynman diagram of the process is shown in \autoref{fig:intro:bb}.
 \begin{equation}
 m_{\beta\beta}=\sum_i U^2_{ei}m_i
 \end{equation}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.5\linewidth]{beta_beta}
-  \caption{Feynman diagram for the neutrinoless double beta decay}
-  \label{fig:intro:bb}
+  \begin{minipage}{0.49\linewidth}
+    \includegraphics[width=\linewidth]{beta_beta}
+    \caption{Feynman diagram for the neutrinoless double beta decay}
+    \label{fig:intro:bb}
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \includegraphics[width=\linewidth]{beta_beta_limit}
+    \caption{The current limits on the $m_{\beta\beta}$ and the allowed regions for both normal and inverse mass order.}
+    \label{fig:intro:bb_lim}
+  \end{minipage}
 \end{figure}
 
-All the $0\nu\beta\beta$ experiments are putting the limits of the current value. The most precise result was obtained by KamLAND-Zen experiment $m_{\beta\beta} < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. One should keep in mind that successful measurement possible only in the case of Majorana neutrino nature.
+All the $0\nu\beta\beta$ experiments are putting the limits of the $m_{\beta\beta}$ value. The most precise result was obtained by KamLAND-Zen experiment $m_{\beta\beta} < (61-165) meV$ 90\% C.L.~\cite{Gando2016}. The summary of all the constraints from different experiments is shown in \autoref{fig:intro:bb_lim}. One should keep in mind that successful measurement possible only in the case of Majorana neutrino nature.
 
 \subsubsection{Cosmology}
 Cosmology provides different possibilities for neutrino mass measurements. One of the earliest attempts was done based on the timing measurements of the neutrinos from SN1987 --- the earliest and so far the only observation of the neutrino from the supernova collapse.
@@ -828,16 +847,19 @@ In general, the HNL search could be separated into several categories:
 So far, no evidence of the HNL existence was found and the upper limits on the mixing elements were set. The latest results from all the experiments could be found in \autoref{fig:umuh}, \autoref{fig:ueh} and \autoref{fig:utauh}.
 
 \begin{figure}[!ht]
+\centering
 \includegraphics[width=0.7\linewidth]{umuh}
 \caption{Constraints on the mixing matrix element $|U_{\mu}|^2$ from the experiments CMS~\cite{cms}, DELPHI~\cite{delphi}, L3~\cite{l3}, LHCb~\cite{lhcb}, BELLE~\cite{belle}, BEBC~\cite{bebc}, FMMF~\cite{fmmf}, E949~\cite{e949}, PIENU~\cite{pienu}, TRIUMF/TINA~\cite{triumf}, PS191~\cite{Bernardi1988}, CHARMII~\cite{charm2}, NuTeV~\cite{nutev}, NA3~\cite{na3} and kaon decays in~\cite{kaon1,kaon2}. The plot is similar to Ref.~\cite{drewes}, some comments on the interpretation can be found in that article and references therein.}
 \label{fig:umuh}
 \end{figure}
 \begin{figure}[!ht]
+\centering
 \includegraphics[width=0.7\linewidth]{ueh}
 \caption{Constraints on the mixing matrix element $|U_{e}|^2$ from the experiments  DELPHI~\cite{delphi},  L3~\cite{l3}, PIENU~\cite{pienu}, TRIUMF/TINA~\cite{triumf}, PS191~\cite{Bernardi1988}, CHARM~\cite{charm}, NA3~\cite{na3}, IHEP-JINR~\cite{jinr} and kaon decays~\cite{kaon1}. The plot is similar to Ref.~\cite{drewes}, some comments on the interpretation can be found in that article and references therein.}
 \label{fig:ueh}
 \end{figure}
 \begin{figure}[!ht]
+\centering
 \includegraphics[width=0.7\linewidth]{utauh}
 \caption{Constraints on the mixing matrix element $|U_{\tau}|^2$ from the experiments  CHARM~\cite{orloff2002limits}, NOMAD~\cite{baldisseris2001search}, DELPHI~\cite{delphi} and L3~\cite{l3}, some comments on the interpretation can be found in that article and references therein.}
 \label{fig:utauh}
