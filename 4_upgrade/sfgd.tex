@@ -11,7 +11,7 @@
 
 \chapter{Super FGD}
 \label{ch:up:sfgd}
-In the ND280, the Fine-Grained Detectors (FGD)~\cite{Amaudruz2012} serves as neutrino targets. They are made from scintillator bars oriented in the perpendicular directions w.r.t the neutrino beam. Such a structure provides an excellent performance in the reconstruction of the forward-going tracks. \autoref{fig:up:sfgd:fgd} shows the scheme of the current FGD modules. From the figure one can see that an acceptance for tracks at a high angle is limited. The whole track may be contained in a one scintillator bar and the accurate measurement will not be possible. One of the main goals of the ND280 upgrade is to study tracks at a high angle, thus a target with a new concept is required.
+In the ND280, the Fine-Grained Detectors (FGD)~\cite{Amaudruz2012} serve as neutrino targets. They are made from scintillator bars oriented in the perpendicular directions w.r.t the neutrino beam. Such a structure provides excellent performance in the reconstruction of the forward-going tracks. \autoref{fig:up:sfgd:fgd} shows the scheme of the current FGD modules. From the figure one can see that acceptance for tracks at a high angle is limited. The whole track may be contained in one scintillator bar and the accurate measurement will not be possible. One of the main goals of the ND280 upgrade is to study tracks at a high angle, thus a target with a new concept is required.
 
 \begin{figure}[!ht]
 	\centering
@@ -21,7 +21,7 @@ In the ND280, the Fine-Grained Detectors (FGD)~\cite{Amaudruz2012} serves as neu
 \end{figure}
 
 \section{Conceptual design}
-A new target is going to be build with the optically isolated scintillator cubes. Each cube will have three holes in x, y, and z directions. The signal readout is organized with wavelength shifting fibers (WLS) that will transfer light to the Multi--Pixel Photo Counters (MPPC). With such a concept, the events will be reconstructed in three projections that can be further merged into a 3D image. The scheme of the concept is shown in \autoref{fig:up:sfgd:gen}.
+A new target is going to be built with the optically isolated scintillator cubes. Each cube will have three holes in x, y, and z directions. The signal readout is organized with wavelength shifting fibers (WLS) that will transfer light to the Multi--Pixel Photo Counters (MPPC). With such a concept, the events will be reconstructed in three projections that can be further merged into a 3D image. The scheme of the concept is shown in \autoref{fig:up:sfgd:gen}.
 
 \begin{figure}[!ht]
 	\centering
@@ -30,11 +30,13 @@ A new target is going to be build with the optically isolated scintillator cubes
 	\label{fig:up:sfgd:gen}
 \end{figure}
 
-The detector dimensions are \sfgdx$\times$\sfgdy$\times$\sfgdz  cubes 1$\times$1$\times$1 $\text{cm}^3$ each. The total number of cubes and channels will be 1885632 and 54224 respectively. The details about the cubes characteristics are provided in \autoref{sec:up:sfgd:cube}. The MPPCs will be placed on the upstream, top, left and right side of the detector. The front--end electronics, including the digitizers is going to be built on site. The digitized signal will be transported through the optical fiber outside the magnet to the ND280 data acquisition system. More details about the electronics can be found in \autoref{sec:up:sfgd:ele}.
+High granularity is a strong advantage of the new detector. The measurements of the energy loss per length unit can estimate the type of self--contained particle with high accuracy. A low energy threshold for nucleon detection will gain the neutrino energy reconstruction accuracy and provide precise measurements of the neutrino interaction with matter.
+
+The detector dimensions are \sfgdx$\times$\sfgdy$\times$\sfgdz  cubes 1$\times$1$\times$1 $\text{cm}^3$ each. The total number of cubes and channels will be 1 885 632 and 54 224 respectively. The fiducial mass of the ND280 will be nearly doubled with SuprrFGD. The details about the cube's characteristics are provided in \autoref{sec:up:sfgd:cube}. The MPPCs will be placed on the upstream, top, left and right side of the detector. The front--end electronics, including the digitizers, is going to be built on site. The digitized signal will be transported through the optical fiber outside the magnet to the ND280 data acquisition system. More details about the electronics can be found in \autoref{sec:up:sfgd:ele}.
 
 \subsection{Scintillator cubes}
 \label{sec:up:sfgd:cube}
-The scintillator cubes are made from polystyrene doped with 1.5\% of paraterphenyl (PTP) and 0.01\% of POPOP. The cubes production is done with the injection molding with the press-form. Ten cubes could be produced at one act of molding that speeds up the mass production of the detector. The molding technology also increases the cube size accuracy comparing to the extrusion technology that is usually used for the scintillator detectors production. Cube dimensions accuracy is critical as we are going to assemble the detector from nearly 2 million of cubes. Size fluctuation are required to be minimal to prevent cube's holes misalignment because of the position fluctuations.
+The scintillator cubes are made from polystyrene doped with 1.5\% of paraterphenyl (PTP) and 0.01\% of POPOP. The cubes production is done with the injection molding with the press-form. Ten cubes could be produced at one act of molding that speeds up the mass production of the detector. The molding technology also increases the cube size accuracy comparing to the extrusion technology that is usually used for the scintillator detectors production. Cube dimensions accuracy is critical as we are going to assemble the detector from nearly 2 million cubes. Size fluctuations are required to be minimal to prevent cube's holes misalignment because of the position fluctuations.
 
 \begin{figure}[!ht]
 	\centering
@@ -52,16 +54,16 @@ The scintillator cubes are made from polystyrene doped with 1.5\% of paraterphen
 	\end{minipage}
 \end{figure}
 
-After the molding, the cubes are covered by a chemical diffuse reflector by etching the scintillator surface in a chemical agent. The fluctuations of the cube size were measured after the etching procedure. The results are shown in \autoref{fig:up:sfgd:cube_s} and demonstrates the Gaussian behavior with 25 $\mu$m accuracy. Afterwards three holes with a 1.5 mm diameter are drilled. The positions of the holes are also precisely controlled with the digital microscope (\autoref{fig:up:sfgd:hole_pos}). Variations at the level of 80 $\mu$m were observed. Since the fiber diameter is 1 mm while the hole size is 1.5 mm, this is not supposed to bring a problem during the assembly. The cube size fluctuations remains the main challenge for the detector construction.
+After the molding, the cubes are covered by a chemical diffuse reflector by etching the scintillator surface in a chemical agent. The fluctuations of the cube size were measured after the etching procedure. The results are shown in \autoref{fig:up:sfgd:cube_s} and demonstrate the Gaussian behavior with 25 $\mu$m accuracy. Afterward, three holes with a 1.5 mm diameter are drilled. The positions of the holes are also precisely controlled with the digital microscope (\autoref{fig:up:sfgd:hole_pos}). Variations at the level of 80 $\mu$m were observed. Since the fiber diameter is 1 mm while the hole size is 1.5 mm, this is not supposed to bring a problem during the assembly. The cube size fluctuations remain the main challenge for the detector construction.
 
 \subsection{Assembly}
 \label{sec:up:sfgd:ass}
-The assembly of the detector needs to be designed carefully. The setup requires aligning all the cubes at their position in three dimensions and easy inserting the WLS fibers. With the given number of 2 million cubes and with measured uncertainties on cube size and hole positions, this is a challenging task.
+The assembly of the detector needs to be designed carefully. The setup requires aligning all the cubes at their position in three dimensions and easy insertion of the WLS fibers. With the given number of 2 million cubes and with measured uncertainties on cube size and hole positions, this is a challenging task.
 
 \subsubsection{Loose structure}
-We considered creating a loose structure of cubes self--aligned with fishing lines. The key idea is to fully assemble the detector with 1.2 mm fishing lines instead of the 1 mm WLS. Cubes positions are fixed only with these lines without the precise control over the position of each cube. Then the fishing line will be replaced one by one with the fibers. As WLS fiber diameter is smaller comparing to the fishing line it should be easy to perform such a replacement. During the whole replacement procedure cubes are aligned with lines and fibers. Such a technique will also protect the fibers that are quite expensive and fragile. They are going to be inserted only at the final stage of detector construction.
+We considered creating a loose structure of cubes self--aligned with fishing lines. The key idea is to fully assemble the detector with 1.2 mm fishing lines instead of the 1 mm WLS fibers. Cubes positions are fixed only with these lines without precise control over the position of each cube. Then the fishing line will be replaced one by one with the fibers. As WLS fiber diameter is smaller compared to the fishing line it should be easy to perform such a replacement. During the whole replacement, procedure cubes are aligned with lines and fibers. Such a technique will also protect the fibers that are quite expensive and fragile. They are going to be inserted only at the final stage of detector construction.
 
-Detector assembly starts from the string construction (\autoref{fig:up:sfgd:string} (a)). A line of \sfgdx cubes is assembled on the fishing line. The set of \sfgdy strings is joint line by line to the plane \sfgdx$\times$\sfgdy (\autoref{fig:up:sfgd:string} (b)). Planes are put on top of the each other to form a full detector (\autoref{fig:up:sfgd:string} (c)). The planes will be aligned so that the fishing lines will be inserted in the vertical holes as well. The alignment along the 3rd axis is the most difficult part of the assembly. The loose structure allows to solve this problem with the small cube displacements during the insertion the fishing line in 3rd axis.
+Detector assembly starts from the string construction (\autoref{fig:up:sfgd:string} (a)). A line of \sfgdx cubes is assembled on the fishing line. The set of \sfgdy strings is joint line by line to the plane \sfgdx$\times$\sfgdy (\autoref{fig:up:sfgd:string} (b)). Planes are put on top of each other to form a full detector (\autoref{fig:up:sfgd:string} (c)). The planes will be aligned so that the fishing lines will be inserted in the vertical holes as well. The alignment along the 3rd axis is the most difficult part of the assembly. The loose structure allows us to solve this problem with the small cube displacements during the insertion of the fishing line in the 3rd axis.
 
 \begin{figure}[!ht]
 	\centering
@@ -81,7 +83,7 @@ Detector assembly starts from the string construction (\autoref{fig:up:sfgd:stri
   \label{fig:up:sfgd:string}
 \end{figure}
 
-Several tests of the assembly were performed. The first one includes a 2 m long prototype with the transversal dimensions 6$\times$6 cubes. This prototype was aimed to test the robustness of the assembly strategy, the possibility of the lines replacement with WLS, the length fluctuations of the 2 m long setup. The photos of the prototype are presented in \autoref{fig:up:sfgd:long}. With such a test it was proved that we can construct the detector with the proposed method. The tests were performed with and without a 50 kg payload on the top cover of the detector. In both cases the fishing lines can be easily replaced by fibers. The friction of the fishing line with the 200 cubes is small and the line can be easily removed. There is no strong friction during the fiber insertion as well. The length of the prototype was in agreement with the expectations within the 1 mm accuracy.
+Several tests of the assembly were performed. The first one includes a 2 m long prototype with the transversal dimensions 6$\times$6 cubes. This prototype was aimed to test the robustness of the assembly strategy, the possibility of the lines replacement with WLS, the length fluctuations of the 2 m long setup. The photos of the prototype are presented in \autoref{fig:up:sfgd:long}. With such a test it was proved that we can construct the detector with the proposed method. The tests were performed with and without a 50 kg payload on the top cover of the detector. In both cases, the fishing lines can be easily replaced by fibers. The friction of the fishing line with the 200 cubes is small and the line can be easily removed. There is no strong friction during fiber insertion as well. The length of the prototype was in agreement with the expectations within the 1 mm accuracy.
 
 \begin{figure}[!ht]
 	\centering
@@ -97,21 +99,21 @@ Several tests of the assembly were performed. The first one includes a 2 m long 
   \label{fig:up:sfgd:long}
 \end{figure}
 
-Two prototypes were build for the detector tests with the beam of charged particles. This prototypes served also as an assembly technology tests. The first one was quite small 5$\times$5$\times$5 cubes. The second one was slightly larger and contained 48$\times$24$\times$8 cubes. Details about prototypes construction and beamtest results will be overviewed in \autoref{sec:up:sfgd:beam}.
+Two prototypes were built for the detector tests with the beam of charged particles. These prototypes served also as an assembly technology tests. The first one was quite small 5$\times$5$\times$5 cubes. The second one was slightly larger and contained 48$\times$24$\times$8 cubes. Details about prototypes construction and beamtest results will be overviewed in \autoref{sec:up:sfgd:beam}.
 
-After the successful beamtests the tall ``tower'' was build with 15$\times$56$\times$192 cubes. The main purpose of this prototype was to test the possibility of the fishing lines replacement with the WLS fibers in a toll and long structure of cubes. It was confirmed that such a detector could be build with fishing lines and they could be replaces with the fibers afterwards. The photo of the prototype is shown in \autoref{fig:up:sfgd:toll}. In addition, the test of the SuperFGD box strength and deformations was performed with this prototype. The details about the detector box will be provided in the next section.
+After the successful beamtests the tall ``tower'' was built with 15$\times$56$\times$192 cubes. The main purpose of this prototype was to test the possibility of the fishing lines replacement with the WLS fibers in a tall and long structure of cubes. It was confirmed that such a detector can be built with fishing lines and they can be replaced with the fibers afterward. The photo of the prototype is shown in \autoref{fig:up:sfgd:tall}. In addition, the test of the SuperFGD box strength and deformations was performed with this prototype. The details about the detector box will be provided in the next section.
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=0.3\linewidth]{sfgd_toll}
+	\includegraphics[width=0.3\linewidth]{sfgd_tall}
 	\caption{The tall prototype of the SuperFGD detector made with 15$\times$56$\times$192 cubes.}
-	\label{fig:up:sfgd:toll}
+	\label{fig:up:sfgd:tall}
 \end{figure}
 
 \subsubsection{SuperFGD mechanics}
-Mechanical structure of the scintillator target should provide a robust detector fixation to minimize the detector deformation due to load. The loose structure of cubes is a subject of deformation, while the WLS fibers are fragile and can be broken with the cube offset. At the same time the dead space between the target and HA--TPC is desired to be as small as possible to gain the precision of charged particles tracking. The mechanical structure should provide the optical interface to readout all the channels and host the calibration system.
+The mechanical structure of the scintillator target should provide a robust detector fixation to minimize the detector deformation due to load. The loose structure of cubes is a subject of deformation, while the WLS fibers are fragile and can be broken with the cube offset. At the same time, the dead space between the target and HA--TPC is desired to be as small as possible to gain the precision of charged particle tracking. The mechanical structure should provide the optical interface to readout all the channels and host the calibration system.
 
-To meet these requirements, the walls of the box are made from 16 mm AIRAX core laminated with 2 mm CF skins and are screwed together. The box is drilled with 3 mm holes providing the exit for every WLS fiber. Three of six walls carry signal readout system. The MPPCs are soldered on printed circuit boards (PCB) that are screwed on the CF box. On the readout sides the fibers are equipped with optical connectors to provide reliable light transfer to MPPC. The CAD of the optical interface and readout system is shown in \autoref{fig:up:sfgd:optics}. The other fibers endings are covered with the plastic coverage screwed to the box. This coverage shades the fibers from external light and also hosts the calibration system.
+To meet these requirements, the walls of the box are made from 16 mm AIRAX core laminated with 2 mm CF skins and are screwed together. The box is drilled with 3 mm holes providing the exit for every WLS fiber. Three of the six walls carry the signal readout system. The MPPCs are soldered on printed circuit boards (PCB) that are screwed on the CF box. On the readout sides, the fibers are equipped with optical connectors to provide reliable light transfer to MPPC. The CAD of the optical interface and readout system is shown in \autoref{fig:up:sfgd:optics}. The other fibers endings are covered with the plastic coverage screwed to the box. This coverage shades the fibers from external light and also hosts the calibration system.
 
 \begin{figure}[!ht]
 	\centering
@@ -122,7 +124,7 @@ To meet these requirements, the walls of the box are made from 16 mm AIRAX core 
 
 The deformation of the mechanical support structure was tested with the long and tall SuperFGD prototype (15$\times$56$\times$192 cubes). The measured sagitta was at the level of 20 mm. This value is close to the distance between the detectors but still meets the requirements and makes possible the detector assembly.
 
-The calibration system is required to measure the MPPC gain, i.e. associate the output MPPC channel with the number of detected photoelectrons. In the current FGD we use MPPC with a high noise rate that allows to perform a calibration with the noise only. In the SuperFGD new low-noise MPPC will be used. It will make the signal more clean, but will require the external light injection system for calibration. The Light Guide Plane (LGP) is used for this purpose. On the non-readout side of the fibers the plastic plate is glued to the SuperFGD box. The light will be injected with LEDs at the plate border. The notches in the plate are made opposite to the fibers ends to scatter some light into the fibers (\autoref{fig:up:sfgd:calib}). With such a system the gain of each channel can be monitored continuously. It is especially important at the assembly stage to check all the MPPCs and fibers operate normally.
+The calibration system is required to measure the MPPC gain, i.e. associate the output MPPC channel with the number of detected photoelectrons. In the current FGD, we use MPPC with a high noise rate that allows us to perform a calibration with the noise only. In the SuperFGD new low-noise MPPC will be used. It will make the signal cleaner, but will require the external light injection system for calibration. The Light Guide Plane (LGP) is used for this purpose. On the non-readout side of the fibers, the plastic plate is glued to the SuperFGD box. The light will be injected with LEDs at the plate border. The notches in the plate are made opposite to the fibers ends to scatter some light into the fibers (\autoref{fig:up:sfgd:calib}). With such a system the gain of each channel can be monitored continuously. It is especially important at the assembly stage to check all the MPPCs and fibers operate normally.
 
 \begin{figure}[!ht]
 	\centering
@@ -133,31 +135,119 @@ The calibration system is required to measure the MPPC gain, i.e. associate the 
 
 \section{Electronics}
 \label{sec:up:sfgd:ele}
-SuperFGD electronics should measure the signal amplitude at every channel at every bunch of the neutrino beam. In T2K 8 bunches are separated with 600 ns and forms a spill that comes every 2 seconds. The readout system should be compatible with this regime. High dynamic range and precise timing are required for the precise physics measurement. Nucleons produced in the neutrino interactions are mostly low-energetic and stops shortly with large energy deposition. Since accurate spectroscopy of the nucleons are required for the neutrino interactions measurements, high dynamic range is essential. Time measurement is important for dividing particles directed to/from the target. The ToF system around the SFGD and HA--TPCs measures time with 100 ns accuracy. At our energies the SFGD time resolution at the level of 1 ns is enough for the reliable estimation of the track direction.
+SuperFGD electronics should measure the signal amplitude at every channel at every bunch of the neutrino beam. In T2K 8 bunches are separated with 600 ns and forms a spill that comes every 2 seconds. The readout system should be compatible with this regime. High dynamic range and precise timing are required for the precise physics measurement. Nucleons produced in the neutrino interactions are mostly low-energetic and stops shortly with large energy deposition. Since accurate spectroscopy of the nucleons is required for the neutrino interactions measurements, a high dynamic range is essential. Time measurement is important for dividing particles directed to/from the target. The time-of-flight (ToF) system around the SFGD and HA--TPCs measures time with 100 ns accuracy. At our energies, the SFGD time resolution at the level of 1 ns is enough for the reliable estimation of the track direction.
 
-The electronics system based of the CITIROC chips (Cherenkov Imaging Telescope Integrated Read Out Chip) was chosen as a baseline option. These chips are used in BabyMIND~\cite{Blondel2015b} experiment in the T2K near detector complex. Thus these chips were designed to operate with scintillator detector at the same neutrino beam and therefore are compatible with the beam timing. CITIROC electronics suits the requirements of the dynamic range and time resolution. It stores signal in both log--gain and high--gain regime simultaneously and thus provides accurate amplitude measurements for both low and high light yield. At the moment, the bottle--neck of the dynamic range is a number of pixels in the MPPC. But our S13360-1325PE MPPCs carry 2668 and this is more then enough for the precise measurements. The sampling rate of the CITIROC ship is 400 MHz (2.5 ns). That brings us below 1 ns time resolution per channel.
+The electronics system based on the CITIROC chips (Cherenkov Imaging Telescope Integrated Read Out Chip) was chosen as a baseline option. These chips are used in BabyMIND~\cite{Blondel2015b} experiment in the T2K near detector complex. Thus these chips were designed to operate with scintillator detector at the same neutrino beam and therefore are compatible with the beam timing. CITIROC electronics suits the requirements of the dynamic range and time resolution. It stores the signal in both low--gain and high--gain regime simultaneously and thus provides accurate amplitude measurements for both low and high light yield. At the moment, the bottle--neck of the dynamic range is a number of pixels in the MPPC. But our S13360-1325PE MPPCs carry 2668 pixels and this is more than enough for the precise measurements. The sampling rate of the CITIROC chip is 400 MHz (2.5 ns). That brings us below 1 ns time resolution per channel.
 
-Front--End Boards (FEB) are mounted in towers on both sides of SGFD inside the magnet. PCB are connected with the FEB with the coaxial cables. Such a scheme minimize the dead material between the SFGD and HA--TPC. FEB provides signal amplification, digitization, and zero--suppression. The optical cable transmit the data outside the magnet to the ND280 global DAQ system. This connection serves for the time synchronization as well.
+Front--End Boards (FEB) are mounted in towers on both sides of SGFD inside the magnet. PCBs are connected with the FEB with the coaxial cables. Such a scheme minimizes the dead material between the SFGD and HA--TPC. FEB provides signal amplification, digitization, and zero--suppression. The optical cable transmits the data outside the magnet to the ND280 global DAQ system. This connection serves for the time synchronization as well.
 
 \section{Simulations}
-To estimate the behavior and main physical characteristics of the future detector I performed a bunch of simulations.
+\label{sec:up:sfgd_sim}
+To estimate the behavior and main physical characteristics of the future detector we performed a bunch of simulations. The framework based on Geant4~\cite{Agostinelli2003} toolkit was created to perform a Monte--Carlo simulation of the proposed detector~\cite{ndUpRepo}. The detector response was estimated based on the well-known behavior of the scintillator detector FGD. Further corrections based on the test beam data are considered. The geometry of the cubes with holes, instrumented with WLS fibers was fully implemented in the framework. The visualization of the simulated geometry is shown in \autoref{fig:up:sfgd:gen}. The propagation and interactions of the particles in the detector are carried out by Geant4 toolkit. As an output, we know the energy spent on the ionization in the scintillator material.
 
-\subsection{Expected light yield}
-On of the goals was to estimate the light yield of the detector with different particle types. As we are using 2 m long fibers the light attenuation is critical. The decision about fiber far end coverage should be taken. It could be mirrored and provide more light, but degrade the time resolution.
+Based on the known energy loss in the scintillator we estimated the amount of light measured by the MPPC. The first step is evaluating the amount of ionization energy that went to light emission. The empirical Birks law was used for this purpose~\cite{Birks1951}.
 
-TODO
+\begin{equation}
+\frac{dS}{dr}=\frac{dE/dr}{1+k_B\times dE/dr}
+\end{equation}
+where $k_B=0.0208\text{cm/MeV}$ is a Birks constant that was precisely measured for the plastic scintillators. Based on the total energy spent on light emission we estimate the number of photons produced and captured with the WLS fibers. Based on our experience with FGD we started with the value of 156.42 $\gamma$/MeV. This value is supposed to be tuned later with the beamtest data. The attenuation of the light in the fiber is estimated with the exponential law (\autoref{eq:att}).
 
-\subsection{Michell electron tagging}
-The next quick check is understanding of the detector efficiency for Michell electron tagging. Michell electrons are produced in the muon decay $\mu\to e+\overline{\nu}_e+\nu_\mu$. They are quite useful for the identification of the muon from the neutrino interactions, thus we are interested in our detector efficiency.
+\begin{equation}
+\label{eq:att}
+L\times=a\cdot e^{-x/L_{long}}+(1-a)\cdot e^{-x/L_{short}}
+\end{equation}
+where $L_{long}$ and $L_{short}$ are 2 attenuation length and $a$ is their relative strength. As before, we have some knowledge about the attenuation length from the FGD operation. In addition, the measurements of the attenuation length in our fiber type were performed with LED. Attenuation parameters were set to $a=0.77$, $L_{long}=4634$ mm, $L_{short}=332$ mm. The MMPC photodetection efficiency is specified by its manufacturer at 25\%. Thus the energy deposited by a charged particle is transformed into the number of detected photo electrons. A similar approach is used in the simulation of the FGD in the ND280.
 
-TODO
+\subsection{Expected light yield and PID}
+\subsubsection{Simulation cross--check}
+One of the goals of the simulations is to estimate the light yield of the detector with different particle types. We want to be sure that the dynamic range of the MPPC is suitable for the amount of light that is going to be measured. First of all, we compared the results of the simulation with the results of the first beam test (\autoref{sec:up:sfgd:beam1}). I found that with our simulation we expect to observe 41 photo electrons per channel in the first small SuperFGD prototype with the beam at the CERN T10 area (mostly Minimum Ionizing particles (MIP)). In the data, we observed a very similar result --- 42 p.e. per channel. Thus we decided that the simulation parameters are reliable enough.
+
+\subsubsection{Beamtest simulations}
+After the validation of the simulation parameters with the first beamtest we simulate the signal from the second prototype (\autoref{sec:up:sfgd:beam2}). The main goal is to estimate the detector response for through-going MIP particles and stopping protons. As we expect a large energy deposition in the second case, our detector should be able to measure high signal amplitude. Simulated event displays are shown in \autoref{fig:up:sfgd:sim_scnd}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_pion_sim} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_proton_sim} \\ (b)
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_pr_last} \\ (c)
+	\end{minipage}
+	\caption{The simulations of the second prototype of the SFGD detector. Event displays of the through-going 1 GeV/c pion track (a) and a stopping proton track (b). The light yield distribution in the stopping proton last cube (c).}
+	\label{fig:up:sfgd:sim_scnd}
+\end{figure}
+
+I estimated the light yield from the through-going MIP track at a value of 50 p.e.. The value is similar to the measurements done with the first prototype and is sufficient for the tracking and time resolution measurements. The signal from the stopping proton is much higher and reaches 600 p.e.. The majority of the prototype's channels are equipped with MPPC with a dynamic range of 2668 pixels that is more than enough for successful spectroscopy.
+
+\subsubsection{PID studies}
+As mentioned before, with SuperFGD we can determine the type of self-contained particle by the energy loss. We performed a simulation to study the accuracy of such a determination. The effect of light attenuation should also be studied. As we are using 2 m long fibers, the attenuation may be quite severe and affect particle identification. I performed simulations of the propagation of different particles through the detector. The samples with the different initial locations of the particles were considered: close to the MPPC, excluding the attenuation effect and at the far corner of the detector where the attenuation is the strongest. The ionization energy loss estimated for muon and proton in both positions is shown in \autoref{fig:up:sfgd:pid}. The particle momenta are taken from the neutrino interactions simulated with GENIE generator. The cut was put at the value where muon and proton PDF intersects. Thus the efficiency and purity of the muon selection can be estimated. As one can see the quality of the selection depends very weak from the initial particle position. The light attenuation reduces the total amount of light but doesn't spoil the particle identification. These plots also demonstrate a good PID power of the detector even with a simple comparison of dE/dx. More sophisticated selection using a momentum by range can further improve the accuracy of particles separation.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_1}
+	\end{minipage}
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_2}
+	\end{minipage}
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_3}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_4} \\ $ L < 50$ mm
+	\end{minipage}
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_5} \\ $50 < L < 100$ mm
+	\end{minipage}
+	\begin{minipage}{0.25\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{PID_6} \\  $100 < L < 200$ mm
+	\end{minipage}
+	\caption{The energy loss per length unit PDFs for muon (blue) and proton(red) for different track length and at different distances from MPPCs. Top row corresponds to the particle position close to MPPC and bottom row corresponds to position far away from MPPC so the light attenuation in fiber is the strongest. The efficiencies of the muon identification as well as a rate of the misidentified protons is shown.}
+	\label{fig:up:sfgd:pid}
+\end{figure}
 
 \subsection{Pileups}
+Neutrino interactions happen not only in the fiducial material but also in the concrete of the pit, in the magnet coil of the ND280 and in the other detectors. SuperFGD will suffer from the pile ups as the particles from such interactions could enter the detector and overlap with the signal from the neutrino interactions inside the fiducial volume. I estimated the rate of pile ups for different beam intensities. Simulation of the neutrino interactions outside of the basket was already done and widely used in the experiment. I used this sample and cherry picked tracks that entered the basket and are pointed towards SuperFGD. Such tracks are used as an input for the SuperFGD simulation framework to estimate detector response. The results are overlapped with the simulation of the neutrino interactions inside SuperFGD. Finally, we got the fraction of pileuped events in the whole detector and a fraction of pileuped channels in 2D projections. The results are summarized in \autoref{tbl:up:sfgd:pile_up}. Two beam powers are considered 500 and 1000 kW.
 
-TODO
+\begin{table}[!ht]
+	\begin{tabular}{|l|ccccc|}
+	\multicolumn{6}{l}{For $10^{21}$ POT total number of $\nu$ events in neutrino mode in  SFGD: 234 546} \\
+	\hline
+	Beam  					& \multicolumn{5}{c}{Pile ups in:} \\
+	power, kW				& whole detector 	& certain cube 	& XY projection 	& YZ projection 	& XZ projection \\
+	\hline
+	500							& 11 520					& 0.64  				& 14.09					  & 9.95 						& 55.58 \\
+	1000 						& 22 147 					& 1.28 					& 28.12 					& 19.91 					& 111.17 \\
+	\hline
+	\hline
+	\multicolumn{6}{l}{} \\
+	\multicolumn{6}{l}{For $10^{21}$ POT total number of $\overline{\nu}$ events in anti-neutrino mode in SFGD: 60 837} \\
+	\hline
+	Beam  					& \multicolumn{5}{c}{Pile ups in:} \\
+	power, kW				& whole detector 	& certain cube 	& XY projection 	& YZ projection 	& XZ projection \\
+	\hline
+	500							&  1 382					& 1.01  				&  2.43					  & 2.17  					& 10.90 \\
+	1000 						&  2 659 					& 1.93 					&  4.68 					& 4.17   					& 21.00 \\
+	\hline
+	\end{tabular}
+	\caption{The pile up rate in the SuperFGD detector.}
+	\label{tbl:up:sfgd:pile_up}
+\end{table}
 
-
-
+The YZ plane has a lower pile up rate as it has the largest number of channels and coincidence is less probable. XY plane contains the least number of channels, but the pile up rate is lower comparing to XZ plane. Most of the OOFV particles are going downstream that's why their tracks are extended along the Z axis and the coincidence of channel in XZ projection is more probable. In total, the rate of the channels pile up with the out of fiducial volume tracks is low and will not affect the data quality.
 
 \section{Beamtest}
 \label{sec:up:sfgd:beam}
@@ -165,7 +255,7 @@ Several beamtests were performed to evaluate the detector performance and charac
 
 \subsection{First CERN beamtest}
 \label{sec:up:sfgd:beam1}
-The first ever test was done with the small 5$\times$5$\times$5 cubes prototype. The main goals of the test were first measurement of the light yield and time resolution with the beam of charged particles. A Photo of the first prototype is shown in \autoref{fig:up:sfgd:1st}.
+The first ever test was done with the small 5$\times$5$\times$5 cubes prototype. The main goals of the test were the first measurement of the light yield and time resolution with the beam of charged particles. A photo of the first prototype is shown in \autoref{fig:up:sfgd:1st}.
 
 \begin{figure}[!ht]
 	\centering
@@ -174,9 +264,9 @@ The first ever test was done with the small 5$\times$5$\times$5 cubes prototype.
 	\label{fig:up:sfgd:1st}
 \end{figure}
 
-The beamtest was performed at the T10 area of the CERN Proton Synchrotron (PS). The 6 GeV/c beam consisted mostly from positron and protons. Two scintillator bars were installed in 26 cm before and after the prototype and used as a trigger and reference measurements for the time resolution studies.
+The beamtest was performed at the T10 area of the CERN Proton Synchrotron (PS). The 6 GeV/c beam consisted mostly of positron and protons. Two scintillator bars were installed in 26 cm before and after the prototype and used as a trigger and reference measurements for the time resolution studies.
 
-The light was readout in the two directions perpendicular to the beam. The distribution of the sum of the light yield from both channels is shown in \autoref{fig:up:sfgd:1st_res} (a). So we observed in average 80 photo electrons from one cube that is enough for the particle tracking and accurate time measurements. The time resolution was measured with respect to the time measurements in both trigger bars. A 5 GHz digitizer was used for sampling the data from the detector. Combing the measurements with two fibers in the same cube we reached a time resolution at the level of 650 ps (\autoref{fig:up:sfgd:1st_res} b). This result is beyond the minimal requirements, but opens a way towards precise ToF measurements inside the SFGD that may be used for the neutron spectroscopy (see \autoref{ch:up:neutron}).
+The light was readout with two fibers perpendicular to the beam direction, fibers along the beam were not inserted. The distribution of the sum of the light yield from both channels is shown in \autoref{fig:up:sfgd:1st_res} (a). So we observed in average 80 photo electrons from one cube that is enough for the particle tracking and accurate time measurements. The time resolution was measured with respect to both trigger bars. A 5 GHz digitizer was used for sampling the data from the detector. Combing the measurements from two fibers in the same cube we reached a time resolution at the level of 650 ps (\autoref{fig:up:sfgd:1st_res} b) and the resolution of the single channel is 0.95 ns. This result is beyond the minimal requirements but opens a way towards precise ToF measurements inside the SFGD that may be used for the neutron spectroscopy (see \autoref{ch:up:neutron}).
 
 \begin{figure}[!ht]
 	\centering
@@ -186,7 +276,7 @@ The light was readout in the two directions perpendicular to the beam. The distr
 	\end{minipage}
 	\begin{minipage}{0.49\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{fst_time} \\ (a)
+		\includegraphics[width=\linewidth]{fst_time} \\ (b)
 	\end{minipage}
 	\caption{A light yield (a) and a time resolution (b) of the first prototype of the SuperFGD detector.}
 	\label{fig:up:sfgd:1st_res}
@@ -196,28 +286,119 @@ The results of the beam test were published in~\cite{Mineev2019}.
 
 \subsection{Second CERN beamtest}
 \label{sec:up:sfgd:beam2}
+The first small prototype was used to test the concept and measure basic detector characteristic. More sophisticated tests are required to study setup performance with different particle types at various energies. The second prototype was made of 48$\times$24$\times$8 cubes. The size a driven by the size of the magnet in which it would be placed. In this larger version all the channels were instrumented with fibers and MPPCs. The readout was organized with CITIROC electronics that is going to be used in the full scale detector. The photos of the setup are shown in \autoref{fig:up:sfgd:scnd_photo}.
 
-prototype description
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.26\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_ass} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.36\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_inst} \\ (b)
+	\end{minipage}
+	\begin{minipage}{0.36\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_magnet} \\ (c)
+	\end{minipage}
+	\caption{The second SuperFGD prototype made of 48$\times$24$\times$8 cubes. During the assembly with fishing lines (a), fully instrumented with WLS fibers, MPPCs and cabled (b), installed in the magnet at the beamline (c).}
+	\label{fig:up:sfgd:scnd_photo}
+\end{figure}
 
-electronics description
+The test was performed at the T9 area at Proton Synchrotron (PS) beamline at CERN. The beam parameters are similar to what was described in the TPC beamtest chapter (\autoref{sec:up:tpc:cern} of \autoref{ch:up:tpc}). The beam is composed of electrons, pions, and protons with a momentum that varies from 800 MeV/c up to 6 GeV/c. Thus we can observe a through going MIP tracks as well as more complicated topologies like single photon production and conversion, electromagnetic shower, stopping proton. All these events are likely to happen in the ND280 detector and it is interesting to study them with the prototype. Some event displays are shown in \autoref{fig:up:sfgd:scnd_ed}.
 
-light yield
-time resolution
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{ed_photon} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{ed_proton} \\ (b)
+	\end{minipage}
+	\caption{Event displays from the second prototype of the SUperFGD detector. A photon production and conversion into electron--positron pair (a) and a stopping proton track (b)}
+	\label{fig:up:sfgd:scnd_ed}
+\end{figure}
+
+The analysis started with estimating the basic detector characteristics like the light yield (LY) and time resolution. The LY was studied with the 0.8 GeV/c MIP sample. The light attenuation in the fibers is not negligible in our detector. Hence we first measured the attenuation effect and then apply the correction to each measurement based on the distance between an illuminated cube and a MPPC. Therefore the obtained value that characterizes a light production and collection in the cube and does not depend on cube position inside the detector. The attenuation was measured for fibers perpendicular to the beam directions. The observed light follows the exponential law with respect to the distance from the cube to the MPPC. The parameters of the exponential law are extracted from the fit and further used for correction of the measured light. The attenuation with respect to the travel distance of the light in the fiber is shown in \autoref{fig:up:sfgd:scnd_light} (a). The corrected values of the LY per cube are shown in \autoref{fig:up:sfgd:scnd_light}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+	\end{minipage}
+	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\label{fig:up:sfgd:scnd_light}
+\end{figure}
+
+The measurements of the time resolution were done separately for short and long fibers (8 and 24 cm respectively). The trigger that was used during the test was not precise. It has an uncertainty much more than 1 ns, thus can not be used as a reference. Instead, the measurements in the particular cube were compared to the cube in the middle of the prototype (in the 24 layer of 48). The uncertainty is supposed the same for both and the final time resolution is $\sqrt{2}$ times smaller than the smearing of the $\Delta T=T_{cube}-T_{reference}$. The distribution of the time resolution across different channels and different fiber length is shown in \autoref{fig:up:sfgd:scnd_time}. The obtained result is a bit worse than 1 ns. Some channels tend to have worse resolution forming a distribution with a long tail. This result is slightly worse compared to the resolution obtained with the first prototype (0.95 ns). In the second test, the CITIROC electronics with 400 MHz sampling was used, while in the first test we used 5 GHz digitizer and that may be the main reason for the different results.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.4\linewidth]{scnd_time}
+	\caption{The time resolution of the second prototype of the SuperFGD detector measured independently for every channel and fiber length.}
+	\label{fig:up:sfgd:scnd_time}
+\end{figure}
+
+A bunch of physics measurements was performed with the prototype. As we have a composition of different particles, we can plot the energy loss per length unit (dE/dx) and to study how well samples are separated. It will demonstrate the possibility of the detector to distinguish types of self-contained particles. Before the external detector like a TPC was required. The information from the trigger was used to distinguish muon/pion, electron, and proton samples. The energy losses per each sample are shown in \autoref{fig:up:sfgd:scnd_dedx}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.4\linewidth]{scnd_dedx}
+	\caption{The energy loss per length unit (dE/dx) for different particles samples distinguished by the trigger type. 0.8 GeV/c muon/pion and proton samples and 1 GeV/c positron sample were used.}
+	\label{fig:up:sfgd:scnd_dedx}
+\end{figure}
+
+The other interesting sample is stopping protons. The energy deposition rises at the end of the proton track (Bragg peak) and results in a large light deposition. Since we are going to measure low energy protons from neutrino interactions it is interesting to see the detector response for such a sample. We used a 0.8 GeV/c protons as the minimal momentum that could be selected with the beamline. The energy deposition of the proton, positron , and muon/pion along their track is shown in \autoref{fig:up:sfgd:scnd_pr}. On this plot, the Bragg peak is clearly seen. The dynamic range of MPPCs used in the test is enough to measure light deposition.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.4\linewidth]{scnd_pr}
+	\caption{The energy deposition along the track for different particle samples. The Bragg peak for protons is clearly seen and can be measured with our MPPCs.}
+	\label{fig:up:sfgd:scnd_pr}
+\end{figure}
+
+In the SuperFGD we expect an optical cross--talk --- a migration of the scintillation light to the neighbor cube with no initial scintillation. It happens because the cube reflector is not completely opaque. In addition, photons can go through the cube holes or WLS fibers. The effect was studied in the beamtest with the stopping proton sample. The large light deposition allows precise measurement of the small fraction of the migrated photons. An attempt to suppress such an effect was performed by putting the Tyvek sheets between Y layers of the prototype. Additional material with a high reflection coefficient is supposed to prevent photons from going to a neighbor cube. The scheme of the cross--talk effect in the track transversal plane is shown in \autoref{fig:sfgd:up:xt} (a). As an effect characteristic, we are using the ratio of the light detected in the neighbor cube to the sum of the light in the central and side cubes.
+\begin{equation}
+\label{eq:xt}
+\kappa=\frac{M_{xtalk}}{M_{main}+2M_{xtalk}}
+\end{equation}
+
+The observed light migration is shown in \autoref{fig:sfgd:up:xt} (b) and (c).
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_xt} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_xt2} \\ (b)
+	\end{minipage}
+	\begin{minipage}{0.33\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_xt3} \\ (c)
+	\end{minipage}
+	\caption{The cross--talk scheme (a) and the measured probability (\autoref{eq:xt}) of the light migration to the neighbor cube (b) divided into the vertical and horizontal direction(c). The migration in vertical direction is suppressed with the Tyvek sheets.}
+	\label{fig:sfgd:up:xt}
+\end{figure}
 
 \section{Conclusion}
+The new scintillator target is going to be built for the upgrade of the near detector. It will be placed between two HA--TPCs. The detector is highly granular. The readout is organized from 3 surfaces making possible the 3D reconstruction of the events.
 
-% A new scintillator target is going to be built for the upgrade of the near detector. It will be placed between two HA--TPCs. The main benefits of the new target are:
-% \begin{itemize}
-% 	\item provide 2 tons of fiducial mass
-% 	\item reconstruct muon, pion, and proton tracks with low momentum threshold
-% 	\item separate electron production from photon conversion
+The performed beamtests demonstrate good detector performance for the processes of interest. High light yield and small time resolution were observed with the beam of charged particles with momentum O(1 GeV/c).
 
-% \end{itemize}
+The setup opens a road towards sophisticated measurements of the neutrino interactions. First of all, the total fiducial mass in ND280 will be doubled providing many more statistics for the analysis. A high granularity allows the detection of the short nucleon tracks. Lower threshold for proton detection will allow us to reconstruct nearly all the protons produced in the neutrino interactions in ND280. With such a measurement, the resolution of the neutrino energy measurements will be improved. The new detector can distinguish a type of self-contained particle, thus it can measure neutrino interactions producing low momentum lepton and/or pion. In the current detector, TPCs are obligatory for particle type definition. A small time uncertainty and usage of the time-of-flight detectors provide a robust separation between particles going inside and outside the target. High granularity is useful for the separation between gamma conversion and electron production in neutrino interactions. Constrain the electron neutrino cross-section with the near detector can improve the precision of the oscillation analysis. Conversion of the gamma rays produced in neutrino interaction outside of fiducial volume is the main background for the process of interest and it can be severely suppressed in the new target.
 
-
-
-
-
+With the SuperFGD, new analysis techniques may be developed to use all the benefits of the setup for neutrino studies. An example of an improved method of anti--neutrino energy reconstruction is presented in the next chapter.
 
 \chapter{Neutron tagging in SuperFGD}
 \label{ch:up:neutron}
