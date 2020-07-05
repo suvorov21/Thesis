@@ -398,13 +398,123 @@ The performed beamtests demonstrate good detector performance for the processes 
 
 The setup opens a road towards sophisticated measurements of the neutrino interactions. First of all, the total fiducial mass in ND280 will be doubled providing many more statistics for the analysis. A high granularity allows the detection of the short nucleon tracks. Lower threshold for proton detection will allow us to reconstruct nearly all the protons produced in the neutrino interactions in ND280. With such a measurement, the resolution of the neutrino energy measurements will be improved. The new detector can distinguish a type of self-contained particle, thus it can measure neutrino interactions producing low momentum lepton and/or pion. In the current detector, TPCs are obligatory for particle type definition. A small time uncertainty and usage of the time-of-flight detectors provide a robust separation between particles going inside and outside the target. High granularity is useful for the separation between gamma conversion and electron production in neutrino interactions. Constrain the electron neutrino cross-section with the near detector can improve the precision of the oscillation analysis. Conversion of the gamma rays produced in neutrino interaction outside of fiducial volume is the main background for the process of interest and it can be severely suppressed in the new target.
 
-With the SuperFGD, new analysis techniques may be developed to use all the benefits of the setup for neutrino studies. An example of an improved method of anti--neutrino energy reconstruction is presented in the next chapter.
+With the SuperFGD, new analysis techniques may be developed to use all the benefits of the setup for neutrino studies. An example of an improved method of anti-neutrino energy reconstruction is presented in the next chapter.
 
 \chapter{Neutron tagging in SuperFGD}
 \label{ch:up:neutron}
+A new detector opens a possibility for new method of physics measurements. In this chapter I will discuss a method for an improved anti-neutrino energy reconstruction in the CCQE interactions $\overline{\nu}_\mu+p\to\mu^++n$. With the large mass of the SuperFGD detector (2 tons), neutrons are likely to scatter over the nucleon, producing charged particles. If the detector has good enough time resolution, the neutron energy can be measured precisely with the time of flight. The time difference between the muon production and neutron rescattering will indicate its energy. Knowledge about the hadron kinematics will gain the precision of anti-neutrino energy reconstruction. With the disbalance in the transverse kinematics of the muon and hadron we can probe the nuclear effects. Such an analysis was performed for neutrino but was impossible for anti-neutrino as neutron detection efficiency was small.
+
+We tested the possibility of the neutron detection in SuperFGD-like setup with different options consigning the detector time resolution. The neutron energy measurements possibility was demonstrated with reasonable uncertainties. The improvement of the anti-neutrino energy reconstruction was obtained. Overall, the method allows an interesting reduction of the strong correlations between the flux and the interaction models that arise in the measure of the neutrino oscillation probability.
+
 \section{Motivation}
+As was overviewed in \autoref{ch:T2K:general} the accurate measurements of the neutrino energy are essential for the precise oscillation measurements. Future experiments (DUNE, Hyper--Kamiokande) are very sensitive to the neutrino energy spectrum with their measurements of the CP violating phase $\delta_{CP}$. At the moment T2K uses charged current quasi--elastic (CCQE) interactions to reconstruct neutrino energy. With the measured lepton momentum and direction and assuming known incoming neutrino direction and fixed liberation energy the neutrino energy calculation is straight-forward. But such a measurement can be biased.
+The bias is implemented with the initial movement of the target nucleons (Fermi motion) and liberation energy smearing. Also, mesonless neutrino interactions with multiple nucleons (mostly 2) will have a different kinematics comparing to CCQE. The other source of bias is unreconstructed meson or a meson that was observed in the nucleus medium. These secondary interactions and multi-nucleons reaction are studied very poorly and prediction of different models varies a lot. Even usage of the same detector at near and far sites can not solve the problem. Oscillated flux is different from the initial one, thus the proper model of  neutrino interactions is essential to estimate the number of events at the far detector based on the measurements in the near detector.
+
+To avoid the effects mentioned above, one can select a sample that is free from the nuclear effects. The usage of the so--called ``transverse kinematic variables'' was theoretically motivated~\cite{Lu2016} and successfully implemented in the experiment~\cite{Abe2018d}. The detailed description of the method is provided in \autoref{sec:}. The implementation is straight forward for the neutrino interactions, where we expect to detect muon and proton in the final state $\nu+n\to\mu^-+p$. But it can not be directly applied for the anti-neutrino, where the charge--less neutron is produced. The SuperFGD--like detector can make possible effective neutron detection and energy measurements. Thus the transversal variables becomes measurable for anti-neutrino interactions.
+
+In the hydrocarbon scintillator we have neutrino interactions over Hydrogen and Carbon only. Moreover interactions over Hydrogen are free from nuclear effects and prompts neutrino energy precisely. The transverse momentum for the interactions over these two elements in the SuperFGD with T2K anti-neutrino flux is shown in \autoref{fig:up:n:pt}. The interactions over Hydrogen are clearly separated from the Carbon ones. If we manage to measure $\delta p_T$ we will be able to extract a Hydrogen sample that is free from the nuclear effects and measure anti-neutrino energy precisely.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{pt}
+	\caption{The differential cross section for $CC0\pi$ interactions on a hydrocarbon target as a function of $\delta p_T$ for anti-neutrino interactions from the T2K experiment’s anti-neutrino flux simulated with the NEUT generator. The samples are divided into the target nucleon and reaction type (for Carbon only).}
+	\label{fig:up:n:pt}
+\end{figure}
+
+To measure the transversal momentum we need to estimate the neutron energy precisely. We are going to do it with the time of flight. The time of the neutron production can be measured accurately with the timing of muon track. In the massive detector neutron is likely to scatter over the nuclei producing charged particles. The most common daughters are proton and alpha-particles. Thus we expect a large light deposition from the stopping hadron that will allow accurate time measurement of the neutron scattering. With the end and start time references neutron velocity and thus energy is easily reconstructible. The scheme of the process of interest is shown in \autoref{fig:up:n:top}.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.5\linewidth]{n_top}
+	\caption{The process of interest that is going to be used for the measurement of the neutron energy produced in neutrino interaction with the time of flight.}
+	\label{fig:up:n:top}
+\end{figure}
+
 \section{Geant4 simulation}
-\section{Efficiency and energy resolution}
+We developed a simulation toolkit to study secondary interactions of the neutron produced in the anti-neutrino interactions. The simulation procedures discussed in \autoref{sec:up:sfgd_sim} of \autoref{ch:up:sfgd} are used. For the simplicity we started with the particle gun samples with the neutron energy distributed uniformly from 0 up to 800 MeV. The starting position in the geometrical center of the detector is set. The neutron direction was distributed uniformly in $4\pi$ angle. Neutron interactions as well as interactions of secondary particles were carried by the Geant4 toolkit with ``QGSP BERT HP'' physics list that is widely used in HEP (e.g. ATLAS experiment). IIt uses quark gluon string model for the high energy events ($\geqslant$ 20 GeV) and Bertini cascade model for lower energies ($\leqslant$ 10 GeV). All the standard EM processes and decays are included. It also uses precise simulations of the low energy neutrons (E<20 MeV) cross-sections. The full chain of readout simulation including ionization energy loss by charged particles, Birks saturation, light attenuation in the fibers, MPPC efficiency was applied.
+
+\subsection{Efficiency and energy resolution}
+The first analysis output is a fraction of neutrons that produced particles that are further detected. The obtained efficiency is presented in \autoref{fig:up:n:eff}. The angular dependence comes from the detector asymmetry. X and Z dimensions are similar with \sfgdx{} and \sfgdz{} cubes but Y dimension is much smaller with \sfgdy{} cubes, thus less neutrons interact along this direction.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.6\linewidth]{eff}
+	\caption{The efficiency of the neutron detection in the SuperFGD detector. Neutron particle gun was fired from the detector center isotropically. The angular dependence comes from the detector asymmetry.}
+	\label{fig:up:n:eff}
+\end{figure}
+
+Neutron energy is measured with a time of flight method. Velocity is estimated based on the distance between two clusters in \autoref{fig:up:n:top} and measured time difference. Detector time resolution is expected to be the main source of the reconstruction energy smearing. In our study we assumed several options on the detector time resolution. Both estimations are based on the fact that the observed time resolution per MIP is 0.95 ns per channel. Then we applied corrections to estimate the precision for the time measurements of the stopping hadrons. The first method is based on the measured light yield from the neutron cluster. With higher light yield, a waveform grows faster and a deviation of the time delay between a signal and its registration is smaller. The measurements with precise digitizer observed a square root dependence of the time resolution on the light yield~\cite{Niemann2010}. As we measured 0.95 ns uncertainty per muon track that gives 40 p.e., we could extrapolate the uncertainty with the known dependence.
+
+\begin{equation}
+	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{3}\right}\cdot\sqrt{40 \text{ }PE/LY}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
+\end{equation}
+
+The division by $\sqrt{3}$ shows the improvements of the measurement with 3 channels over the one channel. Bottom limit of 200 ps is set as further improvements are limited by the smearing in scintillator and fibers. Light emission by scintillator and light rescattering in fibers are not instant and provide some uncertainty.
+
+This method is quite optimistic but the prototypes were not tested with the detection of a large light emission. Thus to prevent an exaggeration of the energy resolution we considered a conservative estimation. If the measurements for each channel are independent their uncertainties can be sum in quadrature. Thus the average uncertainty of N measurements will be $\sqrt{N}$ times more accurate then the single one.
+
+\begin{equation}
+	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{\text{\#channels}}\right}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
+\end{equation}
+
+With the known model of the time resolution I estimated the smearing of the reconstructed neutron energy. The results are presented in \autoref{fig:up:n:smear} a.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+	\end{minipage}
+	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\label{fig:up:n:smear}
+\end{figure}
+
+The observed smearing is quite severe. The are two main sources of such a large resolution. We are taking all the neutrons at all distances. The time resolution is similar for all neutron interactions, but at small distance it affects energy estimations more significant. A cut on the travel distance can gain the resolution. The distribution of the neutron travel distance with respect to its energy is shown in \autoref{fig:up:n:time} a. I am also accepting all the neutron clusters disregard the light yield. Events with very low level of signal provides an enormous large smearing and should be also excluded. The time resolution estimated based on the light yield is shown in \autoref{fig:up:n:time} b. The discrete peaks come from the events with small number of photoelectrons (1 p.e - ns, 2 p.e - , etc.)
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+	\end{minipage}
+	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\label{fig:up:n:time}
+\end{figure}
+
+The cut on the light yield at the level of 40 p.e. was set to provide a time resolution not worth then for a MIP particle. I also studied the dependence of the energy resolution and detection efficiency with different lever arm cuts. The effect of the resolution improvement with the larger travel distance cut is shown in \autoref{fig:up:n:res}. The efficiencies for 20 cm and 70 cm lever arm cuts are shown in \autoref{fig:up:n:eff2}.
+
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
+		\centering
+		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+	\end{minipage}
+	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\label{fig:up:n:eff2}
+\end{figure}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[]{}
+	\caption{Caption here}
+	\label{fig:up:n:res}
+\end{figure}
+
 \section{Background estimations}
+
+
 \section{Prospects for physics}
+
 \end{document}
