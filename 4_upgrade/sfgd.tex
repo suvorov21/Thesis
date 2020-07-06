@@ -220,6 +220,7 @@ As mentioned before, with SuperFGD we can determine the type of self-contained p
 \end{figure}
 
 \subsection{Pileups}
+\label{sec:up:sfgd:pu}
 Neutrino interactions happen not only in the fiducial material but also in the concrete of the pit, in the magnet coil of the ND280 and in the other detectors. SuperFGD will suffer from the pile ups as the particles from such interactions could enter the detector and overlap with the signal from the neutrino interactions inside the fiducial volume. I estimated the rate of pile ups for different beam intensities. Simulation of the neutrino interactions outside of the basket was already done and widely used in the experiment. I used this sample and cherry picked tracks that entered the basket and are pointed towards SuperFGD. Such tracks are used as an input for the SuperFGD simulation framework to estimate detector response. The results are overlapped with the simulation of the neutrino interactions inside SuperFGD. Finally, we got the fraction of pileuped events in the whole detector and a fraction of pileuped channels in 2D projections. The results are summarized in \autoref{tbl:up:sfgd:pile_up}. Two beam powers are considered 500 and 1000 kW.
 
 \begin{table}[!ht]
@@ -443,9 +444,10 @@ The first analysis output is a fraction of neutrons that produced particles that
 	\label{fig:up:n:eff}
 \end{figure}
 
-Neutron energy is measured with a time of flight method. Velocity is estimated based on the distance between two clusters in \autoref{fig:up:n:top} and measured time difference. Detector time resolution is expected to be the main source of the reconstruction energy smearing. In our study we assumed several options on the detector time resolution. Both estimations are based on the fact that the observed time resolution per MIP is 0.95 ns per channel. Then we applied corrections to estimate the precision for the time measurements of the stopping hadrons. The first method is based on the measured light yield from the neutron cluster. With higher light yield, a waveform grows faster and a deviation of the time delay between a signal and its registration is smaller. The measurements with precise digitizer observed a square root dependence of the time resolution on the light yield~\cite{Niemann2010}. As we measured 0.95 ns uncertainty per muon track that gives 40 p.e., we could extrapolate the uncertainty with the known dependence.
+Neutron energy is measured with a time of flight method. Velocity is estimated based on the distance between two clusters in \autoref{fig:up:n:top} and measured time difference. Detector time resolution is expected to be the main source of the reconstructed energy smearing. The accuracy if the time measurements at the neutrino interaction vertex is assumed to be negligible as we will have large light deposition from the vertex activity and a long outgoing muon track that will provide lots of time measurements with illuminating many channels. Thus the time smearing in the neutron cluster is assumed to be the dominating uncertainty on the neutron energy reconstruction. In our study we assume several options on the detector time resolution. Both estimations are based on the fact that the observed time resolution per MIP is 0.95 ns per channel. Then we apply corrections to estimate the precision of the time measurements of the stopping hadrons. The first method is based on the measured light yield from the neutron cluster. With higher light yield, a waveform grows faster and a deviation of the time delay between a signal and its registration is smaller. The measurements with precise digitizer observed a square root dependence of the time resolution on the light yield~\cite{Niemann2010}. As we measured 0.95 ns uncertainty per muon track that gives 40 p.e., we could extrapolate the uncertainty with the known dependence.
 
 \begin{equation}
+\label{eq:up:n:ly}
 	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{3}\right}\cdot\sqrt{40 \text{ }PE/LY}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
 \end{equation}
 
@@ -454,6 +456,7 @@ The division by $\sqrt{3}$ shows the improvements of the measurement with 3 chan
 This method is quite optimistic but the prototypes were not tested with the detection of a large light emission. Thus to prevent an exaggeration of the energy resolution we considered a conservative estimation. If the measurements for each channel are independent their uncertainties can be sum in quadrature. Thus the average uncertainty of N measurements will be $\sqrt{N}$ times more accurate then the single one.
 
 \begin{equation}
+\label{eq:up:n:ch}
 	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{\text{\#channels}}\right}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
 \end{equation}
 
@@ -463,30 +466,32 @@ With the known model of the time resolution I estimated the smearing of the reco
 	\centering
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+		\includegraphics[width=\linewidth]{smear_0} \\ (a)
 	\end{minipage}
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+		\includegraphics[width=\linewidth]{smear_50} \\ (b)
 	\end{minipage}
-	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\caption{The neutron energy smearing for all neutrons (a) and for neutrons with travel distance more then 50 cm (b). The time resolution is estimated with \autoref{eq:up:n:ly}.}
 	\label{fig:up:n:smear}
 \end{figure}
 
-The observed smearing is quite severe. The are two main sources of such a large resolution. We are taking all the neutrons at all distances. The time resolution is similar for all neutron interactions, but at small distance it affects energy estimations more significant. A cut on the travel distance can gain the resolution. The distribution of the neutron travel distance with respect to its energy is shown in \autoref{fig:up:n:time} a. I am also accepting all the neutron clusters disregard the light yield. Events with very low level of signal provides an enormous large smearing and should be also excluded. The time resolution estimated based on the light yield is shown in \autoref{fig:up:n:time} b. The discrete peaks come from the events with small number of photoelectrons (1 p.e - ns, 2 p.e - , etc.)
+The observed smearing is quite severe. The are two main sources of such a large resolution. The first one is neutrons with a short travel distance. The time resolution is similar for all neutron interactions, but at small distance it affects energy estimations more significant. A cut on the travel distance can gain the resolution. The distribution of the neutron travel distance with respect to its energy is shown in \autoref{fig:up:n:e_dist}. I am also accepting all the neutron clusters disregard the light yield. Events with very low level of signal provides an enormous large smearing and should be also excluded. The time resolution estimated based on the light yield is shown in \autoref{fig:up:n:time} b. The discrete peaks come from the events with a small number of photoelectrons (1 p.e - 3.29 ns, 2 p.e - 2.45 ns, etc.)
 
 \begin{figure}[!ht]
 	\centering
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+		\includegraphics[width=\linewidth]{e_dist}
+    \caption{The neutron travel distance until the scattering with respect to its initial energy.}
+    \label{fig:up:n:e_dist}
 	\end{minipage}
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+		\includegraphics[width=\linewidth]{time_n}
+    \caption{The estimations on the time resolution for the neutron clusters.}
+    \label{fig:up:n:time}
 	\end{minipage}
-	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
-	\label{fig:up:n:time}
 \end{figure}
 
 The cut on the light yield at the level of 40 p.e. was set to provide a time resolution not worth then for a MIP particle. I also studied the dependence of the energy resolution and detection efficiency with different lever arm cuts. The effect of the resolution improvement with the larger travel distance cut is shown in \autoref{fig:up:n:res}. The efficiencies for 20 cm and 70 cm lever arm cuts are shown in \autoref{fig:up:n:eff2}.
@@ -495,26 +500,94 @@ The cut on the light yield at the level of 40 p.e. was set to provide a time res
 	\centering
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_att} \\ (a)
+		\includegraphics[width=\linewidth]{eff_20} \\ (a)
 	\end{minipage}
 	\begin{minipage}{0.4\linewidth}
 		\centering
-		\includegraphics[width=\linewidth]{scnd_ly} \\ (b)
+		\includegraphics[width=\linewidth]{eff_70} \\ (b)
 	\end{minipage}
-	\caption{The attenuation of the light in the fibers (a) is used to estimate the light yield of the cube (b).}
+	\caption{The efficiency of the neutron detection with the cut on the travel distance at 20 cm (a) and 70 cm (b).}
 	\label{fig:up:n:eff2}
 \end{figure}
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[]{}
-	\caption{Caption here}
+	\includegraphics[width=0.5\linewidth]{res_spec}
+	\caption{The neutron kinetic energy resolution as a function of the its kinetic energy, assuming different lever-arm cuts (20 cm and 70, denoted by differing colors) and timing resolutions. The hollow markers correspond to a timing resolution using \autoref{eq:up:n:ly}, while the filled markers correspond to \autoref{eq:up:n:ly}. The resolution is taken as the ratio of the largest of the two standard deviations to the mean of a double-sided Gaussian fitted to the reconstructed neutron kinetic energy in a bin of true neutron kinematic energy. The gray band shows NEUT 5.4.0’s predicted distribution of neutron kinematic energies for CC0π neutrino interactions using the T2K experiment’s anti-neutrino flux.}
 	\label{fig:up:n:res}
 \end{figure}
 
 \section{Background estimations}
+In the method described above we assumed the isolated cluster was originated by the neutron from the neutrino interaction. This analysis may be affected by the out of fiducial volume backgrounds when a photon or neutron produced outside SuperFGD interacts inside the detector. Such a cluster can not be separated from the interaction of the neutron produced by the anti-neutrino interaction inside SuperFGD. I estimated the rate of such a pileup and compared the signal and the background. The similar technique to what was used in ~\autoref{sec:up:sfgd:pu} is used to generate the OOFV sample. I studied the time delay between the anti-neutrino interaction in SuperFGD and the neutron cluster detection versus the lever arm for both signal and the background samples. The resulting distribution are presented in \autoref{fig:up:n:bg}. One can see the large difference in the distributions of both samples. The rate of the background events is small.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{signal_LA_T} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{BG_LA_T} \\ (b)
+  \end{minipage}
+  \caption{The distribution of the time delay between the anti-neutrino interaction in SuperFGD and neutron cluster detection versus the distance between them for the signal events (a) and out of fiducial volume interactions (b) normalized to the number of signal events.}
+  \label{sec:up:sfgd:pu}
+\end{figure}
+
+I merged these samples event by event to study the purity of the neutron detection. The time structure of the neutrino interactions was taken the same for both samples. We assumed the bunches are Gaussian with $\sigma=19$ ns.  The first isolated cluster that was found after the anti-neutrino interactions is considered as a neutron detection. If it was caused by the OOFV interaction it is marked as a background otherwise it is a signal. Based on this classification the purity was estimated. I found that with such a method it is very unlikely to misinterpret the background as a signal. The main reason is the overall low background rate. Bu if the events are pileuped the time difference between . The obtained purity is presented in \autoref{fig:up:n:pur}.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\linewidth]{purity}
+  \caption{The purity of the neutron cluster selection. The contamination of the neutral particles produced OOFV is proved to be small.}
+  \label{fig:up:n:pur}
+\end{figure}
 
 
 \section{Prospects for physics}
+The main goal of the current study is a more sophisticated measurement of neutrino interactions. We performed a simulation to evaluate how neutron detection may gain the accuracy. The sample of the CC0$\pi$ events was generated using NEUT 5.4.0. Only events with muon momentum higher then 100 MeV/c are considered as it is an expected threshold of the muon detection in the SuperFGD. Lepton detection is essential for the proper identification of neutrino type and flavor. Plenty of smearing were applied to the simulation to estimate the detector output. Muon momentum was smeared by 4\% with a Gaussian distribution. The value comes from the typical resolution of the TPC in the ND280. The angle of the outgoing muon is smeared with 1${}^\circ$ driven by the granularity of the scintillator detector. The neutron kinematics is smeared according to the results of the GEANT4 simulations described in the previous sections.
+
+After incorporation of all the smearing effects we can estimate the output of the measurements with SuperFGD. The distribution of the transversal momentum $\delta p_T$ is shown in \autoref{fig:up:n:dpt_sim}. Comparing this figure to \autoref{fig:up:n:pt} we can see the effect of the detector smearing. However, the hydrogen sample is largely distinct from the Carbon one.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\linewidth]{dpt_sim}
+  \caption{The NEUT 5.4.0 predicted event rate of CC0$\pi$ interactions from the T2K anti-neutrino flux as a function of δpT obtained after applying the detector smearing effects. The detector time resolution is estimated with \autoref{eq:up:n:ly}.}
+  \label{fig:up:n:dpt_sim}
+\end{figure}
+
+In our analysis we are trying to find the best value of the cuts on lever arm and $\delta p_T$ to maximize the improvement of neutrino energy reconstruction precision. All the events with $\delta p_T$ below the cut value are supposed to be the interactions over Hydrogen. The efficiency and purity of such a selection for different lever arms and cut values are shown in \autoref{fig:up:n:opt}. For this particular figure the detector resolution was estimated with \autoref{eq:up:n:ly}. If I use \autoref{eq:up:n:ly} instead, the shape will be the same but the purity will be approximately 10\% smaller. A good compromise was found with cuts $\delta p_T < 40$ MeV/c and $L < 10$ cm. The resulting Hydrogen purity and efficiency are 61\% and 22\% respectively. With the full T2K-II statistics we expect around 26 thousand interactions in SuperFGD.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\linewidth]{eff_pur}
+  \caption{The anti-neutrino hydrogen purity vs efficiency for different $\delta p_T$ and lever-arm cuts. The first (top left) marker on each line corresponds to a 10 MeV cut and then the star corresponds to the chosen $\delta p_T$ cut of 40 MeV. Each line corresponds to a different lever-arm cut and is made using \autoref{eq:up:n:ly} to determine the time resolution.}
+  \label{fig:up:n:opt}
+\end{figure}
+
+From \autoref{fig:up:n:opt} one can see that a stronger lever arm cut sharply reduces the efficiency, but not improving the purity. This happens because of the correlation between the neutron energy and travel distance. Most of the neutrons produced in ND280 in anti-neutrino interactions are below 100 MeV (\autoref{fig:up:n:res}). In this region the travel distance increase with the growing energy (\autoref{fig:up:n:e_dist}). Therefore, a longer lever arm cut accept more energetic thus faster neutrons and the energy resolution is not improving. The events passing the cuts are further used to reconstruct anti-neutrino energy under the assumption of CCQE interaction.
+
+\begin{equation}
+  \label{eq:n:energy}
+  E_\nu=\frac{m^2_n-m^2_p-m^2_\mu+2m_p E_\mu}{2\left(m_p-E_\nu+p_\mu \cos\theta_\mu\right)}
+\end{equation}
+
+The smearing of the reconstructed energy with and without $\delta p_T$ cut are shown in \autoref{fig:up:n:smear_nu}.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{eKinNoCut} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.4\linewidth}
+    \centering
+    \includegraphics[width=\linewidth]{eKinWCut} \\ (b)
+  \end{minipage}
+  \caption{The reconstructed energy of anti-neutrino under the CCQE assumption with \autoref{eq:n:energy} before applying lever arm and $\delta p_T$ cut (a) and after (b). The Z-axis is normalized such that the highest value in each plot is one.}
+  \label{fig:up:n:smear_nu}
+\end{figure}
+
+
 
 \end{document}
