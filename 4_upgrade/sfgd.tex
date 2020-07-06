@@ -448,7 +448,7 @@ Neutron energy is measured with a time of flight method. Velocity is estimated b
 
 \begin{equation}
 \label{eq:up:n:ly}
-	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{3}\right}\cdot\sqrt{40 \text{ }PE/LY}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
+	\sigma^{ly}_t=0.95\text{ ns}/\sqrt{3}\cdot\sqrt{40 \text{ PE/LY}}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
 \end{equation}
 
 The division by $\sqrt{3}$ shows the improvements of the measurement with 3 channels over the one channel. Bottom limit of 200 ps is set as further improvements are limited by the smearing in scintillator and fibers. Light emission by scintillator and light rescattering in fibers are not instant and provide some uncertainty.
@@ -457,7 +457,7 @@ This method is quite optimistic but the prototypes were not tested with the dete
 
 \begin{equation}
 \label{eq:up:n:ch}
-	\sigma^{ly}_t=\left{0.95\text{ ns}/\sqrt{\text{\#channels}}\right}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
+	\sigma^{ch}_t=0.95\text{ ns}/\sqrt{\text{\#channels}}, \hspace{2cm} \sigma^{ly}_t>200\text{ ps}
 \end{equation}
 
 With the known model of the time resolution I estimated the smearing of the reconstructed neutron energy. The results are presented in \autoref{fig:up:n:smear} a.
@@ -552,7 +552,7 @@ After incorporation of all the smearing effects we can estimate the output of th
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.5\linewidth]{dpt_sim}
-  \caption{The NEUT 5.4.0 predicted event rate of CC0$\pi$ interactions from the T2K anti-neutrino flux as a function of δpT obtained after applying the detector smearing effects. The detector time resolution is estimated with \autoref{eq:up:n:ly}.}
+  \caption{The NEUT 5.4.0 predicted event rate of CC0$\pi$ interactions from the T2K anti-neutrino flux as a function of $\delta p_T$ obtained after applying the detector smearing effects. The detector time resolution is estimated with \autoref{eq:up:n:ly}.}
   \label{fig:up:n:dpt_sim}
 \end{figure}
 
@@ -587,6 +587,8 @@ The smearing of the reconstructed energy with and without $\delta p_T$ cut are s
   \caption{The reconstructed energy of anti-neutrino under the CCQE assumption with \autoref{eq:n:energy} before applying lever arm and $\delta p_T$ cut (a) and after (b). The Z-axis is normalized such that the highest value in each plot is one.}
   \label{fig:up:n:smear_nu}
 \end{figure}
+
+The key feature of the transversal variables are the measurements that are independent from the poorly understood nuclear effects. To prove that selected sample depends weakly
 
 
 
