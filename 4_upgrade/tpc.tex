@@ -89,7 +89,7 @@ The effect of the charge spreading can improve the spatial resolution of the set
 
 \subsection{Electronics}
 \label{sec:up:tpc_ele}
-The architecture of the HA--TPC data acquisition system is schematically shown in \autoref{fig:up:tpc_ele_1}. The analog electric signal from the pads first goes to the Application Specific Integrated Circuit (ASIC)~\cite{Baron2007} called AFTER. They are used in the existing TPC and were proved to have low noise rate, high range of sampling frequency (up to 50 MHz), shaping time (100 ns $\div$ 2 $\mu$s) and gain (120 fC $\div$ 600 fC). Each ASIC collects information from 72 pads and provides only one analog output. The 511-cell deep circular buffer is used to store the signal from each pad. Together with sampling frequency, it sets the time window for signal acquisition. The nominal sampling time is 40 ns (25 MHz) that gives an acquisition window nearly twice larger than the maximum drift time. 4 ASICs are mounted on the Front End Card chip (FEC) that performs the signal digitizing. Four FECs are inserted directly at the Micromegas back and connected to the pads with pitch connectors. Two Front End Mezzanine Cards (FEM) are mounted on top of FEC and synchronize signal digitization with a master clock. At FEM all the data from AFTER chips are collected and zero suppression is applied. All the electronics mentioned above are located inside the magnet. From the FEM the signal is transferred outside the magnet with the optical fiber. The CADs of the electronics that are mounted on the Micromegas inside the basket is provided in \autoref{fig:up:tpc_ele_2}. The cards' temperature is maintained with the water cooling system.
+The architecture of the HA--TPC data acquisition system is schematically shown in \autoref{fig:up:tpc_ele_1}. The analog electric signal from the pads first goes to the Application Specific Integrated Circuit (ASIC)~\cite{Baron2007} called AFTER. They are used in the existing TPC and were proved to have low noise rate, high range of sampling frequency (up to 50 MHz), shaping time (100 ns $\div$ 2 $\mu$s) and gain (120 fC $\div$ 600 fC). Each ASIC collects information from 72 pads and provides only one analog output. The 511-cell deep circular buffer is used to store the signal from each pad. Together with sampling frequency, it sets the time window for signal acquisition. The nominal sampling time is 40 ns (25 MHz) that gives an acquisition window nearly twice larger than the maximum drift time. 4 ASICs are mounted on the Front End Card chip (FEC) that performs the signal digitizing. Two FECs are inserted directly at the Micromegas back and connected to the pads with pitch connectors. Two Front End Mezzanine Cards (FEM) are mounted on top of FEC and synchronize signal digitization with a master clock. At FEM all the data from AFTER chips are collected and zero suppression is applied. All the electronics mentioned above are located inside the magnet. From the FEM the signal is transferred outside the magnet with the optical fiber. The CADs of the electronics that are mounted on the Micromegas inside the basket is provided in \autoref{fig:up:tpc_ele_2}. The cards' temperature is maintained with the water cooling system.
 
 
 \begin{figure}[!ht]
@@ -147,7 +147,8 @@ The data was taken with the cosmic rays and the X--ray radioactive source (${}^{
 
 As at any other detector, we expected to see a certain level of noise in our measurements. The noise level was measured for each channel independently. The pulse generator was used to sample the data from each pad. As we expected no signal in the pad the measured value should be caused by the noise and suppressed in future measurements. As the noise is a subject of fluctuation its value was measured for a continuous period. The measured values were fit with the Gaussian distribution and the mean and sigma characteristics were extracted from the fit. The mean value was going to be subtracted from every measurement done with this particular pad. The sigma value was used to treat the measured amplitude as a signal or a noise. If the amplitude was different from the mean value by more then four sigmas the measurement would be recorded. The procedure described above is called ``zero--suppression''. It is usually quantified with the value of standard deviations used to divide signal and noise, e.g. $4\sigma$ or $5\sigma$ zero--suppression.
 
-The examples of the event displays are shown in \autoref{fig:tpc:saclay_ed}. As the gain supposed to be uniform over the whole Micromegas, we expect a uniform measured charge. The hit map obtained with the cosmic rays is shown in \autoref{fig:tpc:hitmap_saclay}.
+The examples of the event displays are shown in \autoref{fig:tpc:saclay_ed}. As the gain supposed to be uniform over the whole Micromegas, we expect a uniform measured charge. I analyzed the hit map with merging the information from all the cosmic tracks together. The detector response was found uniform, thus the data from the prototype may be used for the further precise analysis.
+% The hit map obtained with the cosmic rays is shown in \autoref{fig:tpc:hitmap_saclay}.
 
 \begin{figure}[!ht]
   \centering
@@ -163,19 +164,19 @@ The examples of the event displays are shown in \autoref{fig:tpc:saclay_ed}. As 
   \label{fig:tpc:saclay_ed}
 \end{figure}
 
-\begin{figure}[!ht]
-  \centering
-  \begin{minipage}{0.49\linewidth}
-  \centering
-    \includegraphics[width=0.8\linewidth]{saclay_hitmap} \\ (a)
-  \end{minipage}
-  \begin{minipage}{0.49\linewidth}
-  \centering
-    \includegraphics[width=0.8\linewidth]{saclay_hitmap_norm} \\ (b)
-  \end{minipage}
-  \caption{Hit maps observed in the TPC prototype during the test in Saclay. (a) how many times the particular pad was hit and (b) the average charge measured per a hit.}
-  \label{fig:tpc:hitmap_saclay}
-\end{figure}
+% \begin{figure}[!ht]
+%   \centering
+%   \begin{minipage}{0.49\linewidth}
+%   \centering
+%     \includegraphics[width=0.8\linewidth]{saclay_hitmap} \\ (a)
+%   \end{minipage}
+%   \begin{minipage}{0.49\linewidth}
+%   \centering
+%     \includegraphics[width=0.8\linewidth]{saclay_hitmap_norm} \\ (b)
+%   \end{minipage}
+%   \caption{Hit maps observed in the TPC prototype during the test in Saclay. (a) how many times the particular pad was hit and (b) the average charge measured per a hit.}
+%   \label{fig:tpc:hitmap_saclay}
+% \end{figure}
 
 At the hit maps, a cluster of the missed pads was observed at the top left part of the Micromegas. It was found that the problem was in the electronic connection in the readout system, but not in the Micromegas itself.
 
@@ -185,13 +186,16 @@ The charge spreading in the Micromegas is the main feature in the prototype. The
 
 \begin{figure}[!ht]
   \centering
-  \begin{minipage}{0.49\linewidth}
+  \begin{minipage}{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{saclay_multi}
     \caption{The number of pads in a row for the vertical cosmic track (pad multiplicity) in the TPC prototype at Saclay.}
     \label{fig:tpc:savlay:mult}
   \end{minipage}
-  \begin{minipage}{0.49\linewidth}
+  \begin{minipage}{0.09\linewidth}
+    \hspace{\linewidth}
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
     \centering
     \includegraphics[width=\linewidth]{saclay_trunc}
     \caption{The distribution of the average charge per cluster after the truncation fit with Gaussian function.}
@@ -330,7 +334,7 @@ The energy resolution was measured with the horizontal beam tracks. The track is
   \label{fig:tpc:cern_energy_1}
 \end{figure}
 
-The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are shown in \autoref{fig:tpc:cern_energy_2} (a). The particle type per each sample is defined based on the trigger combination that was used. However, the contamination of other particle types is possible. The pion sample has two peaks, and the second peak matches perfectly with the peak in the electron sample. As the electrons are dominating in the beam, we suspected that a small impurity in the pion trigger can cause the acceptance of the electrons. The resolution for each particle sample and drift distance is shown in \autoref{fig:tpc:cern_energy_2} (b). For the pion sample, only the first peak that indeed corresponds to the pion is used. The results are summarized in \autoref{tbl:tpc:cern_dedx}. Scaling of the obtained results to the twice longer ND280 TPC will give us a performance similar to one at the existing detectors. That is a very important conclusion as we were afraid of the energy resolution degradation with the resistive anode technology.
+The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are shown in \autoref{fig:tpc:cern_energy_2} (a). The particle type per each sample is defined based on the trigger combination that was used. However, the contamination of other particle types is possible. The pion sample has two peaks, and the second peak matches perfectly with the peak in the electron sample. As the electrons are dominating in the beam, we suspected that a small impurity in the pion trigger can cause the acceptance of the electrons. The resolution for each particle sample and drift distance is shown in \autoref{fig:tpc:cern_energy_2} (b). For the pion sample, only the first peak that indeed corresponds to the pion is used. The results are summarized in \autoref{tbl:tpc:cern_dedx}. The worse resolution in the pion sample is understood as they are less ionizing comparing to protons or electrons. Less deposited charge is more affected by the fluctuations. Scaling of the obtained results to the twice longer ND280 TPC will give us a performance similar to one at the existing detectors. That is a very important conclusion as we were afraid of the energy resolution degradation with the resistive anode technology.
 
 \begin{figure}[!ht]
   \centering
@@ -354,8 +358,8 @@ The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are s
   Sample    & Resolution, \% \\
   \hline
   Electron  & $9.2\pm0.1$ \\
-  Pion      & $9.6\pm0.2$ \\
-  Proton    & $10.9\pm0.4$ \\
+  Pion      & $10.9\pm0.4$ \\
+  Proton    & $9.6\pm0.2$ \\
   \hline
   \end{tabular}
   \caption{The energy resolution for different particles samples at 10 cm drift distance.}
@@ -440,7 +444,7 @@ To estimate the spatial resolution the residuals are defined as a difference bet
     \centering
     \includegraphics[width=0.8\linewidth]{cern_bias} \\ (b)
   \end{minipage}
-  \caption{The spatial resolution (a) and a bias (b) obtained in the TPC prototype test at CERN. The results of the weighted mean method are shown in dashed blue and the results from PRF method is solid red.}
+  \caption{The spatial resolution (a) and a bias (b) obtained in the TPC prototype test at CERN with 10 cm drift distance with electron sample. The results of the weighted mean method are shown in dashed blue and the results from PRF method is solid red.}
   \label{fig:tpc:cern_sr}
 \end{figure}
 

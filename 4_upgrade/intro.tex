@@ -132,6 +132,53 @@ To sum up, the upgraded ND280 will have several benefits comparing to the presen
 
 \section{Simulations}
 \label{ch:up:sim}
+The bunch of simulations was made to estimate the upgraded detector performance. As was overviewed before, the limited acceptance in a main limitation of the current ND280. The goal of these studies is to prove that the new detector will gain the efficiency for the high angle tracks. Also, we studied the benefits of the new scintillator detector, such as lower threshold and particle identification.
+
+\subsection{Subdetectors simulation}
+To estimate the sensitivity of the new setup we have to parametrize the response of subdetectors. The performance of the existing detectors (TPC, ECal) are measured precisely. Thus we used their efficiencies and resolutions for the current analysis.
+
+% TPC simulation
+A track is considered to be reconstructed in the TPC if it is longer than 20 cm in the ZY plane (Micromegas plane). The TPCs are responsible for the charge and particle identification. The efficiency of proper charge reconstruction in the existing TPC binned in the momentum for each particle type is used to determine the reconstructed charge of the particle. The ionization loss fluctuations are estimated based on the track length in the detector plane (ZY). After that, pulls and likelihoods for various particle hypotheses are computed. We consider electron, muon, pion, and proton as possible particle types. The PID is done with the cuts on the 4 likelihoods.
+
+% ToF simulations
+The Time Of Flight detector efficiency is assumed perfect. The measured time is smeared according to the known resolution of 150 ps. Each subdetector (SuperFGD, ToF, ECal, FGD) provides a time measurement. All the time stamps are smeared with the known time resolution of particular subdetector. The track direction is assigned with maximization of the time difference with respect to its uncertainty. Thus if, for example, a track was originated in SuperFGD and then passes TPC, ToF, and ECal, the information from the SuperFGD and ToF will be used as the most robust. For the long forward going track, time information from SuperFGD and downstream ECal will be considered. If as a result of smearing the track end point is earlier in time than the start point the track is flipped.
+
+% ECal simulations
+The ECal efficiency is binned in the particle type, momentum, and angle. The matching with the nearby detectors like TPC and FGD is also taken into account. If the track is recognized as ``unmatched'' the information from the ECal can not be used, and the ECal cluster is considered isolated.
+
+% SuperFGD simulations
+The simulation of the SuperFGD is the most difficult part. For all the other detectors the performance is estimated precisely, but this one is a brand new detector. The SuperFGD materials are fully implemented in the GEANT4 framework. The readout simulation procedure is presented in \autoref{sec:up:sfgd_sim} of \autoref{ch:up:sfgd}. We take into account scintillator saturation, attenuation in the fibers, MPPC efficiency. Thus, the energy lost by particle for the ionization is transformed into the number of observed photoelectrons. With such a simulation we estimated the performance of the detector for the particle tracking and identification.
+
+We want to compare the detector performance before and after the upgrade while the simulation framework for the upgraded setup is simplified and much less sophisticated comparing to existing ND280 software. To make the results comparable we used our simplified framework to simulate the current ND280 performance as well.
+
+% combining everything together
+\subsubsection{Performance}
+After the procedure for the detector response simulation is established, we used a neutrino generator to simulate neutrino interactions in the upgraded ND280. Produced particles are further used as an input for the GEANT4 framework to estimate the particle behavior in the setup. As a next step, we estimated the response of different subdetectors with the procedures described in the previous section.
+
+The final efficiency of the upgraded ND280 for the muon detection is shown in \autoref{fig:up:eff_up}. The detector become much more sensitive for high angle tracks. Furthermore SuperFGD gain the efficiency a lot with ability to track and identify self-contained particles. The phase space of the detected muons from $\nu_\mu$CC interactions before and after the upgrade is shown in \autoref{fig:up:phase_space}. The increased statistics and acceptance of the high-angle tracks are clearly seen.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.5\linewidth]{new_eff}
+  \caption{Efficiency of the muon detection upgraded ND280 versus the current one (in violet). The blue line represents muons that exit SuperFGD and are tracked with TPC, the green line take into account also muons contained in SuperFGD only.}
+  \label{fig:up:eff_up}
+\end{figure}
+
+% efficiecny for various energy & cos theta
+\begin{figure}[!ht]
+  \centering
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{ph_old} \\ (a)
+  \end{minipage}
+  \begin{minipage}{0.49\linewidth}
+    \centering
+    \includegraphics[width = \linewidth]{ps_up} \\ (b)
+  \end{minipage}
+    \caption{Muon kinematics selected from $\nu_\mu$CC interactions with current (a) and upgraded (b) configuration of the ND280.}
+    \label{fig:up:phase_space}
+\end{figure}
+
 
 
 
