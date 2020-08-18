@@ -1,0 +1,98 @@
+%%%% Modèle proposé par frederic.mazaleyrat@ens-paris-saclay.fr %%%%
+%%%% 31/01/2017 %%%%
+
+% \documentclass[12pt,a4paper]{book}
+\documentclass[../main.tex]{subfiles}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{amsmath}
+% \usepackage{amsfonts}
+% \usepackage{fancyhdr}
+% \usepackage{amssymb}
+% \usepackage{color} % où xcolor selon l'installation
+% \definecolor{Prune}{RGB}{99,0,60}
+% \usepackage{mdframed}
+% \usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+% \usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+% \usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+% \usepackage{tikz}
+% \usepackage{graphicx}
+% \usepackage[absolute]{textpos}
+% \usepackage{colortbl}
+% \usepackage{array}
+% %\RequirePackage{geometry}% That nicely create a one-page template
+% %\geometry{textheight=100ex,textwidth=40em,top=30pt,headheight=30pt,headsep=30pt,inner=80pt}
+% \usepackage{geometry}
+
+\begin{document}
+% \begin{titlepage}
+
+
+%\thispagestyle{empty}
+
+% \newgeometry{left=7.5cm,bottom=2cm, top=1cm, right=1cm}
+
+\thispagestyle{empty}
+\newgeometry{top=0.5cm, bottom=1.25cm, left=1cm, right=2cm}
+\fontfamily{rm}\selectfont
+
+\lhead{}
+\rhead{}
+\rfoot{}
+\cfoot{}
+\lfoot{}
+
+\noindent
+
+%*****************************************************
+\includegraphics[height=1.7cm]{PHENIICS.png}
+% \vspace{1cm}
+
+\begin{mdframed}[linecolor=Prune,linewidth=1]
+\vspace{-.25cm}
+\paragraph*{Titre:} Resherche de neutrinos massifs avec l'experience T2K et mise a niveau du detecteur proche ND280
+
+\begin{small}
+\vspace{-.25cm}
+\paragraph*{Mots clés:} T2K, physique des neutrinos, neutrino detecteur
+
+\vspace{-.5cm}
+\begin{multicols}{2}
+\paragraph*{Résumé:} Les expériences sur les neutrinos de l'accélérateur se concentrent sur la mesure précise des paramètres d'oscillation des neutrinos et recherchent la violation de la CP dans le secteur des leptons. L'incertitude systématique des modèles de flux et d'interaction des neutrinos sont les principales limites de la sensibilité. L'expérience T2K améliore le complexe de détecteurs proches (ND280) pour réduire ces incertitudes. Une nouvelle cible à scintillateur à grain fin et Chambres Projections Temporelles avec anode résistive fournirent une sonde précise des modèles d'interaction des neutrinos. Les prototypes de détecteurs ont été testés avec des faisceaux de particules chargées et ont démontré une bonne performance. Les incertitudes systématiques dans l'analyse des oscillations seront réduites de 7\% à 4\%.
+
+La découverte des oscillations du neutrino indique une masse non nulle du neutrino. L'existence de neutrino lourds est une hypothèse prometteuse qui fournit une explication naturelle minimale de la masse du neutrino, de l'existence de la matière noire et de l'asymétrie baryonique de l'Univers. Une recherche des désintégrations HNL a été effectuée avec le détecteur proche de l'expérience T2K. Le volume actif des TPC gazeux a été utilisé car le bruit de fond attendu des interactions des neutrinos devrait être faible par rapport aux détecteurs à scintillation. Une recherche des désintégrations des HNL a été effectuée avec l'ensemble des données T2K. Aucun signe significatif des particules exotiques n'a été observé et une limite supérieure importante a été fixée à leur existence.
+
+\end{multicols}
+\end{small}
+\end{mdframed}
+
+\begin{mdframed}[linecolor=Prune,linewidth=1]
+\vspace{-.25cm}
+\paragraph*{Title:} Search for heavy neutrinos in the T2K experiment and upgrade of the near detector ND280
+
+\begin{small}
+\vspace{-.25cm}
+\paragraph*{Keywords:} Neutrino physics, T2K, neutrino detectors
+
+\vspace{-.5cm}
+\begin{multicols}{2}
+\paragraph*{Abstract:} Accelerator neutrino experiments are focusing on the precise measurements of the neutrino oscillation parameters and search for the CP--violation in the lepton sector. The systematic uncertainty of the flux and neutrino interaction models are the main limitations of the sensitivity. The T2K experiment is upgrading near detector complex (ND280) to reduce these uncertainties. A new 3D fine-grained scintillator target and Time Projections Chambers with resistive anode will provide a precise probe of neutrino interaction models. Detectors' prototypes were tested with charged particles beams and demonstrated a good performance. The systematic uncertainties in the oscillation analysis will be reduced from 7\% down to 4\%.
+
+The discovery of the neutrino oscillations indicates a non-zero mass of the neutrino. The existence of Heavy Neutral Leptons (HNL) is a promising hypothesis that provides a minimal natural explanation of the neutrino mass, the existence of Dark Matter, and baryon asymmetry of the Universe. A search of the HNL decays was performed with the near detector of the T2K experiment. The active volume of the gaseous TPCs was used as the expected background from the neutrino interactions is expected to be small compared to scintillator detectors. A search for HNL decays was performed with T2K data set (2010-2017). No significant signs of the exotic particles were observed and a strong upper limit on their existence was set.
+
+\end{multicols}
+\end{small}
+\end{mdframed}
+
+%************************************
+\vspace{1cm} % ALIGNER EN BAS DE PAGE
+%************************************
+\fontfamily{fvs}\fontseries{m}\selectfont
+\begin{tabular}{p{14cm}r}
+\multirow{3}{16cm}[+0mm]{{\color{Prune} Université Paris-Saclay\\
+Espace Technologique / Immeuble Discovery\\
+Route de l’Orme aux Merisiers RD 128 / 91190 Saint-Aubin, France}} & \multirow{3}{2.19cm}[+9mm]
+{\includegraphics[height=2.19cm]{logoEgrey.png}}\\
+\end{tabular}
+
+\end{document}

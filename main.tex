@@ -11,22 +11,25 @@
 \usepackage{amssymb}
 \usepackage{gensymb}
 \usepackage{graphicx}
-%\usepackage{subfigure}
-%\usepackage{subcaption}
+\usepackage{colortbl}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{Prune}{RGB}{99,0,60}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{multirow} %% Pour mettre un texte sur plusieurs rangées
+\usepackage{multicol} %% Pour mettre un texte sur plusieurs colonnes
+\usepackage{scrextend} %Forcer la 4eme  de couverture en page pair
+\usepackage{fancyhdr}
 \usepackage{multicol,multirow}
 \usepackage{calc}
 \usepackage{pifont}
 \usepackage{adjustbox}
 \usepackage{subfiles}
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[justification=centering]{caption}
-
-\usepackage{color,calc,graphicx,soul,fourier,lipsum}
-
+\usepackage{calc,graphicx,soul,fourier,lipsum}
 \usepackage{chngcntr}
 %\counterwithin*{chapter}{part}
 
-\graphicspath{{fig/}{./1_Introduction/fig/}{./2_T2K/fig/}{./3_HNL/fig/}{./4_upgrade/fig/}{./4_upgrade/fig/TPC/}{./4_upgrade/fig/general/}{./4_upgrade/fig/sfgd/}}
+\graphicspath{{fig/}{./1_Introduction/fig/}{./2_T2K/fig/}{./3_HNL/fig/}{./4_upgrade/fig/}{./4_upgrade/fig/TPC/}{./4_upgrade/fig/general/}{./4_upgrade/fig/sfgd/}{./couverture_these_janv_aout_2020/}{./}}
 \DeclareGraphicsExtensions{.png, .pdf, .jpg}
 
 \newcommand{\todo}[1]{\textcolor{red}{#1}}
@@ -220,7 +223,7 @@
       {\large\bfseries}%
       {}%
       {.0em}%
-      {\filright\boxedsubsection}%
+      {\filright\boxedsubsection}%99
   \titlespacing{\subsection}
 	  {0pc}{-1ex}{-2ex}
 
@@ -254,28 +257,31 @@ citestyle=numeric,
 }
 
 
-\title{Search for heavy neutrinos in the T2K experiment and upgrade of the near detector ND280}
-\author{Suvorov Sergey}
-\date{July 2020}
+% \title{Search for heavy neutrinos in the T2K experiment and upgrade of the near detector ND280}
+% \author{Suvorov Sergey}
+% \date{July 2020}
 
 \DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
 
 \begin{document}
 
-\maketitle
+\subfile{./couverture_these_janv_aout_2020/Modele_These_UParisSaclay_2020.tex}
+
+% \maketitle
 \clearpage
 \tableofcontents*
-
-\linenumbers
+% \linenumbers
 
 % Part references
-\subfile{./1_Introduction/main.tex}
-\subfile{./2_T2K/main.tex}
-\subfile{./3_HNL/main.tex}
+% \subfile{./1_Introduction/main.tex}
+% \subfile{./2_T2K/main.tex}
+% \subfile{./3_HNL/main.tex}
 \subfile{./4_upgrade/main.tex}
 \subfile{./summary.tex}
 
 \printbibliography
-
+\cleartoverso
+\thispagestyle{empty}
+\subfile{./couverture_these_janv_aout_2020/abstract.tex}
 
 \end{document}
