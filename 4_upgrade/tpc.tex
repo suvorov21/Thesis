@@ -43,7 +43,7 @@ The schematic view of the HA--TPC is presented in Figure~\ref{fig:up:tpc_s} and 
     Drift distance (cm)               & 90 \\
     Magnetic Field (T)                & 0.2 \\
     Electric field (V/cm)             & 275 \\
-    Gas $\text{Ar:CF}_4\text{:iC}_4\text{H}_4$ (\%)            & 95-3-17 \\
+    Gas $\text{Ar:CF}_4\text{:iC}_4\text{H}_4$ (\%)            & 95-3-2 \\
     Drift Velocity cm/$\mu$s          & 7.8 \\
     Transverse diffusion ($\mu$m/$\sqrt{\text{cm}}$) & 265 \\
     Micromegas gain                   & 1000 \\
@@ -182,7 +182,7 @@ At the hit maps, a cluster of the missed pads was observed at the top left part 
 
 With the collected data I estimated the energy resolution of the detector with both cosmic rays and ${}^{55}$Fe source with a truncated mean technique (\autoref{sec:tpc:tpc_dedx}). The distribution of the dE/dx for cosmic tracks is shown in \autoref{fig:tpc:saclay_charge} and gives a 20\% energy resolution. The resolution measurement with cosmic rays is not precise. The energy loss depends on the muon energy. The dE/dx measurements from tracks are made for all the cosmic tracks in a whole spectrum. The obtained value is an upper limit and more precise measurements will be done during the beamtest. The analyses of the ${}^{55}$Fe events is more precise as the isotope is a monoenergetic source of 5.9 keV photons. The resolution for the 5.9 keV line was measured at a level of 7.3\% that is comparable with the performance of the existing detectors~\cite{Abgrall2011}.
 
-The charge spreading in the Micromegas is the main feature in the prototype. The spreading needs to be measured and prove to be working. As we are working with the vertical cosmic tracks the number of triggered pads in a row is a good metric to quantify the charge sharing between the pads. We will call this metric ``pad multiplicity''. Without the resistive foil, with a small drift distance, we expect to have one pad illuminated if the track goes over the pad center and two pads if the track goes over the pad border. The pad multiplicity for the vertical cosmic rays going through the TPC prototype is shown in \autoref{fig:tpc:savlay:mult}. Clusters with two pads are dominating. We also have some clusters with more than two pads in a row that is completely impossible in the absence of the resistive layer. Thus we have a clear indication that the RC network is working. Though there are many pads with only one pad in a row. It may be caused by the low ionization by the cosmic muon or by not sufficient charge spreading in the Micromegas.
+The charge spreading in the Micromegas is the main feature in the prototype. The spreading needs to be measured and prove to be working. As we are working with the vertical cosmic tracks the number of triggered pads in a row is a good metric to quantify the charge sharing between the pads. We will call this metric ``pad multiplicity''. Without the resistive foil, with a small drift distance, we expect to have one pad illuminated if the track goes over the pad center and two pads if the track goes over the pad border. The pad multiplicity for the vertical cosmic rays going through the TPC prototype is shown in \autoref{fig:tpc:savlay:mult}. Clusters with two pads are dominating. We also have some clusters with more than two pads in a row that is completely impossible in the absence of the resistive layer. Thus we have a clear indication that the RC network is working. Though there are many pads with only one pad in a row. It may be caused by the low ionization by the cosmic muon or by not sufficient charge spreading in the Micromegas. The beam test will provide more accurate result. The resistivity of the Micromegas can be tuned according to obtained results.
 
 \begin{figure}[!ht]
   \centering
@@ -316,13 +316,13 @@ The gain evolution during the data taking was measured using the ${}^{55}\text{F
   \label{fig:tpc:cern_gain}
 \end{figure}
 
-For all the measurements of the gas parameters, we observed the degradation of the gas quality with time. We assume that the degradation was due to increasing $\text{H}_2\text{O}$ contamination in the mixture. Water is known to slow down the electron drift, increase the attenuation and reduce the gain. The HARP field cage was stored in the air for a long time and was not dried before the operation. During the test the TPC was operated in overpressure, thus we consider that the gas quality degradation was caused by the water releasing from the field cage. The evolution of the gas parameters during the beamtest was correlated with the change of the gas flow in the detector. At the beginning of the data taking the flow was set to 60 L/h and was further decreased to 25 L/h as the mixture was believed to be stable enough. During the data analyses, it was found that the gas flow reduction caused the degradation of the mixture parameters. However, this degradation is not critical for the measurements. For the data analyses, the corrections were applied to compensate for the gain and attenuation length drop.
+For all the measurements of the gas parameters, we observed a slight improvements of the gas quality at the very beginning with further degradation with time. We assume that the degradation was due to increasing $\text{H}_2\text{O}$ contamination in the mixture. Water is known to slow down the electron drift, increase the attenuation and reduce the gain. The HARP field cage was stored in the air for a long time and was not dried before the operation. During the test the TPC was operated in overpressure, thus we consider that the gas quality degradation was caused by the water releasing from the field cage. The evolution of the gas parameters during the beamtest was correlated with the change of the gas flow in the detector. At the beginning of the data taking the flow was set to 60 L/h and was further decreased to 25 L/h as the mixture was believed to be stable enough. During the data analyses, it was found that the gas flow reduction caused the degradation of the mixture parameters. However, this degradation is not critical for the measurements. For the data analyses, the corrections were applied to compensate for the gain and attenuation length drop.
 
 \subsubsection{Ionization energy loss (dE/dx) resolution}
 \label{sec:tpc:tpc_dedx}
-The energy resolution is critical for the T2K measurements. As mentioned in \autoref{sec:t2k:tpc} of \autoref{ch:T2K:general}, during the ionization process charged particles lose the energy with high fluctuations. The average value of several independent measurements is used for the particle type estimations. The resistive foil usage implements a correlation of the measured charge values in the neighbor pads. It can spoil the energy resolution as each measurement is not independent anymore. I estimated the energy resolution for the beam tracks with the CERN TPC prototype.
+The dE/dx resolution is critical for the T2K measurements. As mentioned in \autoref{sec:t2k:tpc} of \autoref{ch:T2K:general}, during the ionization process charged particles lose the energy with high fluctuations. The average value of several independent measurements is used for the particle type estimations. The resistive foil usage implements a correlation of the measured charge values in the neighbor pads. It can spoil the dE/dx resolution as each measurement is not independent anymore. I estimated the dE/dx resolution for the beam tracks with the CERN TPC prototype.
 
-The energy resolution was measured with the horizontal beam tracks. The track is considered as a group of ``clusters''. The ``cluster'' is defined as a group of pads perpendicular to the track direction. E.g. for the horizontal track the hits in a particular column of the Micromegas will form a ``cluster''. The charge collected in the cluster is summed up and considered as an energy loss per fixed length (0.9 mm --- pad size). The distribution of the charge per cluster has a long tail towards the high energy. This is in agreement with the expected ionization energy spectrum as it is described with Landau distribution. To omit the clusters with large charge deposition the ``truncation'' method is used. All the clusters in the track are sorted by increasing charges. Some clusters from the beginning of the list (e.g. 70\%) are used to estimate the average energy loss per cluster. The truncation fraction is varied to obtain the best energy resolution. The 62.5\% truncation was found to provide the best performance (\autoref{fig:tpc:cern_energy_1} (a)). The average energy loss per unit length before and after the truncation is shown in \autoref{fig:tpc:cern_energy_1} (b). As one can see the distribution becomes Gaussian. Therefore the mean and the standard deviation can be estimated and the resolution can be computed.
+The dE/dx resolution was measured with the horizontal beam tracks. The track is considered as a group of ``clusters''. The ``cluster'' is defined as a group of pads perpendicular to the track direction. E.g. for the horizontal track the hits in a particular column of the Micromegas will form a ``cluster''. The charge collected in the cluster is summed up and considered as an energy loss per fixed length (0.9 mm --- pad size). The distribution of the charge per cluster has a long tail towards the high energy. This is in agreement with the expected ionization energy spectrum as it is described with Landau distribution. To omit the clusters with large charge deposition the ``truncation'' method is used. All the clusters in the track are sorted by increasing charges. Some clusters from the beginning of the list (e.g. 70\%) are used to estimate the average energy loss per cluster. The truncation fraction is varied to obtain the best dE/dx resolution. The 62.5\% truncation was found to provide the best performance (\autoref{fig:tpc:cern_energy_1} (a)). The average energy loss per unit length before and after the truncation is shown in \autoref{fig:tpc:cern_energy_1} (b). As one can see the distribution becomes Gaussian. Therefore the mean and the standard deviation can be estimated and the resolution can be computed.
 
 \begin{figure}[!ht]
   \centering
@@ -338,7 +338,7 @@ The energy resolution was measured with the horizontal beam tracks. The track is
   \label{fig:tpc:cern_energy_1}
 \end{figure}
 
-The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are shown in \autoref{fig:tpc:cern_energy_2} (a). The particle type per each sample is defined based on the trigger combination that was used. However, the contamination of other particle types is possible. The pion sample has two peaks, and the second peak matches perfectly with the peak in the electron sample. As the electrons are dominating in the beam, we suspected that a small impurity in the pion trigger can cause the acceptance of the electrons. The resolution for each particle sample and drift distance is shown in \autoref{fig:tpc:cern_energy_2} (b). For the pion sample, only the first peak that indeed corresponds to the pion is used. The results are summarized in \autoref{tbl:tpc:cern_dedx}. The worse resolution in the pion sample is understood as they are less ionizing comparing to protons or electrons. Less deposited charge is more affected by the fluctuations. Scaling of the obtained results to the twice longer ND280 TPC will give us a performance similar to one at the existing detectors. That is a very important conclusion as we were afraid of the energy resolution degradation with the resistive anode technology.
+The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are shown in \autoref{fig:tpc:cern_energy_2} (a). The particle type per each sample is defined based on the trigger combination that was used. However, the contamination of other particle types is possible. The pion sample has two peaks, and the second peak matches perfectly with the peak in the electron sample. As the electrons are dominating in the beam, we suspected that a small impurity in the pion trigger can cause the acceptance of the electrons. The resolution for each particle sample and drift distance is shown in \autoref{fig:tpc:cern_energy_2} (b). For the pion sample, only the first peak that indeed corresponds to the pion is used. The results are summarized in \autoref{tbl:tpc:cern_dedx}. The worse resolution in the pion sample is understood as they are less ionizing comparing to protons or electrons. Less deposited charge is more affected by the fluctuations. Scaling of the obtained results to the twice longer ND280 TPC will give us a performance similar to one at the existing detectors. That is a very important conclusion as we were afraid of the dE/dx resolution degradation with the resistive anode technology.
 
 \begin{figure}[!ht]
   \centering
@@ -350,7 +350,7 @@ The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are s
     \centering
     \includegraphics[width=\linewidth]{cern_energy_resol} \\ (b)
   \end{minipage}
-  \caption{The energy resolution for different particles samples and drift distances (b) obtained from the dE/dx distributions for each sample (a) in the TPC prototype test at CERN.}
+  \caption{The dE/dx resolution for different particles samples and drift distances (b) obtained from the dE/dx distributions for each sample (a) in the TPC prototype test at CERN.}
   \label{fig:tpc:cern_energy_2}
 \end{figure}
 
@@ -366,7 +366,7 @@ The dE/dx distributions for 0.8 GeV/c electrons, pions and protons samples are s
   Proton    & $9.6\pm0.2$ \\
   \hline
   \end{tabular}
-  \caption{The energy resolution for different particles samples at 10 cm drift distance.}
+  \caption{The dE/dx resolution for different particles samples at 10 cm drift distance.}
   \label{tbl:tpc:cern_dedx}
 \end{table}
 
@@ -438,11 +438,11 @@ The spatial resolution analyses flow looks as following:
 
 To estimate the spatial resolution the residuals are defined as a difference between the global track fit and position reconstructed in the particular cluster. The residuals are fit with the Gaussian function. The spatial resolution and bias are defined as sigma and mean of the fit respectively. Steps 2 and 3 are repeated while the spatial resolution is improving. The spatial resolution and the bias obtained with weighted mean and PRF are shown in \autoref{fig:tpc:cern_sr}. The PRF method provides a much more accurate result over the weighted mean. Also, it is more uniform over the detector. The resolution across all particle types and drift distances is presented in \autoref{fig:tpc:sr_tot}. As was expected protons have a better resolution as they deposit more charge and the position can be estimated more precisely. Also, I observed the expected degradation of the spatial resolution with the increase of the drift distance. Because of the transversal diffusion the electron cloud becomes wider during the drift and the position reconstruction accuracy decreases. Finally, I observed the accuracy at the level of 250 $\mu\text{m}$ for the 10 cm drift distance. In the existing T2K TPC the resolution is at the level of 750 $\mu\text{m}$ at the same distance. The resistive foil was confirmed to improve the precision without changing the pad size.
 
-The dependence of the spatial resolution on the drift distance is an important characteristic of the resistive TPC. Without a resistive layer, the resolution becomes worse with decreasing the drift distance. That happens because the transverse diffusion is not sufficient to spread the charge to more then one pad. All the charge is collected by one pad, thus the uncertainty of the measurement is limited by its size. The analytical study of the spatial resolution dependence on the drift distance is provided in~\cite{Arogancia2009}. The advantage of the resistive Micromegas is a charge spreading in the resistive foil, therefore more than one pad receive the signal even for a track close to the readout plane. The spatial resolution for such a detector is expected to follow the square root dependence with respect to the drift distance. The dependence of the resolution is given by \autoref{eq:up:tpc:sr}~\cite{Dixit2007}.
+The dependence of the spatial resolution on the drift distance is an important characteristic of the resistive TPC. Without a resistive layer, the resolution becomes worse with decreasing the drift distance. That happens because the transverse diffusion is not sufficient to spread the charge to more then one pad. All the charge is collected by one pad, thus the uncertainty of the measurement is limited by its size. The analytical study of the spatial resolution dependence on the drift distance is provided in~\cite{Arogancia2009}. The advantage of the resistive Micromegas is a charge spreading in the resistive foil, therefore more than one pad receive the signal even for a track close to the readout plane. The spatial resolution for such a detector is expected to follow the square root dependence with respect to the drift distance ($z$). The dependence of the resolution is given by \autoref{eq:up:tpc:sr}~\cite{Dixit2007}.
 
 \begin{equation}
 \label{eq:up:tpc:sr}
-  \sigma=\sqrt{\sigma_0^2+\frac{D^2_{Tr}z}{N_{eff}}}
+  \sigma\left(z\right)=\sqrt{\sigma_0^2+\frac{D^2_{Tr}z}{N_{eff}}}
 \end{equation}
 where $\sigma_0$ is the resolution at zero drift distance, $D_{Tr}$ is the transverse diffusion constant, and $N_{eff}$ is the effective number of electrons over the length of pad. $N_{eff}$ is computed based on the number of initial ionization electrons $N$ with $N_{eff}=1/\langle\sqrt{1/N}\rangle^2$.
 
@@ -469,7 +469,7 @@ Thus, improving the spatial resolution with the reduction of the drift distance 
   \label{fig:tpc:sr_tot}
 \end{figure}
 
-The beamtest at CERN shows good performance of the resistive TPC prototype. Different samples with different particles types and at various drift distances were tested. The energy resolution was estimated at the same level as in existing TPCs but the spatial resolution was proved to be significantly improved. The paper describing the analyses and the results I obtained was published~\cite{Attie2019b}.
+The beamtest at CERN shows good performance of the resistive TPC prototype. Different samples with different particles types and at various drift distances were tested. The dE/dx resolution was estimated at the same level as in existing TPCs but the spatial resolution was proved to be significantly improved. The paper describing the analyses and the results I obtained was published~\cite{Attie2019b}.
 
 \subsection{DESY beamtest}
 The CERN beamtest confirms the good performance of the new detector. The tested detector was based on the same circuit board (PCB) as we are using in the ND280 TPCs at the moment. The planned HA--TPCs will have different dimensions and pad sizes. The new micromegas was produced for the next beamtest. The same dimensions as in HA--TPC were used. The module size is $\text{34}\times\text{42}\text{ cm}^2$ and is paved with $\text{32}\times\text{36}$ pads $\text{1.1}\times\text{1.0}\text{ cm}^2$ each. The thin 75 $\mu\text{m}$ insulator layer is covered with 50 $\mu\text{m}$ Kapton with the DLC on top of it. Compared to the first prototype (200 + 50 $\mu\text{m}$) the capacitance was increased. The resistivity was decreased from 2.5 $M\Omega/\square$ down to 0.4 $M\Omega/\square$. The side pads were partly covered for mesh fixation as before and these pads were excluded from the analyses.
@@ -500,8 +500,8 @@ In addition to the track reconstruction method described in the CERN test sectio
   \label{fig:tpc:desy_tracks}
 \end{figure}
 
-\subsubsection{Energy resolution}
-The energy resolution was tested with the same method as was used for CERN and Saclay analyses. The truncated mean of the charge collected from the track distribution was fit to estimate the resolution. In the CERN beam test analyses I observed mostly two pads per cluster. We suspect that not sufficient charge spreading may limit the spatial resolution. In the DESY test the nominal MM voltage was increased to 360 V. The effect of the high voltage on the multiplicity can be seen in \autoref{fig:tpc:desy_mult}. Thus with the nominal voltage I observed 3 pads per cluster in most of the cases. With this I expected to improve the spatial resolution.
+\subsubsection{Ionization energy loss resolution}
+The dE/dx resolution was tested with the same method as was used for CERN and Saclay analyses. The truncated mean of the charge collected from the track distribution was fit to estimate the resolution. In the CERN beam test analyses I observed mostly two pads per cluster. We suspect that not sufficient charge spreading may limit the spatial resolution. In the DESY test the nominal MM voltage was increased to 360 V. The effect of the high voltage on the multiplicity can be seen in \autoref{fig:tpc:desy_mult}. Thus with the nominal voltage I observed 3 pads per cluster in most of the cases. With this I expected to improve the spatial resolution.
 
 \begin{figure}[!ht]
   \centering
@@ -510,7 +510,7 @@ The energy resolution was tested with the same method as was used for CERN and S
   \label{fig:tpc:desy_mult}
 \end{figure}
 
-The energy resolution and the collected charge for the different detector parameter scans are presented in \autoref{fig:tpc:desy_dedx1}---\ref{fig:tpc:desy_dedx4}.
+The dE/dx resolution and the collected charge for the different detector parameter scans are presented in \autoref{fig:tpc:desy_dedx1}---\ref{fig:tpc:desy_dedx4}.
 
 \begin{figure}[!ht]
   \centering
@@ -522,7 +522,7 @@ The energy resolution and the collected charge for the different detector parame
     \centering
     \includegraphics[width=0.8\linewidth]{desy_charge_position} \\ (b)
   \end{minipage}
-  \caption{The energy resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the drift distance (a.u.) for different peaking time and magnetic field setup.}
+  \caption{The dE/dx resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the drift distance (a.u.) for different peaking time and magnetic field setup.}
   \label{fig:tpc:desy_dedx1}
 \end{figure}
 
@@ -536,7 +536,7 @@ The energy resolution and the collected charge for the different detector parame
     \centering
     \includegraphics[width=0.8\linewidth]{desy_charge_mom} \\ (b)
   \end{minipage}
-  \caption{The energy resolution (a) and average charge per cluster (b) for the electron tracks in the DESY beamtest versus the track momentum for different peaking time.}
+  \caption{The energy resolution (a) and average charge per cluster (b) for the electron tracks in the DESY beamtest versus the track momentum for different peaking time. The magnetic field is set to 0.2T, the track position is set to 430 mm along Z axis.}
   \label{fig:tpc:desy_dedx2}
 \end{figure}
 
@@ -550,7 +550,7 @@ The energy resolution and the collected charge for the different detector parame
     \centering
     \includegraphics[width=0.8\linewidth]{desy_charge_hv} \\ (b)
   \end{minipage}
-  \caption{The energy resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the Micromegas voltage for different peaking time.}
+  \caption{The energy resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the Micromegas voltage for different peaking time. The magnetic field is set to 0.2T, the track position is set to 430 mm along Z axis.}
   \label{fig:tpc:desy_dedx3}
 \end{figure}
 
@@ -564,13 +564,13 @@ The energy resolution and the collected charge for the different detector parame
     \centering
     \includegraphics[width=0.8\linewidth]{desy_charge_peaking} \\ (b)
   \end{minipage}
-  \caption{The energy resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the peaking time for different drift distances (a.u.).}
+  \caption{The energy resolution (a) and average charge per cluster (b) for the 4 GeV/c electron tracks in the DESY beamtest versus the peaking time for different drift distances (a.u.). The magnetic field is set to 0.2T.}
   \label{fig:tpc:desy_dedx4}
 \end{figure}
 
 From these plots, we can see that the resolution remains stable over the different parameters of the setup. Though I found some expected dependencies. The presence of the magnetic field improves the charge collection and also improves the energy resolution (\autoref{fig:tpc:desy_dedx1}). The dependence of the resolution and the collected charge over the drift distance is not completely understood. The larger collected charge in the sample at 530 mm position is not expected as there is nothing specific in it. We suspect the electric field uniformity as a possible reason for such an effect.
 
-Overall, the energy resolution was estimated below 10\% for nearly all the samples. As before, we are using one module so for the proper comparison with the existing TPCs performance, the result should be scaled with $1/\sqrt{2}$. It will give us 7\% resolution that is the same as what we observed in the existing ND280 TPCs.
+Overall, the energy resolution was estimated below 10\% for nearly all the samples with the magnetic field. In the absence of the field the dE/dx resolution is below 12\%. As before, we are using one module so for the proper comparison with the existing TPCs performance, the result should be scaled with $1/\sqrt{2}$. It will give us 7\% resolution that is the same as what we observed in the existing ND280 TPCs.
 
 \subsubsection{Spatial resolution}
 The PRF technique described in the CERN test section was used to estimate the spatial resolution of the new setup. The various scans with horizontal tracks were used to evaluate the dependence of the resolution over the detector parameters. The result is shown in \autoref{fig:tpc:sr1} and \autoref{fig:tpc:sr2}. The spatial resolution below 220 $\mu$m was observed over all drift distance region. It was found that the higher voltage provides remarkable improvements in the detector performance decreasing the resolution from 300 $\mu$m down to 150 $\mu$m. The higher voltage cause the larger amplification. Therefore more pads detect the signal with the charge spreading. With more pads the more robust position extraction is possible. It was also found that the peaking time has no strong influence of the resolution that allows to choose any value of this parameter.

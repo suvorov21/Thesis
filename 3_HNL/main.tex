@@ -7,7 +7,8 @@
 
 \part{Heavy neutrino study}
 
-\chapter{HNL search prospects in T2K}
+\chapter{HNL in T2K experiment}
+\section{HNL search prospects in T2K}
 \label{ch:hnl}
 
 As mentioned in the \autoref{ch:intro:HNL} the discovery of the neutrino oscillation phenomena explicitly indicates non-zero neutrino mass. Several theoretical frameworks were developed trying to describe its nature. Most of them predict the existence of the Heavy Neutral Lepton (HNL) --- an electrically neutral particle, that interacts only through the weak interaction. It's sometimes refereed to as a ``heavy neutrino''. Neutrino Minimal Standard Model ($\nu$MSM, \autoref{sec:intro:numsm}) is a minimal extension to the Standard Model. It postulates the existence of 3 HNLs. One of them $N_1$ is pretty light ($M_{N_1}\propto1keV$) and is responsible for the phenomenon of the Dark Matter. It interacts with SM particles extremely weakly. Two other heavy neutrinos ($N_2,\text{ }N_3$) should interact stronger to explain the observed behavior of neutrino oscillations. Their mass can be in a pretty wide range from 100 MeV/$\text{c}^2$ up to 80 GeV/$\text{c}^2$. To be able to generate the baryon asymmetry in the early Universe they should be nearly degenerated $\Delta M_{2,3}\ll M_{2,3}$.
@@ -18,7 +19,7 @@ The other class of setups with an extremely intense meson beam are neutrino acce
 
 The most probable HNL decays are $N\to\mu\pi$ and $N\to e\pi$. In the neutrino experiments, we expect a huge amount of similar events from neutrino interactions. Neutrino can interact with the nucleus, producing lepton and pion $\nu_\mu+N\to\mu+\pi+N'$ and $\nu_e+N\to e+\pi+N'$. The huge advantage of the T2K experiment in the search for the HNL is a near detector configuration. As it was widely described in the \autoref{ch:T2K:general} the ND280 detector uses two scintillator targets alternated with three atmospheric pressure TPCs. The gaseous detectors are extremely interesting in the search for the heavy neutrino. The rate of neutrino interactions in gas is extremely low. Even more so the main reaction mode at T2K energies is quasi-elastic interaction, but not the pion production. ND280 is magnetized, so it can separate the oppositely charged lepton and pion from HNL decay. The TPCs provide particle identification with energy loss and also have a good spatial resolution. The latter is essential to select the interactions inside the TPCs only, as we expect many neutrino interactions in the material around the gas volume and the other detectors.
 
-\section{Analysis overview}
+\subsection{Analysis overview}
 In the current work, I study a possibility of the improvement of the constraints on the HNL mixing elements in the T2K experiment. As mentioned above, T2K is expected to have remarkable sensitivity because of the very intense meson beam and the configuration of the near detector. The 30 GeV proton beam from J--PARC accelerator produces mostly pions and kaons. The neutrino and anti-neutrino spectra divided into the parent particle type are presented in \autoref{fig:HNL:meson_flux}.
 
 \begin{figure}[!ht]
@@ -50,13 +51,13 @@ We are going to search for the low-rate process in the low background environmen
 The prediction of the possible improvements on the upper limits of the HNL mixing elements in the T2K experiment was done by Asaka~\cite{Asaka2012}. One of the main goals of my study is to check the phenomenological prediction and to proceed to the final results.
 
 
-\chapter{HNL signal simulations}
+\section{HNL signal simulations}
 \label{ch:HNL:HNLsim}
 The first step of the analysis is the simulation of the HNL flux at the ND280. The simulation of neutrino flux at the near detector has already been developed for the oscillation analysis. I decided to use the obtained results and adapt them to the HNL analysis. With this simulation, we have all the information about the neutrinos entering the ND280 and their parent particles. Because of the kinematics, the phase space of the meson decay into HNL is more limited than the decay into a nearly massless neutrino. E.g. the maximum angle of the HNL direction with respect to the parent meson direction is lower comparing to the massless neutrino case. Thus if we consider only mesons that can produce neutrino entering ND280 and omit all the others, we will definitely take all the possible HNL parent particles.
 
 For the heavy neutrino simulation, we consider the particular meson decay and reweight it taking into account new kinematic and the branching ratios. Thus we will obtain the heavy neutrino spectrum in our detector. The next step is the simulation of the HNL decay in the sensitive detector. I considered two- and tree-body decays of the heavy neutrino. A random direction of the daughter particle was generated and the appropriate decay width was taken into account. Thus I obtained the Monte--Carlo signal samples that can be used for the selection optimization and the detector systematic studies.
 
-\section{T2K flux simulation}
+\subsection{T2K flux simulation}
 The accurate prediction of the neutrino flux is extremely important for precise oscillation analysis. That's why the T2K collaboration has spent great effort into tuning the flux simulation most accurately~\cite{Abe2013}. All the elements of the neutrino beamline are taken into account. The most tricky part is the evaluation of meson production through the proton interactions in the carbon target. As this step is critical for the HNL study, I will overview the simulation process in detail.
 
 The overview of the T2K beamline is presented in \autoref{ch:T2K:nu_beam} of \autoref{ch:T2K:general}. The proton beam spatial distribution and divergence are measured with the beamline monitors. The FLUKA generator is used to perform the simulation of the hadron interaction with the target and a baffle. The position and direction of an incident proton is well--defined with beamline monitors measurements. Proton energy is set to 30 GeV. The information of the generated particles that exited the target volume is stored. The cross--section and the multiplicity of the meson production is a subject of uncertainty. The NA61/SHINE experiment has performed the series of measurements with the T2K-replica target to measure precisely the process of interest.
@@ -123,7 +124,7 @@ After the reweighting of the hadron chains, the total accuracy of the prediction
 \end{figure}
 
 
-\section{HNL production}
+\subsection{HNL production}
 For the purpose of our study, I would like to reweight the kaon decays for the case of HNL production. But I want to use all the fine-tuning described in the previous section to keep the uncertainties as small as possible. Looking at the \autoref{fig:HNL:nu_flux_sim}, I would like to apply a new weight at the second step ``neutrino-producing decays'', but to keep everything else at place. The HNL production will be different from the decay into active neutrino because of the different branching ratios and the kinematic weight.
 
 The new branching ratio is calculated according to~\cite{Gorbunov2007}:
@@ -142,7 +143,7 @@ where
 \item $M_K, f_K, \tau_K$ --- kaon mass, form-factor, lifetime respectively.
 \end{itemize}
 
-The usual approach for the decay simulation is to throw the daughter particle direction uniformly in $4\pi$ angle. But in this case, most of the particles are lost because they will not rich the detector. To gain the simulation statistics I pointed all the produced heavy neutrinos into ND280. But to keep the total number of events consistent I assigned a weight to each heavy neutrino. The geometry weight is calculated as a probability of a daughter particle to have a momentum with a certain angle $\theta$ w.r.t. the parent momentum. As kaons mostly decay in flight I also need to apply the Lorentz boost from the center of mass frame to the laboratory frame.
+The usual approach for the decay simulation is to throw the daughter particle direction uniformly in $4\pi$ angle. But in this case, most of the particles are lost because they will not reach the detector. To gain the simulation statistics I pointed all the produced heavy neutrinos into ND280. But to keep the total number of events consistent I assigned a weight to each heavy neutrino. The geometry weight is calculated as a probability of a daughter particle to have a momentum with a certain angle $\theta$ w.r.t. the parent momentum. As kaons mostly decay in flight I also need to apply the Lorentz boost from the center of mass frame to the laboratory frame.
 
 \begin{align}
     weight_{geom, lab}&=\frac{p_{lab}E_{cm}}{p_{cm}^2}\cdot weight_{geom,cm}
@@ -201,12 +202,12 @@ The second effect is the modification of the branching ratio of the kaon decay. 
 
 In our study, I assume the Majorana nature of the HNL. Hence the parent meson charge is irrelevant. In the analysis, I combine the heavy neutrinos from both $K^+$ and $K^-$ decays. As one can see in \autoref{fig:HNL:meson_flux} the neutrino flux from the $K^-$ is nearly 3 times smaller comparing to one from $K^+$. It is caused by the lower negative kaon production cross--section.
 
-\section{HNL decays}
-Now I have all the information about the HNLs that enter ND280. Thus I can generate the secondary particles that will be produced in the heavy neutrino decay. It will be the expected signal in my analysis. The decay itself is simulated in the HNL rest frame. Then the boost is applied towards the heavy neutrino initial direction. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume (\autoref{fig:HNL:decayPos}).
+\subsection{HNL decays}
+Now I have all the information about the HNLs that enter ND280. Thus I can generate the secondary particles that will be produced in the heavy neutrino decay. It will be the expected signal in my analysis. The decay itself is simulated in the HNL rest frame. Then the boost is applied towards the heavy neutrino initial direction. The decay points are randomly generated along the  HNL tracks inside the TPC volume. So the decay positions are expected to be uniformly distributed in this volume (\autoref{fig:HNL:decayPos}). The small excess of HNL decays in the bottom left is related to the off-axis beam nature. This corner is closer to the beam axis.
 
 The simulation of the 2-body decay is straightforward. The direction of the first particle is thrown isotropically. Then based on both momentum and energy conservation laws the whole decay is parametrized in the HNL rest frame. I will obtain the final kinematics of the daughters with the boost along with the heavy neutrino momentum. The kinematic evaluation is covered in~\cite{Landau2013}, chapter 2.
 
-The 3-body decay case is a bit more complicated. For this mode, I can't just throw all the directions as I have one degree of freedom in the decay. To deal with it I used the normalization with the maximum width of the decay. For each event the following weight is assigned:
+The 3-body decay case is a bit more complicated. For this mode, I can't just throw all the directions as I have one degree of freedom in the decay. To deal with it I used the normalization with the maximum width of the decay. For each event the direction of the daughter particles is still thrown randomly, but the following weight is assigned:
 
 \begin{equation}
     weight_{3-body}=weight_{K\rightarrow \ell N}\cdot\cfrac{\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}}{max\left(\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}\right)}\cdot P,
@@ -250,7 +251,7 @@ where:
 \begin{itemize}
     \item $\delta_\ell'=\left(m_\ell/M_N\right)^2$
     \item $\delta_\pi=\left(m_\pi/M_N\right)^2$
-    \item $\lambda'=\lambda\left(1, \delta_\ell', delta_\pi'\right)$
+    \item $\lambda'=\lambda\left(1, \delta_\ell', \delta_\pi'\right)$
     \item $\theta$ is an angle between the outgoing lepton and the parent meson (kaon) in the HNL rest frame
 \end{itemize}
 
@@ -344,7 +345,7 @@ The reconstructed direction of the HNL candidate is expected to be parallel to t
   \begin{minipage}[h]{0.49\linewidth}
     \center{\includegraphics[width=\linewidth]{HNLpolarEle}  \\ b)}
   \end{minipage}
-  \caption{Angular distribution of the HNL candidate events (a) for $\mu\pi$ mode and (b) for $e\pi$. Red is the signal samples, black is the background from the neutrino interactions and vertical line is a cut value. Background spectrum is normalized to $10^{21}POT$, signal is normalized to 1.}
+  \caption{Angular distribution of the HNL candidate events (a) for $\mu\pi$ mode and (b) for $e\pi$. Red is the MC signal samples, black is the MC background from the neutrino interactions and vertical line is a cut value. Background spectrum is normalized to $10^{21}POT$, signal is normalized to 1.}
   \label{fig:HNL:kin1}
 \end{figure}
 
@@ -356,12 +357,34 @@ The reconstructed direction of the HNL candidate is expected to be parallel to t
   \begin{minipage}[h]{0.49\linewidth}
     \center{\includegraphics[width=\linewidth]{HNLrelative2} \\ b)}
   \end{minipage}
-  \caption{Opening angle for the HNL daughter particles for the $\mu\pi$ mode (a) before the polar angle cut was applied and (b) after. Red is the signal samples, black is the background from the neutrino interactions and vertical line is a cut value. The background is normalized to $10^{21}POT$, the signal is normalized to 1.}
+  \caption{Opening angle for the HNL daughter particles for the $\mu\pi$ mode (a) before the polar angle cut was applied and (b) after. Red is the MC signal samples, black is the MC background from the neutrino interactions and vertical line is a cut value. The background is normalized to $10^{21}POT$, the signal is normalized to 1.}
   \label{fig:HNL:kin2}
 \end{figure}
 
 \subsubsection{\texorpdfstring{$N\to\mu\mu\nu$}{Lg}  mode cuts}
 The dimuon mode requires a special selection. Two muons can not be produced in the neutrino interactions and I want to use the benefits of that fact. But it is not possible to distinguish a muon from a pion using the energy loss in the TPC. So I decided to use the ECal. Pions are expected to cause a shower in the calorimeter while a muon will leave a clean track. So an additional cut was applied. Each muon candidate should reach ECal and behave as a track there. The kinematics cuts were also reviewed. The three-body decay with a neutrino will not allow reconstructing the HNL direction as precisely as a two-body decay. So less strict cut on the polar angle was set.
+
+The cut values that were set based on the signal and background comparison are summarized in \autoref{tbl:hnl:cuts}.
+
+\begin{table}[tb]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+    \hline
+
+    \hline
+    Cut                         & $N\to e\pi$   & $N\to \mu\pi$ & $N\to\mu\mu\pi$ \\
+    \hline
+    $M_{HNL}^{inv}$, MeV/c${}^2$             & 140 - 850     & 250 - 750     &      -   \\
+    \hline
+    $\theta_{HNL}^{polar}$, degree      & <  3.7 & 7.9 & 17 \\
+    \hline
+    $\theta_{opening}$, degree  & \multicolumn{3}{c}{< 90} \\
+    \hline
+    \end{tabular}
+    \caption{caption here}
+    \label{tbl:hnl:cuts}
+\end{table}
+
 
 \subsection{Signal selection efficiency}
 \label{sec:HNL:eff}
@@ -443,7 +466,7 @@ In the T2K experiment neutrino interactions in the ND280 had been already simula
     \hline
 
 \end{tabular}
-\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT generator for $\mu\pi$ mode. The budget is split into quasi--elastic processes (CCQE), resonance $\pi$ production (RES), coherent $\pi$ production (COH), deep inelastic interaction (DIS), neutral current interactions (NC), out of fiducial volume interactions (OOFV), $\overline{\nu}_\mu$ and $\nu_e$ interactions.}
+\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT generator for $\mu\pi$ mode. The budget is split into quasi--elastic processes (CCQE), resonance $\pi$ production (RES), coherent $\pi$ production (COH), deep inelastic interaction (DIS), neutral current interactions (NC), multi--nucleons interaction (2P2H - 2 particles, 2 holes) out of fiducial volume interactions (OOFV), $\overline{\nu}_\mu$ and $\nu_e$ interactions.}
 \label{tbl:HNL:bgOrigMu}
 %\end{adjustbox}
 \end{table}
@@ -469,7 +492,7 @@ The main background for the $N\to\mu\pi$ decay channel is pion production as was
     \hline
 
 \end{tabular}
-\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT for $e\pi$ mode. The budget is split into quasi--elastic processes (CCQE), resonance $\pi$ production (RES), coherent $\pi$ production (COH), deep inelastic interaction (DIS), neutral current interactions (NC), out of fiducial volume interactions (OOFV), $\overline{\nu}_\mu$ and $\nu_e$ interactions.}
+\caption{The number of MC background events after every cut for $10^{21} POT$ from NEUT for $e\pi$ mode. The budget is split into quasi--elastic processes (CCQE), resonance $\pi$ production (RES), coherent $\pi$ production (COH), deep inelastic interaction (DIS), neutral current interactions (NC), multi--nucleons interaction (2P2H - 2 particles, 2 holes) out of fiducial volume interactions (OOFV), $\overline{\nu}_\mu$ and $\nu_e$ interactions.}
 \label{tbl:HNL:bgOrigEle}
 %\end{adjustbox}
 \end{table}
@@ -524,7 +547,7 @@ All the backgrounds from different neutrino interactions generators are put toge
 \end{center}
 \end{table}
 
-The statistics accumulated in the T2K experiment is divided into 8 runs. The total good quality data available for analysis is $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$. Scaling of the MC backgrounds to the real data, collected at ND280, gives us the expected number of the background events (Table~\ref{tbl:HNL:bgScale}).
+The statistics accumulated in the T2K experiment is divided into 8 runs. The total good quality data available for analysis is $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$. The average background prediction across all the neutrino generators is scaled to the real data, collected at ND280, and gives us the expected number of the background events (Table~\ref{tbl:HNL:bgScale}).
 
 \begin{table}[!ht]
 \begin{center}
