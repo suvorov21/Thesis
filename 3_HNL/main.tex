@@ -212,7 +212,7 @@ The 3-body decay case is a bit more complicated. For this mode, I can't just thr
 \begin{equation}
     weight_{3-body}=weight_{K\rightarrow \ell N}\cdot\cfrac{\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}}{max\left(\cfrac{d\Gamma(p_1,p_2)}{dp_1dp_2}\right)}\cdot P,
 \end{equation}
-where $P$ is a 3-body decay weight from the kinematics. As $weight_{3-body} \le 1$ the total number of 3--body decays is reduced. So this number can not be used for the proper estimation of the total number of events. It is crucial to evaluate the probability of the particular event. Because of the kinematics one event can be easier to reconstruct because of the hardware setup (e.g. larger opening angle), but it can be less probable. As I use these samples for the relative efficiency calculation only, the global normalization can be biased but the relative weight should be treated properly.
+where $P$ is a 3-body decay weight from the kinematics~\cite{James1968}. As $weight_{3-body} \le 1$ the total number of 3--body decays is reduced. So this number can not be used for the proper estimation of the total number of events. It is crucial to evaluate the probability of the particular event. Because of the kinematics one event can be easier to reconstruct because of the hardware setup (e.g. larger opening angle), but it can be less probable. As I use these samples for the relative efficiency calculation only, the global normalization can be biased but the relative weight should be treated properly.
 
 \begin{figure}[!ht]
     \center{\includegraphics[width=0.7\linewidth]{DecayPos}}
@@ -319,7 +319,7 @@ The vertex requirement is a key point of the selection. The tracks matching into
   \label{fig:HNL:kalman}
 \end{figure}
 
-The second cut that rejects many signal events is particle identification. I use the energy loss in the TPC (dE/dx) to determine the particle type. In ND280 detector the particle identification is done with the likelihood function comparison. Four hypotheses are built with the comparison of the expected and observed energy loss for electron, muon, pion, and proton. The problem occurs in certain kinematics regions where the energy loss is similar for the different particles. E.g. proton and muon/pion can be confused at the momentum around 1.5 GeV/c. Also, positron and proton have very similar dE/dx at a momentum around 1 GeV/c. Though the particle identification works quite well it is the second cut that most reduces the HNL selection efficiency.
+The second cut that rejects many signal events is particle identification. I use the energy loss in the TPC (dE/dx) to determine the particle type. In ND280 detector the particle identification is done with the likelihood function comparison. Four hypotheses are built with the comparison of the expected and observed energy loss for electron, muon, pion, and proton. The problem occurs in certain kinematics regions where the energy loss is similar for the different particles. E.g. proton and muon/pion can be confused at the momentum around 1.5 GeV/c. Also, positron and proton have very similar dE/dx at a momentum around 1 GeV/c. Though the particle identification works quite well it is the second cut that most reduces the HNL selection efficiency (by 30\% with respect to previous cut \autoref{fig:HNL:EffDrop}).
 
 The ``advance'' part of the selection is aimed at the background reduction. The following cuts are applied:
 
@@ -333,9 +333,32 @@ The ``advance'' part of the selection is aimed at the background reduction. The 
 
 These requirements affect very little the signal selection efficiency but are essential for the background reduction. The neutrino interaction can take place in the upstream detector but due to the reconstruction failure, the vertex can be placed in the TPC fiducial volume. To reject such an event any upstream activity is used as a veto and event is not considered as a signal. The other source of the backgrounds is the inefficient track matching into the vertex. For example, an active neutrino interacts in the TPC volume but more than two tracks are produced. Sometimes vertex matching algorithm can associate only two tracks with the vertex and leave the others unassigned. To reject this process I require no other activity in the TPC besides two tracks that are matched with the HNL candidate decay vertex.
 
-The most powerful cuts for background rejection are the kinematic cuts. The reconstructed invariant mass should be in the kinematically allowed region. Since we are looking for the HNL from kaon decay it can not exceed 493 MeV/$\text{c}^2$. But ND280 can not measure the invariant mass of the HNL in a precise way. Some tolerance is needed to keep efficiency high enough. Nevertheless, this cut is powerful for neutrino interaction rejection since this process can cause the ``invariant mass'' to be in a very wide range.
+The most powerful cuts for background rejection are the kinematic cuts. The reconstructed invariant mass should be in the kinematically allowed region. Since we are looking for the HNL from kaon decay it can not exceed 493 MeV/$\text{c}^2$. But ND280 can not measure the invariant mass of the HNL in a precise way. Some tolerance is needed to keep efficiency high enough. ND280 invariant mass resolution was found to be at level of 50 MeV/c${}^2$ for $N\to\mu\pi$ mode and 70 50 MeV/c${}^2$ for $N\to e\pi$ mode. Nevertheless, this cut is powerful for neutrino interaction rejection since this process can cause the ``invariant mass'' to be in a very wide range.
 
 The reconstructed direction of the HNL candidate is expected to be parallel to the neutrino beam. The products of the neutrino interaction can be distributed in a wide angle. Neutrino interactions are affected by the nuclear effect thus the invariant direction is biased w.r.t. neutrino beam direction. I studied the distribution of the polar angle of the HNL candidate for events that passed all previous cuts, as it is the most strict kinematic cut. Then we looked at the opening angle of the HNL candidate daughters. The results are presented in \autoref{fig:HNL:kin1} and \autoref{fig:HNL:kin2}.
+
+The cut values are summarized in \autoref{tbl:hnl:cuts}. The efficiency drop on each cut is shown in \autoref{fig:HNL:EffDrop} and compared to the background reduction in \autoref{tbl:HNL:bgOrigMu}, \autoref{tbl:HNL:bgOrigEle}.
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|c|c|c|}
+    \hline
+    Cut                         & $N\to e\pi$   & $N\to \mu\pi$ & $N\to\mu\mu\nu$ \\
+    \hline
+    % &&&\\%[-1em]
+    \rule{0pt}{15pt}$M_{HNL}^{inv}$, MeV/c${}^2$             & 140 - 850     & 250 - 750     &      -   \\
+    \hline
+    % &&&\\%[-1em]
+    \rule{0pt}{15pt}$\theta_{HNL}^{polar}$, degree      & <  3.7 & 7.9 & 17 \\
+    \hline
+    % &&&\\%[-1em]
+    \rule{0pt}{15pt}$\theta_{opening}$, degree  & \multicolumn{3}{c|}{< 90} \\
+    \hline
+    \end{tabular}
+    \caption{caption here}
+    \label{tbl:hnl:cuts}
+\end{table}
+
 
 \begin{figure}[!ht]
   \begin{minipage}[h]{0.49\linewidth}
@@ -363,28 +386,6 @@ The reconstructed direction of the HNL candidate is expected to be parallel to t
 
 \subsubsection{\texorpdfstring{$N\to\mu\mu\nu$}{Lg}  mode cuts}
 The dimuon mode requires a special selection. Two muons can not be produced in the neutrino interactions and I want to use the benefits of that fact. But it is not possible to distinguish a muon from a pion using the energy loss in the TPC. So I decided to use the ECal. Pions are expected to cause a shower in the calorimeter while a muon will leave a clean track. So an additional cut was applied. Each muon candidate should reach ECal and behave as a track there. The kinematics cuts were also reviewed. The three-body decay with a neutrino will not allow reconstructing the HNL direction as precisely as a two-body decay. So less strict cut on the polar angle was set.
-
-The cut values that were set based on the signal and background comparison are summarized in \autoref{tbl:hnl:cuts}.
-
-\begin{table}[tb]
-    \centering
-    \begin{tabular}{|l|c|c|c|}
-    \hline
-
-    \hline
-    Cut                         & $N\to e\pi$   & $N\to \mu\pi$ & $N\to\mu\mu\pi$ \\
-    \hline
-    $M_{HNL}^{inv}$, MeV/c${}^2$             & 140 - 850     & 250 - 750     &      -   \\
-    \hline
-    $\theta_{HNL}^{polar}$, degree      & <  3.7 & 7.9 & 17 \\
-    \hline
-    $\theta_{opening}$, degree  & \multicolumn{3}{c}{< 90} \\
-    \hline
-    \end{tabular}
-    \caption{caption here}
-    \label{tbl:hnl:cuts}
-\end{table}
-
 
 \subsection{Signal selection efficiency}
 \label{sec:HNL:eff}
@@ -896,7 +897,9 @@ One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and
 
 A more accurate study shows that the invariant mass of this muon pair is too high for the heavy neutrino decay $M_{inv}\approx$ GeV. But based on the blind analysis method and our analysis strategy this event will be treated as a signal and an appropriate upper limit on the mixing element will be set.
 
-Based on these numbers final limits on the mixing elements based on our analysis can be set. The results are presented in \autoref{fig:HNL:LimitsData1} and \autoref{fig:HNL:LimitsData2}. The data statistics $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$ was used.
+Based on these numbers final limits on the mixing elements based on our analysis can be set. The limits on the each particular mixing element is set under the assumption that the other mixing elements are negligible. For example, setting the limit on $U_e^2$ we assume $U_\mu^2$, $U_\tau^2\ll U_e^2$.
+
+The results are presented in \autoref{fig:HNL:LimitsData1} and \autoref{fig:HNL:LimitsData2}. The data statistics $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$ was used.
 
 \begin{figure}[!ht]
     \begin{center}
