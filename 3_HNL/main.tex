@@ -333,7 +333,7 @@ The ``advance'' part of the selection is aimed at the background reduction. The 
 
 These requirements affect very little the signal selection efficiency but are essential for the background reduction. The neutrino interaction can take place in the upstream detector but due to the reconstruction failure, the vertex can be placed in the TPC fiducial volume. To reject such an event any upstream activity is used as a veto and event is not considered as a signal. The other source of the backgrounds is the inefficient track matching into the vertex. For example, an active neutrino interacts in the TPC volume but more than two tracks are produced. Sometimes vertex matching algorithm can associate only two tracks with the vertex and leave the others unassigned. To reject this process I require no other activity in the TPC besides two tracks that are matched with the HNL candidate decay vertex.
 
-The most powerful cuts for background rejection are the kinematic cuts. The reconstructed invariant mass should be in the kinematically allowed region. Since we are looking for the HNL from kaon decay it can not exceed 493 MeV/$\text{c}^2$. But ND280 can not measure the invariant mass of the HNL in a precise way. Some tolerance is needed to keep efficiency high enough. ND280 invariant mass resolution was found to be at level of 50 MeV/c${}^2$ for $N\to\mu\pi$ mode and 70 50 MeV/c${}^2$ for $N\to e\pi$ mode. Nevertheless, this cut is powerful for neutrino interaction rejection since this process can cause the ``invariant mass'' to be in a very wide range.
+The most powerful cuts for background rejection are the kinematic cuts. The reconstructed invariant mass should be in the kinematically allowed region. Since we are looking for the HNL from kaon decay it can not exceed 493 MeV/$\text{c}^2$. But ND280 can not measure the invariant mass of the HNL in a precise way. Some tolerance is needed to keep efficiency high enough. ND280 invariant mass resolution was found to be at level of 50 MeV/c${}^2$ for $N\to\mu\pi$ mode and 70 MeV/c${}^2$ for $N\to e\pi$ mode. Nevertheless, this cut is powerful for neutrino interaction rejection since this process can cause the ``invariant mass'' to be in a very wide range.
 
 The reconstructed direction of the HNL candidate is expected to be parallel to the neutrino beam. The products of the neutrino interaction can be distributed in a wide angle. Neutrino interactions are affected by the nuclear effect thus the invariant direction is biased w.r.t. neutrino beam direction. I studied the distribution of the polar angle of the HNL candidate for events that passed all previous cuts, as it is the most strict kinematic cut. Then we looked at the opening angle of the HNL candidate daughters. The results are presented in \autoref{fig:HNL:kin1} and \autoref{fig:HNL:kin2}.
 
@@ -345,17 +345,14 @@ The cut values are summarized in \autoref{tbl:hnl:cuts}. The efficiency drop on 
     \hline
     Cut                         & $N\to e\pi$   & $N\to \mu\pi$ & $N\to\mu\mu\nu$ \\
     \hline
-    % &&&\\%[-1em]
     \rule{0pt}{15pt}$M_{HNL}^{inv}$, MeV/c${}^2$             & 140 - 850     & 250 - 750     &      -   \\
     \hline
-    % &&&\\%[-1em]
-    \rule{0pt}{15pt}$\theta_{HNL}^{polar}$, degree      & <  3.7 & 7.9 & 17 \\
+    \rule{0pt}{15pt}$\theta_{HNL}^{polar}$, degree      & <  3.7 & < 7.9 & < 17 \\
     \hline
-    % &&&\\%[-1em]
-    \rule{0pt}{15pt}$\theta_{opening}$, degree  & \multicolumn{3}{c|}{< 90} \\
+    \rule{0pt}{15pt}$\theta^{opening}$, degree  & \multicolumn{3}{c|}{< 90} \\
     \hline
     \end{tabular}
-    \caption{caption here}
+    \caption{The cut values summary for different HNL decays modes.}
     \label{tbl:hnl:cuts}
 \end{table}
 
@@ -827,10 +824,10 @@ This approach can be applied only while $\sigma_{Acc}<1/E_n$. We already showed 
 One more important feature of the current analysis is that we don't consider the background and its uncertainty. We used the background estimations to tune our selection. For the final result we will treat all the observed events as a signal and then put a conservative limit on the mixing elements. The data--driven approach will be indeed conservative, but the advantage is that we are free from the background uncertainty at all. If during the unblinding several events were found we would put the worse limits on the mixing. Such a method can be improved in the future (see \autoref{sec:HNL:prosp}).
 
 \section{Results}
-\subsection{MC sensitivity estimations}
+% \subsection{MC sensitivity estimations}
 \label{sec:HNL:MCres}
 
-After studying the MC efficiency (\autoref{sec:HNL:eff}), background processes (\autoref{sec:HNL:bg}) and systematics (\autoref{sec:HNL:sys}),  sensitivity to the mixing elements based on MC can be estimated according to \autoref{eq:HNL:constrainsAcc}. Because of the small background the acceptance uncertainties have a small effect on the sensitivity.
+After studying the MC efficiency (\autoref{sec:HNL:eff}), background processes (\autoref{sec:HNL:bg}) and systematics (\autoref{sec:HNL:sys}), the real data can be unblinded and the final upper limit on mixing angles can be set. I will use the statistical method descried in \autoref{eq:HNL:constrainsAcc}. Because of the small background the acceptance uncertainties have a small effect on the sensitivity.
 
 \begin{comment}
 \begin{figure}[!ht]
@@ -880,7 +877,7 @@ The numbers of observed events in data after the unblinding are presented in the
 \end{center}
 \end{table}
 
-One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and looks like a signal event: two muon-like tracks with the direction extremely collinear to the beam axis. The event display for this event is presented in \autoref{fig:HNL:DataEvent}.
+One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and looks like a signal event: two muon-like tracks with the direction collinear to the beam axis. The event display for this event is presented in \autoref{fig:HNL:DataEvent}.
 
 \begin{figure}[!ht]
     \begin{center}
@@ -895,9 +892,9 @@ One event for the $N\to\mu\mu\nu$ mode was observed. It happened in the TPC3 and
   \end{center}
 \end{figure}
 
-A more accurate study shows that the invariant mass of this muon pair is too high for the heavy neutrino decay $M_{inv}\approx$ GeV. But based on the blind analysis method and our analysis strategy this event will be treated as a signal and an appropriate upper limit on the mixing element will be set.
+A more accurate study shows that the invariant mass of this muon pair is too high for the heavy neutrino decay $M_{inv}\approx$ GeV. At this particular mode no cut on the HNL invariant mass was set. But based on the blind analysis method and our analysis strategy this event will be treated as a signal and an appropriate upper limit on the mixing element will be set.
 
-Based on these numbers final limits on the mixing elements based on our analysis can be set. The limits on the each particular mixing element is set under the assumption that the other mixing elements are negligible. For example, setting the limit on $U_e^2$ we assume $U_\mu^2$, $U_\tau^2\ll U_e^2$.
+The limits on the each particular mixing element is set under the assumption that the other mixing elements are negligible. For example, setting the limit on $U_e^2$ we assume $U_\mu^2$, $U_\tau^2\ll U_e^2$.
 
 The results are presented in \autoref{fig:HNL:LimitsData1} and \autoref{fig:HNL:LimitsData2}. The data statistics $\left(10.23\nu+6.29\bar{\nu}\right)\cdot 10^{20}POT$ was used.
 
