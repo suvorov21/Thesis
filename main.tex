@@ -269,8 +269,11 @@ citestyle=numeric,
 
 % \maketitle
 \clearpage
+\pagenumbering{gobble}
 \tableofcontents*
 % \linenumbers
+\pagebreak
+\pagenumbering{arabic}
 
 % Part references
 \subfile{./1_Introduction/main.tex}
